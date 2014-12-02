@@ -4,7 +4,7 @@ Category: Python
 Tags: pelican
 Slug: hello-world
 authors: David Jenkins
-Summary: Thie is a short hello world summary for index and feeds.
+Summary: This is a short hello world summary for index and feeds.
 
 ## Hello World
 
