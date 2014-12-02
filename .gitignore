@@ -1,6 +1,7 @@
 __pycache__
 fabfile.py
 output/*
+!output/.gitkeep
 cache
 themes/djenkinsdev_theme/tools/node_modules/*
 .idea
