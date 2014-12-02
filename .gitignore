@@ -3,3 +3,4 @@ fabfile.py
 output/*
 cache
 themes/djenkinsdev_theme/tools/node_modules/*
+.idea
