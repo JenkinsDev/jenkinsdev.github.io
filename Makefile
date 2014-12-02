@@ -62,8 +62,8 @@ html:
 clean:
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
 
-css:
-	cd $(TOOLSDIR) && gulp css
+gulp:
+	cd $(TOOLSDIR) && gulp
 
 regenerate:
 	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
