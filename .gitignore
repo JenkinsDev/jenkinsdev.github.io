@@ -1,0 +1,5 @@
+__pycache__
+fabfile.py
+output/*
+cache
+themes/djenkinsdev_theme/tools/node_modules/*
