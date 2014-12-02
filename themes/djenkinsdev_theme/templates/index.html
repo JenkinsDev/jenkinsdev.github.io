@@ -4,13 +4,43 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
+
     {% for article in articles_page.object_list %}
         <article class="post">
-            <h3><a href="{{ article.url }}">{{ article.title }}</a></h3>
+            <!-- POST TITLE -->
+            <h4><a href="{{ article.url }}">{{ article.title }}</a></h4>
+            <!-- END POST TITLE -->
 
-            <div class="article-summary">
-                {{ article.summary }}
+            <!-- POST META -->
+            <div class="post-meta">
+                <p class="date">
+                    <span class="glyphicon glyphicon-time"></span>
+                    {{ article.date.strftime('%m/%d/%Y') }}
+                </p>
+
+                <p class="read-time">
+                    <span class="glyphicon glyphicon-eye-open"></span>
+                    {{ article.readtime }}
+                </p>
+
+                <p class="comments">
+                    <span class="glyphicon glyphicon-list-alt"></span>
+                    205 Comments
+                </p>
             </div>
+            <!-- END POST META -->
+
+            <!-- POST SUMMARY/CONTENT -->
+            <div class="article-content">
+                {% if article.summary %}
+                    {{ article.summary }}
+                {% else %}
+                    {{ article.content }}
+                {% endif %}
+            </div>
+            <!-- END POST SUMMARY/CONTENT -->
         </article>
+
+        <hr class="article-sep">
     {% endfor %}
 {% endblock %}
