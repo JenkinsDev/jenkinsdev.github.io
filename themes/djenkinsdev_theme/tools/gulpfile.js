@@ -31,7 +31,6 @@ gulp.task('js', function() {
   gulp.src(UNMINIFIED_JS_FILES)
       .pipe(uglify(MINIFIED_JS_FILE))
       .pipe(gulp.dest(MINIFIED_JS_PATH))
-
 });
 
 gulp.task('watch', function() {
