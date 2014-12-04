@@ -6,9 +6,40 @@ article {
     }
 
     p {
-        color: @light-grey;
+
         font-size: 1.8rem;
-        margin: 0 25px;
+    }
+
+    .article-content {
+        & > * {
+            margin: 15px 25px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-size: 55px !important;
+            text-align: left !important;
+            font-weight: 300 !important;
+        }
+
+        h2 {
+            font-size: 50px !important;
+        }
+
+        h3 {
+            font-size: 45px !important;
+        }
+
+        h4 {
+            font-size: 40px !important;
+        }
+
+        h5 {
+            font-size: 35px !important;
+        }
+
+        h6 {
+            font-size: 30px !important;
+        }
     }
 
     .post-meta {
@@ -27,6 +58,10 @@ article {
             margin: 0 15px;
             display: inline;
         }
+    }
+
+    #disqus_thread {
+        margin: 65px 25px !important;
     }
 }
 

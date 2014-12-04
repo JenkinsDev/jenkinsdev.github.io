@@ -4,11 +4,10 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-
     {% for article in articles_page.object_list %}
         <article class="post">
             <!-- POST TITLE -->
-            <h4><a href="{{ article.url }}">{{ article.title }}</a></h4>
+            <h4><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h4>
             <!-- END POST TITLE -->
 
             <!-- POST META -->
@@ -23,10 +22,12 @@
                     {{ article.readtime }}
                 </p>
 
+                <!-- DISQUS COMMENT COUNT -->
                 <p class="comments">
                     <span class="glyphicon glyphicon-list-alt"></span>
-                    205 Comments
+                    <span class="disqus-comment-count" data-disqus-url="{{ SITEURL }}/{{ article.url }}"></span>
                 </p>
+                <!-- END DISQUS COMMENT COUNT -->
             </div>
             <!-- END POST META -->
 

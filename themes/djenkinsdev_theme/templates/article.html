@@ -1,1 +1,45 @@
 <!-- Processed For Each Article -->
+{% extends 'main.html' %}
+
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block content %}
+    <article class="post single">
+        <!-- POST TITLE -->
+        <h4>{{ article.title }}</h4>
+        <!-- END POST TITLE -->
+
+        <!-- POST META -->
+        <div class="post-meta">
+            <p class="date">
+                <span class="glyphicon glyphicon-time"></span>
+                {{ article.date.strftime('%m/%d/%Y') }}
+            </p>
+
+            <p class="read-time">
+                <span class="glyphicon glyphicon-eye-open"></span>
+                {{ article.readtime }}
+            </p>
+
+            <!-- DISQUS COMMENT COUNT -->
+            <p class="comments">
+                <span class="glyphicon glyphicon-list-alt"></span>
+                <span class="disqus-comment-count" data-disqus-url="{{ SITEURL }}/{{ article.url }}"></span>
+            </p>
+            <!-- END DISQUS COMMENT COUNT -->
+        </div>
+        <!-- END POST META -->
+
+        <!-- POST SUMMARY/CONTENT -->
+        <div class="article-content">
+            {{ article.content }}
+        </div>
+        <!-- END POST SUMMARY/CONTENT -->
+
+        <!-- POST COMMENTS -->
+        <div id="disqus_thread"></div>
+        <!-- END POST COMMENTS -->
+    </article>
+
+    <hr class="article-sep">
+{% endblock %}
