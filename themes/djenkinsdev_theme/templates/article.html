@@ -3,6 +3,8 @@
 
 {% block title %}{{ article.title }}{% endblock %}
 
+{% block disqus_identifier %}{{ article.disqusidentifier }}{% endblock %}
+
 {% block content %}
     <article class="post single">
         <!-- POST TITLE -->
@@ -24,7 +26,7 @@
             <!-- DISQUS COMMENT COUNT -->
             <p class="comments">
                 <span class="glyphicon glyphicon-list-alt"></span>
-                <span class="disqus-comment-count" data-disqus-url="{{ SITEURL }}/{{ article.url }}"></span>
+                <span class="disqus-comment-count" data-disqus-identifier="{{ article.disqusidentifier }}"></span>
             </p>
             <!-- END DISQUS COMMENT COUNT -->
         </div>
