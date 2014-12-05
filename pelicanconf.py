@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+
 AUTHOR = 'David Jenkins'
 SITENAME = 'DJenkins Dev'
 SITEURL = 'http://localhost:8000/'
