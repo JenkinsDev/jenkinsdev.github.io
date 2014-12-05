@@ -1,26 +1,30 @@
 Title: Hello World
-Date: 2014-12-1
-Category: Python
-Tags: pelican
+Date: 2014-12-05
+Category: General
+Tags: greeting, python, development, web development
 Slug: hello-world
 Authors: David Jenkins
-ReadTime: 3 Minutes 5 Seconds
-DisqusIdentifier: HelloWorldArticle
-Summary: Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine.
-         You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water.
-         We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are
-         connected, you and I. We're on the same curve, just on opposite ends.
+DisqusIdentifier: HelloWorld
+Summary: This isn't your normal Hello World introduction, this is my personal
+         introduction to you, my readers.  Find out who I am, what I do
+         and what this _blog_ is going to be all about.  Don't be afraid to ask
+         questions for I will most likely answer.
 
-#H1
-##H2
-###H3
-####H4
-#####H5
-######H6
 
-Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.
+##### Come One, Come All
 
-Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.
+Welcome to my blog where I shall mind control and make you all work in my
+developer sweat shop! Nah, I am just messing with you, though that would be
+really nice, it would make my life easier!
+
+On a more serious note, I'd like to welcome you, the reader, to my blog.  This
+is going to be the breading ground for some pretty gnarly content ranging from
+simplistic programming concepts to more complex concepts like aspects of
+game development.  Obviously this blog won't just be about programming though,
+its going to be the home to a lot of my thoughts in general.
+
+
+##### A Bit About Me
 
     :::python3
     # This is a python code test

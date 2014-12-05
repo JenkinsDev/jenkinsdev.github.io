@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import readtime
 
 
 AUTHOR = 'David Jenkins'
@@ -20,6 +21,8 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+LOAD_CONTENT_CACHE = False
+
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
@@ -33,6 +36,8 @@ SOCIAL = (('You can add links in your config file', '#'),
 DEFAULT_PAGINATION = False
 
 THEME = 'themes/djenkinsdev_theme'
+
+PLUGINS = [readtime]
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
