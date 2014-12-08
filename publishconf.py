@@ -8,7 +8,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = ''
+SITEURL = 'http://djenkinsdev.com'
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
@@ -16,6 +16,19 @@ CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
 
-# Following items are often useful when publishing
+AUTHOR = 'David Jenkins'
+SITENAME = 'DJenkins Dev'
 
-#GOOGLE_ANALYTICS = ""
+PATH = 'content'
+
+TIMEZONE = 'America/New_York'
+
+DEFAULT_LANG = 'en'
+
+LOAD_CONTENT_CACHE = False
+
+DEFAULT_PAGINATION = False
+
+THEME = 'themes/djenkinsdev_theme'
+
+PLUGINS = [readtime]
