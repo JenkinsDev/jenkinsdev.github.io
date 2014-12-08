@@ -29,7 +29,7 @@ its going to be the home to a lot of my thoughts in general.
 
 My name is David Jenkins and I currently work over at [Bold Media Group](https://boldmediagroup.com),
 I create some pretty awesome things over there that revolves around
-automation the of tasks.  AUTOMATE EVERYTHING.  That's right, I am
+automation of tasks.  AUTOMATE EVERYTHING.  That's right, I am
 a *HUGE* automation advocate, if it's a task that could be automated in some
 form then you should work towards automating it.  Isn't that what a lot of
 technology is for anyway?
