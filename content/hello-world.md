@@ -19,7 +19,7 @@ developer sweat shop! Nah, I am just messing with you, though that would be
 really nice, it would make my life easier!
 
 On a more serious note, I'd like to welcome you, the reader, to my blog.  This
-is going to be the breading ground for some pretty gnarly content ranging from
+is going to be the breeding ground for some pretty gnarly content ranging from
 simplistic programming concepts to more complex concepts like aspects of
 game development.  Obviously this blog won't just be about programming though,
 its going to be the home to a lot of my thoughts in general.
