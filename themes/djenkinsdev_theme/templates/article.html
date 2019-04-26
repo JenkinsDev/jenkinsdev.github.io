@@ -1,17 +1,14 @@
 <!-- Processed For Each Article -->
 {% extends 'main.html' %}
 
-{% block title %}{{ article.title }}{% endblock %}
+{% import 'fragments/tags.import.html' as tags %}
 
-{% block disqus_identifier %}{{ article.disqusidentifier }}{% endblock %}
+{% block title %}{{ article.title }}{% endblock %}
 
 {% block content %}
     <article class="post single">
-        <!-- POST TITLE -->
         <h4>{{ article.title }}</h4>
-        <!-- END POST TITLE -->
 
-        <!-- POST META -->
         <div class="post-meta">
             <p class="date">
                 <span class="glyphicon glyphicon-time"></span>
@@ -23,41 +20,24 @@
                 {{ article.readtime }}
             </p>
 
-            <!-- DISQUS COMMENT COUNT -->
             <p class="comments">
                 <span class="glyphicon glyphicon-list-alt"></span>
                 <span class="text disqus-comment-count" data-disqus-identifier="{{ article.disqusidentifier }}"></span>
             </p>
-            <!-- END DISQUS COMMENT COUNT -->
-        </div>
-        <!-- END POST META -->
 
-        <!-- POST SUMMARY/CONTENT -->
+            {{ tags.render_tags_list(article.tags) }}
+        </div>
+
         <div class="article-content">
             {{ article.content }}
         </div>
-        <!-- END POST SUMMARY/CONTENT -->
 
-        <!-- SOCIAL SHARING -->
-        <div id="social-sharing">
-            <!-- GOOGLE PLUS 1 -->
-            <div class="g-plusone"></div>
-            <!-- END GOOGLE PLUS 1 -->
-
-            <!-- FACEBOOK LIKE -->
-            <div class="fb-like" data-href="{{ SITEURL }}/{{ article.url }}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-            <!-- END FACEBOOK LIKE -->
-
-            <!-- TWITTER SHARE -->
-            <a href="https://twitter.com/share" class="twitter-share-button" data-via="DJenkinsDev">Tweet</a>
-            <!-- END TWITTER SHARE -->
-        </div>
-        <!-- END SOCIAL SHARING -->
-
-        <!-- POST COMMENTS -->
         <div id="disqus_thread"></div>
-        <!-- END POST COMMENTS -->
     </article>
 
     <hr class="article-sep">
+{% endblock %}
+
+{% block footer_js %}
+  {% include 'fragments/disqus.include.html' %}
 {% endblock %}

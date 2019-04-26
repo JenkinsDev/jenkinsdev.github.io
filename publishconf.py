@@ -17,7 +17,7 @@ CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 DELETE_OUTPUT_DIRECTORY = True
 
 AUTHOR = 'David Jenkins'
-SITENAME = 'DJenkins Dev'
+SITENAME = 'DJenkinsDev'
 
 PATH = 'content'
 

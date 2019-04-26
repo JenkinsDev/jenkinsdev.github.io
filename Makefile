@@ -26,7 +26,6 @@ help:
 	@echo '   make regenerate                  regenerate files upon modification '
 	@echo '   make publish                     generate using production settings '
 	@echo '   make serve [PORT=8000]           serve site at http://localhost:8000'
-	@echo '   make devserver [PORT=8000]       start/restart develop_server.sh    '
 	@echo '   make stopserver                  stop local server                  '
 	@echo '   make ssh_upload                  upload the web site via SSH        '
 	@echo '   make rsync_upload                upload the web site via rsync+ssh  '
@@ -56,13 +55,6 @@ ifdef PORT
 	cd $(OUTPUTDIR) && $(PY) -m http.server $(PORT)
 else
 	cd $(OUTPUTDIR) && $(PY) -m http.server
-endif
-
-devserver:
-ifdef PORT
-	$(BASEDIR)/develop_server.sh restart $(PORT)
-else
-	$(BASEDIR)/develop_server.sh restart
 endif
 
 stopserver:

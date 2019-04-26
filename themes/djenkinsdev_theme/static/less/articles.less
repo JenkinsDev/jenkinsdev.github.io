@@ -43,26 +43,49 @@ article {
     }
 
     .post-meta {
-        width: 100%;
+        width: auto;
         text-align: center;
-        margin: -5px 0 25px;
+        margin: 0 10px 25px;
 
-        span {
+        p {
+            font-size: 1.7rem;
+        }
+
+        .glyphicon {
             position: relative;
             top: 6px;
             right: 3px;
-            font-size: 2.4rem;
+            font-size: 2rem;
         }
 
         .date, .read-time, .comments {
             margin: 0 15px;
             display: inline;
 
-            span.text {
+            .text {
                 position: static;
                 top: 0;
                 right: 0;
                 font-size: 1.8rem;
+            }
+        }
+
+        .tags {
+            margin-top: 20px;
+
+            ul {
+                list-style: none;
+                padding-left: 0px;
+
+                .tag {
+                    font-size: 1.6rem;
+                    display: inline-block;
+                    margin-bottom: 3px;
+                    background-color: @cool-blue;
+                    color: white;
+                    padding: 8px;
+                    border-radius: 3px;
+                }
             }
         }
     }
@@ -80,6 +103,25 @@ article {
 
             iframe {
                 position: static;
+            }
+        }
+    }
+
+    .article-footer {
+        display: block;
+        text-align: right;
+
+        .readmore-link {
+            font-weight: bold;
+        }
+
+        .article-links {
+            font-size: 1.7rem;
+            margin-right: 40px;
+            text-decoration: underline;
+
+            &:last-of-type {
+                margin-right: 0px;
             }
         }
     }

@@ -7,17 +7,17 @@
  */
 (function(window, document, undefined) {
     function load_random_subheader() {
-        var sub_header_ele = document.getElementById('sub-header'),
-            header_text = '',
-            sub_header_text_array = [
-                'The Mind Of David.',
-                'Cool Code Is Cool.'
-            ];
+        var subHeaderEle = document.getElementById('sub-header');
+        var subHeaderTexts = [
+          'Satire Is Life.',
+          'Cool Code Is Cool.',
+          'Into The Mind.',
+          'Poe\'s Law, Emotes For All!',
+          'Progress Is When You Cringe At Something From The Past.'
+        ];
+        var randInd = Math.floor(Math.random() * subHeaderTexts.length);
 
-        // We want to be able to display a random sub header text for each page load.  To do that we will
-        // go ahead and do a tiny bit of JS randomness and choose the text based on its index.
-        header_text = sub_header_text_array[Math.floor(Math.random() * sub_header_text_array.length)];
-        sub_header_ele.innerHTML = header_text;
+        subHeaderEle.innerHTML = subHeaderTexts[randInd];
     }
 
     window.onload = load_random_subheader;

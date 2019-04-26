@@ -1,17 +1,16 @@
 <!-- The Index (List All The Articles) -->
 {% extends 'main.html' %}
 
+{% import 'fragments/tags.import.html' as tags %}
+
 {% block title %}Home{% endblock %}
 
 {% block content %}
     {% for article in articles_page.object_list %}
         <article class="post">
-            <!-- POST TITLE -->
             <h4><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h4>
-            <!-- END POST TITLE -->
 
-            <!-- POST META -->
-            <div class="post-meta">
+            <aside class="post-meta">
                 <p class="date">
                     <span class="glyphicon glyphicon-time"></span>
                     {{ article.date.strftime('%m/%d/%Y') }}
@@ -22,16 +21,9 @@
                     {{ article.readtime }}
                 </p>
 
-                <!-- DISQUS COMMENT COUNT -->
-                <p class="comments">
-                    <span class="glyphicon glyphicon-list-alt"></span>
-                    <span class="text disqus-comment-count" data-disqus-identifier="{{ article.disqusidentifier }}"></span>
-                </p>
-                <!-- END DISQUS COMMENT COUNT -->
-            </div>
-            <!-- END POST META -->
+                {{ tags.render_tags_list(article.tags) }}
+            </aside>
 
-            <!-- POST SUMMARY/CONTENT -->
             <div class="article-content">
                 {% if article.summary %}
                     {{ article.summary }}
@@ -39,9 +31,21 @@
                     {{ article.content }}
                 {% endif %}
             </div>
-            <!-- END POST SUMMARY/CONTENT -->
+
+
+            <div class="article-footer">
+                <a class="article-links readmore-link" href="{{ SITEURL }}/{{ article.url }}">
+                    Read More
+                </a>
+
+                <a class="article-links" href="{{ SITEURL }}/{{ article.url }}#disqus_thread">
+                    Read The Discourse
+                </a>
+            </div>
         </article>
 
         <hr class="article-sep">
     {% endfor %}
 {% endblock %}
+
+
