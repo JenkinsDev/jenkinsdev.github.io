@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>DJenkinsDev - General</title><link href="http://djenkinsdev.com/" rel="alternate"></link><link href="http://djenkinsdev.com/feeds/general.atom.xml" rel="self"></link><id>http://djenkinsdev.com/</id><updated>2019-04-26T00:00:00-04:00</updated><entry><title>Hello, World!</title><link href="http://djenkinsdev.com/hello-world.html" rel="alternate"></link><published>2019-04-26T00:00:00-04:00</published><updated>2019-04-26T00:00:00-04:00</updated><author><name>David Jenkins</name></author><id>tag:djenkinsdev.com,2019-04-26:/hello-world.html</id><summary type="html">&lt;p&gt;This isn't your normal 'Hello, World' introduction, this is my personal
+introduction to you.  Find out who I am, what I do
+and what this &lt;em&gt;blog&lt;/em&gt; is going to be all about.&lt;/p&gt;</summary><content type="html">&lt;h5&gt;Come One, Come All&lt;/h5&gt;
+&lt;p&gt;I'd like to welcome you, the reader, to my blog.  This
+is going to be the breeding ground for content ranging from
+entry-level programming concepts to more complex topics.  Obviously, this blog won't
+just be about programming though, its going to be the home to a lot of my thoughts in general.&lt;/p&gt;
+&lt;h5&gt;A Bit About Me&lt;/h5&gt;
+&lt;p&gt;My name is David Jenkins and I currently work over at &lt;a href="https://boldmediagroup.com"&gt;Bold Media Group&lt;/a&gt;.
+I create some pretty awesome things there that revolve around
+automation.  AUTOMATE EVERYTHING.  That's right, I am
+a &lt;em&gt;HUGE&lt;/em&gt; automation advocate, if it's a task that could be automated in some
+form, then it should automated.  Isn't that what a lot of technology is for anyway?&lt;/p&gt;
+&lt;p&gt;Enough about that automation jazz!  You came here to read
+about me anyway, didn't ya?  When I'm not working on...Work. I
+am generally either spending time with the family, gaming at night or
+trying to excel myself in some fashion - currently re-learning guitar and 
+getting deep into my foray into learning new spoken languages.&lt;/p&gt;
+&lt;p&gt;I am attempting to make this site a sizeable chunk of my life, I want to spread
+the wealth of knowledge as many have done before me.&lt;/p&gt;
+&lt;h5&gt;How It Was Built&lt;/h5&gt;
+&lt;h6&gt;The Back-End&lt;/h6&gt;
+&lt;p&gt;First thing's first, the site is a pretty basic site and the portions that you see
+are all static.  There's a catch though, no I don't write the articles in HTML, I
+write them in &lt;a href="http://daringfireball.net/projects/markdown/"&gt;Markdown&lt;/a&gt;.  The static
+side of the site, everything you see and that is on the server, is all &lt;em&gt;compiled&lt;/em&gt;
+by a &lt;em&gt;library&lt;/em&gt; called &lt;a href="http://blog.getpelican.com/"&gt;Pelican&lt;/a&gt;.  Ever heard of Jekyll?
+It's the same concept except Pelican is built on-top of Python which is my language
+of choice for most projects.  If you want to find out more then follow the link
+above.&lt;/p&gt;
+&lt;p&gt;That's actually about it for the back-end minus a Pelican plugin I made while
+writing up this article. It's called &lt;a href="https://github.com/JenkinsDev/pelican-readtime"&gt;pelican-readtime&lt;/a&gt;,
+basically it does what the name suggests and determines what
+the average read time would be for Pelican content and stores that value in
+an attribute called &lt;code&gt;readtime&lt;/code&gt; in the content's object.  The "algorithm" that is used to
+calculate the read time is based off of Medium's read time "algorithm."&lt;/p&gt;
+&lt;h6&gt;The Front-End&lt;/h6&gt;
+&lt;p&gt;The front-end of this site is your basic HTML, CSS and JavaScript.  During development
+of the assets, CSS and JavaScript, I make use of a build system called
+&lt;a href="http://gulpjs.com/"&gt;GulpJS&lt;/a&gt;.&lt;/p&gt;
+&lt;h5&gt;Conclusion&lt;/h5&gt;
+&lt;p&gt;Well guys I think that's all I am going to cover in this here "Hello, World"
+introduction.  I am hoping to make this a useful resource for everyone.
+If you have any questions then just leave it down below in the comments section.
+I'll make sure to check the comments frequently!&lt;/p&gt;
+&lt;p&gt;Auf Wiedersehen!&lt;/p&gt;</content><category term="greeting"></category><category term="python"></category><category term="javascript"></category></entry></feed>
