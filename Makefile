@@ -72,10 +72,12 @@ endif
 publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
-github: publish
+github:
+	git checkout master
+	publish
 	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
 	git push origin $(GITHUB_PAGES_BRANCH)
-	clean
+	git checkout source
 
 
 .PHONY: html help clean regenerate serve serve-global devserver stopserver publish github
