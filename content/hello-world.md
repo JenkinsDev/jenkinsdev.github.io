@@ -17,7 +17,7 @@ Summary: This isn't your normal 'Hello, World' introduction, this is my personal
 
 I'd like to welcome you &ndash; the reader &ndash; to my blog.  This
 is going to be the breeding ground for practically anything, but with
-a slight focus being on programming related content.
+a slight focus on programming related content.
 
 
 ##### A Bit About Me
