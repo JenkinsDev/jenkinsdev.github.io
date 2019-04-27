@@ -20,7 +20,4 @@ CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
 
-# Following items are often useful when publishing
-
-DISQUS_SITENAME = "jenkinsdev-github-io"
-#GOOGLE_ANALYTICS = ""
+GOOGLE_ANALYTICS_TRACKING = 'UA-139155525-1'
