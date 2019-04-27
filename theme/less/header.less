@@ -15,11 +15,23 @@ header {
         padding-top: 100px;
         text-align: center;
         font-size: 60px;
-        color: @cool-blue;
-        font-weight: 300 !important;
 
-        span {
-            color: white;
+        a {
+            transition: color 0.2s;
+            color: @cool-blue;
+
+            span {
+                transition: color 0.2s;
+                color: white;
+            }
+
+            &:hover {
+                color: white;
+
+                span {
+                    color: @cool-blue;
+                }
+            }
         }
     }
 
