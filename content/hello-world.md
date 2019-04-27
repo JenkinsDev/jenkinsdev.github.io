@@ -29,7 +29,7 @@ of the information is available through that link!
 
 When I'm not working on projects or attempting to keep up with
 the latest programmming news and trends you can find me doing various
-activies with the family, gaming, or trying to excel myself in some form.
+activities with the family, gaming, or trying to excel myself in some form.
 Currently, my main focus is relearning and deepening my understanding of
 German.
 
@@ -43,7 +43,7 @@ site generator. Along with it, I make use of [Markdown](https://daringfireball.n
 to write all of the content.
 
 It does make use of a small plugin I wrote back when I originally published
-the site in 2014. The plugin does some really basic math to figure out what the readtime
+the site in 2014. The plugin does some really basic math to figure out what the read time
 is for the average reader. You can check it out over on github. It's called
 [pelican-readtime](https://github.com/JenkinsDev/pelican-readtime).
 
