@@ -1,7 +1,8 @@
 <!-- Processed For Each Article -->
 {% extends 'main.html' %}
 
-{% import 'fragments/tags.import.html' as tags %}
+{% import 'macros/tags.import.html' as tags %}
+{% import 'macros/disqus.import.html' as disqus %}
 
 {% block title %}{{ article.title }}{% endblock %}
 
@@ -39,5 +40,5 @@
 {% endblock %}
 
 {% block footer_js %}
-  {% include 'fragments/disqus.include.html' %}
+    {{ disqus.render_disqus_script(article.url, article.slug) }}
 {% endblock %}
