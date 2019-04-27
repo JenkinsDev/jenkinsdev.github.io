@@ -4,7 +4,6 @@ Category: General
 Tags: greeting, python, javascript
 Slug: hello-world
 Authors: David Jenkins
-DisqusIdentifier: hello-world
 Summary: This isn't your normal 'Hello, World' introduction, this is my personal
          introduction to you.  Find out who I am, what I do
          and what this _blog_ is going to be all about.
@@ -40,28 +39,24 @@ the wealth of knowledge as many have done before me.
 
 ###### The Back-End
 
-First thing's first, the site is a pretty basic site and the portions that you see
+First thing's first, the site is rather basic and the portions that you see
 are all static.  There's a catch though, no I don't write the articles in HTML, I
 write them in [Markdown](http://daringfireball.net/projects/markdown/).  The static
-side of the site, everything you see and that is on the server, is all *compiled*
-by a *library* called [Pelican](http://blog.getpelican.com/).  Ever heard of Jekyll?
-It's the same concept except Pelican is built on-top of Python which is my language
-of choice for most projects.  If you want to find out more then follow the link
-above.
+side of the site, everything you see and that is on the server, is all generated
+by a library called [Pelican](http://blog.getpelican.com/).  Ever heard of Jekyll?
+It's the same concept, except Pelican is built on-top of Python which is my current language
+of choice for most projects.
 
-That's actually about it for the back-end minus a Pelican plugin I made while
+That's actually about it for the back-end, less a plugin I made while
 writing up this article. It's called [pelican-readtime](https://github.com/JenkinsDev/pelican-readtime),
 basically it does what the name suggests and determines what
-the average read time would be for Pelican content and stores that value in
-an attribute called `readtime` in the content's object.  The "algorithm" that is used to
+the average read time would be for written content and stores that value in
+an attribute called `readtime` within the content object.  The arithmetic used to
 calculate the read time is based off of Medium's read time "algorithm."
-
 
 ###### The Front-End
 
-The front-end of this site is your basic HTML, CSS and JavaScript.  During development
-of the assets, CSS and JavaScript, I make use of a build system called
-[GulpJS](http://gulpjs.com/).
+TODO: Rewrite ( Haha! :) )
 
 
 ##### Conclusion
