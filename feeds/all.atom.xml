@@ -21,24 +21,21 @@ getting deep into my foray into learning new spoken languages.&lt;/p&gt;
 the wealth of knowledge as many have done before me.&lt;/p&gt;
 &lt;h5&gt;How It Was Built&lt;/h5&gt;
 &lt;h6&gt;The Back-End&lt;/h6&gt;
-&lt;p&gt;First thing's first, the site is a pretty basic site and the portions that you see
+&lt;p&gt;First thing's first, the site is rather basic and the portions that you see
 are all static.  There's a catch though, no I don't write the articles in HTML, I
 write them in &lt;a href="http://daringfireball.net/projects/markdown/"&gt;Markdown&lt;/a&gt;.  The static
-side of the site, everything you see and that is on the server, is all &lt;em&gt;compiled&lt;/em&gt;
-by a &lt;em&gt;library&lt;/em&gt; called &lt;a href="http://blog.getpelican.com/"&gt;Pelican&lt;/a&gt;.  Ever heard of Jekyll?
-It's the same concept except Pelican is built on-top of Python which is my language
-of choice for most projects.  If you want to find out more then follow the link
-above.&lt;/p&gt;
-&lt;p&gt;That's actually about it for the back-end minus a Pelican plugin I made while
+side of the site, everything you see and that is on the server, is all generated
+by a library called &lt;a href="http://blog.getpelican.com/"&gt;Pelican&lt;/a&gt;.  Ever heard of Jekyll?
+It's the same concept, except Pelican is built on-top of Python which is my current language
+of choice for most projects.&lt;/p&gt;
+&lt;p&gt;That's actually about it for the back-end, less a plugin I made while
 writing up this article. It's called &lt;a href="https://github.com/JenkinsDev/pelican-readtime"&gt;pelican-readtime&lt;/a&gt;,
 basically it does what the name suggests and determines what
-the average read time would be for Pelican content and stores that value in
-an attribute called &lt;code&gt;readtime&lt;/code&gt; in the content's object.  The "algorithm" that is used to
+the average read time would be for written content and stores that value in
+an attribute called &lt;code&gt;readtime&lt;/code&gt; within the content object.  The arithmetic used to
 calculate the read time is based off of Medium's read time "algorithm."&lt;/p&gt;
 &lt;h6&gt;The Front-End&lt;/h6&gt;
-&lt;p&gt;The front-end of this site is your basic HTML, CSS and JavaScript.  During development
-of the assets, CSS and JavaScript, I make use of a build system called
-&lt;a href="http://gulpjs.com/"&gt;GulpJS&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;TODO: Rewrite ( Haha! :) )&lt;/p&gt;
 &lt;h5&gt;Conclusion&lt;/h5&gt;
 &lt;p&gt;Well guys I think that's all I am going to cover in this here "Hello, World"
 introduction.  I am hoping to make this a useful resource for everyone.
