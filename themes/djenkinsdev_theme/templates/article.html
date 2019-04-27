@@ -23,7 +23,7 @@
 
             <p class="comments">
                 <span class="glyphicon glyphicon-list-alt"></span>
-                <span class="text disqus-comment-count" data-disqus-identifier="{{ article.disqusidentifier }}"></span>
+                <span class="text disqus-comment-count" data-disqus-identifier="{{ article.slug }}"></span>
             </p>
 
             {{ tags.render_tags_list(article.tags) }}
@@ -40,5 +40,6 @@
 {% endblock %}
 
 {% block footer_js %}
-    {{ disqus.render_disqus_script("{}/{}".format(SITEURL_ABSOLUTE, article.url), article.slug) }}
+    {{ disqus.render_comment_count_script() }}
+    {{ disqus.render_comment_thread_script("{}/{}".format(SITEURL_ABSOLUTE, article.url), article.slug) }}
 {% endblock %}

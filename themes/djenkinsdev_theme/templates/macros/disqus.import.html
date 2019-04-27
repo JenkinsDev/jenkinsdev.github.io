@@ -1,4 +1,4 @@
-{% macro render_disqus_script(page_url, page_identifier) -%}
+{% macro render_comment_thread_script(page_url, page_identifier) -%}
   <script>
     var disqus_config = function () {
       this.page.url = "{{ page_url }}";
@@ -17,4 +17,8 @@
     Please enable JavaScript to view the
     <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
   </noscript>
+{%- endmacro %}
+
+{% macro render_comment_count_script() -%}
+  <script id="dsq-count-scr" src="//jenkinsdev-github-io.disqus.com/count.js" async></script>
 {%- endmacro %}

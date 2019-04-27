@@ -2,6 +2,7 @@
 {% extends 'main.html' %}
 
 {% import 'macros/tags.import.html' as tags %}
+{% import 'macros/disqus.import.html' as disqus %}
 
 {% block title %}Home{% endblock %}
 
@@ -48,4 +49,6 @@
     {% endfor %}
 {% endblock %}
 
-
+{% block footer_js %}
+    {{ disqus.render_comment_count_script() }}
+{% endblock %}
