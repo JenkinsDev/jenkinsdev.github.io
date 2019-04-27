@@ -21,5 +21,5 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 
-DISQUS_SITENAME = "djenkinsdev"
+DISQUS_SITENAME = "jenkinsdev-github-io"
 #GOOGLE_ANALYTICS = ""
