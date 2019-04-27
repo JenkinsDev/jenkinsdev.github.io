@@ -1,0 +1,39 @@
+@import "bootstrap/bootstrap.less";
+
+// COLORS
+@cool-blue: #77D8F4;
+@light-grey: #555;
+@grey: #EAEAEA;
+
+// We will go ahead and apply some body styling in this file
+// because... why not?
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: white;
+    font-family: "Source Sans Pro", serif;
+    color: @light-grey;
+
+    .wrapper {
+        max-width: 980px;
+        margin: 0 auto;
+    }
+
+    a {
+        color: @cool-blue;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+@import "header.less";
+@import "content.less";
+@import "footer.less";
