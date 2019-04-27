@@ -1,0 +1,47 @@
+{% import 'macros/tags.import.html' as tags %}
+
+{% macro render_articles(articles) -%}
+    {% for article in articles %}
+        <article class="post">
+            <h4>
+                <a href="{{ SITEURL }}/{{ article.url }}">
+                    {{ article.title }}
+                </a>
+            </h4>
+
+            <aside class="post-meta">
+                <p class="date">
+                    <span class="glyphicon glyphicon-time"></span>
+                    {{ article.date.strftime('%m/%d/%Y') }}
+                </p>
+
+                <p class="read-time">
+                    <span class="glyphicon glyphicon-eye-open"></span>
+                    {{ article.readtime }}
+                </p>
+
+                {{ tags.render_tags_list(article.tags) }}
+            </aside>
+
+            <div class="article-content">
+                {% if article.summary %}
+                    {{ article.summary }}
+                {% else %}
+                    {{ article.content }}
+                {% endif %}
+            </div>
+
+            <div class="article-footer">
+                <a class="article-links readmore-link" href="{{ SITEURL }}/{{ article.url }}">
+                    Read More
+                </a>
+
+                <a class="article-links" href="{{ SITEURL }}/{{ article.url }}#disqus_thread">
+                    Read The Discourse
+                </a>
+            </div>
+        </article>
+
+        <hr class="article-sep">
+    {% endfor %}
+{%- endmacro %}

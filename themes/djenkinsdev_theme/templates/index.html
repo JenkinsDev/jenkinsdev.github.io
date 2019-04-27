@@ -1,52 +1,12 @@
-<!-- The Index (List All The Articles) -->
 {% extends 'main.html' %}
 
-{% import 'macros/tags.import.html' as tags %}
 {% import 'macros/disqus.import.html' as disqus %}
+{% import 'macros/articles.import.html' as articles %}
 
-{% block title %}Home{% endblock %}
+{% block title %}My Home, Your Home{% endblock %}
 
 {% block content %}
-    {% for article in articles_page.object_list %}
-        <article class="post">
-            <h4><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h4>
-
-            <aside class="post-meta">
-                <p class="date">
-                    <span class="glyphicon glyphicon-time"></span>
-                    {{ article.date.strftime('%m/%d/%Y') }}
-                </p>
-
-                <p class="read-time">
-                    <span class="glyphicon glyphicon-eye-open"></span>
-                    {{ article.readtime }}
-                </p>
-
-                {{ tags.render_tags_list(article.tags) }}
-            </aside>
-
-            <div class="article-content">
-                {% if article.summary %}
-                    {{ article.summary }}
-                {% else %}
-                    {{ article.content }}
-                {% endif %}
-            </div>
-
-
-            <div class="article-footer">
-                <a class="article-links readmore-link" href="{{ SITEURL }}/{{ article.url }}">
-                    Read More
-                </a>
-
-                <a class="article-links" href="{{ SITEURL }}/{{ article.url }}#disqus_thread">
-                    Read The Discourse
-                </a>
-            </div>
-        </article>
-
-        <hr class="article-sep">
-    {% endfor %}
+    {{ articles.render_articles(articles_page.object_list) }}    
 {% endblock %}
 
 {% block footer_js %}

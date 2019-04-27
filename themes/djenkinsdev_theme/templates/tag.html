@@ -1,1 +1,14 @@
-<!-- Processed For Each Tag -->
+{% extends 'main.html' %}
+
+{% import 'macros/disqus.import.html' as disqus %}
+{% import 'macros/articles.import.html' as articles %}
+
+{% block title %}My Home, Your Home{% endblock %}
+
+{% block content %}
+    {{ articles.render_articles(articles_page.object_list) }}    
+{% endblock %}
+
+{% block footer_js %}
+    {{ disqus.render_comment_count_script() }}
+{% endblock %}
