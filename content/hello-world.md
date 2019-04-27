@@ -4,66 +4,64 @@ Category: General
 Tags: greeting, python, javascript
 Slug: hello-world
 Authors: David Jenkins
+AuthorNote: This article was originally published in 2014, when the site was
+            first taken live. As of authoring this note I am in an effort to
+            revitalize the site. Therefore, I've edited portions of this article
+            to include up to date information.
 Summary: This isn't your normal 'Hello, World' introduction, this is my personal
-         introduction to you.  Find out who I am, what I do
-         and what this _blog_ is going to be all about.
+         introduction to you, the reader.  Find out a little about me, what I do
+         and what this _blog_ is going to be about.
 
 
 ##### Come One, Come All
 
-I'd like to welcome you, the reader, to my blog.  This
-is going to be the breeding ground for content ranging from
-entry-level programming concepts to more complex topics.  Obviously, this blog won't
-just be about programming though, its going to be the home to a lot of my thoughts in general.
+I'd like to welcome you &ndash; the reader &ndash; to my blog.  This
+is going to be the breeding ground for practically anything, but with
+a slight focus being on programming related content.
 
 
 ##### A Bit About Me
 
 My name is David Jenkins and I currently work over at [Bold Media Group](https://boldmediagroup.com).
-I create some pretty awesome things there that revolve around
-automation.  AUTOMATE EVERYTHING.  That's right, I am
-a *HUGE* automation advocate, if it's a task that could be automated in some
-form, then it should automated.  Isn't that what a lot of technology is for anyway?
+To sum it up, we do lead generation and aggregation for various insurance
+companies. I won't focus too much on what we do, but all
+of the information is available through that link!
 
-Enough about that automation jazz!  You came here to read
-about me anyway, didn't ya?  When I'm not working on...Work. I
-am generally either spending time with the family, gaming at night or
-trying to excel myself in some fashion - currently re-learning guitar and 
-getting deep into my foray into learning new spoken languages.
-
-I am attempting to make this site a sizeable chunk of my life, I want to spread
-the wealth of knowledge as many have done before me.
+When I'm not working on projects or attempting to keep up with
+the latest programmming news and trends you can find me doing various
+activies with the family, gaming, or trying to excel myself in some form.
+Currently, my main focus is relearning and deepening my understanding of
+German.
 
 
 ##### How It Was Built
 
 ###### The Back-End
 
-First thing's first, the site is rather basic and the portions that you see
-are all static.  There's a catch though, no I don't write the articles in HTML, I
-write them in [Markdown](http://daringfireball.net/projects/markdown/).  The static
-side of the site, everything you see and that is on the server, is all generated
-by a library called [Pelican](http://blog.getpelican.com/).  Ever heard of Jekyll?
-It's the same concept, except Pelican is built on-top of Python which is my current language
-of choice for most projects.
+This site is generated using the lovely [Pelican](https://blog.getpelican.com/) static
+site generator. Along with it, I make use of [Markdown](https://daringfireball.net/projects/markdown/)
+to write all of the content.
 
-That's actually about it for the back-end, less a plugin I made while
-writing up this article. It's called [pelican-readtime](https://github.com/JenkinsDev/pelican-readtime),
-basically it does what the name suggests and determines what
-the average read time would be for written content and stores that value in
-an attribute called `readtime` within the content object.  The arithmetic used to
-calculate the read time is based off of Medium's read time "algorithm."
+It does make use of a small plugin I wrote back when I originally published
+the site in 2014. The plugin does some really basic math to figure out what the readtime
+is for the average reader. You can check it out over on github. It's called
+[pelican-readtime](https://github.com/JenkinsDev/pelican-readtime).
+
+Really, that's about it... Simple is nice.
 
 ###### The Front-End
 
-TODO: Rewrite ( Haha! :) )
+TODO: Rewrite
+
+That sums it up, haha! I'll rewrite this section once I finish rewiring how the front-end
+assets are compiled.
 
 
 ##### Conclusion
 
-Well guys I think that's all I am going to cover in this here "Hello, World"
-introduction.  I am hoping to make this a useful resource for everyone.
-If you have any questions then just leave it down below in the comments section.
-I'll make sure to check the comments frequently!
+Well guys I think that's all I am going to cover in this here "Hello, World!"
+tutorial.. I mean introduction.  I am hoping to make this site a
+useful resource for all. If you have any questions then just leave
+it down below in the comments section.
 
 Auf Wiedersehen!
