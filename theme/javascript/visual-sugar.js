@@ -18,6 +18,7 @@
         var randInd = Math.floor(Math.random() * subHeaderTexts.length);
 
         subHeaderEle.innerHTML = subHeaderTexts[randInd];
+        subHeaderEle.style.opacity = 1;
     }
 
     window.onload = load_random_subheader;
