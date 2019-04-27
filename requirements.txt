@@ -1,2 +1,0 @@
--e git+https://github.com/getpelican/pelican.git#egg=pelican
-pelican-readtime==0.1.1
