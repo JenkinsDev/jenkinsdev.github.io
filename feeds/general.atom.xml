@@ -12,7 +12,7 @@ companies. I won't focus too much on what we do, but all
 of the information is available through that link!&lt;/p&gt;
 &lt;p&gt;When I'm not working on projects or attempting to keep up with
 the latest programmming news and trends you can find me doing various
-activies with the family, gaming, or trying to excel myself in some form.
+activities with the family, gaming, or trying to excel myself in some form.
 Currently, my main focus is relearning and deepening my understanding of
 German.&lt;/p&gt;
 &lt;h5&gt;How It Was Built&lt;/h5&gt;
@@ -21,7 +21,7 @@ German.&lt;/p&gt;
 site generator. Along with it, I make use of &lt;a href="https://daringfireball.net/projects/markdown/"&gt;Markdown&lt;/a&gt;
 to write all of the content.&lt;/p&gt;
 &lt;p&gt;It does make use of a small plugin I wrote back when I originally published
-the site in 2014. The plugin does some really basic math to figure out what the readtime
+the site in 2014. The plugin does some really basic math to figure out what the read time
 is for the average reader. You can check it out over on github. It's called
 &lt;a href="https://github.com/JenkinsDev/pelican-readtime"&gt;pelican-readtime&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Really, that's about it... Simple is nice.&lt;/p&gt;
