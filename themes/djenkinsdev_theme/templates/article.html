@@ -1,0 +1,43 @@
+<!-- Processed For Each Article -->
+{% extends 'main.html' %}
+
+{% import 'fragments/tags.import.html' as tags %}
+
+{% block title %}{{ article.title }}{% endblock %}
+
+{% block content %}
+    <article class="post single">
+        <h4>{{ article.title }}</h4>
+
+        <div class="post-meta">
+            <p class="date">
+                <span class="glyphicon glyphicon-time"></span>
+                {{ article.date.strftime('%m/%d/%Y') }}
+            </p>
+
+            <p class="read-time">
+                <span class="glyphicon glyphicon-eye-open"></span>
+                {{ article.readtime }}
+            </p>
+
+            <p class="comments">
+                <span class="glyphicon glyphicon-list-alt"></span>
+                <span class="text disqus-comment-count" data-disqus-identifier="{{ article.disqusidentifier }}"></span>
+            </p>
+
+            {{ tags.render_tags_list(article.tags) }}
+        </div>
+
+        <div class="article-content">
+            {{ article.content }}
+        </div>
+
+        <div id="disqus_thread"></div>
+    </article>
+
+    <hr class="article-sep">
+{% endblock %}
+
+{% block footer_js %}
+  {% include 'fragments/disqus.include.html' %}
+{% endblock %}

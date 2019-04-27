@@ -1,0 +1,13 @@
+{% macro render_tags_list(tags) -%}
+  {% if tags %}
+    <div class="tags">
+      <span>Tags:</span>
+  
+      <ul class="tags_list">
+        {% for tag in tags %}
+          <li class="tag">{{ tag }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+{%- endmacro %}
