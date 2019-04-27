@@ -6,6 +6,8 @@
 {% block title %}My Home, Your Home{% endblock %}
 
 {% block content %}
+    <h3 class="page-title">Scouring Articles by Tag: {{ tag }}</h3>
+
     {{ articles.render_articles(articles_page.object_list) }}    
 {% endblock %}
 
