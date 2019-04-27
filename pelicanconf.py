@@ -4,7 +4,8 @@ from __future__ import unicode_literals
 
 AUTHOR = 'David Jenkins'
 SITENAME = 'JenkinsDev'
-SITEURL = ''
+SITEURL = 'http://localhost:8000'
+SITEURL_ABSOLUTE = SITEURL
 
 PATH = 'content'
 
@@ -28,6 +29,3 @@ SOCIAL = ()
 DEFAULT_PAGINATION = 10
 THEME = 'themes/djenkinsdev_theme'
 PLUGINS = ['readtime']
-
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True

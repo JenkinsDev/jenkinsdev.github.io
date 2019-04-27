@@ -1,7 +1,7 @@
 {% macro render_disqus_script(page_url, page_identifier) -%}
   <script>
     var disqus_config = function () {
-      this.page.url = "{{ page_url }}";
+      this.page.url = "{{ "{}/{}".format(SITEURL_ABSOLUTE, page_url) }}";
       this.page.identifier = "{{ page_identifier }}";
     };
 
