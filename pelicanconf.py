@@ -26,6 +26,9 @@ LINKS = ()
 # Social widget
 SOCIAL = ()
 
+SITEMAP = {'format': 'xml'}
+
 DEFAULT_PAGINATION = 10
 THEME = 'themes/djenkinsdev_theme'
-PLUGINS = ['readtime']
+PLUGIN_PATHS = ['pelican-plugins']
+PLUGINS = ['readtime', 'sitemap']
