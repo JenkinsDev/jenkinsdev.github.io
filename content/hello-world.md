@@ -8,7 +8,7 @@ AuthorNote: This article was originally published in 2014, when the site was
             first taken live. As of authoring this note I am in an effort to
             revitalize the site. Therefore, I've edited portions of this article
             to include up to date information.
-Summary: This isn't your normal 'Hello, World' introduction, this is my personal
+Summary: This isn't your usual 'Hello, World' tutorial. This is my personal
          introduction to you, the reader.  Find out a little about me, what I do
          and what this _blog_ is going to be about.
 
