@@ -8,7 +8,7 @@ ghp-import = "*"
 
 [packages]
 pelican = "*"
-pelican-readtime = "*"
+pelican-readtime = "==0.2.0"
 markdown = "*"
 
 [requires]

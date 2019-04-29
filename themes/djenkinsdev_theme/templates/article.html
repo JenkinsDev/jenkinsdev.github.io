@@ -11,32 +11,27 @@
         <h4>{{ article.title }}</h4>
 
         <div class="post-meta">
-            <p class="date">
+            <p class="post-meta-datapoint date">
                 <span class="glyphicon glyphicon-time"></span>
                 {{ article.date.strftime('%m/%d/%Y') }}
             </p>
 
-            <p class="read-time">
+            <p class="post-meta-datapoint read-time">
                 <span class="glyphicon glyphicon-eye-open"></span>
-                {{ article.readtime }}
+                {{ article.readtime_string_with_seconds }}
             </p>
-
-            <p class="comments">
-                <span class="glyphicon glyphicon-list-alt"></span>
-                <span class="text disqus-comment-count" data-disqus-identifier="{{ article.slug }}"></span>
-            </p>
-
-            {{ tags.render_tags_list(article.tags) }}
         </div>
 
         <div class="article-content">
             {{ article.content }}
         </div>
 
+        <div class="article-footer">
+            {{ tags.render_tags_list(article.tags) }}
+        </div>
+
         <div id="disqus_thread"></div>
     </article>
-
-    <hr class="article-sep">
 {% endblock %}
 
 {% block footer_js %}

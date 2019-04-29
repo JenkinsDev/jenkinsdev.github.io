@@ -1,10 +1,13 @@
 @import "bootstrap/bootstrap.less";
 
 // COLORS
-@cool-blue: #77D8F4;
+@cool-blue: #6DC0FF;
 @dark-blue: #337ab7;
 @light-grey: #555;
 @grey: #EAEAEA;
+
+@primary-color: @cool-blue;
+@secondary-color: #3B7FB3;
 
 // We will go ahead and apply some body styling in this file
 // because... why not?
@@ -22,10 +25,12 @@ body {
     color: @light-grey;
 
     a {
-        color: @cool-blue;
+        transition: color 0.2s ease;
+        color: @primary-color;
 
         &:hover {
             text-decoration: none;
+            color: @secondary-color;
         }
     }
 }

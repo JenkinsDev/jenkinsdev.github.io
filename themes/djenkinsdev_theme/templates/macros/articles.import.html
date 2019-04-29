@@ -10,17 +10,15 @@
             </h4>
 
             <aside class="post-meta">
-                <p class="date">
+                <p class="post-meta-datapoint date">
                     <span class="glyphicon glyphicon-time"></span>
                     {{ article.date.strftime('%m/%d/%Y') }}
                 </p>
 
-                <p class="read-time">
+                <p class="post-meta-datapoint read-time">
                     <span class="glyphicon glyphicon-eye-open"></span>
-                    {{ article.readtime }}
+                    {{ article.readtime_string_with_seconds }}
                 </p>
-
-                {{ tags.render_tags_list(article.tags) }}
             </aside>
 
             <div class="article-content">
@@ -32,6 +30,8 @@
             </div>
 
             <div class="article-footer">
+                {{ tags.render_tags_list(article.tags) }}
+
                 <a class="article-links readmore-link" href="{{ SITEURL }}/{{ article.url }}">
                     Read More
                 </a>
@@ -41,7 +41,5 @@
                 </a>
             </div>
         </article>
-
-        <hr class="article-sep">
     {% endfor %}
 {%- endmacro %}
