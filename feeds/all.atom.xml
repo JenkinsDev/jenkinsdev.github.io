@@ -6,7 +6,7 @@ and what this &lt;em&gt;blog&lt;/em&gt; is going to be about.&lt;/p&gt;</summary
 is going to be the breeding ground for practically anything, but with
 a slight focus on programming related content.&lt;/p&gt;
 &lt;h5&gt;A Bit About Me&lt;/h5&gt;
-&lt;p&gt;My name is David Jenkins and I currently work over at &lt;a href="https://boldmediagroup.com" title="target=&amp;quot;_blank"&gt;Bold Media Group&lt;/a&gt;.
+&lt;p&gt;My name is David Jenkins and I currently work over at &lt;a href="https://boldmediagroup.com"&gt;Bold Media Group&lt;/a&gt;.
 To sum it up, we do lead generation and aggregation for various insurance
 companies. I won't focus too much on what we do, but all
 of the information is available through that link!&lt;/p&gt;
@@ -17,13 +17,13 @@ Currently, my main focus is relearning and deepening my understanding of
 German.&lt;/p&gt;
 &lt;h5&gt;How It Was Built&lt;/h5&gt;
 &lt;h6&gt;The Back-End&lt;/h6&gt;
-&lt;p&gt;This site is generated using the lovely &lt;a href="https://blog.getpelican.com/" title="target=&amp;quot;_blank"&gt;Pelican&lt;/a&gt; static
-site generator. Along with it, I make use of &lt;a href="https://daringfireball.net/projects/markdown/" title="target=&amp;quot;_blank"&gt;Markdown&lt;/a&gt;
+&lt;p&gt;This site is generated using the lovely &lt;a href="https://blog.getpelican.com/"&gt;Pelican&lt;/a&gt; static
+site generator. Along with it, I make use of &lt;a href="https://daringfireball.net/projects/markdown/"&gt;Markdown&lt;/a&gt;
 to write all of the content.&lt;/p&gt;
 &lt;p&gt;It does make use of a small plugin I wrote back when I originally published
 the site in 2014. The plugin does some really basic math to figure out what the read time
 is for the average reader. You can check it out over on Github, it's called
-&lt;a href="https://github.com/JenkinsDev/pelican-readtime" title="target=&amp;quot;_blank"&gt;pelican-readtime&lt;/a&gt;.&lt;/p&gt;
+&lt;a href="https://github.com/JenkinsDev/pelican-readtime"&gt;pelican-readtime&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Really, that's about it... Simple is nice.&lt;/p&gt;
 &lt;h6&gt;The Front-End&lt;/h6&gt;
 &lt;p&gt;TODO: Rewrite&lt;/p&gt;
