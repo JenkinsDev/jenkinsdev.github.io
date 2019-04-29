@@ -22,7 +22,7 @@ a slight focus on programming related content.
 
 ##### A Bit About Me
 
-My name is David Jenkins and I currently work over at [Bold Media Group](https://boldmediagroup.com" target="_blank").
+My name is David Jenkins and I currently work over at [Bold Media Group](https://boldmediagroup.com).
 To sum it up, we do lead generation and aggregation for various insurance
 companies. I won't focus too much on what we do, but all
 of the information is available through that link!
@@ -38,14 +38,14 @@ German.
 
 ###### The Back-End
 
-This site is generated using the lovely [Pelican](https://blog.getpelican.com/" target="_blank") static
-site generator. Along with it, I make use of [Markdown](https://daringfireball.net/projects/markdown/" target="_blank")
+This site is generated using the lovely [Pelican](https://blog.getpelican.com/) static
+site generator. Along with it, I make use of [Markdown](https://daringfireball.net/projects/markdown/)
 to write all of the content.
 
 It does make use of a small plugin I wrote back when I originally published
 the site in 2014. The plugin does some really basic math to figure out what the read time
 is for the average reader. You can check it out over on Github, it's called
-[pelican-readtime](https://github.com/JenkinsDev/pelican-readtime" target="_blank").
+[pelican-readtime](https://github.com/JenkinsDev/pelican-readtime).
 
 Really, that's about it... Simple is nice.
 
