@@ -32,13 +32,15 @@
             <div class="article-footer">
                 {{ tags.render_tags_list(article.tags) }}
 
-                <a class="article-links readmore-link" href="{{ SITEURL }}/{{ article.url }}">
-                    Read More
-                </a>
+                <div class="article-footer-links">
+                    <a class="article-link readmore-link" href="{{ SITEURL }}/{{ article.url }}">
+                        Read More
+                    </a>
 
-                <a class="article-links" href="{{ SITEURL }}/{{ article.url }}#disqus_thread">
-                    Read The Discourse
-                </a>
+                    <a class="article-link" href="{{ SITEURL }}/{{ article.url }}#disqus_thread">
+                        Read The Discourse
+                    </a>
+                </div>
             </div>
         </article>
     {% endfor %}
