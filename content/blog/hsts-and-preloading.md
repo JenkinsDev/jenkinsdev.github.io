@@ -58,8 +58,8 @@ If you have any clue as to the structure of a HTTP header, this should be pretty
 is defined by the use of the header name `Strict-Transport-Security` which is accompanied with directives.
 
 The only directive that is absolutely required is `max-age` which should be given
-a value in seconds. This tells the browser how long it should enforce the policy
-&mdash; in the example above we have it set to 1-year.
+a value in seconds. This tells the browser how long it should enforce the policy. In the example above we
+have it set to 1-year.
 
 The optional `includeSubdomains` directive isn't accompanied by any values and is handled similar to a boolean,
 it either exists or it doesn't. If included in your response the HSTS policy will include all subdomains
@@ -121,16 +121,27 @@ into the preload list you must satisfy a few requirements.
 2. Redirect all requests from HTTP to HTTPS on the same host, if you are listening on port 80
 3. Serve all subdomains over HTTPS
 4. Serve an HSTS header on the base domain for HTTPS requests:
-  * `max-age` directive *MUST* be at least 1-year
-  * `includeSubDomains` directive *MUST* be included
-  * A third directive, `preload` must be included
-  * Redirections must include HSTS headers as well
+    * `max-age` directive must be at least 1-year
+    * `includeSubDomains` directive must be included
+    * A third directive, `preload` must be included
+    * Redirections must include HSTS headers as well
 
- As an example of a HSTS preload header:
- ```
- Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
- ```
+Here's a fully qualifying HSTS with preloading header you can use:
 
- Once you have those requirements met, you can use the link above to submit an inclusion request. Once your
- request has been vetted you'll find your HSTS preload inclusion rolled out generally in one or two browser
- stable releases (can be dependent on the browser vendor).
+```
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+```
+
+Once you have those requirements met, you can use the link above to submit an inclusion request. Once your
+request has been vetted you'll find your HSTS preload inclusion rolled out generally in one or two browser
+stable releases (can be dependent on the browser vendor).
+
+
+
+##### Conclusion
+
+I hope the information provided has been sufficient in helping you wrap your head around why HSTS exists
+and how to implement it yourself. If you have any questions, comments, or concerns feel free to use
+the comments section below to include your voice!
+
+Auf Wiedersehen!
