@@ -17,6 +17,10 @@ PAGE_PATHS = ['pages']
 PAGE_SAVE_AS = '{slug}/index.html'
 PAGE_URL = '{slug}/'
 
+TAG_SAVE_AS = 'blog/tag/{name}/index.html'
+TAG_URL = 'blog/tag/{name}/'
+
+
 TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = 'en'
