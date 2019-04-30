@@ -5,34 +5,41 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://jenkinsdev.github.io/</loc>
-<lastmod>2019-04-29T14:35:44-00:00</lastmod>
+<lastmod>2019-04-30T16:09:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://jenkinsdev.github.io/archives.html</loc>
-<lastmod>2019-04-29T14:35:44-00:00</lastmod>
+<lastmod>2019-04-30T16:09:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://jenkinsdev.github.io/tags.html</loc>
-<lastmod>2019-04-29T14:35:44-00:00</lastmod>
+<lastmod>2019-04-30T16:09:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://jenkinsdev.github.io/categories.html</loc>
-<lastmod>2019-04-29T14:35:44-00:00</lastmod>
+<lastmod>2019-04-30T16:09:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://jenkinsdev.github.io/hello-world.html</loc>
+<loc>https://jenkinsdev.github.io/blog/2019/http-strict-transport-security-and-preloading/</loc>
+<lastmod>2019-04-30T00:00:00-04:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://jenkinsdev.github.io/blog/2019/hello-world/</loc>
 <lastmod>2019-04-26T00:00:00-04:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
@@ -46,21 +53,49 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://jenkinsdev.github.io/tag/greeting.html</loc>
+<loc>https://jenkinsdev.github.io/category/web-security.html</loc>
+<lastmod>2019-04-30T00:00:00-04:56</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://jenkinsdev.github.io/blog/tag/https/</loc>
+<lastmod>2019-04-30T00:00:00-04:56</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://jenkinsdev.github.io/blog/tag/hsts/</loc>
+<lastmod>2019-04-30T00:00:00-04:56</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://jenkinsdev.github.io/blog/tag/security/</loc>
+<lastmod>2019-04-30T00:00:00-04:56</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://jenkinsdev.github.io/blog/tag/greeting/</loc>
 <lastmod>2019-04-26T00:00:00-04:56</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://jenkinsdev.github.io/tag/python.html</loc>
+<loc>https://jenkinsdev.github.io/blog/tag/python/</loc>
 <lastmod>2019-04-26T00:00:00-04:56</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://jenkinsdev.github.io/tag/javascript.html</loc>
+<loc>https://jenkinsdev.github.io/blog/tag/javascript/</loc>
 <lastmod>2019-04-26T00:00:00-04:56</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -68,7 +103,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://jenkinsdev.github.io/author/david-jenkins.html</loc>
-<lastmod>2019-04-26T00:00:00-04:56</lastmod>
+<lastmod>2019-04-30T00:00:00-04:56</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

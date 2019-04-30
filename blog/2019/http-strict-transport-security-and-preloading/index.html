@@ -1,0 +1,207 @@
+<!-- Processed For Each Article -->
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139155525-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-139155525-1');
+    </script>
+
+    <meta charset="UTF-8">
+    <title>HTTP Strict Transport Security (HSTS) &amp; Preloading &mdash; JenkinsDev</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Fonts: Source Sans Pro -->
+    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,700italic,300,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://jenkinsdev.github.io/theme/css/main.css">
+
+    <!-- Modernizr -->
+    <script src="https://jenkinsdev.github.io/theme/javascript/minified/modernizr.js"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="/"><span>Jenkins</span>Dev</a></h1>
+        <h2 id="sub-header">Cool Code Is Cool.</h2>
+    </header>
+
+    <div role="main" id="main" class="wrapper">
+    <article class="post single">
+        <h4>HTTP Strict Transport Security (HSTS) &amp; Preloading</h4>
+
+        <div class="post-meta">
+            <p class="post-meta-datapoint date">
+                <span class="glyphicon glyphicon-time"></span>
+                04/30/2019
+            </p>
+
+            <p class="post-meta-datapoint read-time">
+                <span class="glyphicon glyphicon-eye-open"></span>
+                5 minutes, 18 seconds
+            </p>
+        </div>
+
+        <div class="article-content">
+            <h5>Your 301 HTTP &rarr; HTTPS Redirection Isn't Sufficient</h5>
+<p>Your end-users are still very much susceptible to "man-in-the-middle" attacks which
+could leave them vulnerable to phishing and eavesdropping (we're looking
+at you NSA) attempts. The issue lies within how browsers handle requests that don't
+explicity contain a scheme like "https://" &mdash; most default to "http://".</p>
+<p>When your browser sends a HTTP request to a site that returns a 301 redirection
+header, the end-user is still connecting to you &ndash; even if for just a second &ndash;
+over an unsecured channel. If they're on public Wi-Fi or they've been infected with malware,
+that unsecure request could be intercepted. At which point the malicious actor could then
+stop the request from ever reaching your server and return a response that looks very much
+like your own.</p>
+<p>Your non-tech savvy users may not notice that they're not actually connected to your server.
+They may see a page that looks identical to your own, go to submit their login details, and
+wind up having their credentials stolen. BAM! Hit with phishing!</p>
+<p>Now, put this into the context of a business such as
+one in the banking sector... That'd turn into a disaster.</p>
+<p>Before moving forward, I should make a note that what this article covers does not in any way
+shape or form completely circumvent the possibility of a phishing attempt. This is merely
+a way to compliment other security measures that should be taken.</p>
+<h5>In Comes HTTP Strict Transport Security</h5>
+<p>Thankfully, there is a standard to help us solve this problem. Defined in
+<a href="https://tools.ietf.org/html/rfc6797">RFC 6797</a>, the HSTS RFC outlines a HTTP response header
+that can be returned by your server to tell the user's browser that all future requests
+<em>MUST</em> be over HTTPS and that it should <em>NEVER</em> connect to your site over plain HTTP.</p>
+<h6>Just Show Me How To Use It...</h6>
+<p>For those of you that find technical documentation cumbersome to scan through, here's
+an example of the header:</p>
+<div class="highlight"><pre><span></span><span class="nt">Strict-Transport-Security</span><span class="o">:</span> <span class="nt">max-age</span><span class="o">=</span><span class="nt">31536000</span><span class="o">;</span> <span class="nt">includeSubdomains</span>
+</pre></div>
+
+
+<p>If you have any clue as to the structure of a HTTP header, this should be pretty self-explanatory. HSTS
+is defined by the use of the header name <code>Strict-Transport-Security</code> which is accompanied with directives.</p>
+<p>The only directive that is absolutely required is <code>max-age</code> which should be given
+a value in seconds. This tells the browser how long it should enforce the policy. In the example above we
+have it set to 1-year.</p>
+<p>The optional <code>includeSubdomains</code> directive isn't accompanied by any values and is handled similar to a boolean,
+it either exists or it doesn't. If included in your response the HSTS policy will include all subdomains
+of the host's domain name.</p>
+<h6>Can I Revert These Changes?</h6>
+<p>Yes, you can! There are two ways you can have these changes reverted for connecting clients. You can either wait
+out the time set by stopping the inclusion of the HSTS header and waiting out the <code>max-age</code> you set,
+from that point. Or, you can have your server respond (over HTTPS!) with another HSTS header, but
+giving the <code>max-age</code> directive a value of 0.</p>
+<p>See below for an example of removing HSTS from the host and all of its subdomains:</p>
+<div class="highlight"><pre><span></span><span class="nt">Strict-Transport-Security</span><span class="o">:</span> <span class="nt">max-age</span><span class="o">=</span><span class="nt">0</span><span class="o">;</span> <span class="nt">includeSubdomains</span>
+</pre></div>
+
+
+<h6>Caveats...</h6>
+<p>If your site becomes unavailable over HTTPS, a client abiding by the policy will not be able to
+connect until the max-age has been hit. With this in mind, only ever make use of HSTS if you
+know for certain you won't be defaulting back to HTTP any time soon.</p>
+<p>It's 2019, generally speaking there's not many circumstances where non-HTTPS should be used!</p>
+<p>Also, another caveat is that any clients that have never connected to your host, or ones that have had
+their HSTS policy expire will still go through your HTTP &rarr; HTTPS redirection for the first request. This
+isn't a ginormous attack vector, but <em>you can NEVER be too secure</em>. See the section "Hardening HSTS' Security
+with Browser Preloading" to learn how you can circumvent this step for clients that support preloading.</p>
+<h6>Browser Support</h6>
+<p>As with all things relating to the web, it should come as no suprise that not all
+browsers support this standard. This isn't your usual JavaScript or CSS lack of support
+though, there are no real adverse effects on unsupported browsers if you implement.</p>
+<p>See the compatability matrix below for a list of browsers that support the standard as of writing:</p>
+<p><a href="https://caniuse.com/#feat=stricttransportsecurity" target="_blank">
+  <img alt="HSTS Can I Use Screenshot. Click to go to page." src="https://jenkinsdev.github.io/blog/2019/http-strict-transport-security-and-preloading/images/hsts-can-i-use.png">
+</a></p>
+<h5>Hardening HSTS' Security with Browser Preloading</h5>
+<p>Now that you have the HSTS header sent in your HTTPS responses, you should be good to go, right? Well... Yes
+and no. There's an additional step you can take to help browsers know that your site should NEVER be allowed to
+be accessed through HTTP. This is called browser preloading and is currently supported by most major
+browser vendors.</p>
+<p>HSTS preloading is where your domain is hard-coded into the browsers to never be allowed to be accessed via
+HTTP. You can check and submit your domain by <a href="https://hstspreload.org/">clicking here</a>. In order to be accepted
+into the preload list you must satisfy a few requirements.</p>
+<ol>
+<li>Serve a valid certificate</li>
+<li>Redirect all requests from HTTP to HTTPS on the same host, if you are listening on port 80</li>
+<li>Serve all subdomains over HTTPS</li>
+<li>Serve an HSTS header on the base domain for HTTPS requests:<ul>
+<li><code>max-age</code> directive must be at least 1-year</li>
+<li><code>includeSubDomains</code> directive must be included</li>
+<li>A third directive, <code>preload</code> must be included</li>
+<li>Redirections must include HSTS headers as well</li>
+</ul>
+</li>
+</ol>
+<p>Here's a fully qualifying HSTS with preloading header you can use:</p>
+<div class="highlight"><pre><span></span><span class="nt">Strict-Transport-Security</span><span class="o">:</span> <span class="nt">max-age</span><span class="o">=</span><span class="nt">31536000</span><span class="o">;</span> <span class="nt">includeSubdomains</span><span class="o">;</span> <span class="nt">preload</span>
+</pre></div>
+
+
+<p>Once you have those requirements met, you can use the link above to submit an inclusion request. Once your
+request has been vetted you'll find your HSTS preload inclusion rolled out generally in one or two browser
+stable releases (can be dependent on the browser vendor).</p>
+<h5>Conclusion</h5>
+<p>I hope the information provided has been sufficient in helping you wrap your head around why HSTS exists
+and how to implement it yourself. If you have any questions, comments, or concerns feel free to use
+the comments section below to include your voice!</p>
+<p>Auf Wiedersehen!</p>
+        </div>
+
+        <div class="article-footer">
+                <div class="tags">
+      <p>Tags:</p>
+  
+      <ul class="tags_list">
+          <li class="tag">
+            <a href="/blog/tag/https/">
+              https
+            </a>
+          </li>
+          <li class="tag">
+            <a href="/blog/tag/hsts/">
+              hsts
+            </a>
+          </li>
+          <li class="tag">
+            <a href="/blog/tag/security/">
+              security
+            </a>
+          </li>
+      </ul>
+    </div>
+
+        </div>
+
+        <div id="disqus_thread"></div>
+    </article>
+    </div>
+
+    <footer class="wrapper">
+        <p>
+            Static site generated by <a href="//blog.getpelican.com/" target="_blank">Pelican</a>.  Thoughts by
+            <span>David Jenkins</span>.
+        </p>
+    </footer>
+
+    <script src="https://jenkinsdev.github.io/theme/javascript/minified/script.js"></script>
+    <script id="dsq-count-scr" src="//jenkinsdev-github-io.disqus.com/count.js" async></script>
+    <script>
+    var disqus_config = function () {
+      this.page.url = "https://jenkinsdev.github.io/blog/2019/http-strict-transport-security-and-preloading/";
+      this.page.identifier = "http-strict-transport-security-and-preloading";
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://jenkinsdev-github-io.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+
+  <noscript>
+    Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  </noscript>
+</body>
+</html>

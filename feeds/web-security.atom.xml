@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>JenkinsDev</title><link href="https://jenkinsdev.github.io/" rel="alternate"></link><link href="https://jenkinsdev.github.io/feeds/all.atom.xml" rel="self"></link><id>https://jenkinsdev.github.io/</id><updated>2019-04-30T00:00:00-04:00</updated><entry><title>HTTP Strict Transport Security (HSTS) &amp; Preloading</title><link href="https://jenkinsdev.github.io/blog/2019/http-strict-transport-security-and-preloading/" rel="alternate"></link><published>2019-04-30T00:00:00-04:00</published><updated>2019-04-30T00:00:00-04:00</updated><author><name>David Jenkins</name></author><id>tag:jenkinsdev.github.io,2019-04-30:/blog/2019/http-strict-transport-security-and-preloading/</id><summary type="html">&lt;p&gt;Did you know that merely redirecting an HTTP connection to HTTPS
+<feed xmlns="http://www.w3.org/2005/Atom"><title>JenkinsDev - Web Security</title><link href="https://jenkinsdev.github.io/" rel="alternate"></link><link href="https://jenkinsdev.github.io/feeds/web-security.atom.xml" rel="self"></link><id>https://jenkinsdev.github.io/</id><updated>2019-04-30T00:00:00-04:00</updated><entry><title>HTTP Strict Transport Security (HSTS) &amp; Preloading</title><link href="https://jenkinsdev.github.io/blog/2019/http-strict-transport-security-and-preloading/" rel="alternate"></link><published>2019-04-30T00:00:00-04:00</published><updated>2019-04-30T00:00:00-04:00</updated><author><name>David Jenkins</name></author><id>tag:jenkinsdev.github.io,2019-04-30:/blog/2019/http-strict-transport-security-and-preloading/</id><summary type="html">&lt;p&gt;Did you know that merely redirecting an HTTP connection to HTTPS
 isn't as secure as you think? Your site is still susceptible to "man in the middle" (MITM) attacks
 which could leave your users vulnerable to phishing. Read on to figure out how you can help keep
 your users safe with just a tiny bit of extra effort!&lt;/p&gt;</summary><content type="html">&lt;h5&gt;Your 301 HTTP &amp;rarr; HTTPS Redirection Isn't Sufficient&lt;/h5&gt;
@@ -100,39 +100,4 @@ stable releases (can be dependent on the browser vendor).&lt;/p&gt;
 &lt;p&gt;I hope the information provided has been sufficient in helping you wrap your head around why HSTS exists
 and how to implement it yourself. If you have any questions, comments, or concerns feel free to use
 the comments section below to include your voice!&lt;/p&gt;
-&lt;p&gt;Auf Wiedersehen!&lt;/p&gt;</content><category term="https"></category><category term="hsts"></category><category term="security"></category></entry><entry><title>Hello, World!</title><link href="https://jenkinsdev.github.io/blog/2019/hello-world/" rel="alternate"></link><published>2019-04-26T00:00:00-04:00</published><updated>2019-04-26T00:00:00-04:00</updated><author><name>David Jenkins</name></author><id>tag:jenkinsdev.github.io,2019-04-26:/blog/2019/hello-world/</id><summary type="html">&lt;p&gt;This isn't your usual 'Hello, World' tutorial. This is my personal
-introduction to you, the reader.  Find out a little about me, what I do,
-and what this &lt;em&gt;blog&lt;/em&gt; is going to be about.&lt;/p&gt;</summary><content type="html">&lt;h5&gt;Come One, Come All&lt;/h5&gt;
-&lt;p&gt;I'd like to welcome you &amp;ndash; the reader &amp;ndash; to my blog.  This
-is going to be the breeding ground for practically anything, but with
-a slight focus on programming related content.&lt;/p&gt;
-&lt;h5&gt;A Bit About Me&lt;/h5&gt;
-&lt;p&gt;My name is David Jenkins and I currently work over at &lt;a href="https://boldmediagroup.com"&gt;Bold Media Group&lt;/a&gt;.
-To sum it up, we do lead generation and aggregation for various insurance
-companies. I won't focus too much on what we do, but all
-of the information is available through that link!&lt;/p&gt;
-&lt;p&gt;When I'm not working on projects or attempting to keep up with
-the latest programmming news and trends you can find me doing various
-activities with the family, gaming, or trying to excel myself in some form.
-Currently, my main focus is relearning and deepening my understanding of
-German.&lt;/p&gt;
-&lt;h5&gt;How It Was Built&lt;/h5&gt;
-&lt;h6&gt;The Back-End&lt;/h6&gt;
-&lt;p&gt;This site is generated using the lovely &lt;a href="https://blog.getpelican.com/"&gt;Pelican&lt;/a&gt; static
-site generator. Along with it, I make use of &lt;a href="https://daringfireball.net/projects/markdown/"&gt;Markdown&lt;/a&gt;
-to write all of the content.&lt;/p&gt;
-&lt;p&gt;It does make use of a small plugin I wrote back when I originally published
-the site in 2014. The plugin does some really basic math to figure out what the read time
-is for the average reader. You can check it out over on Github, it's called
-&lt;a href="https://github.com/JenkinsDev/pelican-readtime"&gt;pelican-readtime&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Really, that's about it... Simple is nice.&lt;/p&gt;
-&lt;h6&gt;The Front-End&lt;/h6&gt;
-&lt;p&gt;TODO: Rewrite&lt;/p&gt;
-&lt;p&gt;That sums it up, haha! I'll rewrite this section once I finish rewiring how the front-end
-assets are compiled.&lt;/p&gt;
-&lt;h5&gt;Conclusion&lt;/h5&gt;
-&lt;p&gt;Well guys I think that's all I am going to cover in this here "Hello, World!"
-tutorial.. I mean introduction.  I am hoping to make this site a
-useful resource for all. If you have any questions then just leave
-it down below in the comments section.&lt;/p&gt;
-&lt;p&gt;Auf Wiedersehen!&lt;/p&gt;</content><category term="greeting"></category><category term="python"></category><category term="javascript"></category></entry></feed>
+&lt;p&gt;Auf Wiedersehen!&lt;/p&gt;</content><category term="https"></category><category term="hsts"></category><category term="security"></category></entry></feed>
