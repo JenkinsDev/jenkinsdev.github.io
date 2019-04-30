@@ -66,16 +66,8 @@ it either exists or it doesn't. If included in your response the HSTS policy wil
 of the host's domain name.
 
 
-###### Caveats...
-If your site becomes unavailable over HTTPS, a client abiding by the policy will not be able to
-connect until the max-age has been hit. With this in mind, only ever make use of HSTS if you
-know for certain you won't be defaulting back to HTTP any time soon.
-
-It's 2019, generally speaking there's not many circumstances where non-HTTPS should be used!
-
 
 ###### Can I Revert These Changes?
-
 Yes, you can! There are two ways you can have these changes reverted for connecting clients. You can either wait
 out the time set by stopping the inclusion of the HSTS header and waiting out the `max-age` you set,
 from that point. Or, you can have your server respond (over HTTPS!) with another HSTS header, but
@@ -88,13 +80,25 @@ Strict-Transport-Security: max-age=0; includeSubdomains
 ```
 
 
-###### Browser Support
+###### Caveats...
+If your site becomes unavailable over HTTPS, a client abiding by the policy will not be able to
+connect until the max-age has been hit. With this in mind, only ever make use of HSTS if you
+know for certain you won't be defaulting back to HTTP any time soon.
 
+It's 2019, generally speaking there's not many circumstances where non-HTTPS should be used!
+
+Also, another caveat is that any clients that have never connected to your host, or ones that have had
+their HSTS policy expire will still go through your HTTP &rarr; HTTPS redirection for the first request. This
+isn't a ginormous attack vector, but *you can NEVER be too secure*. See the section "Hardening HSTS' Security
+with Browser Preloading" to learn how you can circumvent this step for clients that support preloading.
+
+
+###### Browser Support
 As with all things relating to the web, it should come as no suprise that not all
 browsers support this standard. This isn't your usual JavaScript or CSS lack of support
 though, there are no real adverse effects on unsupported browsers if you implement.
 
-See the screencap below for a list of browsers that support the standard as of writing:
+See the compatability matrix below for a list of browsers that support the standard as of writing:
 
 <a href="https://caniuse.com/#feat=stricttransportsecurity" target="_blank">
   ![HSTS Can I Use Screenshot. Click to go to page.]({attach}images/hsts-can-i-use.png)
@@ -102,6 +106,31 @@ See the screencap below for a list of browsers that support the standard as of w
 
 
 
-##### Hardening HSTS' Security With Browser Preloading
+##### Hardening HSTS' Security with Browser Preloading
 
+Now that you have the HSTS header sent in your HTTPS responses, you should be good to go, right? Well... Yes
+and no. There's an additional step you can take to help browsers know that your site should NEVER be allowed to
+be accessed through HTTP. This is called browser preloading and is currently supported by most major
+browser vendors.
 
+HSTS preloading is where your domain is hard-coded into the browsers to never be allowed to be accessed via
+HTTP. You can check and submit your domain by [clicking here](https://hstspreload.org/). In order to be accepted
+into the preload list you must satisfy a few requirements.
+
+1. Serve a valid certificate
+2. Redirect all requests from HTTP to HTTPS on the same host, if you are listening on port 80
+3. Serve all subdomains over HTTPS
+4. Serve an HSTS header on the base domain for HTTPS requests:
+  * `max-age` directive *MUST* be at least 1-year
+  * `includeSubDomains` directive *MUST* be included
+  * A third directive, `preload` must be included
+  * Redirections must include HSTS headers as well
+
+ As an example of a HSTS preload header:
+ ```
+ Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+ ```
+
+ Once you have those requirements met, you can use the link above to submit an inclusion request. Once your
+ request has been vetted you'll find your HSTS preload inclusion rolled out generally in one or two browser
+ stable releases (can be dependent on the browser vendor).
