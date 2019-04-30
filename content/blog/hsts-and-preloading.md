@@ -5,8 +5,8 @@ Tags: https, hsts, security
 Slug: http-strict-transport-security-and-preloading
 Authors: David Jenkins
 Summary: Did you know that merely redirecting an HTTP connection to HTTPS
-         isn't as secure as you think? Your site is still susceptible to "man in the middle" (MTIM) attacks which could leave your users
-         vulnerable to phishing. Read on to figure out how you can help keep
+         isn't as secure as you think? Your site is still susceptible to "man in the middle" (MITM) attacks
+         which could leave your users vulnerable to phishing. Read on to figure out how you can help keep
          your users safe with just a tiny bit of extra effort!
 
 
