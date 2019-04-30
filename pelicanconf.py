@@ -9,6 +9,14 @@ SITEURL_ABSOLUTE = SITEURL
 
 PATH = 'content'
 
+ARTICLE_PATHS = ['blog']
+ARTICLE_SAVE_AS = 'blog/{date:%Y}/{slug}/index.html'
+ARTICLE_URL = 'blog/{date:%Y}/{slug}/'
+
+PAGE_PATHS = ['pages']
+PAGE_SAVE_AS = '{slug}/index.html'
+PAGE_URL = '{slug}/'
+
 TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = 'en'

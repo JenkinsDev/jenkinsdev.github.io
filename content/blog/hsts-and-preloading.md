@@ -5,8 +5,7 @@ Tags: https, hsts, security
 Slug: http-strict-transport-security-and-preloading
 Authors: David Jenkins
 Summary: Did you know that merely redirecting an HTTP connection to HTTPS
-         isn't as secure as you think? Your site is still susceptible to
-         "man in the middle" (MTIM) attacks which could leave your users
+         isn't as secure as you think? Your site is still susceptible to "man in the middle" (MTIM) attacks which could leave your users
          vulnerable to phishing. Read on to figure out how you can help keep
          your users safe with just a tiny bit of extra effort!
 
@@ -70,17 +69,19 @@ of the host's domain name.
 ###### Caveats...
 If your site becomes unavailable over HTTPS, a client abiding by the policy will not be able to
 connect until the max-age has been hit. With this in mind, only ever make use of HSTS if you
-know for certain you'll never revert back to HTTP as your default scheme.
+know for certain you won't be defaulting back to HTTP any time soon.
 
-It's 2019 you guys, generally speaking there's not many circumstances where non-HTTPS should be used!
+It's 2019, generally speaking there's not many circumstances where non-HTTPS should be used!
 
 
 ###### Can I Revert These Changes?
 
-Yes you can! There are two ways you can have these changes reverted for connecting clients. You can either wait
-out the time set by stopping the inclusion of the HSTS header and waiting 1-year from that point, or you can
-have your server respond (over HTTPS!) with another HSTS header, but giving the max-age a value of 0.
-As an example:
+Yes, you can! There are two ways you can have these changes reverted for connecting clients. You can either wait
+out the time set by stopping the inclusion of the HSTS header and waiting out the `max-age` you set,
+from that point. Or, you can have your server respond (over HTTPS!) with another HSTS header, but
+giving the `max-age` directive a value of 0.
+
+See below for an example of removing HSTS from the host and all of its subdomains:
 
 ```
 Strict-Transport-Security: max-age=0; includeSubdomains
@@ -90,12 +91,14 @@ Strict-Transport-Security: max-age=0; includeSubdomains
 ###### Browser Support
 
 As with all things relating to the web, it should come as no suprise that not all
-browsers support the standard. This isn't your usual JavaScript or CSS lack of support
+browsers support this standard. This isn't your usual JavaScript or CSS lack of support
 though, there are no real adverse effects on unsupported browsers if you implement.
 
-See the screencap below for a list of browsers that support the standard:
+See the screencap below for a list of browsers that support the standard as of writing:
 
-[Insert Image]
+<a href="https://caniuse.com/#feat=stricttransportsecurity" target="_blank">
+  ![HSTS Can I Use Screenshot. Click to go to page.]({attach}images/hsts-can-i-use.png)
+</a>
 
 
 
