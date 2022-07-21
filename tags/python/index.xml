@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>python on JenkinsDev :: Into the mind of an (aspiring) polymathic autodidact.</title><link>/tags/python/</link><description>Recent content in python on JenkinsDev :: Into the mind of an (aspiring) polymathic autodidact.</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 26 Apr 2019 00:00:00 +0000</lastBuildDate><atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Hello, World!</title><link>/posts/hello-world/</link><pubDate>Fri, 26 Apr 2019 00:00:00 +0000</pubDate><guid>/posts/hello-world/</guid><description>NOTE:
+This blog post is insanely outdated. =)
+Come One, Come All I&amp;rsquo;d like to welcome you – the reader – to my blog. This is going to be the breeding ground for practically anything, but with a slight focus on programming related content.
+A Bit About Me My name is David Jenkins and I currently work over at Bold Media Group. To sum it up, we do lead generation and aggregation for various insurance companies.</description><content>&lt;blockquote>
+&lt;p>NOTE:&lt;/p>
+&lt;p>This blog post is insanely outdated. =)&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="come-one-come-all">Come One, Come All&lt;/h1>
+&lt;p>I&amp;rsquo;d like to welcome you – the reader – to my blog. This is going to be the breeding ground for practically anything, but with a slight focus on programming related content.&lt;/p>
+&lt;h1 id="a-bit-about-me">A Bit About Me&lt;/h1>
+&lt;p>My name is David Jenkins and I currently work over at Bold Media Group. To sum it up, we do lead generation and aggregation for various insurance companies. I won&amp;rsquo;t focus too much on what we do, but all of the information is available through that link!&lt;/p>
+&lt;p>When I&amp;rsquo;m not working on projects or attempting to keep up with the latest programmming news and trends you can find me doing various activities with the family, gaming, or trying to excel myself in some form. Currently, my main focus is relearning and deepening my understanding of German.&lt;/p>
+&lt;h1 id="how-it-was-built">How It Was Built&lt;/h1>
+&lt;h3 id="the-back-end">The Back-End&lt;/h3>
+&lt;p>This site is generated using the lovely Pelican static site generator. Along with it, I make use of Markdown to write all of the content.&lt;/p>
+&lt;p>It does make use of a small plugin I wrote back when I originally published the site in 2014. The plugin does some really basic math to figure out what the read time is for the average reader. You can check it out over on Github, it&amp;rsquo;s called pelican-readtime.&lt;/p>
+&lt;p>Really, that&amp;rsquo;s about it&amp;hellip; Simple is nice.&lt;/p>
+&lt;h1 id="the-front-end">The Front-End&lt;/h1>
+&lt;p>TODO: Rewrite&lt;/p>
+&lt;p>That sums it up, haha! I&amp;rsquo;ll rewrite this section once I finish rewiring how the front-end assets are compiled.&lt;/p>
+&lt;h1 id="conclusion">Conclusion&lt;/h1>
+&lt;p>Well guys I think that&amp;rsquo;s all I am going to cover in this here &amp;ldquo;Hello, World!&amp;rdquo; tutorial.. I mean introduction. I am hoping to make this site a useful resource for all. If you have any questions then just leave it down below in the comments section.&lt;/p>
+&lt;p>Auf Wiedersehen!&lt;/p></content></item></channel></rss>

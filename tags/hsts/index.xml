@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>hsts on JenkinsDev :: Into the mind of an (aspiring) polymathic autodidact.</title><link>/tags/hsts/</link><description>Recent content in hsts on JenkinsDev :: Into the mind of an (aspiring) polymathic autodidact.</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 30 Apr 2019 00:00:00 +0000</lastBuildDate><atom:link href="/tags/hsts/index.xml" rel="self" type="application/rss+xml"/><item><title>HTTP Strict Transport Security (HSTS) &amp; Preloading</title><link>/posts/http-strict-transport-security-and-preloading/</link><pubDate>Tue, 30 Apr 2019 00:00:00 +0000</pubDate><guid>/posts/http-strict-transport-security-and-preloading/</guid><description>Your 301 HTTP → HTTPS Redirection Isn&amp;rsquo;t Sufficient Your end-users are still very much susceptible to &amp;ldquo;man-in-the-middle&amp;rdquo; attacks which could leave them vulnerable to phishing and eavesdropping (we&amp;rsquo;re looking at you NSA) attempts. The issue lies within how browsers handle requests that don&amp;rsquo;t explicity contain a scheme like &amp;ldquo;https://&amp;rdquo; — most default to &amp;ldquo;http://&amp;rdquo;.
+When your browser sends a HTTP request to a site that returns a 301 redirection header, the end-user is still connecting to you – even if for just a second – over an unsecured channel.</description><content>&lt;h1 id="your-301-http--https-redirection-isnt-sufficient">Your 301 HTTP → HTTPS Redirection Isn&amp;rsquo;t Sufficient&lt;/h1>
+&lt;p>Your end-users are still very much susceptible to &amp;ldquo;man-in-the-middle&amp;rdquo; attacks which could leave them vulnerable to phishing and eavesdropping (we&amp;rsquo;re looking at you NSA) attempts. The issue lies within how browsers handle requests that don&amp;rsquo;t explicity contain a scheme like &amp;ldquo;https://&amp;rdquo; — most default to &amp;ldquo;http://&amp;rdquo;.&lt;/p>
+&lt;p>When your browser sends a HTTP request to a site that returns a 301 redirection header, the end-user is still connecting to you – even if for just a second – over an unsecured channel. If they&amp;rsquo;re on public Wi-Fi or they&amp;rsquo;ve been infected with malware, that unsecure request could be intercepted. At which point the malicious actor could then stop the request from ever reaching your server and return a response that looks very much like your own.&lt;/p>
+&lt;p>Your non-tech savvy users may not notice that they&amp;rsquo;re not actually connected to your server. They may see a page that looks identical to your own, go to submit their login details, and wind up having their credentials stolen. BAM! Hit with phishing!&lt;/p>
+&lt;p>Now, put this into the context of a business such as one in the banking sector&amp;hellip; That&amp;rsquo;d turn into a disaster.&lt;/p>
+&lt;p>Before moving forward, I should make a note that what this article covers does not in any way shape or form completely circumvent the possibility of a phishing attempt. This is merely a way to compliment other security measures that should be taken.&lt;/p>
+&lt;h1 id="in-comes-http-strict-transport-security">In Comes HTTP Strict Transport Security&lt;/h1>
+&lt;p>Thankfully, there is a standard to help us solve this problem. Defined in RFC 6797, the HSTS RFC outlines a HTTP response header that can be returned by your server to tell the user&amp;rsquo;s browser that all future requests MUST be over HTTPS and that it should NEVER connect to your site over plain HTTP.&lt;/p>
+&lt;h2 id="just-show-me-how-to-use-it">Just Show Me How To Use It&amp;hellip;&lt;/h2>
+&lt;p>For those of you that find technical documentation cumbersome to scan through, here&amp;rsquo;s an example of the header:&lt;/p>
+&lt;p>&lt;code>Strict-Transport-Security: max-age=31536000; includeSubdomains&lt;/code>&lt;/p>
+&lt;p>If you have any clue as to the structure of a HTTP header, this should be pretty self-explanatory. HSTS is defined by the use of the header name Strict-Transport-Security which is accompanied with directives.&lt;/p>
+&lt;p>The only directive that is absolutely required is max-age which should be given a value in seconds. This tells the browser how long it should enforce the policy. In the example above we have it set to 1-year.&lt;/p>
+&lt;p>The optional includeSubdomains directive isn&amp;rsquo;t accompanied by any values and is handled similar to a boolean, it either exists or it doesn&amp;rsquo;t. If included in your response the HSTS policy will include all subdomains of the host&amp;rsquo;s domain name.&lt;/p>
+&lt;h1 id="can-i-revert-these-changes">Can I Revert These Changes?&lt;/h1>
+&lt;p>Yes, you can! There are two ways you can have these changes reverted for connecting clients. You can either wait out the time set by stopping the inclusion of the HSTS header and waiting out the max-age you set, from that point. Or, you can have your server respond (over HTTPS!) with another HSTS header, but giving the max-age directive a value of 0.&lt;/p>
+&lt;p>See below for an example of removing HSTS from the host and all of its subdomains:&lt;/p>
+&lt;p>&lt;code>Strict-Transport-Security: max-age=0; includeSubdomains&lt;/code>&lt;/p>
+&lt;h1 id="caveats">Caveats&amp;hellip;&lt;/h1>
+&lt;p>If your site becomes unavailable over HTTPS, a client abiding by the policy will not be able to connect until the max-age has been hit. With this in mind, only ever make use of HSTS if you know for certain you won&amp;rsquo;t be defaulting back to HTTP any time soon.&lt;/p>
+&lt;p>It&amp;rsquo;s 2019, generally speaking there&amp;rsquo;s not many circumstances where non-HTTPS should be used!&lt;/p>
+&lt;p>Also, another caveat is that any clients that have never connected to your host, or ones that have had their HSTS policy expire will still go through your HTTP → HTTPS redirection for the first request. This isn&amp;rsquo;t a ginormous attack vector, but you can NEVER be too secure. See the section &amp;ldquo;Hardening HSTS' Security with Browser Preloading&amp;rdquo; to learn how you can circumvent this step for clients that support preloading.&lt;/p>
+&lt;h1 id="browser-support">Browser Support&lt;/h1>
+&lt;p>As with all things relating to the web, it should come as no suprise that not all browsers support this standard. This isn&amp;rsquo;t your usual JavaScript or CSS lack of support though, there are no real adverse effects on unsupported browsers if you implement.&lt;/p>
+&lt;h1 id="hardening-hsts-security-with-browser-preloading">Hardening HSTS' Security with Browser Preloading&lt;/h1>
+&lt;p>Now that you have the HSTS header sent in your HTTPS responses, you should be good to go, right? Well&amp;hellip; Yes and no. There&amp;rsquo;s an additional step you can take to help browsers know that your site should NEVER be allowed to be accessed through HTTP. This is called browser preloading and is currently supported by most major browser vendors.&lt;/p>
+&lt;p>HSTS preloading is where your domain is hard-coded into the browsers to never be allowed to be accessed via HTTP. You can check and submit your domain by clicking here. In order to be accepted into the preload list you must satisfy a few requirements.&lt;/p>
+&lt;ol>
+&lt;li>Serve a valid certificate&lt;/li>
+&lt;li>Redirect all requests from HTTP to HTTPS on the same host, if you are listening on port 80&lt;/li>
+&lt;li>Serve all subdomains over HTTPS&lt;/li>
+&lt;li>Serve an HSTS header on the base domain for HTTPS requests:
+&lt;ul>
+&lt;li>&lt;code>max-age&lt;/code> directive must be at least 1-year&lt;/li>
+&lt;li>includeSubDomains directive must be included&lt;/li>
+&lt;li>A third directive, preload must be included&lt;/li>
+&lt;li>Redirections must include HSTS headers as well&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ol>
+&lt;p>Here&amp;rsquo;s a fully qualifying HSTS with preloading header you can use:&lt;/p>
+&lt;p>&lt;code>Strict-Transport-Security: max-age=31536000; includeSubdomains; preload&lt;/code>&lt;/p>
+&lt;p>Once you have those requirements met, you can use the link above to submit an inclusion request. Once your request has been vetted you&amp;rsquo;ll find your HSTS preload inclusion rolled out generally in one or two browser stable releases (can be dependent on the browser vendor).&lt;/p>
+&lt;h1 id="conclusion">Conclusion&lt;/h1>
+&lt;p>I hope the information provided has been sufficient in helping you wrap your head around why HSTS exists and how to implement it yourself. If you have any questions, comments, or concerns feel free to use the comments section below to include your voice!&lt;/p>
+&lt;p>Auf Wiedersehen!&lt;/p></content></item></channel></rss>
