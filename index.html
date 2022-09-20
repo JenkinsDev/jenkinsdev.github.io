@@ -61,6 +61,27 @@ JenkinsDev
 <div class=posts>
 <div class="post on-list">
 <h1 class=post-title>
+<a href=/posts/remove-all-files-from-git-lfs/>How to remove all files from Git LFS quickly.</a>
+</h1>
+<div class=post-meta>
+<span class=post-date>
+2022-09-20
+</span>
+</div>
+<span class=post-tags>
+#<a href=/tags/git/>git</a>&nbsp;
+#<a href=/tags/lfs/>lfs</a>&nbsp;
+</span>
+<div class=post-content>
+Prerequisites A Git repo with files stored using Git LFS The BFG Repo Cleaner tool (requires java itself) Have a clean HEAD The BFG is a simpler, faster alternative to git-filter-branch for cleansing bad data out of your Git repository history…
+The One-Liner git lfs ls-files &ndash;all | awk &lsquo;{split($0,a," - ");l=split(a[2],b,"/"); print b[l]}&rsquo; | xargs -d\n -n1 java -jar ../bfg.jar -D && \ git reflog expire &ndash;expire=now &ndash;all && \ git gc &ndash;prune=now &ndash;aggressive What’s Happening?
+</div>
+<div>
+<a class="read-more button" href=/posts/remove-all-files-from-git-lfs/>Read more →</a>
+</div>
+</div>
+<div class="post on-list">
+<h1 class=post-title>
 <a href=/posts/http-strict-transport-security-and-preloading/>HTTP Strict Transport Security (HSTS) & Preloading</a>
 </h1>
 <div class=post-meta>
