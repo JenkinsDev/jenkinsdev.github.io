@@ -101,7 +101,7 @@ Name: David Jenkins Date of Birth: 1993-02-04 Workplace: Over at UserWise, where
 &lt;li>Learning &amp;amp; Self-Teaching (I&amp;rsquo;m an aspiring polymathic autodidact!)&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></content></item><item><title>Open-Source Showcase</title><link>/showcase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/showcase/</guid><description> Name Language(s) Description Validatinator Typescript/Javascript Validatinator is a simple, yet effective, HTML form validation library built for JavaScript/Typescript. Pelican Readtime Python Plugin for the Pelican SSG, which computes average read time of text. Manipuldate Python Slightly easier, immutable-based, date manipulation for python.</description><content>&lt;hr>
+&lt;/ul></content></item><item><title>Project Showcase</title><link>/showcase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/showcase/</guid><description> Name Language(s) Description Validatinator Typescript/Javascript Validatinator is a simple, yet effective, HTML form validation library built for JavaScript/Typescript. Pelican Readtime Python Plugin for the Pelican SSG, which computes average read time of text. Manipuldate Python Slightly easier, immutable, date manipulation for python. IntelliFit AI Typescript (React) Unique AI personal trainer that is available anytime, anywhere.</description><content>&lt;hr>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -124,7 +124,12 @@ Name: David Jenkins Date of Birth: 1993-02-04 Workplace: Over at UserWise, where
 &lt;tr>
 &lt;td>&lt;a href="https://github.com/JenkinsDev/manipuldate.git">Manipuldate&lt;/a>&lt;/td>
 &lt;td>Python&lt;/td>
-&lt;td>Slightly easier, immutable-based, date manipulation for python.&lt;/td>
+&lt;td>Slightly easier, immutable, date manipulation for python.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;a href="https://intellifitai.com">IntelliFit AI&lt;/a>&lt;/td>
+&lt;td>Typescript (React)&lt;/td>
+&lt;td>Unique AI personal trainer that is available anytime, anywhere.&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table></content></item></channel></rss>
