@@ -1,10 +1,9 @@
 <!doctype html><html lang=en>
 <head>
-<title>How to remove all files from Git LFS quickly. :: JenkinsDev :: Into the mind of an (aspiring) polymathic autodidact.</title>
+<title>How to remove all files from Git LFS quickly. :: JenkinsDev :: Into the mind of an aspiring polymathic autodidact.</title>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Prerequisites  A Git repo with files stored using Git LFS The BFG Repo Cleaner tool (requires java itself) Have a clean HEAD   The BFG is a simpler, faster alternative to git-filter-branch for cleansing bad data out of your Git repository history&amp;hellip;
- The One-Liner git lfs ls-files --all | awk '{split($0,a,&amp;quot; - &amp;quot;);l=split(a[2],b,&amp;quot;/&amp;quot;); print b[l]}' | xargs -d\\n -n1 java -jar ../bfg.jar -D &amp;amp;&amp;amp; \ git reflog expire --expire=now --all &amp;amp;&amp;amp; \ git gc --prune=now --aggressive What&amp;rsquo;s Happening?">
+<meta name=description content="Prerequisites A Git repo with files stored using Git LFS The BFG Repo Cleaner tool (requires java itself) Have a clean HEAD The BFG is a simpler, faster alternative to git-filter-branch for cleansing bad data out of your Git repository history…">
 <meta name=keywords content>
 <meta name=robots content="noodp">
 <link rel=canonical href=/posts/remove-all-files-from-git-lfs/>
@@ -18,10 +17,9 @@
 <meta property="og:locale" content="en">
 <meta property="og:type" content="article">
 <meta property="og:title" content="How to remove all files from Git LFS quickly.">
-<meta property="og:description" content="Prerequisites  A Git repo with files stored using Git LFS The BFG Repo Cleaner tool (requires java itself) Have a clean HEAD   The BFG is a simpler, faster alternative to git-filter-branch for cleansing bad data out of your Git repository history&amp;hellip;
- The One-Liner git lfs ls-files --all | awk '{split($0,a,&amp;quot; - &amp;quot;);l=split(a[2],b,&amp;quot;/&amp;quot;); print b[l]}' | xargs -d\\n -n1 java -jar ../bfg.jar -D &amp;amp;&amp;amp; \ git reflog expire --expire=now --all &amp;amp;&amp;amp; \ git gc --prune=now --aggressive What&amp;rsquo;s Happening?">
+<meta property="og:description" content="Prerequisites A Git repo with files stored using Git LFS The BFG Repo Cleaner tool (requires java itself) Have a clean HEAD The BFG is a simpler, faster alternative to git-filter-branch for cleansing bad data out of your Git repository history…">
 <meta property="og:url" content="/posts/remove-all-files-from-git-lfs/">
-<meta property="og:site_name" content="JenkinsDev :: Into the mind of an (aspiring) polymathic autodidact.">
+<meta property="og:site_name" content="JenkinsDev :: Into the mind of an aspiring polymathic autodidact.">
 <meta property="og:image" content="/img/favicon/blue.png">
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
@@ -47,14 +45,14 @@ JenkinsDev
 <ul class=menu__sub-inner>
 <li class=menu__sub-inner-more-trigger>Show more ▾</li>
 <ul class="menu__sub-inner-more hidden">
-<li><a href=/showcase>Open-Source Showcase</a></li>
+<li><a href=/showcase>Showcase</a></li>
 </ul>
 </ul>
 </ul>
 <ul class="menu__inner menu__inner--mobile">
 <li><a href=/about>About</a></li>
 <li><a href=/>Home</a></li>
-<li><a href=/showcase>Open-Source Showcase</a></li>
+<li><a href=/showcase>Showcase</a></li>
 </ul>
 </nav>
 </header>

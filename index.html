@@ -1,10 +1,10 @@
 <!doctype html><html lang=en>
 <head>
 <meta name=generator content="Hugo 0.91.2">
-<title>JenkinsDev :: Into the mind of an (aspiring) polymathic autodidact.</title>
+<title>JenkinsDev :: Into the mind of an aspiring polymathic autodidact.</title>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Into the mind of an (aspiring) polymathic autodidact.">
+<meta name=description content="Into the mind of an aspiring polymathic autodidact.">
 <meta name=keywords content>
 <meta name=robots content="noodp">
 <link rel=canonical href=/>
@@ -17,14 +17,14 @@
 <meta name=twitter:creator content="djenkinsdev">
 <meta property="og:locale" content="en">
 <meta property="og:type" content="website">
-<meta property="og:title" content="JenkinsDev :: Into the mind of an (aspiring) polymathic autodidact.">
-<meta property="og:description" content="Into the mind of an (aspiring) polymathic autodidact.">
+<meta property="og:title" content="JenkinsDev :: Into the mind of an aspiring polymathic autodidact.">
+<meta property="og:description" content="Into the mind of an aspiring polymathic autodidact.">
 <meta property="og:url" content="/">
-<meta property="og:site_name" content="JenkinsDev :: Into the mind of an (aspiring) polymathic autodidact.">
+<meta property="og:site_name" content="JenkinsDev :: Into the mind of an aspiring polymathic autodidact.">
 <meta property="og:image" content="/img/favicon/blue.png">
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
-<link href=/index.xml rel=alternate type=application/rss+xml title="JenkinsDev :: Into the mind of an (aspiring) polymathic autodidact.">
+<link href=/index.xml rel=alternate type=application/rss+xml title="JenkinsDev :: Into the mind of an aspiring polymathic autodidact.">
 </head>
 <body class=blue>
 <div class="container center headings--one-size">
@@ -46,14 +46,14 @@ JenkinsDev
 <ul class=menu__sub-inner>
 <li class=menu__sub-inner-more-trigger>Show more ▾</li>
 <ul class="menu__sub-inner-more hidden">
-<li><a href=/showcase>Open-Source Showcase</a></li>
+<li><a href=/showcase>Showcase</a></li>
 </ul>
 </ul>
 </ul>
 <ul class="menu__inner menu__inner--mobile">
 <li><a href=/about>About</a></li>
 <li><a href=/>Home</a></li>
-<li><a href=/showcase>Open-Source Showcase</a></li>
+<li><a href=/showcase>Showcase</a></li>
 </ul>
 </nav>
 </header>
@@ -74,7 +74,6 @@ JenkinsDev
 </span>
 <div class=post-content>
 Prerequisites A Git repo with files stored using Git LFS The BFG Repo Cleaner tool (requires java itself) Have a clean HEAD The BFG is a simpler, faster alternative to git-filter-branch for cleansing bad data out of your Git repository history…
-The One-Liner git lfs ls-files &ndash;all | awk &lsquo;{split($0,a," - ");l=split(a[2],b,"/"); print b[l]}&rsquo; | xargs -d\n -n1 java -jar ../bfg.jar -D && \ git reflog expire &ndash;expire=now &ndash;all && \ git gc &ndash;prune=now &ndash;aggressive What’s Happening?
 </div>
 <div>
 <a class="read-more button" href=/posts/remove-all-files-from-git-lfs/>Read more →</a>
@@ -95,8 +94,7 @@ The One-Liner git lfs ls-files &ndash;all | awk &lsquo;{split($0,a," - ");l=spli
 #<a href=/tags/http-strict-transport-security/>http strict transport security</a>&nbsp;
 </span>
 <div class=post-content>
-Your 301 HTTP → HTTPS Redirection Isn’t Sufficient Your end-users are still very much susceptible to “man-in-the-middle” attacks which could leave them vulnerable to phishing and eavesdropping (we’re looking at you NSA) attempts. The issue lies within how browsers handle requests that don’t explicity contain a scheme like “https://” — most default to “http://”.
-When your browser sends a HTTP request to a site that returns a 301 redirection header, the end-user is still connecting to you – even if for just a second – over an unsecured channel.
+Your end-users are still very much susceptible to &ldquo;man-in-the-middle&rdquo; attacks which could leave them vulnerable to phishing and eavesdropping&mldr;
 </div>
 <div>
 <a class="read-more button" href=/posts/http-strict-transport-security-and-preloading/>Read more →</a>
@@ -118,10 +116,7 @@ When your browser sends a HTTP request to a site that returns a 301 redirection 
 #<a href=/tags/javascript/>javascript</a>&nbsp;
 </span>
 <div class=post-content>
-NOTE:
-This blog post is insanely outdated. =)
-Come One, Come All I’d like to welcome you – the reader – to my blog. This is going to be the breeding ground for practically anything, but with a slight focus on programming related content.
-A Bit About Me My name is David Jenkins and I currently work over at Bold Media Group. To sum it up, we do lead generation and aggregation for various insurance companies.
+I&rsquo;d like to welcome you to my blog! This is going to be the breeding ground for practically any thought that I feel like sharing. 🤷 (outdated)
 </div>
 <div>
 <a class="read-more button" href=/posts/hello-world/>Read more →</a>
