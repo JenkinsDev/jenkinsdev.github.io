@@ -2,6 +2,7 @@
 title: How to remove all files from Git LFS quickly.
 date: 2022-09-20
 tags: [git, lfs]
+description: Prerequisites A Git repo with files stored using Git LFS The BFG Repo Cleaner tool (requires java itself) Have a clean HEAD The BFG is a simpler, faster alternative to git-filter-branch for cleansing bad data out of your Git repository history…
 ---
 
 # Prerequisites

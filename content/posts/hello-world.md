@@ -2,6 +2,8 @@
 title: Hello, World!
 date: 2019-04-26
 tags: [greeting, site, python, javascript]
+description: I'd like to welcome you to my blog! This is going to be the breeding ground for practically any thought that I feel like sharing. 🤷 (outdated)
+
 ---
 
 > NOTE:

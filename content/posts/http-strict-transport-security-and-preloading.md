@@ -2,6 +2,8 @@
 title: HTTP Strict Transport Security (HSTS) & Preloading
 date: 2019-04-30
 tags: [hsts, https, http strict transport security]
+description: Your end-users are still very much susceptible to "man-in-the-middle" attacks which could leave them vulnerable to phishing and eavesdropping...
+
 ---
 
 # Your 301 HTTP → HTTPS Redirection Isn't Sufficient
