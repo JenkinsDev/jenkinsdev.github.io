@@ -237,12 +237,19 @@ ANIMATION_SPEED_MULTIPLIER_ELE.addEventListener('input', e => {
   console.log('animation speed multiplier', animationSpeed, animationSpeedMultiplier);
 });
 
+let cellSizeChangeTimeout;
 CELL_SIZE_ELE.addEventListener('input', e => {
-  cellSize = parseInt(e.target.value);
-  document.querySelector('[for="cell-size"]').textContent = `Cell Size: (${cellSize})`;
+  if (cellSizeChangeTimeout) {
+    clearTimeout(cellSizeChangeTimeout);
+  }
+
+  document.querySelector('[for="cell-size"]').textContent = `Cell Size: (${parseInt(e.target.value)}px)`;
   console.log('cell size', cellSize);
-  resetAnimation();
-  style.innerHTML = `
+
+  cellSizeChangeTimeout = setTimeout(_ => {
+    cellSize = parseInt(e.target.value);
+    resetAnimation();
+    style.innerHTML = `
 input[type=checkbox] {
   width: ${cellSize}px;
   height: ${cellSize}px;
@@ -252,7 +259,8 @@ input[type=checkbox] {
   background-color: white;
 }
 `;
-  setupCanvas();
+    setupCanvas();
+  }, 500);
 });
 
 document.addEventListener('DOMContentLoaded', () => {
