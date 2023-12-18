@@ -2,6 +2,7 @@
 
 const CANVAS_ELE = document.querySelector('#game-canvas');
 const ANIMATION_SPEED_MULTIPLIER_ELE = document.querySelector('#animation-speed-multiplier');
+const CELL_SIZE_ELE = document.querySelector('#cell-size');
 const DEFAULT_ANIMATION_SPEED = 1000;
 
 let animationSpeedMultiplier = 1.0;
@@ -9,8 +10,8 @@ let animationSpeed = DEFAULT_ANIMATION_SPEED / animationSpeedMultiplier;
 let cellSize = 20;
 let cells = [];
 
-document.head.innerHTML += `
-<style>
+const style = document.createElement('style');
+style.innerHTML = `
 input[type=checkbox] {
   width: ${cellSize}px;
   height: ${cellSize}px;
@@ -19,8 +20,8 @@ input[type=checkbox] {
   border: 1px solid black;
   background-color: white;
 }
-</style>
 `;
+document.head.appendChild(style);
 
 function regenerateCells() {
   const CANVAS_ELEBoundingRect = CANVAS_ELE.getBoundingClientRect();
@@ -201,6 +202,8 @@ document.addEventListener('mouseup', _ => {
 document.addEventListener('touchstart', _ => {
   isDragging = true;
   dragListener = window.addEventListener('touchmove', e => {
+    e.preventDefault();
+
     if (isDragging) {
       const firstTouch = e.touches[0];
       const ele = document.elementFromPoint(firstTouch.clientX, firstTouch.clientY);
@@ -228,7 +231,26 @@ document.addEventListener('touchend', _ => {
 ANIMATION_SPEED_MULTIPLIER_ELE.addEventListener('input', e => {
   animationSpeedMultiplier = parseFloat(e.target.value);
   animationSpeed = DEFAULT_ANIMATION_SPEED / animationSpeedMultiplier;
+  document.querySelector('[for="animation-speed-multiplier"]').textContent = `Animation Speed: (${animationSpeedMultiplier})`;
   console.log('animation speed multiplier', animationSpeed, animationSpeedMultiplier);
+});
+
+CELL_SIZE_ELE.addEventListener('input', e => {
+  cellSize = parseInt(e.target.value);
+  document.querySelector('[for="cell-size"]').textContent = `Cell Size: (${cellSize})`;
+  console.log('cell size', cellSize);
+  resetAnimation();
+  style.innerHTML = `
+input[type=checkbox] {
+  width: ${cellSize}px;
+  height: ${cellSize}px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid black;
+  background-color: white;
+}
+`;
+  setupCanvas();
 });
 
 document.addEventListener('DOMContentLoaded', () => {

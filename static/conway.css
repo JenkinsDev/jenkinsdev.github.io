@@ -67,7 +67,7 @@ header {
 }
 
 header h2 {
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-weight: bold;
 }
 
@@ -94,6 +94,11 @@ header #controls .control-group {
   align-items: center;
 }
 
-header #controls .control-group label {
-  font-size: 0.9em;
+header #controls .field-group {
+  display: flex;
+  flex-direction: column;
+}
+
+header #controls .field-group label {
+  font-size: 0.75em;
 }
