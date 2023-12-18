@@ -8,7 +8,7 @@ description: I'd like to welcome you to my blog! This is going to be the breedin
 
 > NOTE:
 >
-> This blog post is insanely outdated. =)
+> This post is insanely outdated.
 
 # Come One, Come All
 
