@@ -26,6 +26,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
+  overflow: hidden;
 }
 ol, ul {
   list-style: none;
@@ -99,6 +100,27 @@ header #controls .field-group {
   flex-direction: column;
 }
 
+header #controls .button-group {
+  display: flex;
+  flex-direction: row;
+}
+
 header #controls .field-group label {
   font-size: 0.75em;
+}
+
+@media (max-width: 600px) {
+  header #controls {
+    flex-direction: column;
+  }
+
+  header #controls .control-group {
+    margin: 10px 0;
+    flex-direction: column;
+  }
+}
+
+#game-canvas {
+  background-color: #333333;
+  touch-action: none;
 }
