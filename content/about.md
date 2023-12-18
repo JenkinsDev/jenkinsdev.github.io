@@ -1,5 +1,5 @@
 ---
-title: About Me (David Jenkins - JenkinsDev)
+title: About Me (David Jenkins)
 ---
 
 Hey there! Here are some quick factoids about me:
