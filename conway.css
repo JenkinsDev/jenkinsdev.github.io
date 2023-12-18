@@ -27,6 +27,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
   overflow: hidden;
+  touch-action: none;
 }
 ol, ul {
   list-style: none;
@@ -55,6 +56,7 @@ html, body, #game-canvas {
 
 header {
   width: 100%;
+  background: linear-gradient(to bottom, #F2F2F2 0%, #CCCCCC 100%);
   background-color: #F2F2F2;
   text-align: center;
   color: #333333;
@@ -80,7 +82,7 @@ header #controls {
 
 header #controls button {
   border: none;
-  background: #CCCCCC;
+  color: #333333;
   font-size: 0.9em;
   font-weight: bold;
   padding: 5px 10px;
@@ -109,6 +111,10 @@ header #controls .field-group label {
   font-size: 0.75em;
 }
 
+header #controls input[type="range"] {
+  background-color: #DDDDDD;
+}
+
 @media (max-width: 600px) {
   header #controls {
     flex-direction: column;
@@ -122,5 +128,4 @@ header #controls .field-group label {
 
 #game-canvas {
   background-color: #333333;
-  touch-action: none;
 }
