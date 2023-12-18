@@ -87,6 +87,10 @@ paginate = 10
         name = "About"
         url = "/about"
       [[languages.en.menu.main]]
+        identifier = "conway"
+        name = "Conway's Game of Life"
+        url = "/conway.html"
+      [[languages.en.menu.main]]
         identifier = "showcase"
         name = "Showcase"
         url = "/showcase"
