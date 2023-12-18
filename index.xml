@@ -66,11 +66,11 @@ When your browser sends a HTTP request to a site that returns a 301 redirection 
 &lt;h1 id="conclusion">Conclusion&lt;/h1>
 &lt;p>I hope the information provided has been sufficient in helping you wrap your head around why HSTS exists and how to implement it yourself. If you have any questions, comments, or concerns feel free to use the comments section below to include your voice!&lt;/p>
 &lt;p>Auf Wiedersehen!&lt;/p></content></item><item><title>Hello, World!</title><link>/posts/hello-world/</link><pubDate>Fri, 26 Apr 2019 00:00:00 +0000</pubDate><guid>/posts/hello-world/</guid><description>NOTE:
-This blog post is insanely outdated. =)
+This post is insanely outdated.
 Come One, Come All I&amp;rsquo;d like to welcome you – the reader – to my blog. This is going to be the breeding ground for practically anything, but with a slight focus on programming related content.
 A Bit About Me My name is David Jenkins and I currently work over at Bold Media Group. To sum it up, we do lead generation and aggregation for various insurance companies.</description><content>&lt;blockquote>
 &lt;p>NOTE:&lt;/p>
-&lt;p>This blog post is insanely outdated. =)&lt;/p>
+&lt;p>This post is insanely outdated.&lt;/p>
 &lt;/blockquote>
 &lt;h1 id="come-one-come-all">Come One, Come All&lt;/h1>
 &lt;p>I&amp;rsquo;d like to welcome you – the reader – to my blog. This is going to be the breeding ground for practically anything, but with a slight focus on programming related content.&lt;/p>
@@ -87,7 +87,7 @@ A Bit About Me My name is David Jenkins and I currently work over at Bold Media 
 &lt;p>That sums it up, haha! I&amp;rsquo;ll rewrite this section once I finish rewiring how the front-end assets are compiled.&lt;/p>
 &lt;h1 id="conclusion">Conclusion&lt;/h1>
 &lt;p>Well guys I think that&amp;rsquo;s all I am going to cover in this here &amp;ldquo;Hello, World!&amp;rdquo; tutorial.. I mean introduction. I am hoping to make this site a useful resource for all. If you have any questions then just leave it down below in the comments section.&lt;/p>
-&lt;p>Auf Wiedersehen!&lt;/p></content></item><item><title>About Me (David Jenkins - JenkinsDev)</title><link>/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/about/</guid><description>Hey there! Here are some quick factoids about me:
+&lt;p>Auf Wiedersehen!&lt;/p></content></item><item><title>About Me (David Jenkins)</title><link>/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/about/</guid><description>Hey there! Here are some quick factoids about me:
 Name: David Jenkins Date of Birth: 1993-02-04 Workplace: Over at UserWise, where we are helping to shape, build, and manage the future of game development Live Operations tooling! Started Programming: December of 2001 (what a wild ride it has been!) Things I Love: My family Technology Learning &amp;amp; Self-Teaching (I&amp;rsquo;m an aspiring polymathic autodidact!)</description><content>&lt;p>Hey there! Here are some quick factoids about me:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Name:&lt;/strong> David Jenkins&lt;/li>
@@ -101,7 +101,8 @@ Name: David Jenkins Date of Birth: 1993-02-04 Workplace: Over at UserWise, where
 &lt;li>Learning &amp;amp; Self-Teaching (I&amp;rsquo;m an aspiring polymathic autodidact!)&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></content></item><item><title>Project Showcase</title><link>/showcase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/showcase/</guid><description> Name Language(s) Description Validatinator Typescript/Javascript Validatinator is a simple, yet effective, HTML form validation library built for JavaScript/Typescript. Pelican Readtime Python Plugin for the Pelican SSG, which computes average read time of text. Manipuldate Python Slightly easier, immutable, date manipulation for python. IntelliFit AI Typescript (React) Unique AI personal trainer that is available anytime, anywhere.</description><content>&lt;hr>
+&lt;/ul></content></item><item><title>Conways Game of Life (Checkbox Edition)</title><link>/conway/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/conway/</guid><description/><content>&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted --></content></item><item><title>Project Showcase</title><link>/showcase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/showcase/</guid><description> Name Language(s) Description Validatinator Typescript/Javascript Validatinator is a simple, yet effective, HTML form validation library built for JavaScript/Typescript. Pelican Readtime Python Plugin for the Pelican SSG, which computes average read time of text. Manipuldate Python Slightly easier, immutable, date manipulation for python. IntelliFit AI Typescript (React) Unique AI personal trainer that is available anytime, anywhere.</description><content>&lt;hr>
 &lt;table>
 &lt;thead>
 &lt;tr>
