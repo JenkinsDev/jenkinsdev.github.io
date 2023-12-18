@@ -1,9 +1,12 @@
 // here lies a mess of code :-)
 
-const canvasEle = document.getElementById('game-canvas');
-const cellSize = 20;
-const animationSpeed = 200;
+const CANVAS_ELE = document.querySelector('#game-canvas');
+const ANIMATION_SPEED_MULTIPLIER_ELE = document.querySelector('#animation-speed-multiplier');
+const DEFAULT_ANIMATION_SPEED = 1000;
 
+let animationSpeedMultiplier = 1.0;
+let animationSpeed = DEFAULT_ANIMATION_SPEED / animationSpeedMultiplier;
+let cellSize = 20;
 let cells = [];
 
 document.head.innerHTML += `
@@ -20,8 +23,9 @@ input[type=checkbox] {
 `;
 
 function regenerateCells() {
-  const numCols = Math.floor(window.innerWidth / cellSize);
-  const numRows = Math.floor(window.innerHeight / cellSize);
+  const CANVAS_ELEBoundingRect = CANVAS_ELE.getBoundingClientRect();
+  const numCols = Math.floor(CANVAS_ELEBoundingRect.width / cellSize);
+  const numRows = Math.floor(CANVAS_ELEBoundingRect.height / cellSize);
 
   const row = document.createElement('div');
   row.style.display = 'flex';
@@ -43,7 +47,7 @@ function regenerateCells() {
     cells.push(rowCells.slice());
 
     const newRow = row.cloneNode(true);
-    canvasEle.appendChild(newRow);
+    CANVAS_ELE.appendChild(newRow);
     newRow.querySelectorAll('input[type=checkbox]').forEach((ele, j) => {
       ele.dataset.row = i;
       ele.dataset.col = j;
@@ -53,7 +57,7 @@ function regenerateCells() {
 
 
 function setupCanvas() {
-  canvasEle.innerHTML = '';
+  CANVAS_ELE.innerHTML = '';
   regenerateCells();
 
   document.querySelectorAll('input[type=checkbox]').forEach(ele => {
@@ -71,7 +75,7 @@ let lastAnimationFrameReq;
 
 function tick(timestamp) {
   if (previousTimestamp === undefined || timestamp - previousTimestamp > animationSpeed) {
-    const cellEles = canvasEle.querySelectorAll('input[type=checkbox]');
+    const cellEles = CANVAS_ELE.querySelectorAll('input[type=checkbox]');
     const newCells = [];
 
     for (let i = 0; i < cellEles.length; i++) {
@@ -125,17 +129,24 @@ function stopAnimation() {
 
   window.cancelAnimationFrame(lastAnimationFrameReq);
   lastAnimationFrameReq = undefined;
+  document.querySelector('#start').disabled = false;
+  document.querySelector('#stop').disabled = true;
   console.log('stopped');
 }
 
 function startAnimation() {
   lastAnimationFrameReq = window.requestAnimationFrame(tick);
+  document.querySelector('#start').disabled = true;
+  document.querySelector('#stop').disabled = false;
   console.log('started');
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+function resetAnimation() {
+  stopAnimation();
+  cells = [];
+  CANVAS_ELE.innerHTML = '';
   setupCanvas();
-});
+}
 
 document.addEventListener('keydown', e => {
   if (e.key === ' ') {
@@ -148,19 +159,15 @@ document.addEventListener('keydown', e => {
   }
 
   if (e.key === 'r') {
-    stopAnimation();
-    cells = [];
-    canvasEle.innerHTML = '';
-    setupCanvas();
+    resetAnimation();
     e.preventDefault();
-
   }
 });
 
 document.addEventListener('resize', _ => {
   stopAnimation();
   cells = [];
-  canvasEle.innerHTML = '';
+  CANVAS_ELE.innerHTML = '';
   setupCanvas();
 });
 
@@ -189,4 +196,45 @@ document.addEventListener('mouseup', _ => {
     dragListener = undefined;
   }
   window.removeEventListener('mousemove', dragListener);
+});
+
+document.addEventListener('touchstart', _ => {
+  isDragging = true;
+  dragListener = window.addEventListener('touchmove', e => {
+    if (isDragging) {
+      const firstTouch = e.touches[0];
+      const ele = document.elementFromPoint(firstTouch.clientX, firstTouch.clientY);
+      if (ele && ele.type === 'checkbox') {
+        ele.checked = true;
+        const row = parseInt(ele.dataset.row);
+        const col = parseInt(ele.dataset.col);
+        cells[row][col] = 1;
+      }
+    }
+  });
+});
+
+document.addEventListener('touchend', _ => {
+  isDragging = false;
+
+  if (dragListener) {
+    window.removeEventListener('touchmove', dragListener);
+    dragListener = undefined;
+  }
+  window.removeEventListener('mousemove', dragListener);
+});
+
+
+ANIMATION_SPEED_MULTIPLIER_ELE.addEventListener('input', e => {
+  animationSpeedMultiplier = parseFloat(e.target.value);
+  animationSpeed = DEFAULT_ANIMATION_SPEED / animationSpeedMultiplier;
+  console.log('animation speed multiplier', animationSpeed, animationSpeedMultiplier);
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  setupCanvas();
+
+  document.querySelector('#start').addEventListener('click', startAnimation);
+  document.querySelector('#stop').addEventListener('click', stopAnimation);
+  document.querySelector('#reset').addEventListener('click', resetAnimation);
 });
