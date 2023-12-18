@@ -199,7 +199,9 @@ document.addEventListener('mouseup', _ => {
   window.removeEventListener('mousemove', dragListener);
 });
 
-document.addEventListener('touchstart', _ => {
+document.addEventListener('touchstart', e => {
+  e.preventDefault();
+
   isDragging = true;
   dragListener = window.addEventListener('touchmove', e => {
     e.preventDefault();
