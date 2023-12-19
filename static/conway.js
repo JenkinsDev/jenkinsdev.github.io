@@ -77,47 +77,47 @@ let lastAnimationFrameReq;
 function tick(timestamp) {
   if (previousTimestamp === undefined || timestamp - previousTimestamp > animationSpeed) {
     const cellEles = CANVAS_ELE.querySelectorAll('input[type=checkbox]');
-    const newCells = [];
 
     for (let i = 0; i < cellEles.length; i++) {
       const row = parseInt(cellEles[i].dataset.row);
       const col = parseInt(cellEles[i].dataset.col);
 
-      const isCellAlive = cells[row][col] === 1
-      const adjacentAliveCells = [
-        cells[row - 1] && cells[row - 1][col - 1],  // top left
-        cells[row - 1] && cells[row - 1][col],      // top middle
-        cells[row - 1] && cells[row - 1][col + 1],  // top right
-        cells[row] && cells[row][col - 1],          // middle left
-        cells[row] && cells[row][col + 1],          // middle right
-        cells[row + 1] && cells[row + 1][col - 1],  // bottom left
-        cells[row + 1] && cells[row + 1][col],      // bottom middle
-        cells[row + 1] && cells[row + 1][col + 1],  // bottom right
-      ].filter(cell => cell === 1).length;
+      const upperRow = cells[row - 1] || cells[cells.length - 1];
+      const currentRow = cells[row];
+      const lowerRow = cells[row + 1] || cells[0];
 
-      if (newCells[row] === undefined) {
-        newCells[row] = Array(cells[0].length).fill(0);
-      }
+      const isCellAlive = cells[row][col] === 1;
+      const adjacentAliveCells = [
+        col - 1 >= 0 ? upperRow[col - 1] : upperRow[upperRow.length - 1],  // top left
+        upperRow[col],                                                     // top middle
+        col + 1 < upperRow.length ? upperRow[col + 1] : upperRow[0],       // top right
+
+        col - 1 >= 0 ? currentRow[col - 1] : currentRow[currentRow.length - 1], // middle left
+        col + 1 < currentRow.length ? currentRow[col + 1] : currentRow[0],      // middle right
+
+        col - 1 >= 0 ? lowerRow[col - 1] : lowerRow[lowerRow.length - 1],  // bottom left
+        lowerRow[col],                                                     // bottom middle
+        col + 1 < lowerRow.length ? lowerRow[col + 1] : lowerRow[0],       // bottom right
+      ].filter(cell => cell === 1).length;
 
       if (isCellAlive) {
         // under and over population death
         if (adjacentAliveCells < 2 || adjacentAliveCells > 3) {
-          newCells[row][col] = 0;
+          cells[row][col] = 0;
         }
 
         // 2-3 adjacent cells, cell lives
       } else {
         // reproduction at 3 adjacent cells
         if (adjacentAliveCells === 3) {
-          newCells[row][col] = 1;
+          cells[row][col] = 1;
         }
       }
 
-      cellEles[i].checked = newCells[row][col] === 1;
+      cellEles[i].checked = cells[row][col] === 1;
     }
 
     previousTimestamp = timestamp;
-    cells = newCells;
   }
 
   lastAnimationFrameReq = window.requestAnimationFrame(tick);
@@ -165,15 +165,7 @@ document.addEventListener('keydown', e => {
   }
 });
 
-document.addEventListener('resize', _ => {
-  stopAnimation();
-  cells = [];
-  CANVAS_ELE.innerHTML = '';
-  setupCanvas();
-});
-
 let isDragging, dragListener;
-
 document.addEventListener('mousedown', _ => {
   isDragging = true;
   dragListener = window.addEventListener('mousemove', e => {
@@ -229,27 +221,33 @@ document.addEventListener('touchend', _ => {
   window.removeEventListener('mousemove', dragListener);
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  setupCanvas();
 
-ANIMATION_SPEED_MULTIPLIER_ELE.addEventListener('input', e => {
-  animationSpeedMultiplier = parseFloat(e.target.value);
-  animationSpeed = DEFAULT_ANIMATION_SPEED / animationSpeedMultiplier;
-  document.querySelector('[for="animation-speed-multiplier"]').textContent = `Animation Speed: (${animationSpeedMultiplier})`;
-  console.log('animation speed multiplier', animationSpeed, animationSpeedMultiplier);
-});
+  document.querySelector('#start').addEventListener('click', startAnimation);
+  document.querySelector('#stop').addEventListener('click', stopAnimation);
+  document.querySelector('#reset').addEventListener('click', resetAnimation);
 
-let cellSizeChangeTimeout;
-CELL_SIZE_ELE.addEventListener('input', e => {
-  if (cellSizeChangeTimeout) {
-    clearTimeout(cellSizeChangeTimeout);
-  }
+  ANIMATION_SPEED_MULTIPLIER_ELE.addEventListener('input', e => {
+    animationSpeedMultiplier = parseFloat(e.target.value);
+    animationSpeed = DEFAULT_ANIMATION_SPEED / animationSpeedMultiplier;
+    document.querySelector('[for="animation-speed-multiplier"]').textContent = `Animation Speed: (${animationSpeedMultiplier})`;
+    console.log('animation speed multiplier', animationSpeed, animationSpeedMultiplier);
+  });
 
-  document.querySelector('[for="cell-size"]').textContent = `Cell Size: (${parseInt(e.target.value)}px)`;
-  console.log('cell size', cellSize);
+  let cellSizeChangeTimeout;
+  CELL_SIZE_ELE.addEventListener('input', e => {
+    if (cellSizeChangeTimeout) {
+      clearTimeout(cellSizeChangeTimeout);
+    }
 
-  cellSizeChangeTimeout = setTimeout(_ => {
-    cellSize = parseInt(e.target.value);
-    resetAnimation();
-    style.innerHTML = `
+    document.querySelector('[for="cell-size"]').textContent = `Cell Size: (${parseInt(e.target.value)}px)`;
+    console.log('cell size', cellSize);
+
+    cellSizeChangeTimeout = setTimeout(_ => {
+      cellSize = parseInt(e.target.value);
+      resetAnimation();
+      style.innerHTML = `
 input[type=checkbox] {
   width: ${cellSize}px;
   height: ${cellSize}px;
@@ -259,14 +257,21 @@ input[type=checkbox] {
   background-color: white;
 }
 `;
-    setupCanvas();
-  }, 500);
-});
+      setupCanvas();
+    }, 500);
+  });
 
-document.addEventListener('DOMContentLoaded', () => {
-  setupCanvas();
+  let resolutionChangeTimeout;
+  window.addEventListener('resize', _ => {
+    if (resolutionChangeTimeout) {
+      clearTimeout(resolutionChangeTimeout);
+    }
 
-  document.querySelector('#start').addEventListener('click', startAnimation);
-  document.querySelector('#stop').addEventListener('click', stopAnimation);
-  document.querySelector('#reset').addEventListener('click', resetAnimation);
+    resolutionChangeTimeout = setTimeout(_ => {
+      stopAnimation();
+      cells = [];
+      CANVAS_ELE.innerHTML = '';
+      setupCanvas();
+    }, 250);
+  });
 });
