@@ -3,7 +3,7 @@
 const CANVAS_ELE = document.querySelector('#game-canvas');
 const ANIMATION_SPEED_MULTIPLIER_ELE = document.querySelector('#animation-speed-multiplier');
 const CELL_SIZE_ELE = document.querySelector('#cell-size');
-const DEFAULT_ANIMATION_SPEED = 1000;
+const DEFAULT_ANIMATION_SPEED = 750;
 
 let animationSpeedMultiplier = 1.0;
 let animationSpeed = DEFAULT_ANIMATION_SPEED / animationSpeedMultiplier;
