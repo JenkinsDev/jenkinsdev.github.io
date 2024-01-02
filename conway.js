@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
   ANIMATION_SPEED_MULTIPLIER_ELE.addEventListener('input', e => {
     animationSpeedMultiplier = parseFloat(e.target.value);
     animationSpeed = DEFAULT_ANIMATION_SPEED / animationSpeedMultiplier;
-    document.querySelector('[for="animation-speed-multiplier"]').textContent = `Animation Speed: (${animationSpeedMultiplier})`;
+    document.querySelector('[for="animation-speed-multiplier"]').textContent = `Animation Speed: (${animationSpeedMultiplier}x)`;
     console.log('animation speed multiplier', animationSpeed, animationSpeedMultiplier);
   });
 
