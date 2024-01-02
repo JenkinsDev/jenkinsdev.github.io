@@ -27,12 +27,21 @@
         <div class="control-group">
           <div class="field-group">
             <label for="animation-speed-multiplier">Animation Speed: (1.0x)</label>
-            <input type="range" id="animation-speed-multiplier" min="0.25" max="8.0" value="1.0" step="0.25" />
+            <input type="range" id="animation-speed-multiplier" min="0.25" max="10.0" value="1.0" step="0.25" />
           </div>
 
           <div class="field-group">
             <label for="cell-size">Cell Size: (20px)</label>
             <input type="range" id="cell-size" min="10" max="50" value="20" step="2" />
+          </div>
+
+          <div class="field-group">
+            <label for="presets">Presets</label>
+            <select id="presets">
+              <option value="blank">Blank</option>
+              <option value="glider">Simple Glider</option>
+              <option value="oscillator">Simple Oscillator</option>
+            </select>
           </div>
         </div>
       </div>

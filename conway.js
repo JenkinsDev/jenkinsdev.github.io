@@ -3,6 +3,7 @@
 const CANVAS_ELE = document.querySelector('#game-canvas');
 const ANIMATION_SPEED_MULTIPLIER_ELE = document.querySelector('#animation-speed-multiplier');
 const CELL_SIZE_ELE = document.querySelector('#cell-size');
+const PRESETS_ELE = document.querySelector('#presets');
 const DEFAULT_ANIMATION_SPEED = 750;
 
 let animationSpeedMultiplier = 1.0;
@@ -262,6 +263,41 @@ input[type=checkbox] {
 `;
       setupCanvas();
     }, 500);
+  });
+
+  PRESETS_ELE.addEventListener('change', e => {
+    stopAnimation();
+    cells = [];
+    CANVAS_ELE.innerHTML = '';
+    setupCanvas();
+
+    switch(e.target.value) {
+      case 'glider':
+        cells[0][1] = 1;
+        cells[1][2] = 1;
+        cells[2][0] = 1;
+        cells[2][1] = 1;
+        cells[2][2] = 1;
+        document.querySelector(`[data-row="0"][data-col="1"]`).checked = true;
+        document.querySelector(`[data-row="1"][data-col="2"]`).checked = true;
+        document.querySelector(`[data-row="2"][data-col="0"]`).checked = true;
+        document.querySelector(`[data-row="2"][data-col="1"]`).checked = true;
+        document.querySelector(`[data-row="2"][data-col="2"]`).checked = true;
+        break;
+      case 'oscillator':
+        // center
+        const midRow = Math.floor(cells.length / 2);
+        const midCol = Math.floor(cells[0].length / 2);
+        cells[midRow][midCol] = 1;
+        cells[midRow][midCol + 1] = 1;
+        cells[midRow][midCol - 1] = 1;
+        document.querySelector(`[data-row="${midRow}"][data-col="${midCol}"]`).checked = true;
+        document.querySelector(`[data-row="${midRow}"][data-col="${midCol + 1}"]`).checked = true;
+        document.querySelector(`[data-row="${midRow}"][data-col="${midCol - 1}"]`).checked = true;
+        break;
+      default:
+        break;
+    }
   });
 
   let resolutionChangeTimeout;
