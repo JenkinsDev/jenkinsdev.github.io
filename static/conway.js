@@ -77,14 +77,15 @@ let lastAnimationFrameReq;
 function tick(timestamp) {
   if (previousTimestamp === undefined || timestamp - previousTimestamp > animationSpeed) {
     const cellEles = CANVAS_ELE.querySelectorAll('input[type=checkbox]');
+    const newCells = Array(cells.length).fill(0).map(_ => Array(cells[0].length).fill(0));
 
     for (let i = 0; i < cellEles.length; i++) {
       const row = parseInt(cellEles[i].dataset.row);
       const col = parseInt(cellEles[i].dataset.col);
 
-      const upperRow = cells[row - 1] || cells[cells.length - 1];
+      const upperRow = row - 1 >= 0 ? cells[row - 1] : cells[cells.length - 1];
       const currentRow = cells[row];
-      const lowerRow = cells[row + 1] || cells[0];
+      const lowerRow = row + 1 < cells.length ? cells[row + 1] : cells[0];
 
       const isCellAlive = cells[row][col] === 1;
       const adjacentAliveCells = [
@@ -101,23 +102,25 @@ function tick(timestamp) {
       ].filter(cell => cell === 1).length;
 
       if (isCellAlive) {
-        // under and over population death
         if (adjacentAliveCells < 2 || adjacentAliveCells > 3) {
-          cells[row][col] = 0;
+          // under and over population death
+          newCells[row][col] = 0;
+        } else {
+          // 2-3 adjacent cells, cell lives
+          newCells[row][col] = 1;
         }
-
-        // 2-3 adjacent cells, cell lives
       } else {
         // reproduction at 3 adjacent cells
         if (adjacentAliveCells === 3) {
-          cells[row][col] = 1;
+          newCells[row][col] = 1;
         }
       }
 
-      cellEles[i].checked = cells[row][col] === 1;
+      cellEles[i].checked = newCells[row][col] === 1;
     }
 
     previousTimestamp = timestamp;
+    cells = newCells;
   }
 
   lastAnimationFrameReq = window.requestAnimationFrame(tick);
