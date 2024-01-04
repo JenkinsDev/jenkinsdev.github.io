@@ -115,7 +115,8 @@ header #controls .field-group label {
 }
 
 header #controls input[type="range"], header #controls select, header #controls button {
-  background-color: #DDDDDD;
+  accent-color: #515E91;
+  background-color: #515E91;
   color: #07113A;
   cursor: pointer;
 }
