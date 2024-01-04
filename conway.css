@@ -56,22 +56,34 @@ html, body, #game-canvas {
 
 header {
   width: 100%;
-  background: #07113A;
+  background: black;
   text-align: center;
   border-bottom: 3px solid lightgrey;
   color: white;
 
-  padding: 10px 20px;
+  padding: 15px 20px;
+  box-sizing: border-box;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 header h1 {
-  font-size: 1.25em;
+  font-size: 1.5em;
   font-weight: bold;
+}
+
+header h1 sup {
+  font-size: 0.5em;
 }
 
 header label {
@@ -79,16 +91,21 @@ header label {
 }
 
 header #controls {
-  margin-top: 20px;
   display: flex;
   flex-direction: row;
+}
+
+@media (max-width: 900px) {
+  header #controls {
+    margin-top: 20px;
+  }
 }
 
 header #controls button {
   border: none;
   font-size: 0.9em;
   font-weight: bold;
-  padding: 0 5px;
+  padding: 0 10px;
   margin: 0 5px;
   border-radius: 5px;
 }
@@ -115,19 +132,21 @@ header #controls .field-group label {
 }
 
 header #controls input[type="range"], header #controls select, header #controls button {
-  accent-color: #515E91;
-  background-color: #DDDDDD;
-  color: #07113A;
+  accent-color: rgb(89, 89, 89);
+  background-color: rgb(89, 89, 89);
+  color: white;
   cursor: pointer;
 }
 
 header #controls select {
   margin: 0 5px;
   border-radius: 5px;
+  color: black;
 }
 
 header #controls button[disabled] {
-  background-color: #515E91;
+  background-color: rgb(39, 39, 42);
+  cursor: not-allowed;
 }
 
 header #controls select {
@@ -143,4 +162,8 @@ header #controls select {
     margin: 10px 0;
     flex-direction: column;
   }
+}
+
+#game-canvas input[type="checkbox"] {
+  accent-color: black;
 }
