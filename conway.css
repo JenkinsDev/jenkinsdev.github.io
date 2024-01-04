@@ -56,10 +56,10 @@ html, body, #game-canvas {
 
 header {
   width: 100%;
-  background: linear-gradient(to bottom, #F2F2F2 0%, #CCCCCC 100%);
-  background-color: #F2F2F2;
+  background: #07113A;
   text-align: center;
-  color: #333333;
+  border-bottom: 3px solid lightgrey;
+  color: white;
 
   padding: 10px 20px;
 
@@ -74,6 +74,10 @@ header h1 {
   font-weight: bold;
 }
 
+header label {
+  margin-bottom: 3px;
+}
+
 header #controls {
   margin-top: 20px;
   display: flex;
@@ -82,10 +86,9 @@ header #controls {
 
 header #controls button {
   border: none;
-  color: #333333;
   font-size: 0.9em;
   font-weight: bold;
-  padding: 5px 10px;
+  padding: 0 5px;
   margin: 0 5px;
   border-radius: 8px;
 }
@@ -111,7 +114,23 @@ header #controls .field-group label {
   font-size: 0.75em;
 }
 
-header #controls input[type="range"] {
+header #controls input[type="range"], header #controls select, header #controls button {
+  background-color: #DDDDDD;
+  color: #07113A;
+  cursor: pointer;
+}
+
+header #controls select {
+  padding: 5px;
+  margin: 0 5px;
+  border-radius: 8px;
+}
+
+header #controls button[disabled] {
+  background-color: #515E91;
+}
+
+header #controls select {
   background-color: #DDDDDD;
 }
 
@@ -124,8 +143,4 @@ header #controls input[type="range"] {
     margin: 10px 0;
     flex-direction: column;
   }
-}
-
-#game-canvas {
-  background-color: #333333;
 }
