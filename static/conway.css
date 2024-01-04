@@ -90,7 +90,7 @@ header #controls button {
   font-weight: bold;
   padding: 0 5px;
   margin: 0 5px;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 header #controls .control-group {
@@ -121,9 +121,8 @@ header #controls input[type="range"], header #controls select, header #controls 
 }
 
 header #controls select {
-  padding: 5px;
   margin: 0 5px;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 header #controls button[disabled] {
