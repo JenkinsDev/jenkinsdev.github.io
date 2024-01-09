@@ -28,7 +28,7 @@ class ObsidianToHugoOverride(ObsidianToHugo):
                     continue
                 title = file[:-3]
                 timestamp = os.stat(os.path.join(root, file)).st_mtime
-                date = date.fromtimestamp(timestamp).strftime("%Y-%m-%d")
+                datestr = date.fromtimestamp(timestamp).strftime("%Y-%m-%d")
                 content = None
                 with open(os.path.join(root, file), "r", encoding="utf-8") as f:
                     content = f.read()
@@ -43,9 +43,9 @@ class ObsidianToHugoOverride(ObsidianToHugo):
                     continue
                 for processor in self.processors:
                     content = processor(content)
-                print(add_appropriate_yaml_header(title, date, content))
+                print(add_appropriate_yaml_header(title, datestr, content))
                 with open(os.path.join(root, file), "w", encoding="utf-8") as f:
-                    f.write(add_appropriate_yaml_header(title, date, content))
+                    f.write(add_appropriate_yaml_header(title, datestr, content))
 
 
 def main():
