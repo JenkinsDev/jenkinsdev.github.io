@@ -1,6 +1,6 @@
 import os
-import datetime
 
+from datetime import date
 from obsidian_to_hugo import ObsidianToHugo
 
 def add_appropriate_yaml_header(title, date, content):
@@ -28,7 +28,7 @@ class ObsidianToHugoOverride(ObsidianToHugo):
                     continue
                 title = file[:-3]
                 timestamp = os.stat(os.path.join(root, file)).st_mtime
-                date = datetime.fromtimestamp(timestamp).strftime("%Y-%m-%d")
+                date = date.fromtimestamp(timestamp).strftime("%Y-%m-%d")
                 content = None
                 with open(os.path.join(root, file), "r", encoding="utf-8") as f:
                     content = f.read()
