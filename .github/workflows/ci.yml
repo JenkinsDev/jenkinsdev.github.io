@@ -36,6 +36,8 @@ jobs:
           rm -rf ./obsidian/Public
           mkdir ./content/notes
           python -m obsidian_to_hugo --obsidian-vault-dir ./obsidian/ --hugo-content-dir ./content/notes
+          mv ./content/notes/* ./content/posts
+          rm -rf ./content/notes
 
       - name: Build
         run: hugo --minify
@@ -46,5 +48,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-
-
