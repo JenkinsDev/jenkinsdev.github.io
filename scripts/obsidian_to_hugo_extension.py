@@ -1,3 +1,5 @@
+import os
+
 from obsidian_to_hugo import ObsidianToHugo
 
 def add_appropriate_yaml_header(title, date, content):
