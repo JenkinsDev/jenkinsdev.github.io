@@ -50,7 +50,7 @@ class ObsidianToHugoOverride(ObsidianToHugo):
 def main():
     ObsidianToHugo(
         hugo_content_dir="content/notes",
-        obsidian_vault_dir="obsidian",
+        obsidian_vault_dir="obsidian/Public",
     ).run()
 
 if __name__ == '__main__':
