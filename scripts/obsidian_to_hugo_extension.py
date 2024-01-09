@@ -1,7 +1,10 @@
 from os import stat
 from obsidian_to_hugo import ObsidianToHugo
 
-def add_appropriate_yaml_header(file_contents):
+def add_appropriate_yaml_header(title, date, contents):
+    """
+    Adds the appropriate YAML header to the file.
+    """
     return """
 ---
 title: {}
@@ -9,7 +12,7 @@ date: {}
 draft: false
 ---
 {}
-""".format(file_contents['title'], file_contents['date'], file_contents)
+""".format(title, date, contents)
 
 class ObsidianToHugoOverride(ObsidianToHugo):
 
@@ -39,22 +42,16 @@ class ObsidianToHugoOverride(ObsidianToHugo):
                     continue
                 for processor in self.processors:
                     content = processor(content)
-                final_content = """
----
-title: {}
-date: {}
-draft: false
----
-{}
-""".format(title, date, content).strip()
+                final_content = add_appropriate_yaml_header(title, date, content)
                 with open(os.path.join(root, file), "w", encoding="utf-8") as f:
                     f.write(final_content)
 
 
-
-
 def main():
-    ObsidianToHugo().run()
+    ObsidianToHugo(
+        hugo_content_dir="content/notes",
+        obsidian_vault_dir="obsidian",
+    ).run()
 
 if __name__ == '__main__':
     main()
