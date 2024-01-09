@@ -26,8 +26,8 @@ jobs:
       - uses: GuillaumeFalourd/clone-github-repo-action@v2.3
         with:
           owner: 'JenkinsDev'
-        repository: 'obsidian'
-        access-token: ${{ secrets.ACCESS_TOKEN }}
+          repository: 'obsidian'
+          access-token: ${{ secrets.ACCESS_TOKEN }}
 
       - name: Transform Notes
         run: |
