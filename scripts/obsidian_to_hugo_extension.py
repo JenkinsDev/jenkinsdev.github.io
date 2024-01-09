@@ -40,6 +40,7 @@ class ObsidianToHugoOverride(ObsidianToHugo):
                     continue
                 for processor in self.processors:
                     content = processor(content)
+                print(add_appropriate_yaml_header(title, date, content))
                 with open(os.path.join(root, file), "w", encoding="utf-8") as f:
                     f.write(add_appropriate_yaml_header(title, date, content))
 
