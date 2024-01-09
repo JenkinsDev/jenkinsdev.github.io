@@ -33,7 +33,7 @@ jobs:
           pip install obsidian_to_hugo
           rm -rf ./obsidian/Private
           mkdir ./content/notes
-          python -m obsidian_to_hugo --obsidian-vault-dir ./obsidian/ --hugo-content-dir ./content/notes
+          python ./scripts/obsidian_to_hugo_extension.py --obsidian-vault-dir ./obsidian/ --hugo-content-dir ./content/notes
           rm -rf ./obsidian
 
       - name: Build
