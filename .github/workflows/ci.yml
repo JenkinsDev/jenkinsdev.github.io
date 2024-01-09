@@ -34,7 +34,6 @@ jobs:
           rm -rf ./obsidian/Private
           mkdir ./content/notes
           python ./scripts/obsidian_to_hugo_extension.py
-          mv ./content/notes ./content/posts
           rm -rf ./obsidian
 
       - name: Build
