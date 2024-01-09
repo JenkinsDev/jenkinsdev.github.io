@@ -40,12 +40,13 @@ class ObsidianToHugoOverride(ObsidianToHugo):
                     continue
                 for processor in self.processors:
                     content = processor(content)
+                print(add_appropriate_yaml_header(title, date, content))
                 with open(os.path.join(root, file), "w", encoding="utf-8") as f:
                     f.write(add_appropriate_yaml_header(title, date, content))
 
 
 def main():
-    ObsidianToHugo(
+    ObsidianToHugoOverride(
         hugo_content_dir="content/notes",
         obsidian_vault_dir="obsidian/Public",
     ).run()
