@@ -46,11 +46,11 @@ paginate = 10
 
   # whether to show a table of contents
   # can be overridden in a page's front-matter
-  Toc = false # default
+  Toc = true
 
   # set title for the table of contents
   # can be overridden in a page's front-matter
-  # TocTitle = "Table of Contents" # default
+  TocTitle = "Table of Contents" # default
 
 
 [params.twitter]
@@ -62,8 +62,8 @@ paginate = 10
     languageName = "English"
     title = "JenkinsDev :: Into the mind of an aspiring polymathic autodidact."
     subtitle = "Into the mind of an aspiring polymathic autodidact."
-    owner = ""
-    keywords = ""
+    owner = "David Jenkins"
+    keywords = "technology coding programming software development creativity work family life everything"
     copyright = ""
     menuMore = "Show more"
     readMore = "Read more"
@@ -90,6 +90,10 @@ paginate = 10
         identifier = "conway"
         name = "Conway's Game of Life (Checkbox Edition)"
         url = "/conway.html"
+      [[languages.en.menu.main]]
+        identifier = "notes"
+        name = "Public Notes"
+        url = "/notes"
       [[languages.en.menu.main]]
         identifier = "showcase"
         name = "Showcase"
