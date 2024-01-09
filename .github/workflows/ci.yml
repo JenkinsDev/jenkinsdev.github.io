@@ -32,6 +32,7 @@ jobs:
         run: |
           pip install obsidian_to_hugo
           rm -rf ./obsidian/Private
+          ls -al ./obsidian
           mv ./obsidian/Public/**/* .
           rm -rf ./obsidian/Public
           mkdir ./content/notes
