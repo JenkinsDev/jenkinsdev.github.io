@@ -20,8 +20,23 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.91.2'
+          hugo-version: '0.121.2'
           # extended: true
+
+      - uses: GuillaumeFalourd/clone-github-repo-action@v2.3
+        with:
+          owner: 'JenkinsDev'
+        repository: 'obsidian'
+        access-token: ${{ secrets.ACCESS_TOKEN }}
+
+      - name: Transform Notes
+        run: |
+          pip install obsidian_to_hugo
+          rm -rf ./obsidian/Private
+          mv ./obsidian/Public/**/* .
+          rm -rf ./obsidian/Public
+          mkdir ./content/notes
+          python -m obsidian_to_hugo --obsidian-vault-dir ./obsidian/ --hugo-content-dir ./content/notes
 
       - name: Build
         run: hugo --minify
@@ -32,3 +47,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+
+
