@@ -32,9 +32,9 @@ jobs:
         run: |
           pip install obsidian_to_hugo
           rm -rf ./obsidian/Private
-          mv ./obsidian/Public/* .
-          rm -rf ./obsidian/Public
           mkdir ./content/notes
+          mv ./obsidian/Public/* ./content/notes
+          rm -rf ./obsidian
           python -m obsidian_to_hugo --obsidian-vault-dir ./obsidian/ --hugo-content-dir ./content/notes
           mv ./content/notes/* ./content/posts
           rm -rf ./content/notes
