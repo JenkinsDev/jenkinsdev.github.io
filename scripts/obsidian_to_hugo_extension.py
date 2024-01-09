@@ -1,7 +1,6 @@
-from os import stat
 from obsidian_to_hugo import ObsidianToHugo
 
-def add_appropriate_yaml_header(title, date, contents):
+def add_appropriate_yaml_header(title, date, content):
     """
     Adds the appropriate YAML header to the file.
     """
@@ -9,10 +8,9 @@ def add_appropriate_yaml_header(title, date, contents):
 ---
 title: {}
 date: {}
-draft: false
 ---
 {}
-""".format(title, date, contents)
+""".format(title, date, content)
 
 class ObsidianToHugoOverride(ObsidianToHugo):
 
@@ -26,7 +24,7 @@ class ObsidianToHugoOverride(ObsidianToHugo):
                 if not file.endswith(".md"):
                     continue
                 title = file[:-3]
-                timestamp = stat(os.path.join(root, file)).st_mtime
+                timestamp = os.stat(os.path.join(root, file)).st_mtime
                 date = datetime.fromtimestamp(timestamp).strftime("%Y-%m-%d")
                 content = None
                 with open(os.path.join(root, file), "r", encoding="utf-8") as f:
@@ -42,9 +40,8 @@ class ObsidianToHugoOverride(ObsidianToHugo):
                     continue
                 for processor in self.processors:
                     content = processor(content)
-                final_content = add_appropriate_yaml_header(title, date, content)
                 with open(os.path.join(root, file), "w", encoding="utf-8") as f:
-                    f.write(final_content)
+                    f.write(add_appropriate_yaml_header(title, date, content))
 
 
 def main():
