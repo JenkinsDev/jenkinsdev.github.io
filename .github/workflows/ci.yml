@@ -35,8 +35,6 @@ jobs:
           mkdir ./content/notes
           python -m obsidian_to_hugo --obsidian-vault-dir ./obsidian/ --hugo-content-dir ./content/notes
           rm -rf ./obsidian
-          mv ./content/notes/* ./content/posts
-          rm -rf ./content/notes
 
       - name: Build
         run: hugo --minify
