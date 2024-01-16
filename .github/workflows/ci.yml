@@ -29,16 +29,13 @@ jobs:
           repository: 'obsidian'
           access-token: ${{ secrets.ACCESS_TOKEN }}
 
-      - name: Transform Notes
+      - name: Build w/ Notes
         run: |
-          pip install obsidian_to_hugo
-          rm -rf ./obsidian/Private
+          curl -Lo obsidian-for-hugo.tar.gz https://github.com/JenkinsDev/obsidian-for-hugo/releases/download/0.1.0/obsidian-for-hugo-0.1.0-linux-amd64.tar.gz
+          tar -xf ./obsidian-for-hugo.tar.gz
           mkdir ./content/notes
-          python ./scripts/obsidian_to_hugo_extension.py
-          rm -rf ./obsidian
-
-      - name: Build
-        run: hugo --minify
+          ./obsidian-for-hugo -vault-path ./obsidian/Public -content-path ./content/notes
+          hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
