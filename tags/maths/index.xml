@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>maths on JenkinsDev :: Into the mind of an aspiring polymathic autodidact.</title><link>/tags/maths/</link><description>Recent content in maths on JenkinsDev :: Into the mind of an aspiring polymathic autodidact.</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 17 Jan 2024 12:53:47 +0000</lastBuildDate><atom:link href="/tags/maths/index.xml" rel="self" type="application/rss+xml"/><item><title>Triangle Trigonometric Functions</title><link>/notes/maths/triangle-trigonometric-functions/</link><pubDate>Wed, 17 Jan 2024 12:53:47 +0000</pubDate><guid>/notes/maths/triangle-trigonometric-functions/</guid><description>Sine Right Triangles sin(θ) = opposite / hypotenuse Non-Right Triangle a / sin(A) = b / sin(B) = c / sin(C) Cosine Right Triangle cos(θ) = adjacent / hypotenuse Tangent Right Triangle tan(θ) = opposite / adjacent</description><content>&lt;h3 id="sine">Sine&lt;/h3>
+&lt;h4 id="right-triangles">Right Triangles&lt;/h4>
+&lt;ul>
+&lt;li>sin(θ) = opposite / hypotenuse&lt;/li>
+&lt;/ul>
+&lt;h4 id="non-right-triangle">Non-Right Triangle&lt;/h4>
+&lt;ul>
+&lt;li>a / sin(A) = b / sin(B) = c / sin(C)&lt;/li>
+&lt;/ul>
+&lt;h3 id="cosine">Cosine&lt;/h3>
+&lt;h4 id="right-triangle">Right Triangle&lt;/h4>
+&lt;ul>
+&lt;li>cos(θ) = adjacent / hypotenuse&lt;/li>
+&lt;/ul>
+&lt;h3 id="tangent">Tangent&lt;/h3>
+&lt;h4 id="right-triangle-1">Right Triangle&lt;/h4>
+&lt;ul>
+&lt;li>tan(θ) = opposite / adjacent&lt;/li>
+&lt;/ul></content></item></channel></rss>
