@@ -31,7 +31,7 @@ jobs:
 
       - name: Build w/ Notes
         run: |
-          curl -Lo obsidian-for-hugo.tar.gz https://github.com/JenkinsDev/obsidian-for-hugo/releases/download/0.1.1/obsidian-for-hugo-0.1.1-linux-amd64.tar.gz
+          curl -Lo obsidian-for-hugo.tar.gz https://github.com/JenkinsDev/obsidian-for-hugo/releases/download/0.1.2/obsidian-for-hugo-0.1.2-linux-amd64.tar.gz
           tar -xf ./obsidian-for-hugo.tar.gz
           mkdir ./content/notes
           ./obsidian-for-hugo -vault-path ./obsidian/Public -content-path ./content/notes
