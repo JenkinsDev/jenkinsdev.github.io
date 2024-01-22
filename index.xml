@@ -1,9 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JenkinsDev :: Into the mind of an aspiring polymathic autodidact.</title><link>/</link><description>Recent content on JenkinsDev :: Into the mind of an aspiring polymathic autodidact.</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 22 Jan 2024 03:56:06 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Ancient Sumerians</title><link>/notes/history/ancient-sumerians/</link><pubDate>Mon, 22 Jan 2024 03:56:06 +0000</pubDate><guid>/notes/history/ancient-sumerians/</guid><description> People slept on their rooftops, due to excessive heat Uruk (first large city in the Mesopotamia) Epic of Gilgamesh (Uruk King) https://en.m.wikipedia.org/wiki/Epic_of_Gilgamesh</description><content>&lt;ul>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JenkinsDev :: Into the mind of an aspiring polymathic autodidact.</title><link>/</link><description>Recent content on JenkinsDev :: Into the mind of an aspiring polymathic autodidact.</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 22 Jan 2024 15:36:27 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>AMD ROCm vs HIP SDK</title><link>/notes/programming/amd-rocm-vs-hip-sdk/</link><pubDate>Mon, 22 Jan 2024 15:36:27 +0000</pubDate><guid>/notes/programming/amd-rocm-vs-hip-sdk/</guid><description>Source
+ROCm vs HIP SDK ROCm is AMD&amp;rsquo;s &amp;ldquo;open-source platform for GPU computing&amp;rdquo; w/ a particular focus on HPC (High-Performance Computing) and AI.
+HIP SDK is a small subset of the ROCm intiative: the focus of enabling conversion of CUDA-specific applications to portable apps which work across AMD &amp;amp; NVIDIA.</description><content>&lt;p>&lt;a href="https://community.amd.com/t5/instinct-accelerators/available-now-new-hip-sdk-helps-democratize-gpu-computing/ba-p/621029">Source&lt;/a>&lt;/p>
+&lt;h3 id="rocm-vs-hip-sdk">ROCm vs HIP SDK&lt;/h3>
+&lt;p>&lt;strong>ROCm&lt;/strong> is AMD&amp;rsquo;s &amp;ldquo;open-source platform for GPU computing&amp;rdquo; w/ a particular focus on HPC (High-Performance Computing) and AI.&lt;/p>
+&lt;p>&lt;strong>HIP SDK&lt;/strong> is a small subset of the ROCm intiative: the focus of enabling conversion of CUDA-specific applications to portable apps which work across AMD &amp;amp; NVIDIA.&lt;/p></content></item><item><title>Ancient Sumerians</title><link>/notes/history/ancient-sumerians/</link><pubDate>Mon, 22 Jan 2024 15:36:27 +0000</pubDate><guid>/notes/history/ancient-sumerians/</guid><description> People slept on their rooftops, due to excessive heat Uruk (first large city in the Mesopotamia) Epic of Gilgamesh (Uruk King) https://en.m.wikipedia.org/wiki/Epic_of_Gilgamesh</description><content>&lt;ul>
 &lt;li>People slept on their rooftops, due to excessive heat&lt;/li>
 &lt;li>Uruk (first large city in the Mesopotamia)&lt;/li>
 &lt;li>Epic of Gilgamesh (Uruk King)&lt;/li>
 &lt;li>&lt;a href="https://en.m.wikipedia.org/wiki/Epic_of_Gilgamesh">https://en.m.wikipedia.org/wiki/Epic_of_Gilgamesh&lt;/a>&lt;/li>
-&lt;/ul></content></item><item><title>Bromelain (Pineapple Enzyme)</title><link>/notes/cooking/bromelain--pineapple-enzyme/</link><pubDate>Mon, 22 Jan 2024 03:56:06 +0000</pubDate><guid>/notes/cooking/bromelain--pineapple-enzyme/</guid><description>Common Names: bromelain, pineapple enzyme, pineapple extract Latin Names: (pineapple plant) Ananas comosus
+&lt;/ul></content></item><item><title>Bromelain (Pineapple Enzyme)</title><link>/notes/cooking/bromelain--pineapple-enzyme/</link><pubDate>Mon, 22 Jan 2024 15:36:27 +0000</pubDate><guid>/notes/cooking/bromelain--pineapple-enzyme/</guid><description>Common Names: bromelain, pineapple enzyme, pineapple extract Latin Names: (pineapple plant) Ananas comosus
 What is it? Group of enzymes which can be found in the stem and fruit of a pineapple Medicinal Usages: Dietary Supplement which can assist w/ pain &amp;amp; swelling Especially the gut, mouth, &amp;amp; nasal regions after an injury or surgery Potentially helpful w/ side-effects of osteoarthritis, cancer, digestive problems, and muscle soreness Topical bromelain can be used to assist w/ burn healing Several studies1 show the benefits of using bromelain to remove dead skin after a burn References Rosenberg L, Krieger Y, Bogdanov-Berezovski A, et al.</description><content>&lt;p>&lt;strong>Common Names:&lt;/strong> bromelain, pineapple enzyme, pineapple extract
 &lt;strong>Latin Names:&lt;/strong> (pineapple plant) &lt;em>Ananas comosus&lt;/em>&lt;/p>
 &lt;h3 id="what-is-it">What is it?&lt;/h3>
@@ -33,8 +38,8 @@ What is it? Group of enzymes which can be found in the stem and fruit of a pinea
 &lt;p>Rosenberg L, Krieger Y, Bogdanov-Berezovski A, et al. &lt;a href="https://www.ncbi.nlm.nih.gov/pubmed/24074719">A novel rapid and selective enzymatic debridement agent for burn wound management: a multi-center RCT.&lt;/a> &lt;em>Burns.&lt;/em> 2014;40(3):466-474.&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></content></item><item><title>Databases</title><link>/notes/programming/databases/</link><pubDate>Mon, 22 Jan 2024 03:56:06 +0000</pubDate><guid>/notes/programming/databases/</guid><description>ScyllaDB Website
-Marketing: &amp;ldquo;ScyllaDB’s close-to-the-metal architecture handles millions of OPS with predictable single-digit millisecond latencies.&amp;rdquo; Wide Column vs Document Sources: https://lp.scylladb.com/scylladb-mongodb-comparison.pdf https://www.scylladb.com/glossary/wide-column-database/ Data Model: &amp;ldquo;MongoDB applies a JSON based document data model, ScyllaDB a wide-column data model.&amp;rdquo; Apache Cassandra Marketing: &amp;ldquo;Manage massive amounts of data, fast, without losing sleep&amp;rdquo; MongoDB Marketing: &amp;ldquo;You don&amp;rsquo;t need a separate database to support transactions, rich search, or genAI. The world&amp;rsquo;s most popular document database is now the world&amp;rsquo;s most versatile developer data platform.</description><content>&lt;h2 id="scylladb">ScyllaDB&lt;/h2>
+&lt;/div></content></item><item><title>Databases</title><link>/notes/programming/databases/</link><pubDate>Mon, 22 Jan 2024 15:36:27 +0000</pubDate><guid>/notes/programming/databases/</guid><description>ScyllaDB Website
+Marketing: &amp;ldquo;ScyllaDB’s close-to-the-metal architecture handles millions of OPS with predictable single-digit millisecond latencies.&amp;rdquo; Wide Column vs Document Sources: https://lp.scylladb.com/scylladb-mongodb-comparison.pdf https://www.scylladb.com/glossary/wide-column-database/ Data Model: &amp;ldquo;MongoDB applies a JSON based document data model, ScyllaDB a wide-column data model.&amp;rdquo; Apache Cassandra Marketing: &amp;ldquo;Manage massive amounts of data, fast, without losing sleep&amp;rdquo; MongoDB Marketing: &amp;ldquo;You don&amp;rsquo;t need a separate database to support transactions, rich search, or genAI. The world&amp;rsquo;s most popular document database is now the world&amp;rsquo;s most versatile developer data platform.</description><content>&lt;h3 id="scylladb">ScyllaDB&lt;/h3>
 &lt;p>&lt;a href="https://www.scylladb.com/">Website&lt;/a>&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Marketing:&lt;/strong> &amp;ldquo;ScyllaDB’s close-to-the-metal architecture handles millions of OPS with predictable single-digit millisecond latencies.&amp;rdquo;&lt;/li>
@@ -52,35 +57,35 @@ Marketing: &amp;ldquo;ScyllaDB’s close-to-the-metal architecture handles milli
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;h2 id="apache-cassandra">Apache Cassandra&lt;/h2>
+&lt;h3 id="apache-cassandra">Apache Cassandra&lt;/h3>
 &lt;ul>
 &lt;li>&lt;strong>Marketing:&lt;/strong> &amp;ldquo;Manage massive amounts of data, fast, without losing sleep&amp;rdquo;&lt;/li>
 &lt;/ul>
-&lt;h2 id="mongodb">MongoDB&lt;/h2>
+&lt;h3 id="mongodb">MongoDB&lt;/h3>
 &lt;ul>
 &lt;li>&lt;strong>Marketing:&lt;/strong> &amp;ldquo;You don&amp;rsquo;t need a separate database to support transactions, rich search, or genAI. The world&amp;rsquo;s most popular document database is now the world&amp;rsquo;s most versatile developer data platform.&amp;rdquo;&lt;/li>
 &lt;/ul>
-&lt;h2 id="amazon-dynamodb">Amazon DynamoDB&lt;/h2>
+&lt;h3 id="amazon-dynamodb">Amazon DynamoDB&lt;/h3>
 &lt;ul>
 &lt;li>&lt;strong>Marketing:&lt;/strong> &amp;ldquo;Serverless, NoSQL, fully managed database with single-digit millisecond performance at any scale&amp;rdquo;&lt;/li>
 &lt;/ul>
-&lt;h2 id="apache-couchdb">Apache CouchDB&lt;/h2>
+&lt;h3 id="apache-couchdb">Apache CouchDB&lt;/h3>
 &lt;ul>
 &lt;li>&lt;strong>Marketing:&lt;/strong> &amp;ldquo;Seamless multi-master sync, that scales from Big Data to Mobile, with an intuitive HTTP/JSON API and designed for Reliability.&amp;rdquo; (Another big one: &amp;ldquo;Relax&amp;rdquo;)&lt;/li>
 &lt;/ul>
-&lt;h2 id="neo4j">Neo4j&lt;/h2>
+&lt;h3 id="neo4j">Neo4j&lt;/h3>
 &lt;ul>
 &lt;li>&lt;strong>Marketing:&lt;/strong> &amp;ldquo;Power your applications with knowledge graphs. Backed by the only graph database with vector search.&amp;rdquo;&lt;/li>
 &lt;/ul>
-&lt;h2 id="elasticsearch">Elasticsearch&lt;/h2>
+&lt;h3 id="elasticsearch">Elasticsearch&lt;/h3>
 &lt;ul>
 &lt;li>&lt;strong>Marketing:&lt;/strong> &amp;ldquo;Elasticsearch is a distributed, RESTful search and analytics engine capable of addressing a growing number of use cases. As the heart of the Elastic Stack, it centrally stores your data for lightning fast search, fine‑tuned relevancy, and powerful analytics that scale with ease.&amp;rdquo;&lt;/li>
 &lt;/ul>
-&lt;h2 id="solr">Solr&lt;/h2>
+&lt;h3 id="solr">Solr&lt;/h3>
 &lt;ul>
 &lt;li>Marketing: &amp;ldquo;Solr is the popular, blazing-fast, open source enterprise search platform built on Apache Lucene&amp;rdquo;&lt;/li>
 &lt;/ul>
-&lt;h2 id="riak">Riak®&lt;/h2>
+&lt;h3 id="riak">Riak®&lt;/h3>
 &lt;h4 id="riak-kv">Riak® KV&lt;/h4>
 &lt;ul>
 &lt;li>Marketing: &amp;ldquo;Riak® KV is a distributed NoSQL &lt;a href="https://riak.com/resources/key-value-databases/index.html?p=12513.html">key-value database&lt;/a> with advanced local and multi-cluster replication that guarantees reads and writes even in the event of hardware failures or network partitions.&amp;rdquo;&lt;/li>
@@ -89,24 +94,25 @@ Marketing: &amp;ldquo;ScyllaDB’s close-to-the-metal architecture handles milli
 &lt;ul>
 &lt;li>Marketing: &amp;ldquo;Riak® TS is the only enterprise-grade NoSQL time series database optimized specifically for IoT and Time Series data. It ingests, transforms, stores, and analyzes massive amounts of time series data. Riak TS is engineered to be faster than Cassandra.&amp;rdquo;&lt;/li>
 &lt;/ul>
-&lt;h2 id="couchbase">Couchbase&lt;/h2>
-&lt;h2 id="memcached">Memcached&lt;/h2>
-&lt;h2 id="hazelcast">Hazelcast&lt;/h2>
-&lt;h2 id="aerospike">Aerospike&lt;/h2>
+&lt;h3 id="couchbase">Couchbase&lt;/h3>
+&lt;h3 id="memcached">Memcached&lt;/h3>
+&lt;h3 id="hazelcast">Hazelcast&lt;/h3>
+&lt;h3 id="aerospike">Aerospike&lt;/h3>
 &lt;ul>
 &lt;li>&lt;strong>Marketing:&lt;/strong> &amp;ldquo;Aerospike is a distributed NoSQL database with blazing-fast reads/writes and unmatched uptime. Start building real-time apps in minutes with our fully managed DBaaS.&amp;rdquo;&lt;/li>
 &lt;/ul>
-&lt;h2 id="arangodb">ArangoDB&lt;/h2>
+&lt;h3 id="arangodb">ArangoDB&lt;/h3>
 &lt;ul>
 &lt;li>&lt;strong>Marketing:&lt;/strong> &amp;ldquo;The Most Complete And Scalable Graph Database For Real-world Use Cases&amp;rdquo;&lt;/li>
 &lt;/ul>
-&lt;h2 id="orientdb">OrientDB&lt;/h2>
-&lt;h2 id="rethinkdb">RethinkDB&lt;/h2>
-&lt;h2 id="influxdb">InfluxDB&lt;/h2>
-&lt;h2 id="redis">Redis&lt;/h2></content></item><item><title>General Guidelines For APIs</title><link>/notes/programming/general-guidelines-for-apis/</link><pubDate>Mon, 22 Jan 2024 03:56:06 +0000</pubDate><guid>/notes/programming/general-guidelines-for-apis/</guid><description/><content/></item><item><title>Link Tests</title><link>/notes/link-tests/</link><pubDate>Mon, 22 Jan 2024 03:56:06 +0000</pubDate><guid>/notes/link-tests/</guid><description>Databases Databases
-Ancient Sumerians</description><content>&lt;p>&lt;a href="/notes/programming/databases/">Databases&lt;/a>
-&lt;a href="/notes/programming/databases/#scylladb">Databases&lt;/a>&lt;/p>
-&lt;p>&lt;a href="/notes/history/ancient-sumerians/">Ancient Sumerians&lt;/a>&lt;/p></content></item><item><title>Triangle Trigonometric Functions</title><link>/notes/maths/triangle-trigonometric-functions/</link><pubDate>Mon, 22 Jan 2024 03:56:06 +0000</pubDate><guid>/notes/maths/triangle-trigonometric-functions/</guid><description>Sine Right Triangles sin(θ) = opposite / hypotenuse Non-Right Triangle a / sin(A) = b / sin(B) = c / sin(C) Cosine Right Triangle cos(θ) = adjacent / hypotenuse Tangent Right Triangle tan(θ) = opposite / adjacent</description><content>&lt;h3 id="sine">Sine&lt;/h3>
+&lt;h3 id="orientdb">OrientDB&lt;/h3>
+&lt;h3 id="rethinkdb">RethinkDB&lt;/h3>
+&lt;h3 id="influxdb">InfluxDB&lt;/h3>
+&lt;h3 id="redis">Redis&lt;/h3></content></item><item><title>General Guidelines For APIs</title><link>/notes/programming/general-guidelines-for-apis/</link><pubDate>Mon, 22 Jan 2024 15:36:27 +0000</pubDate><guid>/notes/programming/general-guidelines-for-apis/</guid><description/><content/></item><item><title>Link Tests</title><link>/notes/link-tests/</link><pubDate>Mon, 22 Jan 2024 15:36:27 +0000</pubDate><guid>/notes/link-tests/</guid><description>Databases
+Databases
+Ancient Sumerians</description><content>&lt;p>&lt;a href="/notes/programming/databases/">Databases&lt;/a>&lt;/p>
+&lt;p>&lt;a href="/notes/programming/databases/#scylladb">Databases&lt;/a>&lt;/p>
+&lt;p>&lt;a href="/notes/history/ancient-sumerians/">Ancient Sumerians&lt;/a>&lt;/p></content></item><item><title>Triangle Trigonometric Functions</title><link>/notes/maths/triangle-trigonometric-functions/</link><pubDate>Mon, 22 Jan 2024 15:36:27 +0000</pubDate><guid>/notes/maths/triangle-trigonometric-functions/</guid><description>Sine Right Triangles sin(θ) = opposite / hypotenuse Non-Right Triangle a / sin(A) = b / sin(B) = c / sin(C) Cosine Right Triangle cos(θ) = adjacent / hypotenuse Tangent Right Triangle tan(θ) = opposite / adjacent</description><content>&lt;h3 id="sine">Sine&lt;/h3>
 &lt;h4 id="right-triangles">Right Triangles&lt;/h4>
 &lt;ul>
 &lt;li>sin(θ) = opposite / hypotenuse&lt;/li>
@@ -124,7 +130,7 @@ Ancient Sumerians</description><content>&lt;p>&lt;a href="/notes/programming/dat
 &lt;h4 id="right-triangle-1">Right Triangle&lt;/h4>
 &lt;ul>
 &lt;li>tan(θ) = opposite / adjacent&lt;/li>
-&lt;/ul></content></item><item><title>Vector Databases</title><link>/notes/vector-databases/</link><pubDate>Mon, 22 Jan 2024 03:56:06 +0000</pubDate><guid>/notes/vector-databases/</guid><description>Technical Primer</description><content>&lt;p>&lt;a href="https://tge-data-web.nyc3.digitaloceanspaces.com/docs/Vector%20Databases%20-%20A%20Technical%20Primer.pdf">Technical Primer&lt;/a>&lt;/p></content></item><item><title>How to remove all files from Git LFS quickly.</title><link>/posts/remove-all-files-from-git-lfs/</link><pubDate>Tue, 20 Sep 2022 00:00:00 +0000</pubDate><guid>/posts/remove-all-files-from-git-lfs/</guid><description>Prerequisites A Git repo with files stored using Git LFS The BFG Repo Cleaner tool (requires java itself) Have a clean HEAD The BFG is a simpler, faster alternative to git-filter-branch for cleansing bad data out of your Git repository history&amp;hellip;
+&lt;/ul></content></item><item><title>Vector Databases</title><link>/notes/vector-databases/</link><pubDate>Mon, 22 Jan 2024 15:36:27 +0000</pubDate><guid>/notes/vector-databases/</guid><description>Technical Primer</description><content>&lt;p>&lt;a href="https://tge-data-web.nyc3.digitaloceanspaces.com/docs/Vector%20Databases%20-%20A%20Technical%20Primer.pdf">Technical Primer&lt;/a>&lt;/p></content></item><item><title>How to remove all files from Git LFS quickly.</title><link>/posts/remove-all-files-from-git-lfs/</link><pubDate>Tue, 20 Sep 2022 00:00:00 +0000</pubDate><guid>/posts/remove-all-files-from-git-lfs/</guid><description>Prerequisites A Git repo with files stored using Git LFS The BFG Repo Cleaner tool (requires java itself) Have a clean HEAD The BFG is a simpler, faster alternative to git-filter-branch for cleansing bad data out of your Git repository history&amp;hellip;
 The One-Liner git lfs ls-files --all | awk &amp;#39;{split($0,a,&amp;#34; - &amp;#34;);l=split(a[2],b,&amp;#34;/&amp;#34;); print b[l]}&amp;#39; | xargs -d\\n -n1 java -jar ../bfg.jar -D &amp;amp;&amp;amp; \ git reflog expire --expire=now --all &amp;amp;&amp;amp; \ git gc --prune=now --aggressive What&amp;rsquo;s Happening?</description><content>&lt;h1 id="prerequisites">Prerequisites&lt;/h1>
 &lt;ol>
 &lt;li>A Git repo with files stored using &lt;a href="https://git-lfs.github.com/">Git LFS&lt;/a>&lt;/li>
