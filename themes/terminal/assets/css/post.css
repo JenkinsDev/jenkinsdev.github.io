@@ -40,7 +40,7 @@
   }
 
   &-title {
-    --border: 3px dotted var(--accent);
+    --border: 2px dotted var(--accent);
     position: relative;
     color: var(--accent);
     margin: 0 0 15px;

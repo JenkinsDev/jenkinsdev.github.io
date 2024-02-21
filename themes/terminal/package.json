@@ -1,8 +1,8 @@
 {
-  "name": "terminal",
-  "version": "2.1.0",
+  "name": "terminal-extended",
+  "version": "1.0.0",
   "main": "index.js",
-  "author": "Radosław Kozieł <@panr> <radoslaw.koziel@gmail.com>",
+  "author": "David Jenkins",
   "license": "MIT",
   "browserslist": [
     "last 2 versions",
