@@ -20,3 +20,4 @@ title: Project Showcase
 | Name         | Description      |
 |--------------|------------------|
 | [Marketing Partner Suite: SEO Copywriter](https://chat.openai.com/g/g-mgLDqPxo1-marketing-partner-suite-seo-copywriter) | Specialized in crafting SEO-optimized descriptions for products and services across industries, focusing on clarity, accuracy, and engagement. Enhances online visibility with relevant keywords, maintaining technical depth for credibility. Tailors content to meet specific marketing goals, ensuring readability and user experience standards for web content. Analyzes webpages for SEO performance, offering improvement recommendations. |
+| [Marketing Partner Suite: Creative Creator](https://chat.openai.com/g/g-Dfq9yeqk5-marketing-partner-suite-creative-creator) | Creates creatives meant to be used across the web. Create a blog post header image, a landing page hero image, a small profile picture, or more! |
