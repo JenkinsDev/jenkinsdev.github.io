@@ -17,5 +17,6 @@ title: Project Showcase
 ### GPTs
 
 -----------------------------------
-| Name | Description |
+| Name         | Description      |
+|--------------|------------------|
 | [Marketing Partner Suite: SEO Copywriter](https://chat.openai.com/g/g-mgLDqPxo1-marketing-partner-suite-seo-copywriter) | Specialized in crafting SEO-optimized descriptions for products and services across industries, focusing on clarity, accuracy, and engagement. Enhances online visibility with relevant keywords, maintaining technical depth for credibility. Tailors content to meet specific marketing goals, ensuring readability and user experience standards for web content. Analyzes webpages for SEO performance, offering improvement recommendations. |
