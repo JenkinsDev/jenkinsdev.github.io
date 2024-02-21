@@ -60,8 +60,8 @@ paginate = 10
 [languages]
   [languages.en]
     languageName = "English"
-    title = "JenkinsDev :: Into the mind of an aspiring polymathic autodidact."
-    subtitle = "Into the mind of an aspiring polymathic autodidact."
+    title = "JenkinsDev :: Into the mind of an aspiring polymathic autodidact"
+    subtitle = "Notes, thoughts, and musings on technology, coding, programming, software development, creativity, work, family, life, and everything in between."
     owner = "David Jenkins"
     keywords = "technology coding programming software development creativity work family life everything"
     copyright = ""
