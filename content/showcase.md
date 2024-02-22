@@ -1,5 +1,6 @@
 ---
-title: Project Showcase
+Title: Project Showcase
+Description: Various projects I've worked on that are openly shareable.
 ---
 
 ### Software-Based Projects
