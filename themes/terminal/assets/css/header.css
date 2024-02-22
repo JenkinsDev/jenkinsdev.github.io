@@ -1,7 +1,7 @@
 @define-mixin menu {
   position: absolute;
-  background: var(--background);
-  box-shadow: var(--shadow);
+  background-color: color-mod(var(--accent) blend(#1D1E28 98%));
+  box-shadow: color-mod(var(--accent) blend(#1D1E28 98%));
   color: white;
   border: 2px solid;
   margin: 0;

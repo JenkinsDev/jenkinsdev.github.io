@@ -79,18 +79,32 @@ paginate = 10
 
     [languages.en.menu]
       [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
-      [[languages.en.menu.main]]
         identifier = "conway"
         name = "Conway's Game of Life (☑️ Edition)"
         url = "/conway.html"
+        weight = 1
       [[languages.en.menu.main]]
         identifier = "notes"
         name = "Public Notes"
         url = "/notes"
+        weight = 2
       [[languages.en.menu.main]]
         identifier = "showcase"
         name = "Showcase"
         url = "/showcase"
+        weight = 3
+      [[languages.en.menu.main]]
+        identifier = "why-hire-me"
+        name = "Why Hire Me?"
+        url = "/why-hire-me"
+        weight = 4
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about"
+        weight = 5
+      [[languages.en.menu.main]]
+        identifier = "contact-me"
+        name = "Contact Me"
+        url = "/contact-me"
+        weight = 6

@@ -1,0 +1,59 @@
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "40171660",
+    formId: "703d5c8a-462a-402e-9ec2-d2a71fc0b35d"
+  });
+
+  const intId = setInterval(function() {
+    const iframeContentDocument = document.querySelector(".hs-form-iframe")?.contentDocument;
+
+    // let's go hack up that embedded form :-)
+    if (iframeContentDocument) {
+      const labels = iframeContentDocument.querySelectorAll(".hs-form-field label");
+      labels.forEach(label => {
+        if (label.classList.contains("hs-error-msg")) {
+          label.style.fontWeight = "600";
+        } else {
+          label.style.color = "white"
+          label.style.fontFamily = "'Fira Sans', 'Helvetica Neue', sans-serif";
+          label.style.fontSize = "1rem";
+          label.style.fontWeight = "400";
+        }
+      });
+
+      const inputs = iframeContentDocument.querySelectorAll(".hs-form-field input");
+      inputs.forEach(input => {
+        input.style.backgroundColor = "white";
+        input.style.color = "black";
+        input.style.fontFamily = "'Fira Sans', 'Helvetica Neue', sans-serif";
+        input.style.fontSize = "1rem";
+        input.style.fontWeight = "400";
+        input.style.padding = "1rem";
+      });
+
+      const textareas = iframeContentDocument.querySelectorAll(".hs-form-field textarea");
+      textareas.forEach(textarea => {
+        textarea.style.backgroundColor = "white";
+        textarea.style.color = "black";
+        textarea.style.fontFamily = "'Fira Sans', 'Helvetica Neue', sans-serif";
+        textarea.style.fontSize = "1rem";
+        textarea.style.fontWeight = "400";
+        textarea.style.padding = "1rem";
+      });
+
+      const button = iframeContentDocument?.querySelector(".hs-button");
+      if (button) {
+        button.style.backgroundColor = "#58b2ff";
+        button.style.width = "100%";
+        button.style.borderColor = "rgb(26, 35, 126)";
+        button.style.fontSize = "0.95rem";
+        button.style.padding = "1.5rem";
+      }
+
+      const viralLink = iframeContentDocument?.querySelector(".hs-form__virality-link");
+      viralLink && viralLink.remove() && clearInterval(intId);
+    }
+  }, 100);
+</script>
