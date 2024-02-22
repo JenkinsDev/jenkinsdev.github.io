@@ -59,11 +59,20 @@ body {
 
 a {
   color: inherit;
-  text-decoration-color: var(--accent);
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid rgb(255 255 255 / 0.5);
+  transition: border-color calc(5/5) ease;
 
-  /* Waiting for a better times... */
-  /* &:has(code) {
-  } */
+  &:hover { animation: color-cycle 5s infinite; }
+}
+
+@keyframes color-cycle {
+  0% { border-color: rgb(255 0 0); }
+  25% { border-color: rgb(0 255 0); }
+  50% { border-color: rgb(0 0 255); }
+  75% { border-color: rgb(0 255 0); }
+  100% { border-color: rgb(255 0 0); }
 }
 
 img {
