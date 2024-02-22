@@ -70,6 +70,7 @@ a {
   &.cta {
     padding: 10px 20px;
     border: 2px solid rgb(255 255 255 / 0.5);
+    animation: color-cycle 5s infinite;
     border-radius: 15px;
     margin: 10px 0;
     display: inline-block;
