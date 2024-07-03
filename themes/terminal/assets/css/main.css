@@ -67,12 +67,12 @@ a {
   border-bottom: 1px solid rgb(255 255 255 / 0.5);
   transition: border-color calc(5/5) ease;
 
-  &:hover { animation: color-cycle 5s infinite; }
+  &:hover { animation: border-color-cycle 5s infinite; }
 
   &.cta {
     padding: 10px 20px;
     border: 2px solid rgb(255 255 255 / 0.5);
-    animation: color-cycle 5s infinite;
+    animation: border-color-cycle 5s infinite;
     border-radius: 15px;
     margin: 10px 0;
     display: inline-block;
@@ -83,12 +83,26 @@ a {
   }
 }
 
-@keyframes color-cycle {
+button, .button {
+  &:hover {
+    animation: border-color-cycle 5s infinite, background-color-cycle 5s infinite;
+  }
+}
+
+@keyframes border-color-cycle {
   0% { border-color: rgb(255 0 0); }
   25% { border-color: rgb(0 255 0); }
   50% { border-color: rgb(0 0 255); }
   75% { border-color: rgb(0 255 0); }
   100% { border-color: rgb(255 0 0); }
+}
+
+@keyframes background-color-cycle {
+  0% { background: rgb(255 0 0); }
+  25% { background: rgb(0 255 0); }
+  50% { background: rgb(0 0 255); }
+  75% { background: rgb(0 255 0); }
+  100% { background: rgb(255 0 0); }
 }
 
 img {
