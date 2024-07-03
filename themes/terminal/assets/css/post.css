@@ -134,6 +134,10 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a {
 }
 
 .notes .note-group-header {
+  &:not(:first-of-type) {
+    margin-top: 3em;
+  }
+
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
 }
@@ -142,7 +146,7 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a {
   border: none !important;
   margin-bottom: 0;
   padding-bottom: 0;
-  margin-top: 2.5em;
+  margin-top: 1.5em;
   padding-top: 0;
 }
 .notes .post .note-title, .notes .post .note-title:after {
