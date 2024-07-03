@@ -133,8 +133,18 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a {
   color: color-mod(var(--color) alpha(50%));
 }
 
-.notes .post {
+.notes .note-group-header {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.notes .note {
   border: none !important;
   margin-bottom: 0;
   padding-bottom: 0;
+  margin-top: 2.5em;
+  padding-top: 0;
+}
+.notes .post .note-title, .notes .post .note-title:after {
+  border-color: #58e978;
 }

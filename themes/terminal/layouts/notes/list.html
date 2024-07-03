@@ -5,22 +5,41 @@
     </div>
   {{ end }}
   <div class="posts notes">
+    {{ $groupedPages := dict }}
     {{ range .Pages.ByTitle }}
-      <div class="post on-list">
-        <h1 class="post-title">
-          <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
-        </h1>
+      {{ $groupedChar := strings.SliceString .Title 0 1 }}
+      {{ $groupedChar = strings.ToUpper $groupedChar }}
+      {{ $group := index $groupedPages $groupedChar }}
 
-        {{ if .Params.tags }}
-          <span class="post-tags">
-            {{ range .Params.tags }}
-            #<a href="{{ (urlize (printf "tags/%s/" . )) | absLangURL }}">
-              {{- . -}}
-            </a>&nbsp;
-            {{ end }}
-          </span>
-        {{ end }}
-      </div>
+      {{ if not $group }}
+        {{ $newGroup := dict $groupedChar (slice .) }}
+        {{ $groupedPages = merge $groupedPages $newGroup }}
+      {{ else }}
+        {{ $updatedDict := dict $groupedChar (union $group (slice .)) }}
+        {{ $groupedPages = merge $groupedPages $updatedDict }}
+      {{ end }}
+    {{ end }}
+    {{ range $k, $v := $groupedPages }}
+
+      <h1 class="note-group-header">{{ $k }}</h1>
+
+      {{ range $v }}
+        <div class="post note on-list">
+          <h4 class="post-title note-title">
+            <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+          </h4>
+
+          {{ if .Params.tags }}
+            <span class="post-tags">
+              {{ range .Params.tags }}
+              #<a href="{{ (urlize (printf "tags/%s/" . )) | absLangURL }}">
+                {{- . -}}
+              </a>&nbsp;
+              {{ end }}
+            </span>
+          {{ end }}
+        </div>
+      {{ end }}
     {{ end }}
   </div>
 {{ end }}
