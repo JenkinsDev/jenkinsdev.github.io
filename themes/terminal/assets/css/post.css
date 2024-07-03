@@ -132,3 +132,5 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a {
 .footnotes {
   color: color-mod(var(--color) alpha(50%));
 }
+
+.notes .post-title { border-bottom: none; }
