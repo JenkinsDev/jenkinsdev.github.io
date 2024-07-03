@@ -133,4 +133,8 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a {
   color: color-mod(var(--color) alpha(50%));
 }
 
-.notes .post-title { border-bottom: none; }
+.notes .post {
+  border: none !important;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
