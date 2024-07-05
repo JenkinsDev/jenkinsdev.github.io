@@ -40,14 +40,14 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  filter: grayscale(1.0) blur(2px);
+  filter: grayscale(1.0) blur(6px);
 }
 
 .body-overlay {
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(0, 0, 0, 0.85);
   height: 100%;
   width: 100%;
   z-index: 1;
