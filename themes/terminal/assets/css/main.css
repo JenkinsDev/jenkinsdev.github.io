@@ -28,6 +28,32 @@ body {
   }
 }
 
+.body-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  filter: grayscale(1.0) blur(2px);
+}
+
+.body-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.90);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.body-wrapper { position: relative; z-index: 10; }
+
 .headings--one-size {
   h1,
   h2,
