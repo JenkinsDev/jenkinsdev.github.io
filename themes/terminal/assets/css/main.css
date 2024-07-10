@@ -376,7 +376,10 @@ mark {
   padding: 30px 80px;
   max-width: 1200px;
   min-height: 100vh;
-  background: linear-gradient(90deg, transparent, rgb(0 0 0 / 80%) 4%, rgb(0 0 0 / 80%) 96%, transparent 100%);
+
+  @media (--desktop) {
+    background: linear-gradient(90deg, transparent, rgb(0 0 0 / 80%) 4%, rgb(0 0 0 / 80%) 96%, transparent 100%);
+  }
 
   &.full,
   &.center {
