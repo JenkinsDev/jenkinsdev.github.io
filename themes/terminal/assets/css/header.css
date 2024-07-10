@@ -29,19 +29,13 @@
     display: flex;
     flex: 1;
 
-    &:after {
-      content: '';
-      background: repeating-linear-gradient(90deg,#233235,var(--accent) 5px,transparent 0,transparent 7px);
-      display: block;
-      width: 100%;
-      right: 10px;
-    }
-
     a {
-      flex: 0 0 auto;
-      max-width: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-decoration: none;
-      border-bottom: none;
+      border: none;
     }
   }
 
@@ -49,6 +43,9 @@
     --shadow-color: color-mod(var(--background) a(80%));
     --shadow: 0 10px var(--shadow-color), -10px 10px var(--shadow-color), 10px 10px var(--shadow-color);
     margin: 20px 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @media (--phone) {
       @mixin menu;

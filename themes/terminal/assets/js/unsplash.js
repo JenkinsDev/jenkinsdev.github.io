@@ -1,6 +1,8 @@
 const UNSPLASH_CACHE_TTL = 1000 * 60 * 60 * 24; // 24 hours
 
 async function loadUnsplashCacheData() {
+  localStorage.setItem("unsplash-cache", '{}');
+
   const cache = JSON.parse(localStorage.getItem("unsplash-cache") || "{}");
   if (cache.lastFetched && Date.now() - cache.lastFetched < UNSPLASH_CACHE_TTL) {
     return cache.images;
