@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>dx on JenkinsDev :: Into the mind of an aspiring polymathic autodidact</title><link>https://jenkinsdev.us/tags/dx/</link><description>Recent content in dx on JenkinsDev :: Into the mind of an aspiring polymathic autodidact</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 15 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://jenkinsdev.us/tags/dx/index.xml" rel="self" type="application/rss+xml"/><item><title>A better AI-powered Development Environment</title><link>https://jenkinsdev.us/posts/supermaven-and-nvim/</link><pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate><guid>https://jenkinsdev.us/posts/supermaven-and-nvim/</guid><description>So&amp;hellip; Why exactly? LLM-powered coding suggestions have been a hot topic since they were first introduced to the mainstream development industry with the launch of GitHub&amp;rsquo;s Copilot program. Some developers swear by their productivity gains (and some stats show it is helpful), while droves of other developers have found themselves turning off LLM-powered suggestions for a plethora of reasons: too distracting, too much reliability on the suggestions, less engaging work, and honestly much more.</description><content>&lt;h2 id="so-why-exactly">So&amp;hellip; Why exactly?&lt;/h2>
+&lt;p>LLM-powered coding suggestions have been a hot topic since they were &lt;a href="https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/">first introduced to the mainstream development industry with the launch of GitHub&amp;rsquo;s Copilot program&lt;/a>. Some developers swear by their productivity gains (and some stats show it is helpful), while droves of other developers have found themselves turning off LLM-powered suggestions for a plethora of reasons: too distracting, too much reliability on the suggestions, less engaging work, and honestly much more.&lt;/p>
+&lt;p>I don&amp;rsquo;t think anyone is wrong here. I think AI pair programming is likely going to become the future of an ideal development environment, but I also believe that the current way default integrations are provided the users can be implemented in a wildly better way (objectively).&lt;/p>
+&lt;p>The premise is really basic: use a completion engine, wire up LSPs &amp;amp; your LLM of choice to that completion engine, and then manage suggestions through a singular interface.&lt;/p>
+&lt;blockquote>
+&lt;p>Note:&lt;/p>
+&lt;p>This flow should work just fine for Copilot or Supermaven. Just ensure you include &lt;a href="https://github.com/zbirenbaum/copilot-cmp">&lt;code>copilot-cmp&lt;/code>&lt;/a> and &lt;a href="https://github.com/github/copilot.vim%5D">&lt;code>copilot&lt;/code>&lt;/a> plugins.&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="neovim-plugins-required">Neovim Plugins Required&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/hrsh7th/nvim-cmp">nvim-cmp&lt;/a>
+&lt;ul>
+&lt;li>A LUA-based neovim completion engine, which will be used to manage our LLM suggestions (supermaven or copilot) and the builtin Neovim LSP&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/neovim/nvim-lspconfig">nvim-lspconfig&lt;/a>
+&lt;ul>
+&lt;li>An official neovim community plugin which handles defaults of MANY lsp configs&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/hrsh7th/cmp-nvim-lsp">cmp-nvim-lsp&lt;/a>
+&lt;ul>
+&lt;li>Provides the &lt;code>&amp;quot;nvim_lsp&amp;quot;&lt;/code> source, enabling support for use with &lt;code>nvim-cmp&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a href="https://github.com/supermaven-inc/supermaven-nvim">supermaven-inc/supermaven-nvim&lt;/a>
+&lt;ul>
+&lt;li>Objectively better, and faster AI-powered coding suggestions, with builtin support for &lt;code>nvim-cmp&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="neovim-lua-configuration">Neovim LUA Configuration&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-lua" data-lang="lua">&lt;span style="display:flex;">&lt;span>require&lt;span style="color:#e6db74">&amp;#39;supermaven-nvim&amp;#39;&lt;/span>.setup({
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> keymaps &lt;span style="color:#f92672">=&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> accept_suggestion &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> clear_suggestion &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> accept_word &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> disable_inline_completion &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>})
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">local&lt;/span> cmp &lt;span style="color:#f92672">=&lt;/span> require&lt;span style="color:#e6db74">&amp;#39;cmp&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cmp.setup({
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> sources &lt;span style="color:#f92672">=&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {name &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;supermaven&amp;#34;&lt;/span>},
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {name &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;nvim_lsp&amp;#34;&lt;/span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> mapp &lt;span style="color:#f92672">=&lt;/span> cmp.mapping.preset.insert({
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">#&lt;/span> control &lt;span style="color:#f92672">+&lt;/span> space to accept the top suggestion
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [&lt;span style="color:#e6db74">&amp;#39;&amp;lt;C-Space&amp;gt;&amp;#39;&lt;/span>] &lt;span style="color:#f92672">=&lt;/span> cmp.mapping.confirm({select &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">true&lt;/span>}),
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> })
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>})
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></content></item></channel></rss>
