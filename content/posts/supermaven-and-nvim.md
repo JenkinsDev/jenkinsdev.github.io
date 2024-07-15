@@ -47,7 +47,7 @@ cmp.setup({
     {name = "supermaven"},
     {name = "nvim_lsp"}
   },
-  mapp = cmp.mapping.preset.insert({
+  map = cmp.mapping.preset.insert({
     # control + space to accept the top suggestion
     ['<C-Space>'] = cmp.mapping.confirm({select = true}),
   })
