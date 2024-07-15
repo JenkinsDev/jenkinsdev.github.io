@@ -52,6 +52,10 @@ body {
   width: 100%;
   z-index: 1;
 }
+@media (--tablet) {
+  .body-overlay { background: none; }
+}
+
 .body-wrapper { position: relative; z-index: 10; }
 
 .headings--one-size {
