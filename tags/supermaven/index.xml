@@ -45,7 +45,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {name &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;supermaven&amp;#34;&lt;/span>},
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {name &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;nvim_lsp&amp;#34;&lt;/span>}
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> },
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> mapp &lt;span style="color:#f92672">=&lt;/span> cmp.mapping.preset.insert({
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> map &lt;span style="color:#f92672">=&lt;/span> cmp.mapping.preset.insert({
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">#&lt;/span> control &lt;span style="color:#f92672">+&lt;/span> space to accept the top suggestion
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> [&lt;span style="color:#e6db74">&amp;#39;&amp;lt;C-Space&amp;gt;&amp;#39;&lt;/span>] &lt;span style="color:#f92672">=&lt;/span> cmp.mapping.confirm({select &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#66d9ef">true&lt;/span>}),
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> })
