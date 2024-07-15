@@ -380,7 +380,6 @@ mark {
   padding: 30px 80px;
   max-width: 1200px;
   min-height: 100vh;
-  background: rgb(0 0 0 / 95%);
 
   @media (--desktop) {
     background: linear-gradient(90deg, rgb(0 0 0 / 70%), rgb(0 0 0 / 99%) 10%, rgb(0 0 0 / 99%) 90%, rgb(0 0 0 / 70%));
