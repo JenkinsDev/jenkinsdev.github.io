@@ -383,7 +383,7 @@ mark {
   background: rgb(0 0 0 / 85%);
 
   @media (--desktop) {
-    background: linear-gradient(90deg, rgb(0 0 0 / 70%), rgb(0 0 0 / 99%) 10%, rgb(0 0 0 / 99%) 90%, rgb(0 0 0 / 70%));
+    background: linear-gradient(90deg, rgb(0 0 0 / 70%), rgb(0 0 0 / 95%) 10%, rgb(0 0 0 / 95%) 90%, rgb(0 0 0 / 70%));
   }
 
   &.full,
