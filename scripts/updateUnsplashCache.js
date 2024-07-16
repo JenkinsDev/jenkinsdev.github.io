@@ -5,7 +5,7 @@ const key = process.argv[2];
 
 const unsplash = createApi({accessKey: key});
 
-unsplash.search.getPhotos({query: 'landscapes and space', perPage: 50})
+unsplash.search.getPhotos({query: 'vibrant landscapes', perPage: 50})
   .then(res => {
     const images = res.response.results.map(photo => ({
       urls: photo.urls, blur_hash: photo.blur_hash
