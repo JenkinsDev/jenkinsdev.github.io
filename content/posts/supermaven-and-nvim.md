@@ -9,7 +9,9 @@ description: An objectively better, unobtrusive AI-powered development environme
 
 LLM-powered coding suggestions have been a hot topic since they were [first introduced to the mainstream development industry with the launch of GitHub's Copilot program](https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/). Some developers swear by their productivity gains (and some stats show it is helpful), while droves of other developers have found themselves turning off LLM-powered suggestions for a plethora of reasons: too distracting, too much reliability on the suggestions, less engaging work, and honestly much more.
 
-I don't think anyone is wrong here. I think AI pair programming is likely going to become the future of an ideal development environment, but... The way we currently deliver AI-powered suggestions just won't cut it in the long-term IMO. So, here is my rather basic premise: use a completion engine, wire up LSPs &amp; your LLM of choice to that completion engine, and then manage suggestions through a singular interface.
+I don't think anyone is wrong here. I think AI pair programming is likely going to become the future of an ideal development environment, but... The way we currently deliver AI-powered suggestions just won't cut it in the long-term IMO.
+
+So, here is my rather basic premise: use a completion engine, wire up LSPs &amp; your LLM of choice to that completion engine, and then manage suggestions through a singular interface.
 
 > Note:
 >
