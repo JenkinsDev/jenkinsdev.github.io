@@ -1,3 +1,48 @@
+@keyframes shimmer {
+  100% { left: 100%; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes white-text-glow-animation {
+  0% {
+    text-shadow: 0 0 3px #FFFFFF;
+  }
+  50% {
+    text-shadow: 0 0 8px #FFFFFF;
+  }
+  100% {
+    text-shadow: 0 0 3px #FFFFFF;
+  }
+}
+
+@keyframes blue-text-glow-animation {
+  0% {
+    text-shadow: 0 0 5px var(--blue);
+  }
+  50% {
+    text-shadow: 0 0 10px var(--blue);
+  }
+  100% {
+    text-shadow: 0 0 5px var(--blue);
+  }
+}
+
+@keyframes green-text-glow-animation {
+  0% {
+    text-shadow: 0 0 5px var(--blue);
+  }
+  50% {
+    text-shadow: 0 0 10px var(--blue);
+  }
+  100% {
+    text-shadow: 0 0 5px var(--blue);
+  }
+}
+
 html {
   box-sizing: border-box;
 }
@@ -14,7 +59,7 @@ body {
   line-height: 1.54;
   font-family: 'Fira Sans', 'Helvetica Neue', sans-serif;
   font-size: 0.97rem;
-  background-color: color-mod(var(--accent) blend(#1D1E28 98%));
+  background-color: color-mod(var(--blue) blend(#1D1E28 98%));
   color: var(--color);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -51,9 +96,11 @@ body {
   height: 100%;
   width: 100%;
   z-index: 1;
-}
-@media (--tablet) {
-  .body-overlay { background: none; }
+
+  background-image: 
+    linear-gradient(0deg, var(--darker) 50%, transparent 50%),
+    linear-gradient(90deg, var(--darker) 50%, transparent 50%);
+  background-size: 8px 8px;
 }
 
 .body-wrapper { position: relative; z-index: 10; }
@@ -69,6 +116,7 @@ body {
     letter-spacing: -0.01em;
     font-family: 'Fira Code', Monaco, Consolas, Ubuntu Mono, monospace;
     margin-bottom: 10px;
+    animation: green-text-glow-animation 5s infinite;
 
     &:not(first-child) {
       margin-top: 10px;
@@ -79,7 +127,17 @@ body {
   h2,
   h3 {
     font-size: 1.6rem;
-    color: var(--accent);
+    color: var(--blue);
+    animation: blue-text-glow-animation 5s infinite;
+  }
+
+  h2, h3 {
+    &::before {
+      content: '>';
+      position: absolute;
+      margin-left: -20px;
+      color: var(--green);
+    }
   }
 
   h2 { font-size: 1.4rem; }
@@ -99,16 +157,12 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-  padding-bottom: 1px;
-  border-bottom: 1px solid rgb(255 255 255 / 0.5);
   transition: border-color calc(5/5) ease;
-
-  &:hover { animation: border-color-cycle 5s infinite; }
 
   &.cta {
     padding: 10px 20px;
     border: 2px solid rgb(255 255 255 / 0.5);
-    animation: border-color-cycle 5s infinite;
+    animation: border-color-cycle 8s infinite;
     border-radius: 15px;
     margin: 10px 0;
     display: inline-block;
@@ -119,26 +173,12 @@ a {
   }
 }
 
-button, .button {
-  &:hover {
-    animation: border-color-cycle 5s infinite, background-color-cycle 5s infinite;
-  }
-}
-
 @keyframes border-color-cycle {
   0% { border-color: rgb(255 0 0); }
   25% { border-color: rgb(0 255 0); }
   50% { border-color: rgb(0 0 255); }
   75% { border-color: rgb(0 255 0); }
   100% { border-color: rgb(255 0 0); }
-}
-
-@keyframes background-color-cycle {
-  0% { background: rgb(255 0 0); }
-  25% { background: rgb(0 255 0); }
-  50% { background: rgb(0 0 255); }
-  75% { background: rgb(0 255 0); }
-  100% { background: rgb(255 0 0); }
 }
 
 img {
@@ -189,7 +229,7 @@ figure {
     font-size: 14px;
     padding: 5px 10px;
     margin-top: 5px;
-    background: var(--accent);
+    background: var(--blue);
     color: var(--background);
     /* opacity: .8; */
 
@@ -210,11 +250,12 @@ figure {
 code, kbd {
   font-family: 'Fira Code', Monaco, Consolas, Ubuntu Mono, monospace !important;
   font-feature-settings: normal;
-  background: color-mod(var(--accent) a(20%));
-  color: var(--accent);
+  background: color-mod(var(--blue) a(20%));
+  color: var(--green) !important;
   padding: 1px 6px;
   margin: 0 2px;
   font-size: .95rem;
+  animation: green-text-glow-animation 5s infinite !important;
 
   code, kbd {
     background: transparent;
@@ -252,8 +293,8 @@ pre {
 }
 
 blockquote {
-  border-top: 1px solid var(--accent);
-  border-bottom: 1px solid var(--accent);
+  border-top: 1px solid var(--blue);
+  border-bottom: 1px solid var(--blue);
   margin: 40px 0;
   padding: 25px;
 
@@ -278,15 +319,15 @@ blockquote {
     display: block;
     position: absolute;
     left: -25px;
-    color: var(--accent);
+    color: var(--blue);
   }
 
   &.twitter-tweet {
     position: relative;
-    background: color-mod(var(--accent) a(10%));
+    background: color-mod(var(--blue) a(10%));
     font: inherit;
     color: inherit;
-    border: 1px solid var(--accent);
+    border: 1px solid var(--blue);
     padding-top: 60px;
 
     p:before {
@@ -297,12 +338,12 @@ blockquote {
       content: '> From Twitter:';
       position: absolute;
       top: 20px;
-      color: var(--accent);
+      color: var(--blue);
       font-weight: bold;
     }
 
     a {
-      color: var(--accent);
+      color: var(--blue);
     }
   }
 }
@@ -317,12 +358,12 @@ table {
 table,
 th,
 td {
-  border: 1px dotted var(--accent);
+  border: 1px dotted var(--blue);
   padding: 16px;
 }
 
 th {
-  color: var(--accent);
+  color: var(--blue);
 }
 
 ul,
@@ -351,7 +392,7 @@ ol {
     content: counter(li);
     position: absolute;
     right: calc(100% + 10px);
-    color: var(--accent);
+    color: var(--blue);
     display: inline-block;
     text-align: right;
   }
@@ -370,7 +411,7 @@ ol {
 }
 
 mark {
-  background: var(--accent);
+  background: var(--blue);
   color: var(--background);
 }
 
@@ -380,11 +421,7 @@ mark {
   padding: 30px 80px;
   max-width: 1200px;
   min-height: 100vh;
-  background: rgb(0 0 0 / 85%);
-
-  @media (--desktop) {
-    background: linear-gradient(90deg, rgb(0 0 0 / 70%), rgb(0 0 0 / 95%) 10%, rgb(0 0 0 / 95%) 90%, rgb(0 0 0 / 70%));
-  }
+  background: none;
 
   &.full,
   &.center {
@@ -408,6 +445,7 @@ mark {
 .content {
   display: flex;
   flex-direction: column;
+  b
 
   @media print {
     display: initial;
@@ -428,3 +466,5 @@ hr {
 sup {
  line-height: 0;
 }
+
+b { animation: white-text-glow-animation 5s infinite; }

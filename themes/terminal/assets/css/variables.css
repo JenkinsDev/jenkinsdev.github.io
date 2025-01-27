@@ -7,6 +7,13 @@
   /* variables for js, must be the same as these in @custom-media queries */
   --phoneWidth: (max-width: 684px);
   --tabletWidth: (max-width: 900px);
+
+  --blue: #00A7E1;
+  --blue-glow: #00A7E133;
+  --green: #00FF41;
+  --green-glow: #00FF4133;
+  --dark: #0A0A0A;
+  --darker: #050505;
 }
 
 @custom-media --phone (max-width: 684px);

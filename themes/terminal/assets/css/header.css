@@ -12,7 +12,11 @@
 
 .header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--blue-text-glow);
   position: relative;
 
   @media print {
@@ -25,18 +29,33 @@
     justify-content: space-between;
   }
 
-  &__logo {
-    display: flex;
-    flex: 1;
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    border-bottom: 0;
+    animation: blue-text-glow-animation 2s infinite;
+  } 
 
-    a {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      border: none;
-    }
+  .logo::before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .logo::after {
+    content: 'SYSTEM ONLINE';
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    font-size: 0.6rem;
+    color: var(--green);
+    opacity: 0.7;
+    animation: green-text-glow-animation 1.2s infinite;
   }
 
   .menu {
@@ -83,6 +102,8 @@
           margin-bottom: 10px;
           flex: 0 0 auto;
         }
+
+        a { animation: white-text-glow-animation 6s infinite; }
       }
 
       @media (--phone) {

@@ -1,8 +1,7 @@
 <header class="header">
   <div class="header__inner">
-    <div class="header__logo">
-      {{ partial "logo.html" . }}
-    </div>
+    {{ partial "logo.html" . }}
+
     {{ if len $.Site.Menus }}
       <div class="menu-trigger">menu</div>
     {{ end }}
