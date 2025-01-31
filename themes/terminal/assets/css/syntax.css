@@ -124,6 +124,21 @@ pre[class*="language-"] {
 	margin: var(--code-margin) 0;
 	padding: 20px;
 	border: 1px solid rgba(255, 255, 255, .1);
+  background: rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+
+  &:before {
+    animation: scandown 2.5s linear infinite;
+    background: linear-gradient(180deg,#00a7e1,#00a7e1 50%,transparent 0,transparent);
+    background: linear-gradient(to bottom, transparent, var(--green) 50%,transparent);
+    content: " ";
+    height: 15px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0.05;
+  }
 
 	+ .code-toolbar,
 	+ .highlight,

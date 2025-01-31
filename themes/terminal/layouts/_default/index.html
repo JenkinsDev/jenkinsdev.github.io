@@ -51,13 +51,6 @@
             {{ .Summary | markdownify }}
           {{ end }}
         </div>
-
-        {{ if not .Params.showFullContent }}
-        <div>
-          <a class="read-more button"
-            href="{{.RelPermalink}}">{{ $.Site.Params.ReadMore }} →</a>
-        </div>
-        {{ end }}
       </div>
     {{ end }}
     {{ partial "pagination.html" . }}
