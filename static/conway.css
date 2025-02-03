@@ -80,10 +80,13 @@ header {
 header h1 {
   font-size: 1.5em;
   font-weight: bold;
+  animation: text-glow-white 5s infinite alternate;
 }
 
 header h1 sup {
   font-size: 0.5em;
+  color: #4CAF50;
+  animation: text-glow-green 5s infinite alternate;
 }
 
 header label {
@@ -185,6 +188,24 @@ header #controls select {
   }
   to {
     border-color: #4CAF50;
+  }
+}
+
+@keyframes text-glow-white {
+  from {
+    text-shadow: 0 0 2px white;
+  }
+  to {
+    text-shadow: 0 0 4px white;
+  }
+}
+
+@keyframes text-glow-green {
+  from {
+    text-shadow: 0 0 2px #00FF41;
+  }
+  to {
+    text-shadow: 0 0 4px #00FF41;
   }
 }
 

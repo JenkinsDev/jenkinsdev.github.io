@@ -174,12 +174,14 @@ document.addEventListener('mousedown', _ => {
   isDragging = true;
   dragListener = window.addEventListener('mousemove', e => {
     if (isDragging) {
-      const ele = document.elementFromPoint(e.clientX, e.clientY);
-      if (ele && ele.type === 'checkbox') {
-        ele.checked = true;
-        const row = parseInt(ele.dataset.row);
-        const col = parseInt(ele.dataset.col);
-        cells[row][col] = 1;
+      const eles = document.elementsFromPoint(e.clientX, e.clientY);
+      for (const ele of eles) {
+        if (ele && ele.type === 'checkbox') {
+          ele.checked = true;
+          const row = parseInt(ele.dataset.row);
+          const col = parseInt(ele.dataset.col);
+          cells[row][col] = 1;
+        }
       }
     }
   });
