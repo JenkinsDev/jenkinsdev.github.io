@@ -28,6 +28,7 @@ body {
   line-height: 1;
   overflow: hidden;
   touch-action: none;
+  background: #000000;
 }
 ol, ul {
   list-style: none;
@@ -58,10 +59,9 @@ header {
   width: 100%;
   background: black;
   text-align: center;
-  border-bottom: 3px solid lightgrey;
   color: white;
 
-  padding: 15px 20px;
+  padding: 5px 20px;
   box-sizing: border-box;
 
   display: flex;
@@ -80,10 +80,13 @@ header {
 header h1 {
   font-size: 1.5em;
   font-weight: bold;
+  animation: text-glow-white 5s infinite alternate;
 }
 
 header h1 sup {
   font-size: 0.5em;
+  color: #4CAF50;
+  animation: text-glow-green 5s infinite alternate;
 }
 
 header label {
@@ -165,5 +168,52 @@ header #controls select {
 }
 
 #game-canvas input[type="checkbox"] {
-  accent-color: black;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: 0.25px solid #333333;
+  background-color: #1A1A1A;
+}
+
+#game-canvas input[type="checkbox"]:checked {
+  background-color: #4CAF50;
+  animation: glow 1.5s infinite alternate, fadeIn 0.05s ease-in;
+}
+
+@keyframes glow {
+  from {
+    border-color: #333333;
+  }
+  to {
+    border-color: #4CAF50;
+  }
+}
+
+@keyframes text-glow-white {
+  from {
+    text-shadow: 0 0 2px white;
+  }
+  to {
+    text-shadow: 0 0 4px white;
+  }
+}
+
+@keyframes text-glow-green {
+  from {
+    text-shadow: 0 0 2px #00FF41;
+  }
+  to {
+    text-shadow: 0 0 4px #00FF41;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
