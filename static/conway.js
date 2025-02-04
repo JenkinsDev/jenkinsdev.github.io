@@ -10,7 +10,7 @@ const params = new URLSearchParams(window.location.search);
 
 let animationSpeedMultiplier = params.has('animation-speed') ? parseFloat(params.get('animation-speed')) : 1.0;
 let animationSpeed = DEFAULT_ANIMATION_SPEED / animationSpeedMultiplier;
-let cellSize = params.has('cell-size') ? parseFloat(params.get('cell-size')) : 1.0;
+let cellSize = params.has('cell-size') ? parseFloat(params.get('cell-size')) : 10.0;
 let cells = [];
 
 const style = document.createElement('style');
@@ -323,11 +323,11 @@ input[type=checkbox] {
       setupCanvas();
     }, 250);
   });
+
+
+  if (params.has('autoplay')) {
+    startAnimation();
+    document.querySelector('header').remove();
+    document.querySelector('body').style.padding = 0;
+  }
 });
-
-
-if (params.has('autoplay')) {
-  startAnimation();
-  document.querySelector('header').remove();
-  document.querySelector('body').style.padding = 0;
-}
