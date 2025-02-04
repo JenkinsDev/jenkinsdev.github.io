@@ -6,9 +6,11 @@ const CELL_SIZE_ELE = document.querySelector('#cell-size');
 const PRESETS_ELE = document.querySelector('#presets');
 const DEFAULT_ANIMATION_SPEED = 750;
 
-let animationSpeedMultiplier = 1.0;
+const params = new URLSearchParams(window.location.search);
+
+let animationSpeedMultiplier = params.has('animation-speed') ? parseFloat(params.get('animation-speed')) : 1.0;
 let animationSpeed = DEFAULT_ANIMATION_SPEED / animationSpeedMultiplier;
-let cellSize = 20;
+let cellSize = params.has('cell-size') ? parseFloat(params.get('cell-size')) : 1.0;
 let cells = [];
 
 const style = document.createElement('style');
@@ -169,33 +171,41 @@ document.addEventListener('keydown', e => {
   }
 });
 
-let isDragging, dragListener;
-document.addEventListener('mousedown', _ => {
-  isDragging = true;
-  dragListener = window.addEventListener('mousemove', e => {
-    if (isDragging) {
-      const eles = document.elementsFromPoint(e.clientX, e.clientY);
-      for (const ele of eles) {
-        if (ele && ele.type === 'checkbox') {
-          ele.checked = true;
-          const row = parseInt(ele.dataset.row);
-          const col = parseInt(ele.dataset.col);
-          cells[row][col] = 1;
-        }
-      }
+function onMouseMove(e) {
+  const eles = document.elementsFromPoint(e.clientX, e.clientY);
+  for (const ele of eles) {
+    if (ele && ele.type === 'checkbox') {
+      ele.checked = true;
+      const row = parseInt(ele.dataset.row);
+      const col = parseInt(ele.dataset.col);
+      cells[row][col] = 1;
     }
-  });
-});
-
-document.addEventListener('mouseup', _ => {
-  isDragging = false;
-
-  if (dragListener) {
-    window.removeEventListener('mousemove', dragListener);
-    dragListener = undefined;
   }
-  window.removeEventListener('mousemove', dragListener);
-});
+}
+
+if (params.has('no-click')) {
+  window.addEventListener('mousemove', onMouseMove);
+} else {
+  let isDragging, dragListener;
+  document.addEventListener('mousedown', _ => {
+    isDragging = true;
+    dragListener = window.addEventListener('mousemove', e => {
+      if (isDragging) {
+        onMouseMove(e);
+      }
+    });
+  });
+
+  document.addEventListener('mouseup', _ => {
+    isDragging = false;
+
+    if (dragListener) {
+      window.removeEventListener('mousemove', dragListener);
+      dragListener = undefined;
+    }
+    window.removeEventListener('mousemove', dragListener);
+  });
+}
 
 document.addEventListener('touchstart', e => {
   e.preventDefault();
@@ -238,7 +248,6 @@ document.addEventListener('DOMContentLoaded', () => {
     animationSpeedMultiplier = parseFloat(e.target.value);
     animationSpeed = DEFAULT_ANIMATION_SPEED / animationSpeedMultiplier;
     document.querySelector('[for="animation-speed-multiplier"]').textContent = `Animation Speed: (${animationSpeedMultiplier}x)`;
-    console.log('animation speed multiplier', animationSpeed, animationSpeedMultiplier);
   });
 
   let cellSizeChangeTimeout;
@@ -248,7 +257,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     document.querySelector('[for="cell-size"]').textContent = `Cell Size: (${parseInt(e.target.value)}px)`;
-    console.log('cell size', cellSize);
 
     cellSizeChangeTimeout = setTimeout(_ => {
       cellSize = parseInt(e.target.value);
@@ -316,3 +324,10 @@ input[type=checkbox] {
     }, 250);
   });
 });
+
+
+if (params.has('autoplay')) {
+  startAnimation();
+  document.querySelector('header').remove();
+  document.querySelector('body').style.padding = 0;
+}
