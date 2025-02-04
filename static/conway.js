@@ -5,12 +5,11 @@ const ANIMATION_SPEED_MULTIPLIER_ELE = document.querySelector('#animation-speed-
 const CELL_SIZE_ELE = document.querySelector('#cell-size');
 const PRESETS_ELE = document.querySelector('#presets');
 const DEFAULT_ANIMATION_SPEED = 750;
+const QUERY_PARAMS = new URLSearchParams(window.location.search);
 
-const params = new URLSearchParams(window.location.search);
-
-let animationSpeedMultiplier = params.has('animation-speed') ? parseFloat(params.get('animation-speed')) : 1.0;
+let animationSpeedMultiplier = 1.0;
 let animationSpeed = DEFAULT_ANIMATION_SPEED / animationSpeedMultiplier;
-let cellSize = params.has('cell-size') ? parseFloat(params.get('cell-size')) : 10.0;
+let cellSize = 20.0;
 let cells = [];
 
 const style = document.createElement('style');
@@ -183,7 +182,7 @@ function onMouseMove(e) {
   }
 }
 
-if (params.has('no-click')) {
+if (QUERY_PARAMS.has('no-click')) {
   window.addEventListener('mousemove', onMouseMove);
 } else {
   let isDragging, dragListener;
@@ -325,9 +324,19 @@ input[type=checkbox] {
   });
 
 
-  if (params.has('autoplay')) {
+  if (QUERY_PARAMS.has('autoplay')) {
     startAnimation();
     document.querySelector('header').remove();
     document.querySelector('body').style.padding = 0;
+  }
+
+  if (QUERY_PARAMS.has('animation-speed')) {
+    ANIMATION_SPEED_MULTIPLIER_ELE.value = QUERY_PARAMS.get('animation-speed');
+    ANIMATION_SPEED_MULTIPLIER_ELE.dispatchEvent(new Event('input'));
+  }
+
+  if (QUERY_PARAMS.has('cell-size')) {
+    CELL_SIZE_ELE.value = QUERY_PARAMS.get('cell-size');
+    CELL_SIZE_ELE.dispatchEvent(new Event('input'));
   }
 });
