@@ -3,27 +3,34 @@
 const CANVAS_ELE = document.querySelector('#game-canvas');
 const ANIMATION_SPEED_MULTIPLIER_ELE = document.querySelector('#animation-speed-multiplier');
 const CELL_SIZE_ELE = document.querySelector('#cell-size');
-const PRESETS_ELE = document.querySelector('#presets');
 const DEFAULT_ANIMATION_SPEED = 750;
 const QUERY_PARAMS = new URLSearchParams(window.location.search);
+
+const CELL_ACTIVE_COLOR = QUERY_PARAMS.has('color') ? QUERY_PARAMS.get('color') : '#4CAF50';
 
 let animationSpeedMultiplier = 1.0;
 let animationSpeed = DEFAULT_ANIMATION_SPEED / animationSpeedMultiplier;
 let cellSize = 20.0;
 let cells = [];
 
+/*********** CANVAS GENERATION **************/
 const style = document.createElement('style');
-style.innerHTML = `
-input[type=checkbox] {
-  width: ${cellSize}px;
-  height: ${cellSize}px;
-  margin: 0;
-  padding: 0;
-  border: 1px solid black;
-  background-color: white;
-}
-`;
 document.head.appendChild(style);
+
+function updateStyle() {
+  style.innerHTML = `
+    input[type=checkbox] {
+      width: ${cellSize}px;
+      height: ${cellSize}px;
+      margin: 0;
+      padding: 0;
+    }
+
+    input[type=checkbox]:checked {
+      background-color: ${CELL_ACTIVE_COLOR} !important;
+    }
+  `;
+}
 
 function regenerateCells() {
   const CANVAS_ELEBoundingRect = CANVAS_ELE.getBoundingClientRect();
@@ -72,6 +79,12 @@ function setupCanvas() {
     });
   });
 }
+
+
+
+
+
+/** Tick function for animation **/
 
 let previousTimestamp;
 let lastAnimationFrameReq;
@@ -128,6 +141,11 @@ function tick(timestamp) {
   lastAnimationFrameReq = window.requestAnimationFrame(tick);
 }
 
+
+
+
+/*********** ANIMATION CONTROLS **************/
+
 function stopAnimation() {
   if (lastAnimationFrameReq === undefined) {
     return;
@@ -135,15 +153,19 @@ function stopAnimation() {
 
   window.cancelAnimationFrame(lastAnimationFrameReq);
   lastAnimationFrameReq = undefined;
-  document.querySelector('#start').disabled = false;
-  document.querySelector('#stop').disabled = true;
+  const startEle = document.querySelector('#start');
+  const stopEle = document.querySelector('#stop');
+  startEle.disabled = false;
+  stopEle.disabled = true;
   console.log('stopped');
 }
 
 function startAnimation() {
   lastAnimationFrameReq = window.requestAnimationFrame(tick);
-  document.querySelector('#start').disabled = true;
-  document.querySelector('#stop').disabled = false;
+  const startEle = document.querySelector('#start');
+  const stopEle = document.querySelector('#stop');
+  startEle.disabled = true;
+  stopEle.disabled = false;
   console.log('started');
 }
 
@@ -152,6 +174,24 @@ function resetAnimation() {
   cells = [];
   CANVAS_ELE.innerHTML = '';
   setupCanvas();
+}
+
+
+
+
+
+/*********** CANVAS CONTROLS **************/
+
+function onMouseMove(e) {
+  const eles = document.elementsFromPoint(e.clientX, e.clientY);
+  for (const ele of eles) {
+    if (ele && ele.type === 'checkbox') {
+      ele.checked = true;
+      const row = parseInt(ele.dataset.row);
+      const col = parseInt(ele.dataset.col);
+      cells[row][col] = 1;
+    }
+  }
 }
 
 document.addEventListener('keydown', e => {
@@ -169,18 +209,6 @@ document.addEventListener('keydown', e => {
     e.preventDefault();
   }
 });
-
-function onMouseMove(e) {
-  const eles = document.elementsFromPoint(e.clientX, e.clientY);
-  for (const ele of eles) {
-    if (ele && ele.type === 'checkbox') {
-      ele.checked = true;
-      const row = parseInt(ele.dataset.row);
-      const col = parseInt(ele.dataset.col);
-      cells[row][col] = 1;
-    }
-  }
-}
 
 if (QUERY_PARAMS.has('no-click')) {
   window.addEventListener('mousemove', onMouseMove);
@@ -260,53 +288,9 @@ document.addEventListener('DOMContentLoaded', () => {
     cellSizeChangeTimeout = setTimeout(_ => {
       cellSize = parseInt(e.target.value);
       resetAnimation();
-      style.innerHTML = `
-input[type=checkbox] {
-  width: ${cellSize}px;
-  height: ${cellSize}px;
-  margin: 0;
-  padding: 0;
-  border: 1px solid black;
-  background-color: white;
-}
-`;
+      updateStyle();
       setupCanvas();
     }, 500);
-  });
-
-  PRESETS_ELE.addEventListener('change', e => {
-    stopAnimation();
-    cells = [];
-    CANVAS_ELE.innerHTML = '';
-    setupCanvas();
-
-    switch(e.target.value) {
-      case 'glider':
-        cells[0][1] = 1;
-        cells[1][2] = 1;
-        cells[2][0] = 1;
-        cells[2][1] = 1;
-        cells[2][2] = 1;
-        document.querySelector(`[data-row="0"][data-col="1"]`).checked = true;
-        document.querySelector(`[data-row="1"][data-col="2"]`).checked = true;
-        document.querySelector(`[data-row="2"][data-col="0"]`).checked = true;
-        document.querySelector(`[data-row="2"][data-col="1"]`).checked = true;
-        document.querySelector(`[data-row="2"][data-col="2"]`).checked = true;
-        break;
-      case 'oscillator':
-        // center
-        const midRow = Math.floor(cells.length / 2);
-        const midCol = Math.floor(cells[0].length / 2);
-        cells[midRow][midCol] = 1;
-        cells[midRow][midCol + 1] = 1;
-        cells[midRow][midCol - 1] = 1;
-        document.querySelector(`[data-row="${midRow}"][data-col="${midCol}"]`).checked = true;
-        document.querySelector(`[data-row="${midRow}"][data-col="${midCol + 1}"]`).checked = true;
-        document.querySelector(`[data-row="${midRow}"][data-col="${midCol - 1}"]`).checked = true;
-        break;
-      default:
-        break;
-    }
   });
 
   let resolutionChangeTimeout;
