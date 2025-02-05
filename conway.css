@@ -61,32 +61,8 @@ header {
   text-align: center;
   color: white;
 
-  padding: 5px 20px;
+  padding: 0.3rem 0.5rem;
   box-sizing: border-box;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-@media (max-width: 900px) {
-  header {
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
-header h1 {
-  font-size: 1.5em;
-  font-weight: bold;
-  animation: text-glow-white 5s infinite alternate;
-}
-
-header h1 sup {
-  font-size: 0.5em;
-  color: #4CAF50;
-  animation: text-glow-green 5s infinite alternate;
 }
 
 header label {
@@ -96,6 +72,8 @@ header label {
 header #controls {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media (max-width: 900px) {
@@ -108,9 +86,11 @@ header #controls button {
   border: none;
   font-size: 0.9em;
   font-weight: bold;
-  padding: 0 10px;
+  padding: 10px;
   margin: 0 5px;
   border-radius: 5px;
+  height: 100%;
+  border: none;
 }
 
 header #controls .control-group {
@@ -118,6 +98,7 @@ header #controls .control-group {
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 10px;
 }
 
 header #controls .field-group {
@@ -180,6 +161,26 @@ header #controls select {
 #game-canvas input[type="checkbox"]:checked {
   background-color: #4CAF50;
   animation: glow 1.5s infinite alternate, fadeIn 0.05s ease-in;
+}
+
+.caption {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.caption h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  animation: text-glow-white 5s infinite alternate;
+}
+
+.caption h1 sup {
+  font-size: 0.5em;
+  color: #4CAF50;
+  animation: text-glow-green 5s infinite alternate;
 }
 
 @keyframes glow {
