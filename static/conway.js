@@ -8,16 +8,18 @@ const QUERY_PARAMS = new URLSearchParams(window.location.search);
 
 const CELL_ACTIVE_COLOR = QUERY_PARAMS.has('color') ? QUERY_PARAMS.get('color') : '#4CAF50';
 
-let animationSpeedMultiplier = 1.0;
+let animationSpeedMultiplier = QUERY_PARAMS.has('animation-speed') ? QUERY_PARAMS.get('animation-speed') : 1.0;
 let animationSpeed = DEFAULT_ANIMATION_SPEED / animationSpeedMultiplier;
-let cellSize = 20.0;
+let cellSize = QUERY_PARAMS.has('cell-size') ? QUERY_PARAMS.get('cell-size') : 20.0;
 let cells = [];
 
 /*********** CANVAS GENERATION **************/
 const style = document.createElement('style');
 document.head.appendChild(style);
 
+let styleRenderCnt = 0;
 function updateStyle() {
+  styleRenderCnt += 1;
   style.innerHTML = `
     input[type=checkbox] {
       width: ${cellSize}px;
@@ -28,9 +30,20 @@ function updateStyle() {
 
     input[type=checkbox]:checked {
       background-color: ${CELL_ACTIVE_COLOR} !important;
+	  animation: glow-${styleRenderCnt} ${1.5 / animationSpeedMultiplier}s infinite, fadeIn 0.05s ease-in !important;
+    }
+	
+	@keyframes glow-${styleRenderCnt} {
+      from {
+        filter: saturate(100%) hue-rotate(0deg);
+      }
+      to {
+        filter: saturate(200%) hue-rotate(-180deg);
+      }
     }
   `;
 }
+updateStyle();
 
 function regenerateCells() {
   const CANVAS_ELEBoundingRect = CANVAS_ELE.getBoundingClientRect();
