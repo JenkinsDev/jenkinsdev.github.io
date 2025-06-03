@@ -17,7 +17,7 @@
       
       {{ $groupKey := "" }}
       {{ if (time $pageDate).After $cutoffDate }}
-        {{ $groupKey = dateFormat "2006-01-01" $pageDate }}
+        {{ $groupKey = dateFormat "2006-01-31" $pageDate }}
       {{ else }}
         {{ $groupKey = "Old Notes" }}
       {{ end }}
