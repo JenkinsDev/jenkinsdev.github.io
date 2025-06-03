@@ -35,6 +35,7 @@ jobs:
           tar -xf ./obsidian-for-hugo.tar.gz
           mkdir ./content/notes
           echo $(./obsidian-for-hugo -vault-path ./obsidian/Public -content-path ./content/notes)
+          echo $(./obsidian-for-hugo -vault-path ./obsidian/Rocketbook -content-path ./content/handwritten-notes)
           hugo --minify
 
       - name: Deploy

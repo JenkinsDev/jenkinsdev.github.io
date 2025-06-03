@@ -89,22 +89,27 @@ paginate = 10
         url = "/notes"
         weight = 2
       [[languages.en.menu.main]]
+        identifier = "handwritten-notes"
+        name = "Handwritten Notes"
+        url = "/handwritten-notes"
+        weight = 3
+      [[languages.en.menu.main]]
         identifier = "showcase"
         name = "Showcase"
         url = "/showcase"
-        weight = 3
+        weight = 4
       [[languages.en.menu.main]]
         identifier = "why-hire-me"
         name = "Why Hire Me?"
         url = "/why-hire-me"
-        weight = 4
+        weight = 5
       [[languages.en.menu.main]]
         identifier = "about"
         name = "About"
         url = "/about"
-        weight = 5
+        weight = 6
       [[languages.en.menu.main]]
         identifier = "contact-me"
         name = "Contact Me"
         url = "/contact-me"
-        weight = 6
+        weight = 7
