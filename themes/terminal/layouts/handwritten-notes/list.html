@@ -1,0 +1,58 @@
+{{ define "main" }}
+  {{ with .Content }}
+    <div class="index-content">
+      {{ . }}
+    </div>
+  {{ end }}
+  <div class="posts notes">
+    {{ $groupedPages := dict }}
+    {{ $cutoffDate := time "2025-06-02" }}
+    
+    {{ range .Pages.ByTitle }}
+      {{ $pageDate := .Params.created }}
+      {{ if not $pageDate }}
+        {{ $pageDate = .Params.date }}
+      {{ end }}
+      
+      {{ $groupKey := "" }}
+      {{ if and $pageDate (time $pageDate).After $cutoffDate }}
+        {{ $groupKey = dateFormat "January 2006" $pageDate }}
+      {{ else }}
+        {{ $groupKey = "Old Notes" }}
+      {{ end }}
+      
+      {{ $group := index $groupedPages $groupKey }}
+      
+      {{ if not $group }}
+        {{ $newGroup := dict $groupKey (slice .) }}
+        {{ $groupedPages = merge $groupedPages $newGroup }}
+      {{ else }}
+        {{ $updatedDict := dict $groupKey (union $group (slice .)) }}
+        {{ $groupedPages = merge $groupedPages $updatedDict }}
+      {{ end }}
+    {{ end }}
+    
+    {{ range $k, $v := $groupedPages }}
+      
+      <h1 class="note-group-header">{{ $k }}</h1>
+      
+      {{ range $v }}
+        <div class="post note on-list">
+          <h4 class="post-title note-title">
+            <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
+          </h4>
+          
+          {{ if .Params.tags }}
+            <span class="post-tags">
+              {{ range .Params.tags }}
+              #<a href="{{ (urlize (printf "tags/%s/" . )) | absLangURL }}">
+                {{- . -}}
+              </a>&nbsp;
+              {{ end }}
+            </span>
+          {{ end }}
+        </div>
+      {{ end }}
+    {{ end }}
+  </div>
+{{ end }}
