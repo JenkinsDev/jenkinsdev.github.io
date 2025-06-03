@@ -12,7 +12,7 @@ paginate = 10
   themeColor = "blue"
 
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 4
+  showMenuItems = 3
 
   # show selector to switch language
   showLanguageSelector = false
@@ -94,14 +94,14 @@ paginate = 10
         url = "/handwritten-notes"
         weight = 3
       [[languages.en.menu.main]]
-        identifier = "showcase"
-        name = "Showcase"
-        url = "/showcase"
-        weight = 4
-      [[languages.en.menu.main]]
         identifier = "why-hire-me"
         name = "Why Hire Me?"
         url = "/why-hire-me"
+        weight = 4
+      [[languages.en.menu.main]]
+        identifier = "showcase"
+        name = "Showcase"
+        url = "/showcase"
         weight = 5
       [[languages.en.menu.main]]
         identifier = "about"
