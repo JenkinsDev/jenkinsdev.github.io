@@ -17,7 +17,7 @@ a.button {
   text-align: center;
   border-radius: 0;
   border: 0;
-  background: var(--blue);
+  background: none;
   font: inherit;
   font-weight: bold;
   appearance: none;
@@ -25,7 +25,7 @@ a.button {
   outline: none;
 
   &:hover {
-    background: color-mod(var(--blue) a(90%));
+    filter: brightness(0.89);
   }
 
   /* variants */

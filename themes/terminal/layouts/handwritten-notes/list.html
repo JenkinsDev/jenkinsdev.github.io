@@ -1,4 +1,8 @@
 {{ define "main" }}
+  <div class="ai-warning">
+    <h5>WARNING: The information on this page has been OCR-extracted through LLM inference</h5>
+  </div>
+
   {{ with .Content }}
     <div class="index-content">
       {{ . }}
@@ -9,14 +13,11 @@
     {{ $cutoffDate := time "2025-06-02" }}
     
     {{ range .Pages.ByTitle }}
-      {{ $pageDate := .Params.created }}
-      {{ if not $pageDate }}
-        {{ $pageDate = .Params.date }}
-      {{ end }}
+      {{ $pageDate := .Date }}
       
       {{ $groupKey := "" }}
-      {{ if and $pageDate (time $pageDate).After $cutoffDate }}
-        {{ $groupKey = dateFormat "January 2006" $pageDate }}
+      {{ if (time $pageDate).After $cutoffDate }}
+        {{ $groupKey = dateFormat "2006-01-01" $pageDate }}
       {{ else }}
         {{ $groupKey = "Old Notes" }}
       {{ end }}

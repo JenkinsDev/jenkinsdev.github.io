@@ -1,7 +1,9 @@
 baseurl = "https://jenkinsdev.us/"
 languageCode = "en-us"
 theme = "terminal"
-paginate = 10
+
+[pagination]
+pagerSize = 10
 
 [params]
   # dir name of your main content (default is `content/posts`).
