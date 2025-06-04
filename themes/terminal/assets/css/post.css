@@ -159,3 +159,4 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a {
   margin: 20px 0;
   border-radius: 5px;
 }
+.ai-warning h5 { text-align: center; }
