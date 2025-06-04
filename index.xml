@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JenkinsDev :: Into the mind of an aspiring polymathic autodidact</title><link>https://jenkinsdev.us/</link><description>Recent content on JenkinsDev :: Into the mind of an aspiring polymathic autodidact</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 04 Jun 2025 14:15:37 +0000</lastBuildDate><atom:link href="https://jenkinsdev.us/index.xml" rel="self" type="application/rss+xml"/><item><title>A Different Programmer’s Book List</title><link>https://jenkinsdev.us/notes/technology/a-different-programmer-s-book-list/</link><pubDate>Wed, 04 Jun 2025 14:15:37 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/a-different-programmer-s-book-list/</guid><description>https://x.com/0xglitchbyte/status/1775529740981477715?s=46&amp;amp;t=wzJBGH_k-cdpzRzQDCggLA</description><content>&lt;p>&lt;a href="https://x.com/0xglitchbyte/status/1775529740981477715?s=46&amp;amp;t=wzJBGH_k-cdpzRzQDCggLA">https://x.com/0xglitchbyte/status/1775529740981477715?s=46&amp;amp;t=wzJBGH_k-cdpzRzQDCggLA&lt;/a>&lt;/p></content></item><item><title>AMD ROCm vs HIP SDK</title><link>https://jenkinsdev.us/notes/technology/amd-rocm-vs-hip-sdk/</link><pubDate>Wed, 04 Jun 2025 14:15:37 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/amd-rocm-vs-hip-sdk/</guid><description>Source
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JenkinsDev :: Into the mind of an aspiring polymathic autodidact</title><link>https://jenkinsdev.us/</link><description>Recent content on JenkinsDev :: Into the mind of an aspiring polymathic autodidact</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 04 Jun 2025 20:11:14 +0000</lastBuildDate><atom:link href="https://jenkinsdev.us/index.xml" rel="self" type="application/rss+xml"/><item><title>A Different Programmer’s Book List</title><link>https://jenkinsdev.us/notes/technology/a-different-programmer-s-book-list/</link><pubDate>Wed, 04 Jun 2025 20:11:14 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/a-different-programmer-s-book-list/</guid><description>https://x.com/0xglitchbyte/status/1775529740981477715?s=46&amp;amp;t=wzJBGH_k-cdpzRzQDCggLA</description><content>&lt;p>&lt;a href="https://x.com/0xglitchbyte/status/1775529740981477715?s=46&amp;amp;t=wzJBGH_k-cdpzRzQDCggLA">https://x.com/0xglitchbyte/status/1775529740981477715?s=46&amp;amp;t=wzJBGH_k-cdpzRzQDCggLA&lt;/a>&lt;/p></content></item><item><title>AMD ROCm vs HIP SDK</title><link>https://jenkinsdev.us/notes/technology/amd-rocm-vs-hip-sdk/</link><pubDate>Wed, 04 Jun 2025 20:11:14 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/amd-rocm-vs-hip-sdk/</guid><description>Source
 ROCm vs HIP SDK ROCm is AMD&amp;rsquo;s &amp;ldquo;open-source platform for GPU computing&amp;rdquo; w/ a particular focus on HPC (High-Performance Computing) and AI.
 HIP SDK is a small subset of the ROCm intiative: the focus of enabling conversion of CUDA-specific applications to portable apps which work across AMD &amp;amp; NVIDIA.</description><content>&lt;p>&lt;a href="https://community.amd.com/t5/instinct-accelerators/available-now-new-hip-sdk-helps-democratize-gpu-computing/ba-p/621029">Source&lt;/a>&lt;/p>
 &lt;h3 id="rocm-vs-hip-sdk">ROCm vs HIP SDK&lt;/h3>
 &lt;p>&lt;strong>ROCm&lt;/strong> is AMD&amp;rsquo;s &amp;ldquo;open-source platform for GPU computing&amp;rdquo; w/ a particular focus on HPC (High-Performance Computing) and AI.&lt;/p>
-&lt;p>&lt;strong>HIP SDK&lt;/strong> is a small subset of the ROCm intiative: the focus of enabling conversion of CUDA-specific applications to portable apps which work across AMD &amp;amp; NVIDIA.&lt;/p></content></item><item><title>Ancient Sumerians</title><link>https://jenkinsdev.us/notes/history/ancient-sumerians/</link><pubDate>Wed, 04 Jun 2025 14:15:37 +0000</pubDate><guid>https://jenkinsdev.us/notes/history/ancient-sumerians/</guid><description>Historical West-Asian region situated roughly around today&amp;rsquo;s Iraq and parts of Iran, Syria, Kuwait, &amp;amp; Turkey.
+&lt;p>&lt;strong>HIP SDK&lt;/strong> is a small subset of the ROCm intiative: the focus of enabling conversion of CUDA-specific applications to portable apps which work across AMD &amp;amp; NVIDIA.&lt;/p></content></item><item><title>Ancient Sumerians</title><link>https://jenkinsdev.us/notes/history/ancient-sumerians/</link><pubDate>Wed, 04 Jun 2025 20:11:14 +0000</pubDate><guid>https://jenkinsdev.us/notes/history/ancient-sumerians/</guid><description>Historical West-Asian region situated roughly around today&amp;rsquo;s Iraq and parts of Iran, Syria, Kuwait, &amp;amp; Turkey.
 People slept on their rooftops, due to excessive heat Uruk (first large city in the Mesopotamia) Epic of Gilgamesh (Uruk King) https://en.m.wikipedia.org/wiki/Epic_of_Gilgamesh</description><content>&lt;p>Historical West-Asian region situated roughly around today&amp;rsquo;s Iraq and parts of Iran, Syria, Kuwait, &amp;amp; Turkey.&lt;/p>
 &lt;ul>
 &lt;li>People slept on their rooftops, due to excessive heat&lt;/li>
 &lt;li>Uruk (first large city in the Mesopotamia)&lt;/li>
 &lt;li>Epic of Gilgamesh (Uruk King)&lt;/li>
 &lt;li>&lt;a href="https://en.m.wikipedia.org/wiki/Epic_of_Gilgamesh">https://en.m.wikipedia.org/wiki/Epic_of_Gilgamesh&lt;/a>&lt;/li>
-&lt;/ul></content></item><item><title>BBQ Sauce Ratios</title><link>https://jenkinsdev.us/notes/cooking/bbq-sauce-ratios/</link><pubDate>Wed, 04 Jun 2025 14:15:37 +0000</pubDate><guid>https://jenkinsdev.us/notes/cooking/bbq-sauce-ratios/</guid><description>&amp;ldquo;Red&amp;rdquo; Tomato-based BBQ Sauce Per 6 servings:
+&lt;/ul></content></item><item><title>BBQ Sauce Ratios</title><link>https://jenkinsdev.us/notes/cooking/bbq-sauce-ratios/</link><pubDate>Wed, 04 Jun 2025 20:11:14 +0000</pubDate><guid>https://jenkinsdev.us/notes/cooking/bbq-sauce-ratios/</guid><description>&amp;ldquo;Red&amp;rdquo; Tomato-based BBQ Sauce Per 6 servings:
 1/2 cup Tomato Sauce ~1 Tbsp of acidity (e.g. vinegars) ~2 Tbsp of sweet (e.g. brown sugar, molasses) ~1-3 Tbsp of spicy (e.g. hot sauce) Seasoning (warm, earthy + salt) Korean BBQ Sauce Per 14 servings:
 3/4 cup sweet 3/4 cup low-sodium umami (soy sauce, worcestershire, &amp;hellip;) 1/4 cup water 1 1/2 Tbsp spice (chili paste, hot sauce, etc.) 1 Tbsp acidity (e.g. rice wine vinegar) Seasoning (warm, earthy, spicy) 1 Tbsp cornstarch (any thickening agent) 1 Tbsp water (thickening agent activator)</description><content>&lt;h4 id="red-tomato-based-bbq-sauce">&amp;ldquo;Red&amp;rdquo; Tomato-based BBQ Sauce&lt;/h4>
 &lt;p>&lt;strong>Per 6 servings:&lt;/strong>&lt;/p>
@@ -32,7 +32,7 @@ People slept on their rooftops, due to excessive heat Uruk (first large city in 
 &lt;li>Seasoning (warm, earthy, spicy)&lt;/li>
 &lt;li>1 Tbsp cornstarch (any thickening agent)&lt;/li>
 &lt;li>1 Tbsp water (thickening agent activator)&lt;/li>
-&lt;/ul></content></item><item><title>Bromelain (Pineapple Enzyme)</title><link>https://jenkinsdev.us/notes/cooking/bromelain--pineapple-enzyme/</link><pubDate>Wed, 04 Jun 2025 14:15:37 +0000</pubDate><guid>https://jenkinsdev.us/notes/cooking/bromelain--pineapple-enzyme/</guid><description>Common Names: bromelain, pineapple enzyme, pineapple extract Latin Names: (pineapple plant) Ananas comosus
+&lt;/ul></content></item><item><title>Bromelain (Pineapple Enzyme)</title><link>https://jenkinsdev.us/notes/cooking/bromelain--pineapple-enzyme/</link><pubDate>Wed, 04 Jun 2025 20:11:14 +0000</pubDate><guid>https://jenkinsdev.us/notes/cooking/bromelain--pineapple-enzyme/</guid><description>Common Names: bromelain, pineapple enzyme, pineapple extract Latin Names: (pineapple plant) Ananas comosus
 What is it? Group of enzymes which can be found in the stem and fruit of a pineapple Medicinal Usages: Dietary Supplement which can assist w/ pain &amp;amp; swelling Especially the gut, mouth, &amp;amp; nasal regions after an injury or surgery Potentially helpful w/ side-effects of osteoarthritis, cancer, digestive problems, and muscle soreness Topical bromelain can be used to assist w/ burn healing Several studies1 show the benefits of using bromelain to remove dead skin after a burn References Rosenberg L, Krieger Y, Bogdanov-Berezovski A, et al.</description><content>&lt;p>&lt;strong>Common Names:&lt;/strong> bromelain, pineapple enzyme, pineapple extract
 &lt;strong>Latin Names:&lt;/strong> (pineapple plant) &lt;em>Ananas comosus&lt;/em>&lt;/p>
 &lt;h3 id="what-is-it">What is it?&lt;/h3>
@@ -62,7 +62,7 @@ What is it? Group of enzymes which can be found in the stem and fruit of a pinea
 &lt;p>Rosenberg L, Krieger Y, Bogdanov-Berezovski A, et al. &lt;a href="https://www.ncbi.nlm.nih.gov/pubmed/24074719">A novel rapid and selective enzymatic debridement agent for burn wound management: a multi-center RCT.&lt;/a> &lt;em>Burns.&lt;/em> 2014;40(3):466-474.&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></content></item><item><title>Business Tips (Tweets)</title><link>https://jenkinsdev.us/notes/business/business-tips--tweets/</link><pubDate>Wed, 04 Jun 2025 14:15:37 +0000</pubDate><guid>https://jenkinsdev.us/notes/business/business-tips--tweets/</guid><description>Loom Lead Magnet (Greg Isenberg) No one talks about this but you can use Loom as a &amp;ldquo;lead magnet&amp;rdquo; in 10 minutes or less:
+&lt;/div></content></item><item><title>Business Tips (Tweets)</title><link>https://jenkinsdev.us/notes/business/business-tips--tweets/</link><pubDate>Wed, 04 Jun 2025 20:11:14 +0000</pubDate><guid>https://jenkinsdev.us/notes/business/business-tips--tweets/</guid><description>Loom Lead Magnet (Greg Isenberg) No one talks about this but you can use Loom as a &amp;ldquo;lead magnet&amp;rdquo; in 10 minutes or less:
 Record a Loom jam packed with value Request email to view loom Share Loom link on social or paid ads Get thousands of emails You now know there&amp;rsquo;s demand for your product https://x.com/gregisenberg/status/1751618325208007046?s=46&amp;amp;t=wzJBGH_k-cdpzRzQDCggLA
 Engineering + Product-Minded i talk a lot about how engineers should be more product minded</description><content>&lt;h3 id="loom-lead-magnet-greg-isenberg">Loom Lead Magnet (Greg Isenberg)&lt;/h3>
 &lt;blockquote>
@@ -83,11 +83,11 @@ Engineering + Product-Minded i talk a lot about how engineers should be more pro
 &lt;p>so many of our tools lack taste, simplicity and optimize for things that don’t matter&lt;/p>
 &lt;/blockquote>
 &lt;p>&lt;a href="https://x.com/thdxr/status/1763376813655417252?s=46&amp;amp;t=wzJBGH_k-cdpzRzQDCggLA">https://x.com/thdxr/status/1763376813655417252?s=46&amp;amp;t=wzJBGH_k-cdpzRzQDCggLA&lt;/a>&lt;/p>
-&lt;p>Personal Q: What is the median of those two?&lt;/p></content></item><item><title>CSS Tips &amp; Tricks</title><link>https://jenkinsdev.us/notes/technology/css-tips---tricks/</link><pubDate>Wed, 04 Jun 2025 14:15:37 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/css-tips---tricks/</guid><description>Overlay a Gradient (or Image) Over Text background-image: ...; background-clip: text; color: trasparent;</description><content>&lt;h3 id="overlay-a-gradient-or-image-over-text">Overlay a Gradient (or Image) Over Text&lt;/h3>
+&lt;p>Personal Q: What is the median of those two?&lt;/p></content></item><item><title>CSS Tips &amp; Tricks</title><link>https://jenkinsdev.us/notes/technology/css-tips---tricks/</link><pubDate>Wed, 04 Jun 2025 20:11:14 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/css-tips---tricks/</guid><description>Overlay a Gradient (or Image) Over Text background-image: ...; background-clip: text; color: trasparent;</description><content>&lt;h3 id="overlay-a-gradient-or-image-over-text">Overlay a Gradient (or Image) Over Text&lt;/h3>
 &lt;pre tabindex="0">&lt;code>background-image: ...;
 background-clip: text;
 color: trasparent;
-&lt;/code>&lt;/pre></content></item><item><title>Databases</title><link>https://jenkinsdev.us/notes/technology/databases/</link><pubDate>Wed, 04 Jun 2025 14:15:37 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/databases/</guid><description>ScyllaDB Website
+&lt;/code>&lt;/pre></content></item><item><title>Databases</title><link>https://jenkinsdev.us/notes/technology/databases/</link><pubDate>Wed, 04 Jun 2025 20:11:14 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/databases/</guid><description>ScyllaDB Website
 Marketing: &amp;ldquo;ScyllaDB’s close-to-the-metal architecture handles millions of OPS with predictable single-digit millisecond latencies.&amp;rdquo; Wide Column vs Document Sources: https://lp.scylladb.com/scylladb-mongodb-comparison.pdf https://www.scylladb.com/glossary/wide-column-database/ Data Model: &amp;ldquo;MongoDB applies a JSON based document data model, ScyllaDB a wide-column data model.&amp;rdquo; Apache Cassandra Marketing: &amp;ldquo;Manage massive amounts of data, fast, without losing sleep&amp;rdquo; MongoDB Marketing: &amp;ldquo;You don&amp;rsquo;t need a separate database to support transactions, rich search, or genAI. The world&amp;rsquo;s most popular document database is now the world&amp;rsquo;s most versatile developer data platform.</description><content>&lt;h3 id="scylladb">ScyllaDB&lt;/h3>
 &lt;p>&lt;a href="https://www.scylladb.com/">Website&lt;/a>&lt;/p>
 &lt;ul>
@@ -157,13 +157,13 @@ Marketing: &amp;ldquo;ScyllaDB’s close-to-the-metal architecture handles milli
 &lt;h3 id="orientdb">OrientDB&lt;/h3>
 &lt;h3 id="rethinkdb">RethinkDB&lt;/h3>
 &lt;h3 id="influxdb">InfluxDB&lt;/h3>
-&lt;h3 id="redis">Redis&lt;/h3></content></item><item><title>Flash Memory</title><link>https://jenkinsdev.us/notes/technology/flash-memory/</link><pubDate>Wed, 04 Jun 2025 14:15:37 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/flash-memory/</guid><description>Definition: Electronic, nonvolatile memory storage device (differing from mechanical and electro-mechanical)
+&lt;h3 id="redis">Redis&lt;/h3></content></item><item><title>Flash Memory</title><link>https://jenkinsdev.us/notes/technology/flash-memory/</link><pubDate>Wed, 04 Jun 2025 20:11:14 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/flash-memory/</guid><description>Definition: Electronic, nonvolatile memory storage device (differing from mechanical and electro-mechanical)
 Real-World Usage Solid State Drives (SSDs) Serial Flash</description><content>&lt;p>&lt;strong>Definition:&lt;/strong> Electronic, nonvolatile memory storage device &lt;!-- raw HTML omitted -->(differing from mechanical and electro-mechanical)&lt;!-- raw HTML omitted -->&lt;/p>
 &lt;h3 id="real-world-usage">Real-World Usage&lt;/h3>
 &lt;ul>
 &lt;li>Solid State Drives (SSDs)&lt;/li>
 &lt;li>Serial Flash&lt;/li>
-&lt;/ul></content></item><item><title>Foundation Models</title><link>https://jenkinsdev.us/notes/technology/foundation-models/</link><pubDate>Wed, 04 Jun 2025 14:15:37 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/foundation-models/</guid><description>A type of ML model that is trained on a broad dataset. These models are generally used for general or broad use cases, and may be adaptable through fine-tuning.
+&lt;/ul></content></item><item><title>Foundation Models</title><link>https://jenkinsdev.us/notes/technology/foundation-models/</link><pubDate>Wed, 04 Jun 2025 20:11:14 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/foundation-models/</guid><description>A type of ML model that is trained on a broad dataset. These models are generally used for general or broad use cases, and may be adaptable through fine-tuning.
 Foundation models like the ones powering OpenAI’s ChatGPT, can cost hundreds of millions of dollars to train.
 The term was coined in Aug. 2021 at Stanford.
 ——
@@ -171,7 +171,7 @@ Foundation models are near universally based on Transformers.</description><cont
 &lt;p>Foundation models like the ones powering OpenAI’s ChatGPT, can cost hundreds of millions of dollars to train.&lt;/p>
 &lt;p>The term was coined in Aug. 2021 at Stanford.&lt;/p>
 &lt;p>——&lt;/p>
-&lt;p>Foundation models are near universally based on &lt;a href="https://jenkinsdev.us/notes/technology/transformers/">Transformers&lt;/a>.&lt;/p></content></item><item><title>FreeCAD 3D Printing Notes</title><link>https://jenkinsdev.us/notes/cnc-3d-printing/freecad-3d-printing-notes/</link><pubDate>Wed, 04 Jun 2025 14:15:37 +0000</pubDate><guid>https://jenkinsdev.us/notes/cnc-3d-printing/freecad-3d-printing-notes/</guid><description>Avoiding Common Pitfalls Always ensure that 3D objects are solid PartDesign Workbench will notify you of any operations that would prevent the model from staying solid. Part Workbench has a Check Geometry tool, which can check for further defects Ensure your dimensions align properly Dimensions are vital: 1 millimeter in FreeCAD is 1 millimeter in real life Control degradation of the model, during transformation w/ the slicer (FreeCAD file -&amp;gt; a G-Code dialect) No printer will be able to directly create a 1:1 replica of the 3D object.</description><content>&lt;h2 id="avoiding-common-pitfalls">Avoiding Common Pitfalls&lt;/h2>
+&lt;p>Foundation models are near universally based on &lt;a href="https://jenkinsdev.us/notes/technology/transformers/">Transformers&lt;/a>.&lt;/p></content></item><item><title>FreeCAD 3D Printing Notes</title><link>https://jenkinsdev.us/notes/cnc-3d-printing/freecad-3d-printing-notes/</link><pubDate>Wed, 04 Jun 2025 20:11:14 +0000</pubDate><guid>https://jenkinsdev.us/notes/cnc-3d-printing/freecad-3d-printing-notes/</guid><description>Avoiding Common Pitfalls Always ensure that 3D objects are solid PartDesign Workbench will notify you of any operations that would prevent the model from staying solid. Part Workbench has a Check Geometry tool, which can check for further defects Ensure your dimensions align properly Dimensions are vital: 1 millimeter in FreeCAD is 1 millimeter in real life Control degradation of the model, during transformation w/ the slicer (FreeCAD file -&amp;gt; a G-Code dialect) No printer will be able to directly create a 1:1 replica of the 3D object.</description><content>&lt;h2 id="avoiding-common-pitfalls">Avoiding Common Pitfalls&lt;/h2>
 &lt;ul>
 &lt;li>Always &lt;strong>ensure&lt;/strong> that &lt;strong>3D objects&lt;/strong> are &lt;strong>solid&lt;/strong>
 &lt;ul>
@@ -198,7 +198,7 @@ Foundation models are near universally based on Transformers.</description><cont
 &lt;li>&lt;a href="https://wiki.freecad.org/Manual:Preparing_models_for_3D_printing#Generating_G-code">Generate G-Code&lt;/a>&lt;/li>
 &lt;/ol>
 &lt;h2 id="useful-links">Useful Links&lt;/h2>
-&lt;p>&lt;strong>Preparing Models for 3D Printing:&lt;/strong> &lt;a href="https://wiki.freecad.org/Manual:Preparing_models_for_3D_printing">https://wiki.freecad.org/Manual:Preparing_models_for_3D_printing&lt;/a>&lt;/p></content></item><item><title>Hyrum’s Law</title><link>https://jenkinsdev.us/notes/technology/hyrum-s-law/</link><pubDate>Wed, 04 Jun 2025 14:15:37 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/hyrum-s-law/</guid><description>With a sufficient number of users of an API,
+&lt;p>&lt;strong>Preparing Models for 3D Printing:&lt;/strong> &lt;a href="https://wiki.freecad.org/Manual:Preparing_models_for_3D_printing">https://wiki.freecad.org/Manual:Preparing_models_for_3D_printing&lt;/a>&lt;/p></content></item><item><title>Hyrum’s Law</title><link>https://jenkinsdev.us/notes/technology/hyrum-s-law/</link><pubDate>Wed, 04 Jun 2025 20:11:14 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/hyrum-s-law/</guid><description>With a sufficient number of users of an API,
 it does not matter what you promise in the contract:
 all observable behaviors of your system
 will be depended on by somebody.
@@ -208,7 +208,7 @@ it does not matter what you promise in the contract:&lt;br>
 all observable behaviors of your system&lt;br>
 will be depended on by somebody.&lt;/p>
 &lt;/blockquote>
-&lt;p>&lt;a href="https://www.hyrumslaw.com/">Source&lt;/a>&lt;/p></content></item><item><title>Just-In-Time vs Just-In-Case</title><link>https://jenkinsdev.us/notes/knowledge/just-in-time-vs-just-in-case/</link><pubDate>Wed, 04 Jun 2025 14:15:37 +0000</pubDate><guid>https://jenkinsdev.us/notes/knowledge/just-in-time-vs-just-in-case/</guid><description>The difference between just-in-case and just-in-time is like the difference between training and trying. Person A never learned Algebra and never uses it. Person B learned Algebra in grade school and uses it daily. It would be hard to learn Algebra just in time. And the likelihood that Person B would use Algebra, if they had not learned it, is slim-to-nil What is the perfect balance of Just-In-Time learning vs Just-In-Case?</description><content>&lt;ul>
+&lt;p>&lt;a href="https://www.hyrumslaw.com/">Source&lt;/a>&lt;/p></content></item><item><title>Just-In-Time vs Just-In-Case</title><link>https://jenkinsdev.us/notes/knowledge/just-in-time-vs-just-in-case/</link><pubDate>Wed, 04 Jun 2025 20:11:14 +0000</pubDate><guid>https://jenkinsdev.us/notes/knowledge/just-in-time-vs-just-in-case/</guid><description>The difference between just-in-case and just-in-time is like the difference between training and trying. Person A never learned Algebra and never uses it. Person B learned Algebra in grade school and uses it daily. It would be hard to learn Algebra just in time. And the likelihood that Person B would use Algebra, if they had not learned it, is slim-to-nil What is the perfect balance of Just-In-Time learning vs Just-In-Case?</description><content>&lt;ul>
 &lt;li>The difference between just-in-case and just-in-time is like the difference between training and trying.&lt;/li>
 &lt;li>Person A never learned Algebra and never uses it. Person B learned Algebra in grade school and uses it daily.
 &lt;ul>
@@ -218,7 +218,7 @@ will be depended on by somebody.&lt;/p>
 &lt;/ul>
 &lt;p>&lt;strong>What is the perfect balance of Just-In-Time learning vs Just-In-Case?&lt;/strong> Is a difficult question to answer.&lt;/p>
 &lt;p>One cannot simply learn something Just-In-Time if they do not know a solution or problem exists.&lt;/p>
-&lt;p>&lt;strong>Source:&lt;/strong> &lt;a href="https://www.johndcook.com/blog/2010/03/03/just-in-case-versus-just-in-time/">https://www.johndcook.com/blog/2010/03/03/just-in-case-versus-just-in-time/&lt;/a>&lt;/p></content></item><item><title>K-Factor (Viral Coefficient)</title><link>https://jenkinsdev.us/notes/business/k-factor--viral-coefficient/</link><pubDate>Wed, 04 Jun 2025 14:15:37 +0000</pubDate><guid>https://jenkinsdev.us/notes/business/k-factor--viral-coefficient/</guid><description>What is it? The K-factor is the average number of referral signups, per unique inviting user.
+&lt;p>&lt;strong>Source:&lt;/strong> &lt;a href="https://www.johndcook.com/blog/2010/03/03/just-in-case-versus-just-in-time/">https://www.johndcook.com/blog/2010/03/03/just-in-case-versus-just-in-time/&lt;/a>&lt;/p></content></item><item><title>K-Factor (Viral Coefficient)</title><link>https://jenkinsdev.us/notes/business/k-factor--viral-coefficient/</link><pubDate>Wed, 04 Jun 2025 20:11:14 +0000</pubDate><guid>https://jenkinsdev.us/notes/business/k-factor--viral-coefficient/</guid><description>What is it? The K-factor is the average number of referral signups, per unique inviting user.
 K-Factor Scale 0.15 - 0.20 = ideal minimum 0.40 = good 0.70 = outstanding 1 = viral</description><content>&lt;h2 id="what-is-it">What is it?&lt;/h2>
 &lt;p>The K-factor is the average number of referral signups, per &lt;em>unique inviting user&lt;/em>.&lt;/p>
 &lt;h2 id="k-factor-scale">K-Factor Scale&lt;/h2>
@@ -231,9 +231,9 @@ K-Factor Scale 0.15 - 0.20 = ideal minimum 0.40 = good 0.70 = outstanding 1 = vi
 &lt;p>1 = viral&lt;/p>
 &lt;/blockquote>
 &lt;/li>
-&lt;/ul></content></item><item><title>Key Words of Astronomy</title><link>https://jenkinsdev.us/notes/science/key-words-of-astronomy/</link><pubDate>Wed, 04 Jun 2025 14:15:37 +0000</pubDate><guid>https://jenkinsdev.us/notes/science/key-words-of-astronomy/</guid><description>Astronomy: A branching field of Science that focuses on the study of Planetary Science, Stellar Astronomy, Galactic Astronomy and more!
+&lt;/ul></content></item><item><title>Key Words of Astronomy</title><link>https://jenkinsdev.us/notes/science/key-words-of-astronomy/</link><pubDate>Wed, 04 Jun 2025 20:11:14 +0000</pubDate><guid>https://jenkinsdev.us/notes/science/key-words-of-astronomy/</guid><description>Astronomy: A branching field of Science that focuses on the study of Planetary Science, Stellar Astronomy, Galactic Astronomy and more!
 Astrophysics: A branch of astronomy thay focuses on the study of celestial objects and phenomena (e.g. stars, planets, asteroids, black holes, etc.). Primarily focused on unearthing the physical processes and rules that govern the behavior of these objects.</description><content>&lt;p>&lt;strong>Astronomy:&lt;/strong> A branching field of Science that focuses on the study of Planetary Science, Stellar Astronomy, Galactic Astronomy and more!&lt;/p>
-&lt;p>&lt;strong>Astrophysics:&lt;/strong> A branch of astronomy thay focuses on the study of celestial objects and phenomena (e.g. stars, planets, asteroids, black holes, etc.). Primarily focused on unearthing the physical processes and rules that govern the behavior of these objects.&lt;/p></content></item><item><title>Korean</title><link>https://jenkinsdev.us/notes/language/korean/</link><pubDate>Wed, 04 Jun 2025 14:15:37 +0000</pubDate><guid>https://jenkinsdev.us/notes/language/korean/</guid><description>Learn To Read Korean In 15 Minutes
+&lt;p>&lt;strong>Astrophysics:&lt;/strong> A branch of astronomy thay focuses on the study of celestial objects and phenomena (e.g. stars, planets, asteroids, black holes, etc.). Primarily focused on unearthing the physical processes and rules that govern the behavior of these objects.&lt;/p></content></item><item><title>Korean</title><link>https://jenkinsdev.us/notes/language/korean/</link><pubDate>Wed, 04 Jun 2025 20:11:14 +0000</pubDate><guid>https://jenkinsdev.us/notes/language/korean/</guid><description>Learn To Read Korean In 15 Minutes
 Comic strip explaining the basics of the Korean alphabet Hangeul through “Romanization”
 https://ai.glossika.com/blog/korean-hangul-pronunciation
 A deeper dive into the Hangeul alphabet + “Romanization” cheat sheet</description><content>&lt;p>&lt;a href="https://www.ryanestrada.com/learntoreadkoreanin15minutes/">Learn To Read Korean In 15 Minutes&lt;/a>&lt;/p>
@@ -243,14 +243,14 @@ A deeper dive into the Hangeul alphabet + “Romanization” cheat sheet</descri
 &lt;p>&lt;a href="https://ai.glossika.com/blog/korean-hangul-pronunciation">https://ai.glossika.com/blog/korean-hangul-pronunciation&lt;/a>&lt;/p>
 &lt;blockquote>
 &lt;p>A deeper dive into the Hangeul alphabet + “Romanization” cheat sheet&lt;/p>
-&lt;/blockquote></content></item><item><title>Mamba Model</title><link>https://jenkinsdev.us/notes/technology/mamba-model/</link><pubDate>Wed, 04 Jun 2025 14:15:37 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/mamba-model/</guid><description>Why? Foundation Models
+&lt;/blockquote></content></item><item><title>Mamba Model</title><link>https://jenkinsdev.us/notes/technology/mamba-model/</link><pubDate>Wed, 04 Jun 2025 20:11:14 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/mamba-model/</guid><description>Why? Foundation Models
 Linear Attention Gated Convolution Recurrent Models</description><content>&lt;h3 id="why">Why?&lt;/h3>
 &lt;p>&lt;a href="https://jenkinsdev.us/notes/technology/foundation-models/">Foundation Models&lt;/a>&lt;/p>
 &lt;ul>
 &lt;li>Linear Attention&lt;/li>
 &lt;li>Gated Convolution&lt;/li>
 &lt;li>Recurrent Models&lt;/li>
-&lt;/ul></content></item><item><title>Memory Layouts</title><link>https://jenkinsdev.us/notes/technology/memory-layouts/</link><pubDate>Wed, 04 Jun 2025 14:15:37 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/memory-layouts/</guid><description>Vector A vector data structure can make use of an extremely sparse memory structure
+&lt;/ul></content></item><item><title>Memory Layouts</title><link>https://jenkinsdev.us/notes/technology/memory-layouts/</link><pubDate>Wed, 04 Jun 2025 20:11:14 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/memory-layouts/</guid><description>Vector A vector data structure can make use of an extremely sparse memory structure
 --------------------------------------------------- | destructor_fn | size | capacity | data[0] | ... | --------------------------------------------------- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^ Vector Metadata Vector Data Generally speaking, the user would get back a pointer to the first element of the vector Internal logic will be able to access the memory of the metadata</description><content>&lt;h3 id="vector">Vector&lt;/h3>
 &lt;p>A &lt;em>vector&lt;/em> data structure can make use of an extremely sparse memory structure&lt;/p>
 &lt;pre tabindex="0">&lt;code>---------------------------------------------------
@@ -261,7 +261,7 @@ Vector Metadata Vector Data
 &lt;/code>&lt;/pre>&lt;ul>
 &lt;li>Generally speaking, the user would get back a pointer to the first element of the vector&lt;/li>
 &lt;li>Internal logic will be able to access the memory of the metadata&lt;/li>
-&lt;/ul></content></item><item><title>Mutual Funds vs ETFs</title><link>https://jenkinsdev.us/notes/finance/mutual-funds-vs-etfs/</link><pubDate>Wed, 04 Jun 2025 14:15:37 +0000</pubDate><guid>https://jenkinsdev.us/notes/finance/mutual-funds-vs-etfs/</guid><description>Mutual Funds are actively managed by a fund manager or a full team (though passively managed fund have a bit of popularity)
+&lt;/ul></content></item><item><title>Mutual Funds vs ETFs</title><link>https://jenkinsdev.us/notes/finance/mutual-funds-vs-etfs/</link><pubDate>Wed, 04 Jun 2025 20:11:14 +0000</pubDate><guid>https://jenkinsdev.us/notes/finance/mutual-funds-vs-etfs/</guid><description>Mutual Funds are actively managed by a fund manager or a full team (though passively managed fund have a bit of popularity)
 ETFs are always passively managed
 Mutual Funds generally have a minimum investment amount (e.g. in the $500 - $5,000 min range)
 ETFs are bought and sold like stock and therefore are bought &amp;amp; sold similarly. They can even be shorted
@@ -287,7 +287,7 @@ Mutual Funds will almost always have much higher expenses, especially due to the
 &lt;li>
 &lt;p>&lt;strong>ETFs&lt;/strong> generally track a market index or sector sub-index&lt;/p>
 &lt;/li>
-&lt;/ul></content></item><item><title>Practical Electronics For Inventors (Book Notes)</title><link>https://jenkinsdev.us/notes/technology/practical-electronics-for-inventors--book-notes/</link><pubDate>Wed, 04 Jun 2025 14:15:37 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/practical-electronics-for-inventors--book-notes/</guid><description>Definitions (A) ampere or amp (p6) Unit of current Interchangeable unit for 1 C/s (C) coulomb (p6) Unit of electrical charge Voltage potential difference or just potential (NOT potential energy) (V) volt (p14) Unit of measure of Voltage 1 volt = 1 joule / 1 coulomb Power (p14) power = dW/dt Chapter 2: Theory Voltage To get a mental image of how a battery generates an EMF through a circuit, we envision that chemical reactions inside yield free electrons that quickly build in number within the negative terminal region (anode material), causing an electron concentration.</description><content>&lt;h2 id="definitions">Definitions&lt;/h2>
+&lt;/ul></content></item><item><title>Practical Electronics For Inventors (Book Notes)</title><link>https://jenkinsdev.us/notes/technology/practical-electronics-for-inventors--book-notes/</link><pubDate>Wed, 04 Jun 2025 20:11:14 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/practical-electronics-for-inventors--book-notes/</guid><description>Definitions (A) ampere or amp (p6) Unit of current Interchangeable unit for 1 C/s (C) coulomb (p6) Unit of electrical charge Voltage potential difference or just potential (NOT potential energy) (V) volt (p14) Unit of measure of Voltage 1 volt = 1 joule / 1 coulomb Power (p14) power = dW/dt Chapter 2: Theory Voltage To get a mental image of how a battery generates an EMF through a circuit, we envision that chemical reactions inside yield free electrons that quickly build in number within the negative terminal region (anode material), causing an electron concentration.</description><content>&lt;h2 id="definitions">Definitions&lt;/h2>
 &lt;ul>
 &lt;li>&lt;strong>(A) &lt;em>ampere&lt;/em> or &lt;em>amp&lt;/em>&lt;/strong> (p6)
 &lt;ul>
@@ -323,7 +323,7 @@ Mutual Funds will almost always have much higher expenses, especially due to the
 &lt;p>To get a mental image of how a battery generates an EMF through a circuit, we envision that chemical reactions inside yield free electrons that quickly build in number within the negative terminal region (anode material), causing an electron concentration. This concentration is full of repulsive force (electrons repel) that can be viewed as a kind of &amp;ldquo;electrical pressure&amp;rdquo;&lt;/p>
 &lt;p>With a load (e.g., flashlight lamp, &amp;hellip;) placed between the battery&amp;rsquo;s terminals, electrons from the battery&amp;rsquo;s negative terminal attempt to alleviate this pressure by dispersing into the circuit. These electrons increase the concentration of free electrons within the end of the conductor attached to the negative terminal. Even a small percentage difference in free electron concentration in one region gives rise to great repulsive forces between free electrons.
 &lt;em>(p11) 2.3.1 The Mechanisms of Voltage&lt;/em>&lt;/p>
-&lt;/blockquote></content></item><item><title>Random Technical Resources</title><link>https://jenkinsdev.us/notes/technology/random-technical-resources/</link><pubDate>Wed, 04 Jun 2025 14:15:37 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/random-technical-resources/</guid><description>getdeploying
+&lt;/blockquote></content></item><item><title>Random Technical Resources</title><link>https://jenkinsdev.us/notes/technology/random-technical-resources/</link><pubDate>Wed, 04 Jun 2025 20:11:14 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/random-technical-resources/</guid><description>getdeploying
 Discover, filter and compare cloud providers of all shapes and sizes.
 cybersectools
 Compilation of many types of cyber security tools and other resources.
@@ -339,7 +339,7 @@ Hardware &amp;ldquo;hacking&amp;rdquo; wiki</description><content>&lt;p>&lt;a hr
 &lt;p>&lt;a href="https://www.hardbreak.wiki/hardware-hacking/introduction">hardbreak&lt;/a>&lt;/p>
 &lt;blockquote>
 &lt;p>Hardware &amp;ldquo;hacking&amp;rdquo; wiki&lt;/p>
-&lt;/blockquote></content></item><item><title>Staff Engineering Archetypes</title><link>https://jenkinsdev.us/notes/business/staff-engineering-archetypes/</link><pubDate>Wed, 04 Jun 2025 14:15:37 +0000</pubDate><guid>https://jenkinsdev.us/notes/business/staff-engineering-archetypes/</guid><description>Source
+&lt;/blockquote></content></item><item><title>Staff Engineering Archetypes</title><link>https://jenkinsdev.us/notes/business/staff-engineering-archetypes/</link><pubDate>Wed, 04 Jun 2025 20:11:14 +0000</pubDate><guid>https://jenkinsdev.us/notes/business/staff-engineering-archetypes/</guid><description>Source
 Tech Lead Focus on partnering with a small amount of Engineering Managers (1-3 generally) Guides approach and execution of technical bits, generally in a focused area Tech Lead Manager may also exists, but is on the Engineering Manager track (not Staff-plus) Architect Combines technical prowess and organizational leadership knowledge to guide direction, quality, and execution in critical paths Solver Digs very deep into arbitrarily difficult or complex problem areas Very strong technical skills are necessary Can focus on a specific area for an extended amount of time, or can jump between “hotspots” Right Hand Generally only present in very large organizations Acts as an extension to an executive, providing additional processing/bandwidth Generally acts on the scope and authority of whom they’re assisting</description><content>&lt;p>&lt;a href="https://staffeng.com/guides/staff-archetypes/">Source&lt;/a>&lt;/p>
 &lt;h3 id="tech-lead">Tech Lead&lt;/h3>
 &lt;ul>
@@ -362,9 +362,9 @@ Tech Lead Focus on partnering with a small amount of Engineering Managers (1-3 g
 &lt;li>Generally only present in very large organizations&lt;/li>
 &lt;li>Acts as an extension to an executive, providing additional processing/bandwidth&lt;/li>
 &lt;li>Generally acts on the scope and authority of whom they’re assisting&lt;/li>
-&lt;/ul></content></item><item><title>Startup Funding</title><link>https://jenkinsdev.us/notes/business/startup-funding/</link><pubDate>Wed, 04 Jun 2025 14:15:37 +0000</pubDate><guid>https://jenkinsdev.us/notes/business/startup-funding/</guid><description>▪︎ TinySeed is an alternative to the usual Venture Capital funding ▪︎ Even raising $100k is considered semi-bootstrapping ▪︎ Finding Angel Investors or other low investment options are better for 90+% of startups</description><content>&lt;p>▪︎ TinySeed is an alternative to the usual Venture Capital funding
+&lt;/ul></content></item><item><title>Startup Funding</title><link>https://jenkinsdev.us/notes/business/startup-funding/</link><pubDate>Wed, 04 Jun 2025 20:11:14 +0000</pubDate><guid>https://jenkinsdev.us/notes/business/startup-funding/</guid><description>▪︎ TinySeed is an alternative to the usual Venture Capital funding ▪︎ Even raising $100k is considered semi-bootstrapping ▪︎ Finding Angel Investors or other low investment options are better for 90+% of startups</description><content>&lt;p>▪︎ TinySeed is an alternative to the usual Venture Capital funding
 ▪︎ Even raising $100k is considered semi-bootstrapping
-▪︎ Finding Angel Investors or other low investment options are better for 90+% of startups&lt;/p></content></item><item><title>Startup Ideas</title><link>https://jenkinsdev.us/notes/business/startup-ideas/</link><pubDate>Wed, 04 Jun 2025 14:15:37 +0000</pubDate><guid>https://jenkinsdev.us/notes/business/startup-ideas/</guid><description>SISP - Solution In Search of a Problem
+▪︎ Finding Angel Investors or other low investment options are better for 90+% of startups&lt;/p></content></item><item><title>Startup Ideas</title><link>https://jenkinsdev.us/notes/business/startup-ideas/</link><pubDate>Wed, 04 Jun 2025 20:11:14 +0000</pubDate><guid>https://jenkinsdev.us/notes/business/startup-ideas/</guid><description>SISP - Solution In Search of a Problem
 Tar Pit Ideas - Ideas that seem tantalizing, and are theoretically easy to solve. However, you will get stuck for months or years trying to solve the problem. (Social Media Co. trying to consolidate communication)
 Q1) Is/are the founder(s) fit for the market?
 Q2) How large is the market?
@@ -379,14 +379,14 @@ Q3) How accute is this problem? (Care of the problem, for consumers of your prod
 &lt;p>Q6) Are there any proxy businesses that can proven your idea?&lt;/p>
 &lt;p>Q7) Is this a problem you want to work on for years?&lt;/p>
 &lt;p>Q8) Is this a scalable business?&lt;/p>
-&lt;p>Q9) Is this a good idea space? A good idea space is one which has a good hit rate of success.&lt;/p></content></item><item><title>TanStack Query</title><link>https://jenkinsdev.us/notes/technology/tanstack-query/</link><pubDate>Wed, 04 Jun 2025 14:15:37 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/tanstack-query/</guid><description>Opinions Queries In Hooks or Contexts The documentation and articles across the web show examples of direct usage of useQuery (for a good reason, it is THE interface after all!).
+&lt;p>Q9) Is this a good idea space? A good idea space is one which has a good hit rate of success.&lt;/p></content></item><item><title>TanStack Query</title><link>https://jenkinsdev.us/notes/technology/tanstack-query/</link><pubDate>Wed, 04 Jun 2025 20:11:14 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/tanstack-query/</guid><description>Opinions Queries In Hooks or Contexts The documentation and articles across the web show examples of direct usage of useQuery (for a good reason, it is THE interface after all!).
 However, as your codebase scales, your application will benefit from using hooks or contexts. This enables logical abstractions that can enhance your query&amp;rsquo;s data.
 Mutations, derived values, and the data/metadata of the query itself may be provided through a singular interface.</description><content>&lt;h2 id="opinions">Opinions&lt;/h2>
 &lt;h4 id="queries-in-hooks-or-contexts">Queries In Hooks or Contexts&lt;/h4>
 &lt;p>The documentation and articles across the web show examples of direct usage of &lt;code>useQuery&lt;/code> (for a good reason, it is THE interface after all!).&lt;/p>
 &lt;p>However, as your codebase scales, your application will benefit from using hooks or contexts. This enables logical abstractions that can enhance your query&amp;rsquo;s data.&lt;/p>
 &lt;p>Mutations, derived values, and the data/metadata of the query itself may be provided through a singular interface.&lt;/p>
-&lt;p>As always, do not prematurely optimize for what does not matter. But, food for thought&lt;/p></content></item><item><title>Transformers</title><link>https://jenkinsdev.us/notes/technology/transformers/</link><pubDate>Wed, 04 Jun 2025 14:15:37 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/transformers/</guid><description>What is it? A deep learning architecture which is based on multi-head attention.
+&lt;p>As always, do not prematurely optimize for what does not matter. But, food for thought&lt;/p></content></item><item><title>Transformers</title><link>https://jenkinsdev.us/notes/technology/transformers/</link><pubDate>Wed, 04 Jun 2025 20:11:14 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/transformers/</guid><description>What is it? A deep learning architecture which is based on multi-head attention.
 Transformers were introduced to the world through a 2017 paper by eight scientists at Google: “Attention Is All You Need”. A paper which is seen as the turning point of modern artificial intelligence.
 Why was it created? Previously, ML architectures such as recurrent architectures, long short-term memory took much longer to train.
 Transformers enabled more efficient training, and by proxy made possible the wave of LLMs (Large Language Models) we have access to today.</description><content>&lt;h3 id="what-is-it">What is it?&lt;/h3>
@@ -394,7 +394,7 @@ Transformers enabled more efficient training, and by proxy made possible the wav
 &lt;p>Transformers were introduced to the world through a 2017 paper by eight scientists at Google: &lt;a href="https://en.m.wikipedia.org/wiki/Attention_Is_All_You_Need">“Attention Is All You Need”&lt;/a>. A paper which is seen as the turning point of modern artificial intelligence.&lt;/p>
 &lt;h3 id="why-was-it-created">Why was it created?&lt;/h3>
 &lt;p>Previously, ML architectures such as recurrent architectures, long short-term memory took much longer to train.&lt;/p>
-&lt;p>Transformers enabled more efficient training, and by proxy made possible the wave of LLMs (Large Language Models) we have access to today.&lt;/p></content></item><item><title>Triangle Trigonometric Functions</title><link>https://jenkinsdev.us/notes/maths/triangle-trigonometric-functions/</link><pubDate>Wed, 04 Jun 2025 14:15:37 +0000</pubDate><guid>https://jenkinsdev.us/notes/maths/triangle-trigonometric-functions/</guid><description>Sine Right Triangles sin(θ) = opposite / hypotenuse Non-Right Triangle a / sin(A) = b / sin(B) = c / sin(C) Cosine Right Triangle cos(θ) = adjacent / hypotenuse Tangent Right Triangle tan(θ) = opposite / adjacent</description><content>&lt;h3 id="sine">Sine&lt;/h3>
+&lt;p>Transformers enabled more efficient training, and by proxy made possible the wave of LLMs (Large Language Models) we have access to today.&lt;/p></content></item><item><title>Triangle Trigonometric Functions</title><link>https://jenkinsdev.us/notes/maths/triangle-trigonometric-functions/</link><pubDate>Wed, 04 Jun 2025 20:11:14 +0000</pubDate><guid>https://jenkinsdev.us/notes/maths/triangle-trigonometric-functions/</guid><description>Sine Right Triangles sin(θ) = opposite / hypotenuse Non-Right Triangle a / sin(A) = b / sin(B) = c / sin(C) Cosine Right Triangle cos(θ) = adjacent / hypotenuse Tangent Right Triangle tan(θ) = opposite / adjacent</description><content>&lt;h3 id="sine">Sine&lt;/h3>
 &lt;h4 id="right-triangles">Right Triangles&lt;/h4>
 &lt;ul>
 &lt;li>sin(θ) = opposite / hypotenuse&lt;/li>
@@ -412,109 +412,479 @@ Transformers enabled more efficient training, and by proxy made possible the wav
 &lt;h4 id="right-triangle-1">Right Triangle&lt;/h4>
 &lt;ul>
 &lt;li>tan(θ) = opposite / adjacent&lt;/li>
-&lt;/ul></content></item><item><title>Useful &amp; Cool AI Tools</title><link>https://jenkinsdev.us/notes/technology/useful---cool-ai-tools/</link><pubDate>Wed, 04 Jun 2025 14:15:37 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/useful---cool-ai-tools/</guid><description>Meshy
+&lt;/ul></content></item><item><title>Useful &amp; Cool AI Tools</title><link>https://jenkinsdev.us/notes/technology/useful---cool-ai-tools/</link><pubDate>Wed, 04 Jun 2025 20:11:14 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/useful---cool-ai-tools/</guid><description>Meshy
 A set of generative AI tools, offering Text to 3D, Image to 3D, AI Texturing, &amp;amp; Text to Voxel (as of writing).</description><content>&lt;p>&lt;a href="https://meshy.ai/">Meshy&lt;/a>&lt;/p>
 &lt;blockquote>
 &lt;p>A set of generative AI tools, offering Text to 3D, Image to 3D, AI Texturing, &amp;amp; Text to Voxel (as of writing).&lt;/p>
-&lt;/blockquote></content></item><item><title>Vector Databases</title><link>https://jenkinsdev.us/notes/technology/vector-databases/</link><pubDate>Wed, 04 Jun 2025 14:15:37 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/vector-databases/</guid><description>Technical Primer</description><content>&lt;p>&lt;a href="https://tge-data-web.nyc3.digitaloceanspaces.com/docs/Vector%20Databases%20-%20A%20Technical%20Primer.pdf">Technical Primer&lt;/a>&lt;/p></content></item><item><title>## Meeting Notes - Production and Development Tasks</title><link>https://jenkinsdev.us/handwritten-notes/meeting-notes---production-and-development-tasks/</link><pubDate>Tue, 03 Jun 2025 18:52:39 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/meeting-notes---production-and-development-tasks/</guid><description>Meeting Notes - Production and Development Tasks 2025-06-02
-Actions: ☑️ Remove (oauth_provider_id, oauth_sub) idx (in favor of optics[?]) ☑️ Deploy to staging following ☑️ Test in staging ☑️ Deploy to production Kiwi: ☑️ &amp;ldquo;Tap to copy&amp;rdquo; should probably be pressable ☑️ Add zip share button (location share) ☑️ Level up pre-entry ☑️ Update app icon Right Side Box: Cashapp offer What do we do if we can&amp;rsquo;t get fluent to raise caps.</description><content>&lt;h1 id="meeting-notes---production-and-development-tasks">Meeting Notes - Production and Development Tasks&lt;/h1>
-&lt;p>&lt;strong>2025-06-02&lt;/strong>&lt;/p>
-&lt;h3 id="actions">Actions:&lt;/h3>
+&lt;/blockquote></content></item><item><title>Vector Databases</title><link>https://jenkinsdev.us/notes/technology/vector-databases/</link><pubDate>Wed, 04 Jun 2025 20:11:14 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/vector-databases/</guid><description>Technical Primer</description><content>&lt;p>&lt;a href="https://tge-data-web.nyc3.digitaloceanspaces.com/docs/Vector%20Databases%20-%20A%20Technical%20Primer.pdf">Technical Primer&lt;/a>&lt;/p></content></item><item><title>## Rhythm TDD Development Notes and Ben's Command Block Setup</title><link>https://jenkinsdev.us/handwritten-notes/rhythm-tdd-development-notes-and-ben-s-command-block-setup/</link><pubDate>Wed, 04 Jun 2025 16:28:43 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/rhythm-tdd-development-notes-and-ben-s-command-block-setup/</guid><description>Rhythm TDD Development Notes and Ben&amp;rsquo;s Command Block Setup Rollbar Integration for Rhythm Foot Control Pad for Computer
+[Drawing description: A simple blue sketch showing what appears to be an L-shaped foot control pad or pedal]
+Rhythm TDD Checklist: System Playlists ■ Search/Playlist = yet-driven Client Authentication AdSee System Test Server [ ] Test Client Client: Finish Designs ■ Client: Can Resume spot on app boot ■ Coming Soon: can make playlists ■ Client: iOS ■ Bottom Nav Bar (spacing iOS) Ensure autoplay works (80?</description><content>&lt;h1 id="rhythm-tdd-development-notes-and-bens-command-block-setup">Rhythm TDD Development Notes and Ben&amp;rsquo;s Command Block Setup&lt;/h1>
+&lt;h3 id="rollbar-integration-for-rhythm">Rollbar Integration for Rhythm&lt;/h3>
+&lt;p>&lt;strong>Foot Control Pad for Computer&lt;/strong>&lt;/p>
+&lt;p>[Drawing description: A simple blue sketch showing what appears to be an L-shaped foot control pad or pedal]&lt;/p>
+&lt;h3 id="rhythm-tdd-checklist">Rhythm TDD Checklist:&lt;/h3>
 &lt;ul>
-&lt;li>☑️ &lt;del>Remove (oauth_provider_id, oauth_sub) idx&lt;/del> (in favor of optics[?])&lt;/li>
-&lt;li>☑️ &lt;del>Deploy to staging&lt;/del> following&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> System Playlists&lt;/li>
+&lt;li>■ &lt;del>Search/Playlist&lt;/del> = yet-driven&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Client Authentication&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> AdSee System
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Test Server [ ] Test Client&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Client: Finish Designs&lt;/li>
+&lt;li>■ Client: Can Resume spot on app boot&lt;/li>
+&lt;li>■ Coming Soon: can make playlists&lt;/li>
+&lt;li>■ Client: iOS&lt;/li>
+&lt;li>■ Bottom Nav Bar (spacing iOS)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Ensure autoplay works &lt;del>(80?)&lt;/del>&lt;/li>
+&lt;li>■ Search playlist screen&lt;/li>
+&lt;li>■ Queue → Page: keep playing&lt;/li>
+&lt;/ul>
+&lt;h3 id="allow-ben-to-use-cmd-block">Allow Ben to use Cmd Block:&lt;/h3>
+&lt;ul>
+&lt;li>get X(64 Diamonds&lt;/li>
+&lt;li>Pwns Flick diamond Blue&lt;/li>
+&lt;li>if you aren&amp;rsquo;t Ben; death!&lt;/li>
+&lt;/ul></content></item><item><title>## Mobile App Development Notes &amp; Cost Calculations</title><link>https://jenkinsdev.us/handwritten-notes/mobile-app-development-notes---cost-calculations/</link><pubDate>Wed, 04 Jun 2025 16:28:36 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/mobile-app-development-notes---cost-calculations/</guid><description>Mobile App Development Notes &amp;amp; Cost Calculations Triple Dot - acq. App.com - REPLICATION
+CPI
+$36K/month = bills $100K/day = Licensing ☐ Cache video, queue, CURRENT HYPE ☐ Reload on app start
+☐ Coming Soon Location Changes (No Playback)
+[There is a scribbled/crossed out section with heavy blue marks]
+SDK Integration:
+Amplitude SDK AppFlyer Facebook Ads SDK Cost Calculation: $15,000/day × 30 = $0,000 √ 5,000 $450,000
+Organic Growth:
+1700 organic 2700 organic in our system Diagram Description: The note contains several organizational elements including checkboxes for task tracking, crossed-out items indicating completed or cancelled features, and a mathematical calculation showing monthly revenue projections.</description><content>&lt;h1 id="mobile-app-development-notes--cost-calculations">Mobile App Development Notes &amp;amp; Cost Calculations&lt;/h1>
+&lt;p>&lt;strong>Triple Dot - acq.&lt;/strong>
+&lt;strong>App.com - REPLICATION&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>CPI&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>$36K/month = bills&lt;/li>
+&lt;li>$100K/day = Licensing&lt;/li>
+&lt;/ul>
+&lt;p>☐ Cache video, queue, CURRENT HYPE
+☐ Reload on app start&lt;/p>
+&lt;p>☐ Coming Soon &lt;del>Location&lt;/del>
+Changes (No Playback)&lt;/p>
+&lt;p>[There is a scribbled/crossed out section with heavy blue marks]&lt;/p>
+&lt;p>&lt;strong>SDK Integration:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Amplitude SDK&lt;/li>
+&lt;li>&lt;del>AppFlyer&lt;/del>&lt;/li>
+&lt;li>Facebook Ads SDK&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Cost Calculation:&lt;/strong>
+$15,000/day
+× 30
+= $0,000
+√ 5,000
+&lt;strong>$450,000&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Organic Growth:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>1700 organic&lt;/li>
+&lt;li>2700 organic in our system&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>&lt;strong>Diagram Description:&lt;/strong>
+The note contains several organizational elements including checkboxes for task tracking, crossed-out items indicating completed or cancelled features, and a mathematical calculation showing monthly revenue projections. There&amp;rsquo;s a heavily scribbled section that appears to represent frustration or emphasis around the &amp;ldquo;No Playback&amp;rdquo; issue.&lt;/p></content></item><item><title>## Smart Home Server and IoT Setup Notes</title><link>https://jenkinsdev.us/handwritten-notes/smart-home-server-and-iot-setup-notes/</link><pubDate>Wed, 04 Jun 2025 16:28:29 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/smart-home-server-and-iot-setup-notes/</guid><description>Smart Home Server and IoT Setup Notes System Architecture Smart Home Server
+Linux &amp;ndash; systemd startup script Windows &amp;ndash; startup PS1 script Both connect to: Docker Container w/ MQTT Broker
+Diagram: Simple flow chart showing Linux and Windows boxes connecting via dotted lines to the Docker container
+Embedded MQTT Broker in a Mist Program, w/ Client pub/sub
+Diagram: Small squares and rectangles representing &amp;ldquo;Couldn&amp;rsquo;s game of life Roguerl&amp;rdquo; - appears to be a simple sketch of connected components</description><content>&lt;h1 id="smart-home-server-and-iot-setup-notes">Smart Home Server and IoT Setup Notes&lt;/h1>
+&lt;h3 id="system-architecture">System Architecture&lt;/h3>
+&lt;p>&lt;strong>Smart Home Server&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Linux&lt;/strong> &amp;ndash; systemd startup script&lt;/li>
+&lt;li>&lt;strong>Windows&lt;/strong> &amp;ndash; startup PS1 script&lt;/li>
+&lt;/ul>
+&lt;p>Both connect to:
+&lt;strong>Docker Container w/ MQTT Broker&lt;/strong>&lt;/p>
+&lt;p>&lt;em>Diagram: Simple flow chart showing Linux and Windows boxes connecting via dotted lines to the Docker container&lt;/em>&lt;/p>
+&lt;p>&lt;strong>Embedded MQTT Broker in a Mist Program, w/ Client pub/sub&lt;/strong>&lt;/p>
+&lt;p>&lt;em>Diagram: Small squares and rectangles representing &amp;ldquo;Couldn&amp;rsquo;s game of life Roguerl&amp;rdquo; - appears to be a simple sketch of connected components&lt;/em>&lt;/p>
+&lt;hr>
+&lt;p>&lt;strong>Date: 2025-02-15&lt;/strong>&lt;/p>
+&lt;h3 id="recent-updates">Recent Updates&lt;/h3>
+&lt;p>&lt;strong>■ Upload 2.3.14 Android/iOS&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Include 2.0.2 Flutter/Earn SDK update&lt;/li>
+&lt;li>&lt;del>integrate Shuffle to each of&lt;/del> &lt;strong>test tracks&lt;/strong>&lt;/li>
+&lt;li>&lt;del>[unclear] outage&lt;/del>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>■ &lt;del>Program YouTube Search&lt;/del>&lt;/strong> [struck through]&lt;/p>
+&lt;p>&lt;strong>□ Sketch CofE Go 2&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Hiring Trainees (Unity) - iOS Organic - Playful Left ~ 100k online&lt;/li>
+&lt;li>table in January&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="status-questions">Status Questions&lt;/h3>
+&lt;p>&lt;strong>Are these scraped?&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Linkin Park&lt;/li>
+&lt;li>&lt;del>Lower Dingle&lt;/del> &lt;strong>Nope!&lt;/strong> - Meaning poor search results is due to it being not scraped yet&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>&lt;em>Note: This appears to be technical notes about a smart home server setup with MQTT messaging, along with mobile app development updates and content scraping status checks.&lt;/em>&lt;/p></content></item><item><title>## Meeting Notes - Product Updates and User Research</title><link>https://jenkinsdev.us/handwritten-notes/meeting-notes---product-updates-and-user-research/</link><pubDate>Wed, 04 Jun 2025 16:28:12 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/meeting-notes---product-updates-and-user-research/</guid><description>Meeting Notes - Product Updates and User Research Playful Records [unclear] diff action line v2.3.3 Social Auth Router ☐ v2.3.4 (App Usage Data Filtering) ☐ v2.3.5 (Onboarding Wizard v2) Important Note Box TikTok + FB + Apps flyst deep link cloud deferred
+Social Audit - Completed vs Planned 0 merge or build 4 test rank
+Completed:
+Audio Google Skype Google Analytics Skyhit Skype Google Analytics Seyhit Skype iOS:
+Google Skype Google Analytics Seyhit Skype Google Analytics Seyhit Skype User Issues User Info (Prod)</description><content>&lt;h1 id="meeting-notes---product-updates-and-user-research">Meeting Notes - Product Updates and User Research&lt;/h1>
+&lt;h3 id="playful-records">Playful Records&lt;/h3>
+&lt;ul>
+&lt;li>&lt;del>[unclear] diff action line&lt;/del>&lt;/li>
+&lt;li>&lt;del>v2.3.3 Social Auth Router&lt;/del>&lt;/li>
+&lt;li>☐ v2.3.4 (App Usage Data Filtering)&lt;/li>
+&lt;li>☐ v2.3.5 (Onboarding Wizard v2)&lt;/li>
+&lt;/ul>
+&lt;h3 id="important-note-box">Important Note Box&lt;/h3>
+&lt;p>TikTok + FB + Apps flyst
+deep link cloud
+deferred&lt;/p>
+&lt;h3 id="social-audit---completed-vs-planned">Social Audit - Completed vs Planned&lt;/h3>
+&lt;p>0 merge or build 4 test
+rank&lt;/p>
+&lt;p>&lt;strong>Completed:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;del>Audio&lt;/del>&lt;/li>
+&lt;li>&lt;del>Google&lt;/del> &lt;del>Skype&lt;/del> &lt;del>Google Analytics&lt;/del>&lt;/li>
+&lt;li>&lt;del>Skyhit&lt;/del> &lt;del>Skype&lt;/del> &lt;del>Google Analytics&lt;/del>&lt;/li>
+&lt;li>&lt;del>Seyhit&lt;/del> &lt;del>Skype&lt;/del>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>iOS:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;del>Google&lt;/del> &lt;del>Skype&lt;/del> &lt;del>Google Analytics&lt;/del>&lt;/li>
+&lt;li>&lt;del>Seyhit&lt;/del> &lt;del>Skype&lt;/del> &lt;del>Google Analytics&lt;/del>&lt;/li>
+&lt;li>&lt;del>Seyhit&lt;/del> &lt;del>Skype&lt;/del>&lt;/li>
+&lt;/ul>
+&lt;h3 id="user-issues">User Issues&lt;/h3>
+&lt;p>&lt;strong>&lt;del>User Info (Prod)&lt;/del>&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>☐ Frontend Change Sync?&lt;/li>
+&lt;li>☐ Workers dying&lt;/li>
+&lt;li>☐ Global Remote Config&lt;/li>
+&lt;li>☐ Worker Job (TIME Advancement)&lt;/li>
+&lt;li>☐ Push Notifications (Scheduled Send)&lt;/li>
+&lt;li>☐ Update segment concrete to use queue + time&lt;/li>
+&lt;li>☐ Query Optimizations&lt;/li>
+&lt;li>☐ Journey Step Patching (Client)&lt;/li>
+&lt;li>☐ Journey State Event Template&lt;/li>
+&lt;li>☐ Enable Stack&lt;/li>
+&lt;li>☐ ARM&lt;/li>
+&lt;/ul>
+&lt;h3 id="search-rpi-focus">Search RPI Focus&lt;/h3>
+&lt;p>Get Client ROAS&lt;/p>
+&lt;p>Get $300 by spending
+$175&lt;/p>
+&lt;p>&lt;strong>Senders!&lt;/strong>
+IAP
+Changes
+to boost
+up next
+Click Roas&lt;/p>
+&lt;h3 id="click-roas-metric-pushing">Click Roas Metric Pushing&lt;/h3>
+&lt;p>Focus on IARs&lt;/p>
+&lt;h3 id="business-analytics">Business Analytics&lt;/h3>
+&lt;p>👁️ &lt;strong>Visibility &amp;amp; Observability for Business Analytics&lt;/strong>&lt;/p>
+&lt;h3 id="big-updates-new">Big Updates New&lt;/h3>
+&lt;p>Then Analytics Revamp&lt;/p>
+&lt;hr>
+&lt;p>&lt;strong>Diagram Description:&lt;/strong> The notes contain several hand-drawn boxes and sections with checkboxes, line-throughs indicating completed items, and organizational dividers. There&amp;rsquo;s a prominent boxed section at the top right highlighting TikTok, FB, and Apps integration points.&lt;/p></content></item><item><title>## Product Development &amp; Playful Rewards Notes</title><link>https://jenkinsdev.us/handwritten-notes/product-development---playful-rewards-notes/</link><pubDate>Wed, 04 Jun 2025 16:28:06 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/product-development---playful-rewards-notes/</guid><description>Product Development &amp;amp; Playful Rewards Notes Date: 2024-10-22
+Prepared by: Default
+Diagram: Push Out RTK Client Build Process [Diamond-shaped diagram showing &amp;ldquo;Push Out RTK DEN Logs one Client&amp;rdquo; workflow with staging and client builds + Firebase]
+Playful Rewards: Test Attribution Push Up Social Auth (Staging + Client Builds + Firebase) App Usage Tracking Sync w/ Adam: 2.3.4 • What are our goals exactly • Here is what we provide summary Send Adam Credentials encrypt changes for [Lead Accar-auth] Onboarding Wizard v2 (Quick vs Big) V2.</description><content>&lt;h1 id="product-development--playful-rewards-notes">Product Development &amp;amp; Playful Rewards Notes&lt;/h1>
+&lt;p>&lt;strong>Date:&lt;/strong> 2024-10-22&lt;br>
+&lt;strong>Prepared by:&lt;/strong> Default&lt;/p>
+&lt;h3 id="diagram-push-out-rtk-client-build-process">Diagram: Push Out RTK Client Build Process&lt;/h3>
+&lt;p>&lt;em>[Diamond-shaped diagram showing &amp;ldquo;Push Out RTK DEN Logs one Client&amp;rdquo; workflow with staging and client builds + Firebase]&lt;/em>&lt;/p>
+&lt;hr>
+&lt;h3 id="playful-rewards">Playful Rewards:&lt;/h3>
+&lt;h4 id="test-attribution">Test Attribution&lt;/h4>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Push Up Social Auth (Staging + Client Builds + Firebase)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> App Usage Tracking Sync w/ Adam: &lt;strong>2.3.4&lt;/strong>
+&lt;ul>
+&lt;li>• What are our goals exactly&lt;/li>
+&lt;li>• Here is what we provide summary&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Send Adam Credentials encrypt changes for [Lead Accar-auth]&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Onboarding Wizard v2 (Quick vs Big)&lt;/li>
+&lt;/ul>
+&lt;h4 id="v234-updates">V2.3.4 Updates&lt;/h4>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> &lt;del>Filter Out Recently Played (90-days)&lt;/del> ⭐&lt;/li>
+&lt;/ul>
+&lt;h4 id="userwise-updates">UserWise Updates&lt;/h4>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Mongo 5 → 6
+&lt;ul>
+&lt;li>• Staging: &lt;strong>0&lt;/strong> Production&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> &lt;del>Parietal Changes&lt;/del> &amp;gt;_&amp;lt;&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> FluxRTS during?&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Global Rewrite config&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Worker Job (time)?&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Push Notifications (Scheduled Send)&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>OUG&lt;/strong> &lt;em>[boxed text]&lt;/em>&lt;/p>
+&lt;hr>
+&lt;h3 id="perpetual-call-notes">Perpetual Call Notes:&lt;/h3>
+&lt;h4 id="q1q2-for-liveops-uw-then">Q1/Q2 for LiveOps; UW then?&lt;/h4>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> GCP??? Do we host for them?&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> How do we integrate UW ↔ PT
+&lt;ul>
+&lt;li>• UW would be a nice frontend&lt;/li>
+&lt;li>• They would need custom features&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Start SaaS → Self-Hosted (pre-live)&lt;/li>
+&lt;/ul>
+&lt;h4 id="pubsub-realtime-flow">PubSub Realtime Flow&lt;/h4>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> They provide segments to us.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>ECP&lt;/strong> &lt;em>[boxed text at bottom]&lt;/em>&lt;/p>
+&lt;hr>
+&lt;h3 id="diagrams-present">Diagrams Present:&lt;/h3>
+&lt;ol>
+&lt;li>&lt;strong>Diamond workflow diagram&lt;/strong> at top showing RTK client build process&lt;/li>
+&lt;li>&lt;strong>Star symbol&lt;/strong> (⭐) marking completed recently played filter&lt;/li>
+&lt;li>&lt;strong>Boxed labels&lt;/strong> for &amp;ldquo;OUG&amp;rdquo; and &amp;ldquo;ECP&amp;rdquo; sections&lt;/li>
+&lt;/ol></content></item><item><title>## Development Tasks - 2025-06-03</title><link>https://jenkinsdev.us/handwritten-notes/development-tasks---2025-06-03/</link><pubDate>Wed, 04 Jun 2025 15:39:43 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/development-tasks---2025-06-03/</guid><description>Development Tasks - 2025-06-03 Client: ☐ Double-Check Social Auth iOS/Google • Android/Google iOS/Apple • Android/Apple ☐ Create Amplitude onboarding Funnel Backend: ☐ Fix game overview link color ☐ Push Notification creds JSON for Kiwi ☐ General LEVELUP Design tweaks ☐ APNS creds → Firebase Additional Notes: Personal Property Dentist 3:11 (!!!) IntelliJ Op: transparency Note: This appears to be a development task list with client-side and backend items, along with some personal reminders at the bottom.</description><content>&lt;h1 id="development-tasks---2025-06-03">Development Tasks - 2025-06-03&lt;/h1>
+&lt;h3 id="client">Client:&lt;/h3>
+&lt;ul>
+&lt;li>☐ Double-Check Social Auth
+&lt;ul>
+&lt;li>iOS/Google • Android/Google&lt;/li>
+&lt;li>iOS/Apple • Android/Apple&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>☐ Create Amplitude onboarding Funnel&lt;/li>
+&lt;/ul>
+&lt;h3 id="backend">Backend:&lt;/h3>
+&lt;ul>
+&lt;li>☐ Fix game overview link color&lt;/li>
+&lt;li>☐ Push Notification creds JSON for Kiwi&lt;/li>
+&lt;li>☐ General LEVELUP Design tweaks&lt;/li>
+&lt;li>☐ APNS creds → Firebase&lt;/li>
+&lt;/ul>
+&lt;h3 id="additional-notes">Additional Notes:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;del>Personal Property&lt;/del>&lt;/li>
+&lt;li>Dentist 3:11 (!!!)&lt;/li>
+&lt;li>IntelliJ&lt;/li>
+&lt;li>Op: transparency&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>&lt;em>Note: This appears to be a development task list with client-side and backend items, along with some personal reminders at the bottom. The checkboxes (☐) indicate incomplete tasks, while the strikethrough text shows completed or cancelled items.&lt;/em>&lt;/p></content></item><item><title>## Development Tasks - June 3, 2005</title><link>https://jenkinsdev.us/handwritten-notes/development-tasks---june-3--2005/</link><pubDate>Wed, 04 Jun 2025 15:39:43 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/development-tasks---june-3--2005/</guid><description>Development Tasks - June 3, 2005 Client Tasks: Double-Check Social Auth iOS/Google iOS/Apple Android/Google Android/Apple Create Amplitude Onboarding Funnel Backend Tasks: Fix game overview link color Push Notification creds json for Kiwi General LEVELUP Design tweaks APNS creds → Firebase Additional Notes: Personal Property Dentist 3:11 (!!!) InterFit Op: transparency</description><content>&lt;h1 id="development-tasks---june-3-2005">Development Tasks - June 3, 2005&lt;/h1>
+&lt;h3 id="client-tasks">Client Tasks:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> &lt;strong>Double-Check Social Auth&lt;/strong>
+&lt;ul>
+&lt;li>iOS/Google&lt;/li>
+&lt;li>iOS/Apple&lt;/li>
+&lt;li>Android/Google&lt;/li>
+&lt;li>Android/Apple&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> &lt;strong>Create Amplitude Onboarding Funnel&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h3 id="backend-tasks">Backend Tasks:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> &lt;strong>Fix game overview link color&lt;/strong>&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> &lt;strong>Push Notification creds json for Kiwi&lt;/strong>&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> &lt;strong>General LEVELUP Design tweaks&lt;/strong>&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> &lt;strong>APNS creds → Firebase&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="additional-notes">Additional Notes:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;del>Personal Property&lt;/del>&lt;/li>
+&lt;li>Dentist 3:11 (!!!)&lt;/li>
+&lt;li>InterFit&lt;/li>
+&lt;li>Op: transparency&lt;/li>
+&lt;/ul></content></item><item><title>## Meeting Notes - June 2, 2025</title><link>https://jenkinsdev.us/handwritten-notes/meeting-notes---june-2--2025/</link><pubDate>Tue, 03 Jun 2025 18:52:39 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/meeting-notes---june-2--2025/</guid><description>Meeting Notes - June 2, 2025 Decisions: ☑️ Remove (cough, powder, cough_sub) idx (on favor of ophicopy) ☑️ Deploy to staging → following ☑️ Test in staging ☑️ Deploy to production Kiwi: &amp;ldquo;Tap to copy&amp;rdquo; should probably be pressable Add zip share button (location share) Level up pre-entry Update app icon Boxed Notes Section: Cashapp offer What do we do if we can&amp;rsquo;t get Fund to raise Caps. $600k gross pact $160k playful share after base pay AppLaRn internally - Ad creation [unclear] -cool hire a PP Tax Additional Boxed Notes: -Intelligence Renderbook → ATD → Obsidian Personal ship Op: transparency Diagram Description: The image contains two rectangular boxes with handwritten notes inside them.</description><content>&lt;h1 id="meeting-notes---june-2-2025">Meeting Notes - June 2, 2025&lt;/h1>
+&lt;h3 id="decisions">Decisions:&lt;/h3>
+&lt;ul>
+&lt;li>☑️ &lt;del>Remove (cough, powder, cough_sub) idx&lt;/del>
+&lt;em>(on favor of ophicopy)&lt;/em>&lt;/li>
+&lt;li>☑️ &lt;del>Deploy to staging&lt;/del> → following&lt;/li>
 &lt;li>☑️ &lt;del>Test in staging&lt;/del>&lt;/li>
 &lt;li>☑️ &lt;del>Deploy to production&lt;/del>&lt;/li>
 &lt;/ul>
 &lt;h3 id="kiwi">Kiwi:&lt;/h3>
 &lt;ul>
-&lt;li>☑️ &amp;ldquo;Tap to copy&amp;rdquo; should probably be pressable&lt;/li>
-&lt;li>☑️ Add zip share button (location share)&lt;/li>
-&lt;li>☑️ Level up pre-entry&lt;/li>
-&lt;li>☑️ Update app icon&lt;/li>
+&lt;li>&amp;ldquo;Tap to copy&amp;rdquo; should probably be pressable&lt;/li>
+&lt;li>Add zip share button (location share)&lt;/li>
+&lt;li>Level up pre-entry&lt;/li>
+&lt;li>Update app icon&lt;/li>
 &lt;/ul>
 &lt;hr>
-&lt;h3 id="right-side-box">Right Side Box:&lt;/h3>
+&lt;h3 id="boxed-notes-section">Boxed Notes Section:&lt;/h3>
 &lt;ul>
-&lt;li>Cashapp offer&lt;/li>
-&lt;li>What do we do if we can&amp;rsquo;t get fluent to raise caps.&lt;/li>
-&lt;li>$600k gross profit&lt;/li>
-&lt;li>$100k playful [unclear: shar] after base pay&lt;/li>
-&lt;li>Applatin internally - Ad creation
+&lt;li>&lt;strong>Cashapp offer&lt;/strong>&lt;/li>
+&lt;li>What do we do if we can&amp;rsquo;t get Fund to raise Caps.&lt;/li>
+&lt;li>$600k gross pact&lt;/li>
+&lt;li>$160k playful share after base pay&lt;/li>
+&lt;li>&lt;strong>AppLaRn internally - Ad creation&lt;/strong> [unclear]
 &lt;ul>
-&lt;li>$60k&lt;/li>
-&lt;li>Cool hire a&lt;/li>
+&lt;li>-cool hire a&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
 &lt;hr>
-&lt;h3 id="bottom-section">Bottom Section:&lt;/h3>
-&lt;p>&lt;strong>PP Tax&lt;/strong>&lt;/p>
-&lt;h4 id="right-side-box-1">Right Side Box:&lt;/h4>
+&lt;h3 id="pp-tax">PP Tax&lt;/h3>
+&lt;h3 id="additional-boxed-notes">Additional Boxed Notes:&lt;/h3>
 &lt;ul>
-&lt;li>Intelligence AI&lt;/li>
-&lt;li>Rosterbook → ATD → Obsidian&lt;/li>
-&lt;li>Personal Sep&lt;/li>
-&lt;li>OP: Transparency&lt;/li>
+&lt;li>-Intelligence&lt;/li>
+&lt;li>Renderbook → ATD → Obsidian
+&lt;ul>
+&lt;li>Personal ship&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Op: transparency&lt;/li>
 &lt;/ul>
 &lt;hr>
-&lt;p>&lt;strong>Diagram Description:&lt;/strong>
-The image contains several rectangular boxes drawn around different sections of text, creating visual separation between different topics or categories of tasks and notes.&lt;/p></content></item><item><title>## Appuser Effect System Design Notes</title><link>https://jenkinsdev.us/handwritten-notes/appuser-effect-system-design-notes/</link><pubDate>Tue, 03 Jun 2025 18:52:33 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/appuser-effect-system-design-notes/</guid><description>Appuser Effect System Design Notes Appuser Effect Structure Appuser Effect / \ Appuser Effect Key Components:
-Appusers: Jobs :: Accruve - series Records (Appuser Effect) Appusers: AppuserSpecial offers :: {Claim, process} both offer examples of AppuserEffect creation AppuserEffects: Jobs :: Complex more appuserEffects in Complex Player: Appusors :: Advice :: CeaseReward shows usage of AppuserEffect + Effect so Cease bonus Rewards Effect should be RewardableSub Burn Sources ☐ Fluent ☐ Protege offers ☐ Protege Magic Receipts ☐ Protege Surveys ☐ Ravil ☐ HostGrid /Bestios ☐ Knucer Process Flow Diagram POST Request Flow:</description><content>&lt;h1 id="appuser-effect-system-design-notes">Appuser Effect System Design Notes&lt;/h1>
+&lt;p>&lt;strong>Diagram Description:&lt;/strong> The image contains two rectangular boxes with handwritten notes inside them. The boxes appear to be used to group related information or highlight important points separately from the main bullet-pointed lists.&lt;/p></content></item><item><title>## Meeting Notes - Product Development and Process Improvements</title><link>https://jenkinsdev.us/handwritten-notes/meeting-notes---product-development-and-process-improvements/</link><pubDate>Tue, 03 Jun 2025 18:52:39 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/meeting-notes---product-development-and-process-improvements/</guid><description>Meeting Notes - Product Development and Process Improvements Date: 2025-06-02
+Blockers: ☐ Resolve (courts, providers in, courts, suits) idx
+on flavor of [unclear] ☐ Deploy to staging } following ☐ Test in staging } ☐ Deploy to production } Kiwi: ☐ &amp;ldquo;Tap to copy&amp;rdquo; should probably be pressable ☐ Add zip share button (location share) ☐ Level up pre-entry ☐ Update app icon Boxed Notes Section 1: Cashapp aired What do we do if we can&amp;rsquo;t get fluent to raise cafe?</description><content>&lt;h1 id="meeting-notes---product-development-and-process-improvements">Meeting Notes - Product Development and Process Improvements&lt;/h1>
+&lt;p>&lt;strong>Date:&lt;/strong> 2025-06-02&lt;/p>
+&lt;h3 id="blockers">Blockers:&lt;/h3>
+&lt;ul>
+&lt;li>☐ Resolve (courts, providers in, courts, suits) idx&lt;br>
+&lt;em>on flavor of [unclear]&lt;/em>&lt;/li>
+&lt;li>☐ Deploy to staging } following&lt;/li>
+&lt;li>☐ Test in staging }&lt;/li>
+&lt;li>☐ Deploy to production }&lt;/li>
+&lt;/ul>
+&lt;h3 id="kiwi">Kiwi:&lt;/h3>
+&lt;ul>
+&lt;li>☐ &amp;ldquo;Tap to copy&amp;rdquo; should probably be pressable&lt;/li>
+&lt;li>☐ Add zip share button (location share)&lt;/li>
+&lt;li>☐ Level up pre-entry&lt;/li>
+&lt;li>☐ Update app icon&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="boxed-notes-section-1">Boxed Notes Section 1:&lt;/h3>
+&lt;ul>
+&lt;li>Cashapp aired&lt;/li>
+&lt;li>What do we do if we can&amp;rsquo;t get fluent to raise cafe?&lt;/li>
+&lt;li>$600k gross profit&lt;/li>
+&lt;li>$600k playful share after lease pay&lt;/li>
+&lt;li>AppLovin internally - Ad creation tier&lt;/li>
+&lt;li>Cool hire a&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="-pptax">-PPTax&lt;/h3>
+&lt;h3 id="boxed-notes-section-2">Boxed Notes Section 2:&lt;/h3>
+&lt;ul>
+&lt;li>Intelligent ai&lt;/li>
+&lt;li>Rosterbook → ATD → Obsidian&lt;/li>
+&lt;li>Personal ship&lt;/li>
+&lt;li>Op: transparency&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>&lt;strong>Diagrams Present:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Two rectangular boxes containing additional notes and action items&lt;/li>
+&lt;li>Connecting lines/brackets grouping related deployment tasks under &amp;ldquo;following&amp;rdquo;&lt;/li>
+&lt;/ul></content></item><item><title>## Appuser Effect System Design</title><link>https://jenkinsdev.us/handwritten-notes/appuser-effect-system-design/</link><pubDate>Tue, 03 Jun 2025 18:52:33 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/appuser-effect-system-design/</guid><description>Appuser Effect System Design Appuser Effect Structure Appuser Effect / \ Appuser Effect Component Details Appusers: Jobs :: Archive - delete records (Appuser Effect)
+Appusers: AppuserSpecial offers :: {Claim, process} - both offer examples of AppuserEffect creation
+AppuserEffects: Jobs :: Complete - make appuser effects w/ complete
+Player: Appusers :: Advice :: Cease Reward - shows usage of Appuser Effect + Effect to cease bonus rewards
+Effect should be Rewardable Sub Earn Sources Fluent Prestige offers Prestige Magic Receipts Prestige Sundays Rayli Meshbird / Bestios Kaiser Process Flow POST (send code) → Find or Create Idle 24-hour Effect → Find or Create Appuser Archive Effect ⬛</description><content>&lt;h1 id="appuser-effect-system-design">Appuser Effect System Design&lt;/h1>
+&lt;h3 id="appuser-effect-structure">Appuser Effect Structure&lt;/h3>
+&lt;pre tabindex="0">&lt;code>Appuser Effect
+/ \
+Appuser Effect
+&lt;/code>&lt;/pre>&lt;h3 id="component-details">Component Details&lt;/h3>
+&lt;p>&lt;strong>Appusers&lt;/strong>: Jobs :: Archive - delete records (Appuser Effect)&lt;/p>
+&lt;p>&lt;strong>Appusers&lt;/strong>: AppuserSpecial offers :: {Claim, process} - both offer examples of AppuserEffect creation&lt;/p>
+&lt;p>&lt;strong>AppuserEffects&lt;/strong>: Jobs :: Complete - make appuser effects w/ complete&lt;/p>
+&lt;p>&lt;strong>Player&lt;/strong>: Appusers :: Advice :: Cease Reward - shows usage of Appuser Effect + Effect to cease bonus rewards&lt;/p>
+&lt;ul>
+&lt;li>Effect should be Rewardable Sub&lt;/li>
+&lt;/ul>
+&lt;h3 id="earn-sources">Earn Sources&lt;/h3>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Fluent&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Prestige offers&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Prestige Magic Receipts&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Prestige Sundays&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> &lt;del>Rayli&lt;/del>&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> &lt;del>Meshbird / Bestios&lt;/del>&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Kaiser&lt;/li>
+&lt;/ul>
+&lt;h3 id="process-flow">Process Flow&lt;/h3>
+&lt;p>&lt;strong>POST (send code)&lt;/strong> → Find or Create Idle 24-hour Effect → Find or Create Appuser Archive Effect ⬛&lt;/p>
+&lt;p>&lt;strong>Receive Earn Source Event&lt;/strong> → Appusers :: AppuserEffects :: Apply Earn Modifiers ⬛
+(Reward, appuser)&lt;/p>
+&lt;p>&lt;strong>BOOSTED&lt;/strong>
+Add another 1400 reward record&lt;/p>
+&lt;hr>
+&lt;h3 id="diagrams-present">Diagrams Present:&lt;/h3>
+&lt;ol>
+&lt;li>&lt;strong>Tree Structure&lt;/strong>: Shows Appuser Effect branching into Appuser and Effect components&lt;/li>
+&lt;li>&lt;strong>Flow Diagram&lt;/strong>: Shows POST request flow with arrows connecting the process steps&lt;/li>
+&lt;li>&lt;strong>Checkboxes&lt;/strong>: Multiple unchecked boxes for earn sources, with Rayli and Meshbird/Bestios crossed out&lt;/li>
+&lt;li>&lt;strong>Black squares (⬛)&lt;/strong>: Used as completion markers or emphasis points in the flow&lt;/li>
+&lt;/ol>
+&lt;p>The notes appear to be technical documentation for a system that handles user rewards and effects, with various processes for creating, managing, and applying these effects based on different earn sources and user actions.&lt;/p></content></item><item><title>## Appuser Effect System Design Notes</title><link>https://jenkinsdev.us/handwritten-notes/appuser-effect-system-design-notes/</link><pubDate>Tue, 03 Jun 2025 18:52:33 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/appuser-effect-system-design-notes/</guid><description>Appuser Effect System Design Notes Appuser Effect Structure Appuser Effect / \ Appuser Effect Key Components:
+Appusers: Jobs/Archive - series records (Appuser Effect) Appusers: AppuserSpecial offers: {Claim, process} - both offer examples of AppuserEffect creation AppuserEffects: Jobs: Complex mode appuser effects w/ complete Player: Appusers: Advice: CreateReward shows usage of Appuser Effect + Effect so create bonus rewards Effect should be RewardableSub Earn Sources Fluent Prestige offers Prestige Magic Receipts Prestige Surveys Rav1 MoshMod/Besitos Kwiser Process Flow Diagram POST Find or Create Find or Create (send code) → Idle 24-hour → appuser archive Effect Effect \- - - - / Event Handling Receive Earn Source → Appusers: AppuserEffects: Apply Earn Modifiers Event (Reward/appuser) | [BOOSTED] | Add another 40% Reward Record Diagrams Present:</description><content>&lt;h1 id="appuser-effect-system-design-notes">Appuser Effect System Design Notes&lt;/h1>
 &lt;h3 id="appuser-effect-structure">Appuser Effect Structure&lt;/h3>
 &lt;pre tabindex="0">&lt;code>Appuser Effect
 / \
 Appuser Effect
 &lt;/code>&lt;/pre>&lt;p>&lt;strong>Key Components:&lt;/strong>&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Appusers&lt;/strong>: Jobs :: Accruve - series Records (Appuser Effect)&lt;/li>
-&lt;li>&lt;strong>Appusers&lt;/strong>: AppuserSpecial offers :: {Claim, process} both offer examples of AppuserEffect creation&lt;/li>
-&lt;li>&lt;strong>AppuserEffects&lt;/strong>: Jobs :: Complex more appuserEffects in Complex&lt;/li>
-&lt;li>&lt;strong>Player&lt;/strong>: Appusors :: Advice :: CeaseReward shows usage of AppuserEffect + Effect so Cease bonus Rewards
+&lt;li>&lt;strong>Appusers&lt;/strong>: Jobs/Archive - series records (Appuser Effect)&lt;/li>
+&lt;li>&lt;strong>Appusers&lt;/strong>: AppuserSpecial offers: {Claim, process} - both offer examples of AppuserEffect creation&lt;/li>
+&lt;li>&lt;strong>AppuserEffects&lt;/strong>: Jobs: Complex mode appuser effects w/ complete&lt;/li>
+&lt;li>&lt;strong>Player&lt;/strong>: Appusers: Advice: CreateReward shows usage of Appuser Effect + Effect so create bonus rewards
 &lt;ul>
 &lt;li>Effect should be RewardableSub&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;h3 id="burn-sources">Burn Sources&lt;/h3>
+&lt;h3 id="earn-sources">Earn Sources&lt;/h3>
 &lt;ul>
-&lt;li>☐ Fluent&lt;/li>
-&lt;li>☐ Protege offers&lt;/li>
-&lt;li>☐ Protege Magic Receipts&lt;/li>
-&lt;li>☐ Protege Surveys&lt;/li>
-&lt;li>☐ Ravil&lt;/li>
-&lt;li>☐ HostGrid /Bestios&lt;/li>
-&lt;li>☐ Knucer&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Fluent&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Prestige offers&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Prestige Magic Receipts&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Prestige Surveys&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> &lt;del>Rav1&lt;/del>&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> MoshMod/Besitos&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Kwiser&lt;/li>
 &lt;/ul>
 &lt;h3 id="process-flow-diagram">Process Flow Diagram&lt;/h3>
-&lt;p>&lt;strong>POST Request Flow:&lt;/strong>&lt;/p>
-&lt;pre tabindex="0">&lt;code>POST → Find or Create → Find or Create
-(send code) Idle 24-hour Appuser Archive
+&lt;pre tabindex="0">&lt;code>POST Find or Create Find or Create
+(send code) → Idle 24-hour → appuser archive
 Effect Effect
-\ /
-- - - - - - -
-&lt;/code>&lt;/pre>&lt;p>&lt;strong>Event Processing:&lt;/strong>&lt;/p>
-&lt;pre tabindex="0">&lt;code>Receive Born Source → Appusers::AppuserEffects:: Apply Born Modifiers
-Event (Reward, appuser)
+\- - - - /
+&lt;/code>&lt;/pre>&lt;h3 id="event-handling">Event Handling&lt;/h3>
+&lt;pre tabindex="0">&lt;code>Receive Earn Source → Appusers: AppuserEffects: Apply Earn Modifiers
+Event (Reward/appuser)
 |
-BOOSTED
+[BOOSTED]
 |
 Add another
-use Reward
+40% Reward
 Record
-&lt;/code>&lt;/pre>&lt;h3 id="diagrams-present">Diagrams Present&lt;/h3>
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Diagrams Present:&lt;/strong>&lt;/p>
 &lt;ol>
-&lt;li>&lt;strong>Hierarchical Structure Diagram&lt;/strong>: Shows the relationship between Appuser Effect, Appuser, and Effect components&lt;/li>
-&lt;li>&lt;strong>Process Flow Diagram&lt;/strong>: Illustrates the POST request workflow with find/create operations and a 24-hour effect duration&lt;/li>
-&lt;li>&lt;strong>Event Processing Flow&lt;/strong>: Shows how born source events trigger appuser effects and boost rewards&lt;/li>
-&lt;/ol></content></item><item><title>## Software Development Sprint Planning Notes</title><link>https://jenkinsdev.us/handwritten-notes/software-development-sprint-planning-notes/</link><pubDate>Mon, 02 Jun 2025 13:33:57 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/software-development-sprint-planning-notes/</guid><description>Software Development Sprint Planning Notes Date: 2024-10-28
-Sponsored By: [unclear]
-Playful Rewards: ☑️ Test Attraction ☐ Push Up Social Auth (Staging + Client Builds + Firebase) ☐ App Usage Tracking Sync w/ Adam: 2.3.4 • What are our goals exactly ← • How is what we provide summary ☑️ Send Adam Credentials.enc.yml changes for [lead-accar-auth] ☐ Onboarding Wizard v2 (Quick vs Big) UserWise: ☐ Mongo 5 → 6 • Staging 0 Production ☐ Planned Changes &amp;gt;_&amp;lt; ☐ Workers during?</description><content>&lt;h1 id="software-development-sprint-planning-notes">Software Development Sprint Planning Notes&lt;/h1>
-&lt;p>&lt;strong>Date:&lt;/strong> 2024-10-28&lt;br>
-&lt;strong>Sponsored By:&lt;/strong> [unclear]&lt;/p>
+&lt;li>A simple tree structure showing Appuser Effect branching into Appuser and Effect&lt;/li>
+&lt;li>A linear flow diagram showing the POST request process through idle effects to archive effects&lt;/li>
+&lt;li>An event flow diagram showing how earn source events are processed through appuser effects with boosting capabilities&lt;/li>
+&lt;/ol>
+&lt;p>The notes appear to be technical documentation for a rewards/earning system with complex effect processing and user reward mechanisms.&lt;/p></content></item><item><title>## Product Development Meeting Notes - October 28, 2024</title><link>https://jenkinsdev.us/handwritten-notes/product-development-meeting-notes---october-28--2024/</link><pubDate>Mon, 02 Jun 2025 13:33:57 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/product-development-meeting-notes---october-28--2024/</guid><description>Product Development Meeting Notes - October 28, 2024 Date: 2024-10-28
+Playful Rewards: ☑️ Test Attribution ☐ Push Up Social Auth (Staging + Client Builds + Firebase) ☐ App Usage Tracking Sync w/ Adam: 2.3.4 • What are our goals exactly ← • How is what we provide summary ☑️ Send Adam Credentials.env.yml changes for [lead/accor-auth] ☐ Onboarding Wizard v2 (Quick vs Big) UserWise: ☐ Mongo 5 → 6 • Staging 0 Production ☐ Frontend Changes &amp;gt;_&amp;lt; ☐ Workers during?</description><content>&lt;h1 id="product-development-meeting-notes---october-28-2024">Product Development Meeting Notes - October 28, 2024&lt;/h1>
+&lt;p>&lt;strong>Date:&lt;/strong> 2024-10-28&lt;/p>
 &lt;h3 id="playful-rewards">Playful Rewards:&lt;/h3>
 &lt;ul>
-&lt;li>☑️ Test Attraction&lt;/li>
+&lt;li>☑️ Test Attribution&lt;/li>
 &lt;li>☐ Push Up Social Auth (Staging + Client Builds + Firebase)&lt;/li>
 &lt;li>☐ App Usage Tracking Sync w/ Adam: &lt;strong>2.3.4&lt;/strong>
 &lt;ul>
@@ -522,29 +892,23 @@ Playful Rewards: ☑️ Test Attraction ☐ Push Up Social Auth (Staging + Clien
 &lt;li>• How is what we provide summary&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>☑️ Send Adam Credentials.enc.yml changes for [lead-accar-auth]&lt;/li>
+&lt;li>☑️ Send Adam Credentials.env.yml changes for [lead/accor-auth]&lt;/li>
 &lt;li>☐ Onboarding Wizard v2 (Quick vs Big)&lt;/li>
 &lt;/ul>
 &lt;h3 id="userwise">UserWise:&lt;/h3>
 &lt;ul>
 &lt;li>☐ Mongo 5 → 6&lt;/li>
 &lt;li>• Staging &lt;strong>0 Production&lt;/strong>&lt;/li>
-&lt;li>☐ Planned Changes &amp;gt;_&amp;lt;&lt;/li>
+&lt;li>☐ &lt;del>Frontend Changes&lt;/del> &amp;gt;_&amp;lt;&lt;/li>
 &lt;li>☐ Workers during?&lt;/li>
-&lt;li>☐ Global Rewrite config&lt;/li>
-&lt;li>☐ Worker Job (time) ?&lt;/li>
-&lt;li>☐ Push Notifications (Scheduled Send)&lt;/li>
+&lt;li>☐ Global Reverse config&lt;/li>
+&lt;li>☐ Worker Job (time)&lt;/li>
+&lt;li>☐ Push Notifications (scheduled send)&lt;/li>
 &lt;/ul>
-&lt;h3 id="v234">v2.3.4&lt;/h3>
-&lt;ul>
-&lt;li>☑️ Filter Out Recently Played (90-days) ★&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>[Diamond shape diagram with text inside:]&lt;/strong>
-Push Out&lt;br>
-???? DEN&lt;br>
-Lance Creek&lt;br>
-???? [unclear]&lt;/p>
-&lt;h3 id="perpetual-call-notes">Perpetual Call Notes:&lt;/h3>
+&lt;h3 id="version-234">Version 2.3.4:&lt;/h3>
+&lt;p>☐ Filter Out Recently Played (30-days) ★&lt;/p>
+&lt;p>&lt;strong>AUG&lt;/strong> [boxed text]&lt;/p>
+&lt;h3 id="perpetua-call-notes">Perpetua Call Notes:&lt;/h3>
 &lt;ul>
 &lt;li>☑️ Q1/Q2 for LiveOps? UW then?&lt;/li>
 &lt;li>☑️ GCP??? Do we host for them?&lt;/li>
@@ -556,243 +920,536 @@ Lance Creek&lt;br>
 &lt;/li>
 &lt;li>☑️ Start SaaS → Self-Hosted (pre-live)&lt;/li>
 &lt;/ul>
-&lt;h3 id="pubsub-realtime-flow">PubSub Realtime Flow&lt;/h3>
+&lt;h3 id="pubsub-realtime-flow">PubSub Realtime Flow:&lt;/h3>
 &lt;ul>
 &lt;li>☑️ They provide segments to us.&lt;/li>
 &lt;/ul>
-&lt;p>&lt;strong>[Rectangle with &amp;ldquo;GCP&amp;rdquo; inside]&lt;/strong>&lt;/p>
-&lt;p>&lt;strong>[Rectangle with &amp;ldquo;AUG&amp;rdquo; inside, heavily outlined]&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>SCP&lt;/strong> [boxed/circled text]&lt;/p>
 &lt;hr>
-&lt;p>&lt;em>Note: There is a diamond-shaped diagram in the upper portion containing what appears to be location or project names, and two rectangular boxes labeled &amp;ldquo;GCP&amp;rdquo; and &amp;ldquo;AUG&amp;rdquo; near the bottom of the notes.&lt;/em>&lt;/p></content></item><item><title>## Development Playful Rounds and Technical Updates</title><link>https://jenkinsdev.us/handwritten-notes/development-playful-rounds-and-technical-updates/</link><pubDate>Mon, 02 Jun 2025 13:33:49 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/development-playful-rounds-and-technical-updates/</guid><description>Development Playful Rounds and Technical Updates Playful Rounds v2.3.3 Social Admin + Roll-out ☑ v2.3.4 (App Usage Data Filtering) ☑ v2.3.5 (Onboarding Wizard v2) Timeline/Releases TikTok + FB + Apps Flyer Keep link clean - deferred
-Social Audit Engagement or Magic or built 4 test tools
-Android
-Google → Apple → [unclear] [unclear] → [unclear] → [unclear] Google → Apple → [unclear] iOS
-Google → Apple → [unclear] Signup → Signup → [unclear] Login → Login Userwise Things to (most)</description><content>&lt;h1 id="development-playful-rounds-and-technical-updates">Development Playful Rounds and Technical Updates&lt;/h1>
+&lt;h3 id="diagram-description">Diagram Description:&lt;/h3>
+&lt;p>There&amp;rsquo;s a diamond-shaped diagram in the upper left that appears to show: &amp;ldquo;Push Out RPTA v2.0 Launch Check&amp;rdquo; with &amp;ldquo;RAS&amp;rdquo; noted inside.&lt;/p>
+&lt;p>The notes contain various checkboxes (some filled, some empty), crossed-out items, and emphasized text with arrows and stars marking important items.&lt;/p></content></item><item><title>## Product Development Meeting Notes - October 28, 2024</title><link>https://jenkinsdev.us/handwritten-notes/product-development-meeting-notes---october-28--2024/</link><pubDate>Mon, 02 Jun 2025 13:33:57 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/product-development-meeting-notes---october-28--2024/</guid><description>Product Development Meeting Notes - October 28, 2024 Date: 2024-10-28
+Playful Rewards: ☑️ Test Attraction ☐ Push Up Social Auth (Staging + Client Builds + Firebase) ☑️ App Usage Tracking Sync w/ Adam: v2.3.4 • What are our goals exactly • Hope to what we provide summary ☑️ Send Adam Credentials.enc.yml changes for [Lead Account-Auth] ☐ Onboarding Wizard v2 (Quick vs Big) Version Updates: v2.3.4
+Filter Out Recently Played (30-days) ⭐ UserWise: ☐ Mongo 5 → 6 • Staging 0 Production ☐ Frontend Changes &amp;gt;_&amp;lt; ☐ Workers during?</description><content>&lt;h1 id="product-development-meeting-notes---october-28-2024">Product Development Meeting Notes - October 28, 2024&lt;/h1>
+&lt;p>&lt;strong>Date:&lt;/strong> 2024-10-28&lt;/p>
+&lt;h3 id="playful-rewards">Playful Rewards:&lt;/h3>
+&lt;ul>
+&lt;li>☑️ Test Attraction&lt;/li>
+&lt;li>☐ Push Up Social Auth (Staging + Client Builds + Firebase)&lt;/li>
+&lt;li>☑️ App Usage Tracking Sync w/ Adam: &lt;strong>v2.3.4&lt;/strong>
+&lt;ul>
+&lt;li>• What are our goals exactly&lt;/li>
+&lt;li>• Hope to what we provide summary&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>☑️ Send Adam Credentials.enc.yml changes for [Lead Account-Auth]&lt;/li>
+&lt;li>☐ Onboarding Wizard v2 (Quick vs Big)&lt;/li>
+&lt;/ul>
+&lt;h3 id="version-updates">Version Updates:&lt;/h3>
+&lt;p>&lt;strong>v2.3.4&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Filter Out Recently Played (30-days) ⭐&lt;/li>
+&lt;/ul>
+&lt;h3 id="userwise">UserWise:&lt;/h3>
+&lt;ul>
+&lt;li>☐ Mongo 5 → 6&lt;/li>
+&lt;li>• Staging &lt;strong>0 Production&lt;/strong>&lt;/li>
+&lt;li>☐ Frontend Changes &amp;gt;_&amp;lt;&lt;/li>
+&lt;li>☐ Workers during?&lt;/li>
+&lt;li>☐ Global Revisic config&lt;/li>
+&lt;li>☐ Worker Job (time?)&lt;/li>
+&lt;li>☐ Push Notifications (Scheduled Send)&lt;/li>
+&lt;/ul>
+&lt;h3 id="perpetuin-call-notes">Perpetuin Call Notes:&lt;/h3>
+&lt;ul>
+&lt;li>☑️ Q1/Q2 for LiveOps? UW then?&lt;/li>
+&lt;li>☑️ GCP??? Do we host for them?&lt;/li>
+&lt;li>☑️ How do we integrate UW ↔ PT
+&lt;ul>
+&lt;li>• UW would be a nice frontend&lt;/li>
+&lt;li>• They would need custom features&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>☑️ Start SaaS → Self-Hosted (pre-live)&lt;/li>
+&lt;/ul>
+&lt;h3 id="pubsub-realtime-flow">PubSub Realtime Flow:&lt;/h3>
+&lt;ul>
+&lt;li>☑️ They provide segments to CWS&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>&lt;strong>Diagram Description:&lt;/strong> There&amp;rsquo;s a diamond-shaped diagram at the top with &amp;ldquo;Push Out RPM DEN Love Creek&amp;rdquo; and &amp;ldquo;Roads&amp;rdquo; written inside. There are also several boxed sections labeled &amp;ldquo;AUG&amp;rdquo; and &amp;ldquo;SCP&amp;rdquo; scattered throughout the notes.&lt;/p></content></item><item><title>## Meeting Notes: Playful Rounds and Feature Planning</title><link>https://jenkinsdev.us/handwritten-notes/meeting-notes--playful-rounds-and-feature-planning/</link><pubDate>Mon, 02 Jun 2025 13:33:49 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/meeting-notes--playful-rounds-and-feature-planning/</guid><description>Meeting Notes: Playful Rounds and Feature Planning Playful Rounds [unclear] offline line v2.3.5 Social Activity Rollout ☐ v2.3.4 (App Usage Offer Filtering) ☐ v2.3.5 (Onboarding Wizard v2) TikTok + FB + Apps Flag Note: Keep link clean, deferred
+Social Audit Completed/Implemented:
+Android Google → Apple [unclear] → Apple [unclear] → Apple iOS:
+Google → Apple [unclear] → Apple Login Userwise Completed:
+[unclear] (most) Pending:
+☐ Frontend Change Sync? ☐ Workers during ☐ Global Remote Config ☐ Worker Job (TIME Advanced) ☐ Push Notifications (scheduled send) ☐ Update segment concrete to use one?</description><content>&lt;h1 id="meeting-notes-playful-rounds-and-feature-planning">Meeting Notes: Playful Rounds and Feature Planning&lt;/h1>
 &lt;h3 id="playful-rounds">Playful Rounds&lt;/h3>
 &lt;ul>
-&lt;li>&lt;del>v2.3.3 Social Admin + Roll-out&lt;/del>&lt;/li>
-&lt;li>☑ v2.3.4 (App Usage Data Filtering)&lt;/li>
-&lt;li>☑ v2.3.5 (Onboarding Wizard v2)&lt;/li>
+&lt;li>&lt;del>[unclear] offline&lt;/del> line&lt;/li>
+&lt;li>&lt;del>v2.3.5 Social Activity Rollout&lt;/del>&lt;/li>
+&lt;li>☐ v2.3.4 (App Usage Offer Filtering)&lt;/li>
+&lt;li>☐ v2.3.5 (Onboarding Wizard v2)&lt;/li>
 &lt;/ul>
-&lt;h3 id="timelinereleases">Timeline/Releases&lt;/h3>
-&lt;p>&lt;strong>TikTok + FB + Apps Flyer&lt;/strong>
-Keep link clean - deferred&lt;/p>
+&lt;h3 id="tiktok--fb--apps-flag">TikTok + FB + Apps Flag&lt;/h3>
+&lt;blockquote>
+&lt;p>&lt;strong>Note:&lt;/strong> Keep link clean, deferred&lt;/p>
+&lt;/blockquote>
 &lt;h3 id="social-audit">Social Audit&lt;/h3>
+&lt;p>&lt;strong>Completed/Implemented:&lt;/strong>&lt;/p>
 &lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Engagement&lt;/strong> or Magic or built 4 test tools&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Android&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>&lt;del>Google&lt;/del> → &lt;del>Apple&lt;/del> → &lt;del>[unclear]&lt;/del>&lt;/li>
-&lt;li>&lt;del>[unclear]&lt;/del> → &lt;del>[unclear]&lt;/del> → &lt;del>[unclear]&lt;/del>&lt;/li>
-&lt;li>&lt;del>Google&lt;/del> → &lt;del>Apple&lt;/del> → &lt;del>[unclear]&lt;/del>&lt;/li>
+&lt;li>&lt;del>Android&lt;/del>&lt;/li>
+&lt;li>&lt;del>Google&lt;/del> → &lt;del>Apple&lt;/del>&lt;/li>
+&lt;li>&lt;del>[unclear]&lt;/del> → &lt;del>Apple&lt;/del>&lt;/li>
+&lt;li>&lt;del>[unclear]&lt;/del> → &lt;del>Apple&lt;/del>&lt;/li>
 &lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>iOS&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>iOS:&lt;/strong>&lt;/p>
 &lt;ul>
-&lt;li>&lt;del>Google&lt;/del> → &lt;del>Apple&lt;/del> → &lt;del>[unclear]&lt;/del>&lt;/li>
-&lt;li>&lt;del>Signup&lt;/del> → &lt;del>Signup&lt;/del> → &lt;del>[unclear]&lt;/del>&lt;/li>
-&lt;li>&lt;del>Login&lt;/del> → &lt;del>Login&lt;/del>&lt;/li>
-&lt;/ul>
-&lt;/li>
+&lt;li>&lt;del>Google&lt;/del> → &lt;del>Apple&lt;/del>&lt;/li>
+&lt;li>&lt;del>[unclear]&lt;/del> → &lt;del>Apple&lt;/del>&lt;/li>
+&lt;li>&lt;del>Login&lt;/del>&lt;/li>
 &lt;/ul>
 &lt;h3 id="userwise">Userwise&lt;/h3>
-&lt;p>&lt;strong>Things to (most)&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Completed:&lt;/strong>&lt;/p>
 &lt;ul>
-&lt;li>
-&lt;p>☑ Frontend Change Sync?&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>☑ Workers during&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>☑ Global Remote Config&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>☑ Worker Job (TIME advancement)&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>☑ Push Notifications (scheduled send)&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>☑ Update segment concrete to use one time&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>☑ Query Optimizations&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>☑ Soulnet Step padding (Cloud)&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>☑ Journey Step Event Template&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>☑ Enable Stack&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>☑ ARM&lt;/p>
-&lt;/li>
+&lt;li>&lt;del>[unclear] (most)&lt;/del>&lt;/li>
 &lt;/ul>
-&lt;h3 id="scalability-rpt-focus">Scalability RPT Focus&lt;/h3>
-&lt;p>Get Client ROMS&lt;/p>
-&lt;p>&lt;strong>Visibility &amp;amp; Observability for Business Analytics&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Pending:&lt;/strong>&lt;/p>
 &lt;ul>
-&lt;li>Spenders/IAP Changes to Beta up Crab Rests&lt;/li>
+&lt;li>☐ Frontend Change Sync?&lt;/li>
+&lt;li>☐ Workers during&lt;/li>
+&lt;li>☐ Global Remote Config&lt;/li>
+&lt;li>☐ Worker Job (TIME Advanced)&lt;/li>
+&lt;li>☐ Push Notifications (scheduled send)&lt;/li>
+&lt;li>☐ Update segment concrete to use one? time&lt;/li>
+&lt;li>☐ Query Optimizations&lt;/li>
+&lt;li>☐ Journal Step posting (client)&lt;/li>
+&lt;li>☐ Journey Step &lt;strong>Event&lt;/strong> → Template&lt;/li>
+&lt;li>☐ Enable Stack&lt;/li>
+&lt;li>☐ ARM&lt;/li>
 &lt;/ul>
-&lt;p>&lt;strong>Get $200 by spending $175&lt;/strong>&lt;/p>
-&lt;p>&lt;strong>Client Roles Means pushing focus on IAPs&lt;/strong>&lt;/p>
+&lt;h3 id="scratch-rpi-focus">Scratch RPI Focus&lt;/h3>
+&lt;p>Get client ROAS&lt;/p>
+&lt;p>&lt;strong>Visibility &amp;amp; Observability for Business Analytics:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Spends/IAP changes to beta&lt;/li>
+&lt;li>Get $200 by spending $175&lt;/li>
+&lt;/ul>
+&lt;h3 id="client-roles-means-pushing">Client Roles Means Pushing&lt;/h3>
+&lt;p>Focus on IAPs&lt;/p>
 &lt;h3 id="big-updates-now">Big Updates Now&lt;/h3>
-&lt;p>&lt;strong>Then Analytics Revamp&lt;/strong>&lt;/p>
+&lt;p>Then Analytics revamp&lt;/p>
 &lt;hr>
-&lt;p>&lt;strong>Diagram Description:&lt;/strong> The image contains a hand-drawn flowchart/mind map structure with various sections connected by lines and boxes. There&amp;rsquo;s a prominent box at the top right with an arrow pointing to it containing the TikTok/FB/Apps Flyer information. The layout suggests this is a planning or brainstorming document with different development tracks and priorities.&lt;/p></content></item><item><title>## App Development &amp; Monitoring System Design</title><link>https://jenkinsdev.us/handwritten-notes/app-development---monitoring-system-design/</link><pubDate>Mon, 02 Jun 2025 13:33:43 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/app-development---monitoring-system-design/</guid><description>App Development &amp;amp; Monitoring System Design Architecture Flow Computer/Server → Property → [Display/LED Strip] ↓ 5v External Power Alloz Integration Alloz ?!?!?! Alloz Speed Run 10 X 12 [dimensions noted] Erebus (LED Strip Simulator?) Features:
-Device handwriting 📱 → upload tags Intervals:
-&amp;ldquo;daily&amp;rdquo; / &amp;ldquo;hourly&amp;rdquo; Package_name = &amp;quot;&amp;quot; App Components AppPlayTime ScheduleWorkers AppPlayTimeTrackingWorker Scheduled Worker (run every hour) Configuration:
-Pull tracking worker scheduling config (if config interval changed) CancelUnique WorkName (&amp;ldquo;PR AppPlaytime Tracker&amp;rdquo;) + enqueue MagicWork System Architecture Diagram [Diagram shows interconnected boxes representing:]</description><content>&lt;h1 id="app-development--monitoring-system-design">App Development &amp;amp; Monitoring System Design&lt;/h1>
-&lt;h3 id="architecture-flow">Architecture Flow&lt;/h3>
-&lt;pre tabindex="0">&lt;code>Computer/Server → Property → [Display/LED Strip]
+&lt;p>&lt;strong>Diagram Notes:&lt;/strong> The image contains handwritten notes with various crossed-out items, checkboxes, and connecting lines. There&amp;rsquo;s a boxed section at the top right highlighting the TikTok/FB/Apps flag item. The layout suggests this is a meeting or planning document with multiple workstreams and priorities.&lt;/p></content></item><item><title>## Product Development Notes &amp; Feature Planning</title><link>https://jenkinsdev.us/handwritten-notes/product-development-notes---feature-planning/</link><pubDate>Mon, 02 Jun 2025 13:33:49 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/product-development-notes---feature-planning/</guid><description>Product Development Notes &amp;amp; Feature Planning Playful Rounds [unclear] v2.3.3 Social Activity [unclear] ☐ v2.3.4 (App Usage Data Filtering) ☐ v2.3.5 (Onboarding Wizard v2) Important Features Box TikTok + FB + Apps Hype
+Keep link clean Deferred Social Audit Implementation Android Apple iPhone iOS [several crossed out items] iOS Updates Google Spotify TikTok [unclear items] Userwise Features Things to do (most):
+☐ Frontend Change Sync? ☐ Workers during ☐ Global Remote config ☐ Worker Job (TIME advancement) ☐ Push Notifications (scheduled send) ☐ Update segment concrete to use one time ☐ Query Optimizations ☐ Journey Step patching (Cloud) ☐ Journey Step Event Template ☐ Enable Stack ☐ ARM Search RPI Focus Get Click ROAS</description><content>&lt;h1 id="product-development-notes--feature-planning">Product Development Notes &amp;amp; Feature Planning&lt;/h1>
+&lt;h3 id="playful-rounds">Playful Rounds&lt;/h3>
+&lt;ul>
+&lt;li>&lt;del>[unclear]&lt;/del>&lt;/li>
+&lt;li>&lt;del>v2.3.3 Social Activity [unclear]&lt;/del>&lt;/li>
+&lt;li>☐ v2.3.4 (App Usage Data Filtering)&lt;/li>
+&lt;li>☐ v2.3.5 (Onboarding Wizard v2)&lt;/li>
+&lt;/ul>
+&lt;h3 id="important-features-box">Important Features Box&lt;/h3>
+&lt;p>&lt;strong>TikTok + FB + Apps Hype&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Keep link clean&lt;/li>
+&lt;li>Deferred&lt;/li>
+&lt;/ul>
+&lt;h3 id="social-audit-implementation">Social Audit Implementation&lt;/h3>
+&lt;ul>
+&lt;li>&lt;del>Android&lt;/del>&lt;/li>
+&lt;li>&lt;del>Apple&lt;/del> &lt;del>iPhone&lt;/del> &lt;del>iOS&lt;/del>&lt;/li>
+&lt;li>&lt;del>[several crossed out items]&lt;/del>&lt;/li>
+&lt;/ul>
+&lt;h3 id="ios-updates">iOS Updates&lt;/h3>
+&lt;ul>
+&lt;li>&lt;del>Google&lt;/del>&lt;/li>
+&lt;li>&lt;del>Spotify&lt;/del> &lt;del>TikTok&lt;/del>&lt;/li>
+&lt;li>&lt;del>[unclear items]&lt;/del>&lt;/li>
+&lt;/ul>
+&lt;h3 id="userwise-features">Userwise Features&lt;/h3>
+&lt;p>&lt;strong>Things to do (most):&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>☐ Frontend Change Sync?&lt;/li>
+&lt;li>☐ Workers during&lt;/li>
+&lt;li>☐ Global Remote config&lt;/li>
+&lt;li>☐ Worker Job (TIME advancement)&lt;/li>
+&lt;li>☐ Push Notifications (scheduled send)&lt;/li>
+&lt;li>☐ Update segment concrete to use one time&lt;/li>
+&lt;li>☐ Query Optimizations&lt;/li>
+&lt;li>☐ Journey Step patching (Cloud)&lt;/li>
+&lt;li>☐ Journey Step Event Template&lt;/li>
+&lt;li>☐ Enable Stack&lt;/li>
+&lt;li>☐ ARM&lt;/li>
+&lt;/ul>
+&lt;h3 id="search-rpi-focus">Search RPI Focus&lt;/h3>
+&lt;p>&lt;strong>Get Click ROAS&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Spends&lt;/strong> $175&lt;/li>
+&lt;li>&lt;strong>IAP&lt;/strong> changes to be up to $30&lt;/li>
+&lt;li>Grab ROAS&lt;/li>
+&lt;/ul>
+&lt;h3 id="visibility--observability">Visibility &amp;amp; Observability&lt;/h3>
+&lt;p>&lt;strong>For Business Analytics&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Get $200 by spending $175&lt;/li>
+&lt;li>&lt;strong>Click ROAS&lt;/strong> means pushing focus on IAPs&lt;/li>
+&lt;/ul>
+&lt;h3 id="big-updates-now">Big Updates Now&lt;/h3>
+&lt;p>Then Analytics Revamp&lt;/p>
+&lt;hr>
+&lt;p>&lt;strong>Diagram Description:&lt;/strong> The notes contain several boxes and sections with crossed-out items, checkboxes, and emphasized text boxes. There&amp;rsquo;s a prominent box at the top right highlighting &amp;ldquo;TikTok + FB + Apps Hype&amp;rdquo; as an important feature area. The layout suggests this is a product planning session with various features in different stages of completion.&lt;/p></content></item><item><title>## App Development &amp; LED Strip Simulator Design</title><link>https://jenkinsdev.us/handwritten-notes/app-development---led-strip-simulator-design/</link><pubDate>Mon, 02 Jun 2025 13:33:43 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/app-development---led-strip-simulator-design/</guid><description>App Development &amp;amp; LED Strip Simulator Design System Architecture CPAM → Computer/Server MQS → Property [unclear] → LED Strip (485 SOC) 5v External power connection AllOz speed run [unclear calculations with 10x12 dimensions] EVEUS (LED Strip Simulator) Hardware Requirements:
+More handwriting D.C → upload Tags Software Components:
+Interval = &amp;ldquo;daily&amp;rdquo; / &amp;ldquo;hourly&amp;rdquo; Package name = &amp;quot;&amp;quot; AppPlayTime Scheduling Workers AppPlayTimeScheduleWorker AppPlayTimeTrackingWorker Scheduled Worker Configuration Schedule Worker (run every hour)
+Pull tracking worker scheduling/config If config interval changed → Cancel unqueue work Enqueue magic work AppPlayTimeTrackingWorker Every ⚫ minutes (run @ interval config) Only query for this every 8+ days Data Flow &amp;amp; Worker Management Shared Preferences Interval Package name Get package name interval Tracking Worker PR Remote → Get (something) If interval changed → Cancel unqueue work → Enqueue magic work Development Notes Current Status: &amp;ldquo;Hmm&amp;hellip; Feeling good&amp;rdquo;</description><content>&lt;h1 id="app-development--led-strip-simulator-design">App Development &amp;amp; LED Strip Simulator Design&lt;/h1>
+&lt;h3 id="system-architecture">System Architecture&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>CPAM&lt;/strong> → Computer/Server&lt;/li>
+&lt;li>&lt;strong>MQS&lt;/strong> → Property [unclear] → &lt;strong>LED Strip&lt;/strong> (485 SOC)&lt;/li>
+&lt;li>&lt;strong>5v External&lt;/strong> power connection&lt;/li>
+&lt;li>&lt;strong>AllOz&lt;/strong> speed run [unclear calculations with 10x12 dimensions]&lt;/li>
+&lt;/ul>
+&lt;h3 id="eveus-led-strip-simulator">EVEUS (LED Strip Simulator)&lt;/h3>
+&lt;p>&lt;strong>Hardware Requirements:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>More handwriting&lt;/li>
+&lt;li>D.C → upload&lt;/li>
+&lt;li>Tags&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Software Components:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Interval&lt;/strong> = &amp;ldquo;daily&amp;rdquo; / &amp;ldquo;hourly&amp;rdquo;&lt;/li>
+&lt;li>&lt;strong>Package name&lt;/strong> = &amp;quot;&amp;quot;&lt;/li>
+&lt;/ul>
+&lt;h4 id="appplaytime-scheduling-workers">AppPlayTime Scheduling Workers&lt;/h4>
+&lt;ul>
+&lt;li>&lt;code>AppPlayTimeScheduleWorker&lt;/code>&lt;/li>
+&lt;li>&lt;code>AppPlayTimeTrackingWorker&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h3 id="scheduled-worker-configuration">Scheduled Worker Configuration&lt;/h3>
+&lt;p>&lt;strong>Schedule Worker&lt;/strong> (run every hour)&lt;/p>
+&lt;ul>
+&lt;li>Pull tracking worker scheduling/config&lt;/li>
+&lt;li>If config interval changed →
+&lt;ul>
+&lt;li>Cancel unqueue work&lt;/li>
+&lt;li>Enqueue magic work&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="appplaytimetrackingworker">AppPlayTimeTrackingWorker&lt;/h3>
+&lt;ul>
+&lt;li>Every ⚫ minutes (run @ interval config)&lt;/li>
+&lt;li>Only query for this every 8+ days&lt;/li>
+&lt;/ul>
+&lt;h3 id="data-flow--worker-management">Data Flow &amp;amp; Worker Management&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Shared Preferences&lt;/strong>
+&lt;ul>
+&lt;li>Interval&lt;/li>
+&lt;li>Package name&lt;/li>
+&lt;li>Get package name interval&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Tracking Worker&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>PR Remote&lt;/strong> → &lt;strong>Get (something)&lt;/strong>&lt;/li>
+&lt;li>If interval changed → &lt;strong>Cancel unqueue work&lt;/strong> → &lt;strong>Enqueue magic work&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h3 id="development-notes">Development Notes&lt;/h3>
+&lt;p>&lt;strong>Current Status:&lt;/strong> &amp;ldquo;Hmm&amp;hellip; Feeling good&amp;rdquo;&lt;/p>
+&lt;p>&lt;strong>TODO:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Take code and spread it out&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Query Logic:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Query if corresponds to a day&lt;/li>
+&lt;li>If daily → was it been &amp;gt;= 1 hour?&lt;/li>
+&lt;li>If daily → was it been &amp;gt;= 1 day?&lt;/li>
+&lt;/ul>
+&lt;h3 id="diagrams-present">Diagrams Present:&lt;/h3>
+&lt;ol>
+&lt;li>&lt;strong>System flow diagram&lt;/strong> showing connections between CPAM, server, and LED strip components&lt;/li>
+&lt;li>&lt;strong>Worker architecture diagram&lt;/strong> illustrating the relationship between scheduling and tracking workers&lt;/li>
+&lt;li>&lt;strong>Data flow boxes&lt;/strong> showing the interaction between shared preferences, workers, and remote services&lt;/li>
+&lt;li>&lt;strong>Hardware layout sketch&lt;/strong> showing EVEUS device with dimensions (appears to be 12x12 or 10x12)&lt;/li>
+&lt;/ol>
+&lt;p>The notes appear to be planning documentation for a mobile app that tracks app usage time and controls LED strips, with scheduled background workers handling data collection and synchronization.&lt;/p></content></item><item><title>## App Development &amp; Playtime Tracking System</title><link>https://jenkinsdev.us/handwritten-notes/app-development---playtime-tracking-system/</link><pubDate>Mon, 02 Jun 2025 13:33:43 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/app-development---playtime-tracking-system/</guid><description>App Development &amp;amp; Playtime Tracking System System Architecture Flow Computer/Server → API → Property → LED Strip ↓ External connection AllGZ?!?!?!
+All6 Speed Run 10 x 12 dimensions Errors (LED Strip Simulator?) Issue: Handwriting D.C → Upload Issues Internal settings:
+&amp;ldquo;daily&amp;rdquo; / &amp;ldquo;hourly&amp;rdquo; Package_name = &amp;quot;&amp;quot; Component Structure AppPlayTime ScheduledWorkers AppPlayTimeTrackingWorker Scheduled Worker (run every hour) Pull tracking worker scheduling/config If config interval changed CancelUniqueWork(&amp;ldquo;PR AppPlaytime Tracker&amp;rdquo;) + EnqueueUniqueWork Events Amplitude Y2 3,4 Corn Rate w/ Ham Surface PR Remote (get SQL conn) Stored Prefs interval package_name get package name from interval Scheduled Worker if interval changed → CancelUniqueWork, EnqueueUniqueWork AppPlayTimeTrackingWorker Every 5 minutes Run on interval (2min) Only query for this every 8-12 days Current Status &amp;ldquo;Hmm&amp;hellip; Feeling good&amp;rdquo;</description><content>&lt;h1 id="app-development--playtime-tracking-system">App Development &amp;amp; Playtime Tracking System&lt;/h1>
+&lt;h3 id="system-architecture-flow">System Architecture Flow&lt;/h3>
+&lt;pre tabindex="0">&lt;code>Computer/Server → API → Property → LED Strip
 ↓
-5v External Power
-&lt;/code>&lt;/pre>&lt;h3 id="alloz-integration">Alloz Integration&lt;/h3>
+External connection
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>AllGZ?!?!?!&lt;/strong>&lt;/p>
 &lt;ul>
-&lt;li>Alloz ?!?!?!&lt;/li>
-&lt;li>Alloz Speed Run&lt;/li>
-&lt;li>10 X 12 [dimensions noted]&lt;/li>
+&lt;li>All6 Speed Run&lt;/li>
+&lt;li>10 x 12 dimensions&lt;/li>
 &lt;/ul>
-&lt;h3 id="erebus-led-strip-simulator">Erebus (LED Strip Simulator?)&lt;/h3>
-&lt;p>&lt;strong>Features:&lt;/strong>&lt;/p>
+&lt;h3 id="errors-led-strip-simulator">Errors (LED Strip Simulator?)&lt;/h3>
 &lt;ul>
-&lt;li>Device handwriting&lt;/li>
-&lt;li>📱 → upload tags&lt;/li>
+&lt;li>Issue: Handwriting&lt;/li>
+&lt;li>D.C → Upload Issues&lt;/li>
 &lt;/ul>
-&lt;p>&lt;strong>Intervals:&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Internal settings:&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>&amp;ldquo;daily&amp;rdquo; / &amp;ldquo;hourly&amp;rdquo;&lt;/li>
 &lt;li>Package_name = &amp;quot;&amp;quot;&lt;/li>
 &lt;/ul>
-&lt;h3 id="app-components">App Components&lt;/h3>
-&lt;h4 id="appplaytime-scheduleworkers">AppPlayTime ScheduleWorkers&lt;/h4>
+&lt;h3 id="component-structure">Component Structure&lt;/h3>
+&lt;h4 id="appplaytime-scheduledworkers">AppPlayTime ScheduledWorkers&lt;/h4>
 &lt;ul>
 &lt;li>AppPlayTimeTrackingWorker&lt;/li>
 &lt;/ul>
 &lt;h4 id="scheduled-worker-run-every-hour">Scheduled Worker (run every hour)&lt;/h4>
-&lt;p>&lt;strong>Configuration:&lt;/strong>&lt;/p>
 &lt;ul>
-&lt;li>Pull tracking worker scheduling config&lt;/li>
-&lt;li>(if config interval changed)&lt;/li>
-&lt;li>CancelUnique WorkName (&amp;ldquo;PR AppPlaytime Tracker&amp;rdquo;) + enqueue MagicWork&lt;/li>
+&lt;li>Pull tracking worker scheduling/config&lt;/li>
+&lt;li>If config interval changed&lt;/li>
+&lt;li>CancelUniqueWork(&amp;ldquo;PR AppPlaytime Tracker&amp;rdquo;) + EnqueueUniqueWork&lt;/li>
 &lt;/ul>
-&lt;h3 id="system-architecture-diagram">System Architecture Diagram&lt;/h3>
-&lt;p>[Diagram shows interconnected boxes representing:]&lt;/p>
+&lt;h4 id="events-amplitude">Events Amplitude&lt;/h4>
 &lt;ul>
-&lt;li>Erebus (Amplitude Events v2, 3, 4)&lt;/li>
-&lt;li>Corn Rate w/ Ham Justice&lt;/li>
-&lt;li>PR Remote (getIsSeens)&lt;/li>
-&lt;li>Stored Prefs (interval, package_name) → get package_name &amp;amp; interval&lt;/li>
-&lt;li>If interval changed → Tracking Worker&lt;/li>
-&lt;li>CancelUniqueWork &amp;amp; enqueueUniqueWork&lt;/li>
+&lt;li>Y2 3,4&lt;/li>
 &lt;/ul>
-&lt;h3 id="appplaytimetrackingworker">AppPlaytimeTrackingWorker&lt;/h3>
+&lt;h4 id="corn-rate-w-ham-surface">Corn Rate w/ Ham Surface&lt;/h4>
+&lt;h4 id="pr-remote-get-sql-conn">PR Remote (get SQL conn)&lt;/h4>
+&lt;h4 id="stored-prefs">Stored Prefs&lt;/h4>
 &lt;ul>
-&lt;li>Every 🕐 minutes (run @ interval (2sarly))&lt;/li>
-&lt;li>↑ (Daily query for: This every 8-1 day)&lt;/li>
+&lt;li>interval&lt;/li>
+&lt;li>package_name&lt;/li>
+&lt;li>get package name from interval&lt;/li>
 &lt;/ul>
-&lt;h3 id="implementation-notes">Implementation Notes&lt;/h3>
+&lt;h4 id="scheduled-worker">Scheduled Worker&lt;/h4>
 &lt;ul>
-&lt;li>Hmm&amp;hellip; Feeling good&lt;/li>
-&lt;li>Queries for 6 progression
+&lt;li>if interval changed → CancelUniqueWork, EnqueueUniqueWork&lt;/li>
+&lt;/ul>
+&lt;h4 id="appplaytimetrackingworker">AppPlayTimeTrackingWorker&lt;/h4>
 &lt;ul>
-&lt;li>If daily → has it been 1+ hour?&lt;/li>
-&lt;li>If daily → has it been 1+ day?&lt;/li>
+&lt;li>Every 5 minutes&lt;/li>
+&lt;li>Run on interval (2min)&lt;/li>
+&lt;li>Only query for this every 8-12 days&lt;/li>
 &lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h3 id="task-list">Task List&lt;/h3>
-&lt;p>☐ Take CFL then spread it out&lt;/p>
-&lt;h3 id="dimensions--specifications">Dimensions &amp;amp; Specifications&lt;/h3>
+&lt;h3 id="current-status">Current Status&lt;/h3>
+&lt;p>&amp;ldquo;Hmm&amp;hellip; Feeling good&amp;rdquo;&lt;/p>
+&lt;h3 id="action-items">Action Items&lt;/h3>
 &lt;ul>
-&lt;li>Multiple references to &amp;ldquo;10 X 12&amp;rdquo; dimensions&lt;/li>
-&lt;li>Device appears to be some form of LED display or monitoring system&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Take CPE then spread it out&lt;/li>
 &lt;/ul>
-&lt;p>&lt;strong>Diagram Description:&lt;/strong> The image contains multiple interconnected flowcharts and system diagrams showing the architecture of an app monitoring system. The main flow shows data moving from a computer/server through various processing stages to display components. There are several boxed sections showing different workers and processes, with arrows indicating data flow and dependencies between components.&lt;/p></content></item><item><title>## Release Notes and System Updates</title><link>https://jenkinsdev.us/handwritten-notes/release-notes-and-system-updates/</link><pubDate>Mon, 02 Jun 2025 13:33:34 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/release-notes-and-system-updates/</guid><description>Release Notes and System Updates Call Notes: Tuned Global Apps to see? Search/Rec APIs Existing: Many object search (Rec contextual to store) Upcoming: [Diagram: Box containing &amp;ldquo;Wilson Scoring System&amp;rdquo; with arrow pointing down to &amp;ldquo;Elastic Scoring System&amp;rdquo;]
-Adobe shutting us off (traffic ↗) Update package from Mega [Diagram: Box containing &amp;ldquo;Universal Music Group in Tuned Catalogue - Music in Demo&amp;rdquo;]
-AppLovin Rewarded Videos Ad Pre-tagging Tuned Global for Cold Start [Diagram: Parallelogram shape containing &amp;ldquo;Playful Rewards (Userwise) Playful Rhythm&amp;rdquo;]</description><content>&lt;h1 id="release-notes-and-system-updates">Release Notes and System Updates&lt;/h1>
+&lt;h3 id="queries--timeframes">Queries &amp;amp; Timeframes&lt;/h3>
+&lt;ul>
+&lt;li>Query # corresponds to 6&lt;/li>
+&lt;li>if daily → has it been 1+ hour?&lt;/li>
+&lt;li>if daily → has it been 1+ day?&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>&lt;strong>Diagrams Present:&lt;/strong>&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>System Flow Diagram&lt;/strong>: Shows connection from Computer/Server through API to Property and LED Strip with external connection&lt;/li>
+&lt;li>&lt;strong>Component Architecture&lt;/strong>: Multiple connected boxes showing the relationship between different workers, stored preferences, and tracking components&lt;/li>
+&lt;li>&lt;strong>Checkbox&lt;/strong>: One completed checkbox indicating a finished task&lt;/li>
+&lt;/ol></content></item><item><title>## Music Streaming System Architecture &amp; Development Notes</title><link>https://jenkinsdev.us/handwritten-notes/music-streaming-system-architecture---development-notes/</link><pubDate>Mon, 02 Jun 2025 13:33:34 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/music-streaming-system-architecture---development-notes/</guid><description>Music Streaming System Architecture &amp;amp; Development Notes Call Notes: Tuned Global Apps to See? Search/Rec APIs Existing: Many object Search (Rec contextual to store) Upcoming: Adobe shutting us off (traffic 📈) Update Package from Maven System Architecture Wilson Scoring System ↓
+Elastic Scoring System
+Universal Music Group in Tuned Catalogue - Music in Demo
+Pre-tagging &amp;amp; Rewards Pre-tagging Tuned Global for Cold Start
+Playful Rewards (userwise)
+Playful Rhythm Technical Details Per hour All packages Android only Storage &amp;amp; Performance TikTok in Store?</description><content>&lt;h1 id="music-streaming-system-architecture--development-notes">Music Streaming System Architecture &amp;amp; Development Notes&lt;/h1>
 &lt;h3 id="call-notes">Call Notes:&lt;/h3>
 &lt;ul>
-&lt;li>&lt;strong>Tuned Global&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Apps to see?&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Search/Rec APIs&lt;/strong>
+&lt;li>&lt;strong>Tuned Global&lt;/strong>
 &lt;ul>
-&lt;li>&lt;strong>Existing:&lt;/strong> Many object search (Rec contextual to store)&lt;/li>
+&lt;li>&lt;em>Apps to See?&lt;/em>&lt;/li>
+&lt;li>&lt;em>Search/Rec APIs&lt;/em>&lt;/li>
+&lt;li>&lt;strong>Existing:&lt;/strong> Many object Search (Rec contextual to store)&lt;/li>
 &lt;li>&lt;strong>Upcoming:&lt;/strong>&lt;/li>
+&lt;li>Adobe shutting us off (traffic 📈)&lt;/li>
+&lt;li>&lt;del>Update Package from&lt;/del> &lt;del>Maven&lt;/del>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;p>[Diagram: Box containing &amp;ldquo;Wilson Scoring System&amp;rdquo; with arrow pointing down to &amp;ldquo;Elastic Scoring System&amp;rdquo;]&lt;/p>
+&lt;h3 id="system-architecture">System Architecture&lt;/h3>
+&lt;p>&lt;strong>Wilson Scoring System&lt;/strong>
+↓&lt;br>
+&lt;strong>Elastic Scoring System&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Universal Music Group in Tuned Catalogue - Music in Demo&lt;/strong>&lt;/p>
+&lt;h3 id="pre-tagging--rewards">Pre-tagging &amp;amp; Rewards&lt;/h3>
+&lt;p>&lt;strong>Pre-tagging Tuned Global for Cold Start&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Playful Rewards (userwise)&lt;/strong>&lt;/p>
 &lt;ul>
-&lt;li>&lt;strong>Adobe shutting us off (traffic ↗)&lt;/strong>&lt;/li>
-&lt;li>&lt;del>&lt;strong>Update package from&lt;/strong>&lt;/del>
-&lt;strong>Mega&lt;/strong>&lt;/li>
+&lt;li>Playful&lt;/li>
+&lt;li>Rhythm&lt;/li>
 &lt;/ul>
-&lt;p>[Diagram: Box containing &amp;ldquo;Universal Music Group in Tuned Catalogue - Music in Demo&amp;rdquo;]&lt;/p>
+&lt;h3 id="technical-details">Technical Details&lt;/h3>
 &lt;ul>
-&lt;li>&lt;strong>AppLovin Rewarded Videos Ad&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Per hour&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>All packages&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Android only&lt;/strong>&lt;/li>
 &lt;/ul>
-&lt;h3 id="pre-tagging-tuned-global-for-cold-start">Pre-tagging Tuned Global for Cold Start&lt;/h3>
-&lt;p>[Diagram: Parallelogram shape containing &amp;ldquo;Playful Rewards (Userwise) Playful Rhythm&amp;rdquo;]&lt;/p>
-&lt;p>&lt;strong>TikTok in Store???&lt;/strong> [shown in separate box in upper right]&lt;/p>
-&lt;p>&lt;strong>- 3% margin to user&lt;/strong>
-&lt;strong>- 97% for us 👀&lt;/strong>&lt;/p>
-&lt;p>&lt;strong>- per hour&lt;/strong>
-&lt;strong>- all packages&lt;/strong>
-&lt;strong>- Android only&lt;/strong>&lt;/p>
-&lt;h3 id="dropped-out-issue-with-guided-install">Dropped Out Issue with guided install&lt;/h3>
-&lt;p>☐ UX optimizations + segment optimizations
-☐ PR Android app time (Ollur/tracking)
+&lt;h3 id="storage--performance">Storage &amp;amp; Performance&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>TikTok in Store???&lt;/strong> [boxed question]&lt;/li>
+&lt;li>3% margin to user&lt;/li>
+&lt;li>47% for us 👍&lt;/li>
+&lt;li>Need SSD → git upload?&lt;/li>
+&lt;li>Storage&lt;/li>
+&lt;li>Parsing? [unclear]&lt;/li>
+&lt;/ul>
+&lt;h3 id="phase-out-issues">Phase Out Issues&lt;/h3>
+&lt;p>&lt;strong>Phase Out issue with guided install&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> UX optimizations + segment optimizations&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> PR Android app time (Olluy/tracking)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Rhythm?&lt;/li>
+&lt;/ul>
+&lt;h3 id="release">RELEASE&lt;/h3>
+&lt;p>&lt;strong>UW Updates&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>L7 Time Tracking&lt;/strong>
+&lt;ul>
+&lt;li>→ &lt;strong>Segment (easy filtering?)&lt;/strong>
+&lt;ul>
+&lt;li>&lt;strong>Updates&lt;/strong>
+&lt;ul>
+&lt;li>→ &lt;strong>Rhythm&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>&lt;strong>Diagrams Present:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Several rectangular boxes highlighting key system components (Wilson/Elastic Scoring System, Universal Music Group integration, Playful Rewards system)&lt;/li>
+&lt;li>Arrows showing flow between components&lt;/li>
+&lt;li>A boxed question mark highlighting &amp;ldquo;TikTok in Store???&amp;rdquo;&lt;/li>
+&lt;/ul></content></item><item><title>## Release Notes &amp; System Updates</title><link>https://jenkinsdev.us/handwritten-notes/release-notes---system-updates/</link><pubDate>Mon, 02 Jun 2025 13:33:34 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/release-notes---system-updates/</guid><description>Release Notes &amp;amp; System Updates Call Modes: Tuned Global &amp;ldquo;Apps to See&amp;rdquo; &amp;ldquo;Search/Rec APIS&amp;rdquo; [Boxed section - System Architecture] Wilson Scoring System ↓ Elastic Scoring System
+Existing Features: Many object Search (Rec contextual to store) Upcoming: Adobe Integration: Adobe shutting us off (traffic ↓) update Package from [unclear] Magn Video Features: AppLovin Rewarded Videos Ad [Boxed section - Music Integration] Universal Music Group in Tuned Catalogue Music in Demo
+Pre-tagging: Pre-tagging Tuned Global for Cold Start</description><content>&lt;h1 id="release-notes--system-updates">Release Notes &amp;amp; System Updates&lt;/h1>
+&lt;h3 id="call-modes">Call Modes:&lt;/h3>
+&lt;ul>
+&lt;li>Tuned Global&lt;/li>
+&lt;li>&amp;ldquo;Apps to See&amp;rdquo;&lt;/li>
+&lt;li>&amp;ldquo;Search/Rec APIS&amp;rdquo;&lt;/li>
+&lt;/ul>
+&lt;h3 id="boxed-section---system-architecture">[Boxed section - System Architecture]&lt;/h3>
+&lt;p>Wilson Scoring System
+↓
+Elastic Scoring System&lt;/p>
+&lt;h3 id="existing-features">Existing Features:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Many object Search&lt;/strong> (Rec contextual to store)&lt;/li>
+&lt;li>&lt;strong>Upcoming:&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h3 id="adobe-integration">Adobe Integration:&lt;/h3>
+&lt;ul>
+&lt;li>Adobe shutting us off (traffic ↓)&lt;/li>
+&lt;li>&lt;del>update&lt;/del> Package from &lt;del>[unclear]&lt;/del> Magn&lt;/li>
+&lt;/ul>
+&lt;h3 id="video-features">Video Features:&lt;/h3>
+&lt;ul>
+&lt;li>AppLovin Rewarded Videos Ad&lt;/li>
+&lt;/ul>
+&lt;h3 id="boxed-section---music-integration">[Boxed section - Music Integration]&lt;/h3>
+&lt;p>Universal Music Group
+in Tuned Catalogue
+Music in Demo&lt;/p>
+&lt;h3 id="pre-tagging">Pre-tagging:&lt;/h3>
+&lt;p>Pre-tagging Tuned Global for Cold Start&lt;/p>
+&lt;h3 id="boxed-section---rewards-system">[Boxed section - Rewards System]&lt;/h3>
+&lt;p>Playful Rewards
+(userwise)
+Playful
+Rhythm&lt;/p>
+&lt;h3 id="technical-details">Technical Details:&lt;/h3>
+&lt;ul>
+&lt;li>per hour&lt;/li>
+&lt;li>all packages&lt;/li>
+&lt;li>Android only&lt;/li>
+&lt;/ul>
+&lt;h3 id="issues-to-address">Issues to Address:&lt;/h3>
+&lt;p>☐ Phasing Out issue with guided install
+☐ UX optimizations + segment optimizations&lt;br>
+☐ PR Android app time &lt;del>billing&lt;/del> tracking
 ☐ Rhythm?&lt;/p>
-&lt;p>&lt;strong>Next steps ➤ 9+ update?&lt;/strong>
-&lt;strong>Storage&lt;/strong>
-&lt;strong>Parsing? Naahh&amp;hellip;&lt;/strong>&lt;/p>
+&lt;h3 id="boxed-section---storage-question">[Boxed section - Storage Question]&lt;/h3>
+&lt;p>TikTok in Store???&lt;/p>
+&lt;h3 id="additional-notes">Additional Notes:&lt;/h3>
+&lt;ul>
+&lt;li>3% margin to user&lt;/li>
+&lt;li>47% for us 🙄&lt;/li>
+&lt;li>Node &lt;del>side&lt;/del> → q+ update?&lt;/li>
+&lt;li>Storage&lt;/li>
+&lt;li>Parsing? &lt;del>Wahhh&lt;/del>&lt;/li>
+&lt;/ul>
+&lt;h3 id="release">RELEASE&lt;/h3>
+&lt;p>UW Updates
+L7 Time Tracking
+└→ Segment (easy filtering?)
+Updates
+└→ Rhythm&lt;/p>
 &lt;hr>
-&lt;h2 id="release">RELEASE&lt;/h2>
-&lt;h3 id="uw-updates">UW Updates&lt;/h3>
-&lt;p>&lt;strong>L7 Time Tracking&lt;/strong>
-&lt;strong>⤷ Segment (Easy filtering?)&lt;/strong>
-** Updates**
-** ⤷ Rhythm**&lt;/p>
-&lt;hr>
-&lt;h3 id="diagrams-present">Diagrams Present:&lt;/h3>
-&lt;ol>
-&lt;li>&lt;strong>System Architecture Box:&lt;/strong> Wilson Scoring System transitioning to Elastic Scoring System&lt;/li>
-&lt;li>&lt;strong>Music Integration Box:&lt;/strong> Universal Music Group integration with Tuned Catalogue&lt;/li>
-&lt;li>&lt;strong>Rewards System Parallelogram:&lt;/strong> Showing Playful Rewards and Rhythm features&lt;/li>
-&lt;li>&lt;strong>Revenue Split Box:&lt;/strong> TikTok integration question with margin breakdown&lt;/li>
-&lt;/ol>
-&lt;p>The notes appear to be from a product development meeting covering system updates, third-party integrations, monetization strategies, and upcoming release plans.&lt;/p></content></item><item><title>## Development Tasks and Planning Notes - May 29, 2025</title><link>https://jenkinsdev.us/handwritten-notes/development-tasks-and-planning-notes---may-29--2025/</link><pubDate>Thu, 29 May 2025 14:28:05 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/development-tasks-and-planning-notes---may-29--2025/</guid><description>Development Tasks and Planning Notes - May 29, 2025 IntelliJ:
-RedKit Book → Tado → Obsidian RacketBook → Markdown → Obsidian General ToDo Remove david@username.io lucky/kiwi G(?)P Auth screen Adobe/Playtime SDK upgrade to 310: Playful Reworks Server ToDo Save new onboarding Kiwi Data Add promo code encoding Add 10% boost functionality Swap Remaining Keys Update Apploin to support Kiwi Add New Kiwi Content Sections Clue Section Horizontal Hotlink Section LevelUp Game Overview Client ToDo Update app-id to be Kiwi Update DoT + Gender to match Tech Update last name audit[?</description><content>&lt;h1 id="development-tasks-and-planning-notes---may-29-2025">Development Tasks and Planning Notes - May 29, 2025&lt;/h1>
+&lt;p>&lt;strong>Diagram Description:&lt;/strong> The image contains several hand-drawn boxes connecting different system components, with arrows showing relationships between Wilson Scoring System flowing to Elastic Scoring System, and hierarchical structures for the release updates section.&lt;/p></content></item><item><title>## Development Task List - May 29, 2025</title><link>https://jenkinsdev.us/handwritten-notes/development-task-list---may-29--2025/</link><pubDate>Thu, 29 May 2025 14:28:05 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/development-task-list---may-29--2025/</guid><description>Development Task List - May 29, 2025 Date: 05-29-2025
+IntelliJ:
+RocketBook → iTodo RocketBook → Markdown → Obsidian General ToDo Remove david@username.io lucky/kiwi GAP Auth Screen Adobe/Playtime SDK upgrade to 3.1.0: Playful Rewards Server ToDo Save new onboarding Kiwi Data Add promo code enabling Add 1080 boost functionality Swap Remaining Keys Update Appdown to support Kiwi Add new Kiwi Content Sections Game Section Horizontal Hotlink Section Level up Game Overview Client ToDo Update app.</description><content>&lt;h1 id="development-task-list---may-29-2025">Development Task List - May 29, 2025&lt;/h1>
+&lt;p>&lt;strong>Date:&lt;/strong> 05-29-2025&lt;/p>
 &lt;p>&lt;strong>IntelliJ:&lt;/strong>&lt;/p>
 &lt;ul>
-&lt;li>&lt;del>RedKit Book&lt;/del> → &lt;del>Tado&lt;/del> → Obsidian&lt;/li>
-&lt;li>&lt;del>RacketBook&lt;/del> → &lt;del>Markdown&lt;/del> → Obsidian&lt;/li>
+&lt;li>&lt;del>RocketBook&lt;/del> → &lt;del>iTodo&lt;/del>&lt;/li>
+&lt;li>RocketBook → Markdown → Obsidian&lt;/li>
 &lt;/ul>
 &lt;h3 id="general-todo">General ToDo&lt;/h3>
 &lt;ul>
-&lt;li>&lt;input disabled="" type="checkbox"> Remove &lt;a href="mailto:david@username.io">david@username.io&lt;/a> lucky/kiwi G(?)P Auth screen&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> Adobe/Playtime SDK upgrade to 310: Playful Reworks&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Remove &lt;a href="mailto:david@username.io">david@username.io&lt;/a> lucky/kiwi GAP Auth Screen&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Adobe/Playtime SDK upgrade to 3.1.0: Playful Rewards&lt;/li>
 &lt;/ul>
 &lt;h3 id="server-todo">Server ToDo&lt;/h3>
 &lt;ul>
 &lt;li>&lt;input disabled="" type="checkbox"> Save new onboarding Kiwi Data&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> Add promo code encoding&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Add promo code enabling&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Add 1080 boost functionality&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Swap Remaining Keys&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Update Appdown to support Kiwi&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Add new Kiwi Content Sections
+&lt;ul>
+&lt;li>Game Section Horizontal&lt;/li>
+&lt;li>Hotlink Section&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Level up Game Overview&lt;/li>
+&lt;/ul>
+&lt;h3 id="client-todo">Client ToDo&lt;/h3>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Update app.id to be Kiwi&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Update DoTS + Gender to match fetch [unclear text]&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Update last name autofill&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>&lt;em>Note: This appears to be a development task list with items organized by category (General, Server, Client). There are some strikethroughs in the header indicating completed or changed items, and the note includes references to various technical tasks related to app development and SDK upgrades.&lt;/em>&lt;/p></content></item><item><title>## Development Tasks and Planning - May 29, 2025</title><link>https://jenkinsdev.us/handwritten-notes/development-tasks-and-planning---may-29--2025/</link><pubDate>Thu, 29 May 2025 14:28:05 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/development-tasks-and-planning---may-29--2025/</guid><description>Development Tasks and Planning - May 29, 2025 Date: 05-29-2025
+IntelliJ:
+RocketBook → TaDa → Obsidian RocketBook → Markdown → Obsidian General ToDo Remove David Discourse ID Lucky/Kiwi GUI Auth Screen Adobe/Playtime SDK upgrade to 3.1.0: Playful Rewards Server ToDo Save new onboarding Kiwi Data Add promo code enabling Add 10% boost functionality Swap Remaining Keys Update AppDain to support Kiwi Add New Kiwi Content Sections League Section Horizontal Hotlink Section LevelUp Game Overview Client ToDo Update app-id to be Kiwi Speak or: Update DoD + Gender to match Fetch Update last name autofill [unclear] Note: This appears to be a development planning document with tasks organized by general, server-side, and client-side work items.</description><content>&lt;h1 id="development-tasks-and-planning---may-29-2025">Development Tasks and Planning - May 29, 2025&lt;/h1>
+&lt;p>&lt;strong>Date:&lt;/strong> 05-29-2025&lt;/p>
+&lt;p>&lt;strong>IntelliJ:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;del>RocketBook&lt;/del> → &lt;del>TaDa&lt;/del> → Obsidian&lt;/li>
+&lt;li>RocketBook → Markdown → Obsidian&lt;/li>
+&lt;/ul>
+&lt;h3 id="general-todo">General ToDo&lt;/h3>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Remove David Discourse ID Lucky/Kiwi GUI Auth Screen&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Adobe/Playtime SDK upgrade to 3.1.0: Playful Rewards&lt;/li>
+&lt;/ul>
+&lt;h3 id="server-todo">Server ToDo&lt;/h3>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Save new onboarding Kiwi Data&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Add promo code enabling&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> Add 10% boost functionality&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> Swap Remaining Keys&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> Update Apploin to support Kiwi&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Update AppDain to support Kiwi&lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> Add New Kiwi Content Sections
 &lt;ul>
-&lt;li>&lt;input disabled="" type="checkbox"> Clue Section Horizontal&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> Hotlink Section&lt;/li>
+&lt;li>League Section Horizontal&lt;/li>
+&lt;li>Hotlink Section&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>&lt;input disabled="" type="checkbox"> LevelUp Game Overview&lt;/li>
@@ -800,11 +1457,16 @@ RedKit Book → Tado → Obsidian RacketBook → Markdown → Obsidian General T
 &lt;h3 id="client-todo">Client ToDo&lt;/h3>
 &lt;ul>
 &lt;li>&lt;input disabled="" type="checkbox"> Update app-id to be Kiwi&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> Update DoT + Gender to match Tech&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> Update last name audit[?]&lt;/li>
+&lt;li>Speak or:
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Update DoD + Gender to match Fetch&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Update last name autofill&lt;/li>
 &lt;/ul>
-&lt;p>&lt;strong>Note:&lt;/strong> There appears to be some additional text marked as &amp;ldquo;Swab[?] 6th&amp;rdquo; in the Client ToDo section that is partially unclear.&lt;/p>
-&lt;p>The note shows a typical development sprint planning format with tasks organized by component (General, Server, Client) and includes some completed items that have been crossed out in the IntelliJ section.&lt;/p></content></item><item><title>A better AI-powered Development Environment</title><link>https://jenkinsdev.us/posts/supermaven-and-nvim/</link><pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate><guid>https://jenkinsdev.us/posts/supermaven-and-nvim/</guid><description>So&amp;hellip; Why exactly? LLM-powered coding suggestions have been a hot topic since they were first introduced to the mainstream development industry with the launch of GitHub&amp;rsquo;s Copilot program. Some developers swear by their productivity gains (and some stats show it is helpful), while droves of other developers have found themselves turning off LLM-powered suggestions for a plethora of reasons: too distracting, too much reliability on the suggestions, less engaging work, and honestly much more.</description><content>&lt;h2 id="so-why-exactly">So&amp;hellip; Why exactly?&lt;/h2>
+&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> [unclear]&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>&lt;em>Note: This appears to be a development planning document with tasks organized by general, server-side, and client-side work items. The handwriting shows some crossed-out items indicating completed or changed tasks, and there are checkboxes indicating incomplete tasks.&lt;/em>&lt;/p></content></item><item><title>A better AI-powered Development Environment</title><link>https://jenkinsdev.us/posts/supermaven-and-nvim/</link><pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate><guid>https://jenkinsdev.us/posts/supermaven-and-nvim/</guid><description>So&amp;hellip; Why exactly? LLM-powered coding suggestions have been a hot topic since they were first introduced to the mainstream development industry with the launch of GitHub&amp;rsquo;s Copilot program. Some developers swear by their productivity gains (and some stats show it is helpful), while droves of other developers have found themselves turning off LLM-powered suggestions for a plethora of reasons: too distracting, too much reliability on the suggestions, less engaging work, and honestly much more.</description><content>&lt;h2 id="so-why-exactly">So&amp;hellip; Why exactly?&lt;/h2>
 &lt;p>LLM-powered coding suggestions have been a hot topic since they were &lt;a href="https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/">first introduced to the mainstream development industry with the launch of GitHub&amp;rsquo;s Copilot program&lt;/a>. Some developers swear by their productivity gains (and some stats show it is helpful), while droves of other developers have found themselves turning off LLM-powered suggestions for a plethora of reasons: too distracting, too much reliability on the suggestions, less engaging work, and honestly much more.&lt;/p>
 &lt;p>I don&amp;rsquo;t think anyone is wrong here. I think AI pair programming is likely going to become the future of an ideal development environment, but&amp;hellip; The way we currently deliver AI-powered suggestions just won&amp;rsquo;t cut it in the long-term IMO.&lt;/p>
 &lt;p>So, here is my rather basic premise: use a completion engine, wire up LSPs &amp;amp; your LLM of choice to that completion engine, and then manage suggestions through a singular interface.&lt;/p>
