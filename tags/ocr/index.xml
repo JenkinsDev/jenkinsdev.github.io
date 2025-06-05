@@ -1,4 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ocr on JenkinsDev :: Into the mind of an aspiring polymathic autodidact</title><link>https://jenkinsdev.us/tags/ocr/</link><description>Recent content in ocr on JenkinsDev :: Into the mind of an aspiring polymathic autodidact</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 04 Jun 2025 16:28:43 +0000</lastBuildDate><atom:link href="https://jenkinsdev.us/tags/ocr/index.xml" rel="self" type="application/rss+xml"/><item><title>Rhythm ToDo List and Development Notes</title><link>https://jenkinsdev.us/handwritten-notes/rhythm-todo-list-and-development-notes/</link><pubDate>Wed, 04 Jun 2025 16:28:43 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/rhythm-todo-list-and-development-notes/</guid><description>Rollbar In for Rhythm
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ocr on JenkinsDev :: Into the mind of an aspiring polymathic autodidact</title><link>https://jenkinsdev.us/tags/ocr/</link><description>Recent content in ocr on JenkinsDev :: Into the mind of an aspiring polymathic autodidact</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 05 Jun 2025 18:47:38 +0000</lastBuildDate><atom:link href="https://jenkinsdev.us/tags/ocr/index.xml" rel="self" type="application/rss+xml"/><item><title>Personal Finance and App Development Notes</title><link>https://jenkinsdev.us/handwritten-notes/personal-finance-and-app-development-notes/</link><pubDate>Thu, 05 Jun 2025 18:47:38 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/personal-finance-and-app-development-notes/</guid><description>H2025 - 016-04
+General TODOs: Helium Paywall integration CashApp offer Planning Micro blink Receipt scanning Besitos API ingestion Maybe not; Maybe just core logic Show KashKa/Besitos AMGold 3.0.0 Playful submit [Simple flow diagram showing two connected boxes with arrows] Box 1: Do we want to use RevenueCat?
+Rev up to $25K MRR (monthly recurring revenue) Box 2: This to Payout to CashApp
+How long to get callback on success Daily Stand up: Internal CRONS tracking (Adam) 10% conv → lift $6 ARR (CashApp offer) CashApp Payout Method/Option grayed out if never showing Not until CashApp offer is live (e.</description><content>&lt;p>&lt;strong>H2025 - 016-04&lt;/strong>&lt;/p>
+&lt;h3 id="general-todos">General TODOs:&lt;/h3>
+&lt;ul>
+&lt;li>Helium Paywall integration&lt;/li>
+&lt;li>CashApp offer Planning&lt;/li>
+&lt;li>Micro blink Receipt scanning&lt;/li>
+&lt;li>Besitos API ingestion
+&lt;ul>
+&lt;li>Maybe not; Maybe just core logic&lt;/li>
+&lt;li>Show KashKa/Besitos&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>AMGold 3.0.0 Playful submit&lt;/li>
+&lt;/ul>
+&lt;p>[Simple flow diagram showing two connected boxes with arrows]
+&lt;strong>Box 1:&lt;/strong> Do we want to use RevenueCat?&lt;/p>
+&lt;ul>
+&lt;li>Rev up to $25K MRR (monthly recurring revenue)&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Box 2:&lt;/strong> This to Payout to CashApp&lt;/p>
+&lt;ul>
+&lt;li>How long to get callback on success&lt;/li>
+&lt;/ul>
+&lt;h3 id="daily-stand-up">Daily Stand up:&lt;/h3>
+&lt;ul>
+&lt;li>Internal CRONS tracking (Adam)&lt;/li>
+&lt;li>10% conv → lift $6 ARR (CashApp offer)&lt;/li>
+&lt;li>CashApp Payout Method/Option grayed out if never showing
+&lt;ul>
+&lt;li>Not until CashApp offer is live (e.g. events)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Diagram Description:&lt;/strong> The image contains a simple flowchart with two rectangular boxes connected by arrows, illustrating a decision flow about RevenueCat usage and payout processing to CashApp.&lt;/p></content></item><item><title>Rhythm ToDo List and Development Notes</title><link>https://jenkinsdev.us/handwritten-notes/rhythm-todo-list-and-development-notes/</link><pubDate>Wed, 04 Jun 2025 16:28:43 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/rhythm-todo-list-and-development-notes/</guid><description>Rollbar In for Rhythm
 Foot Control Pad for Computer
 Rhythm TODO: System Playlists Search/Playlist = yet-driven Client Authentication AdSvc System Test Server Test Client Client: Finish Designs Client: Can Resume Spot on App boot Coming Soon: Can make playlists Client: iOS Bottom Nav Bar (spacing iOS) Ensure autoplay works (80%) Search playlist screen Queue → Page; Keep Playing Allow Ben to use Cmd block: get X(64 Diamonds -Igns Flick diamond Blue if you aren&amp;rsquo;t Ben; death!</description><content>&lt;p>&lt;strong>Rollbar In for Rhythm&lt;/strong>&lt;/p>
 &lt;p>&lt;strong>Foot Control Pad for Computer&lt;/strong>&lt;/p>
