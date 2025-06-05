@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ocr on JenkinsDev :: Into the mind of an aspiring polymathic autodidact</title><link>https://jenkinsdev.us/tags/ocr/</link><description>Recent content in ocr on JenkinsDev :: Into the mind of an aspiring polymathic autodidact</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 04 Jun 2025 16:28:43 +0000</lastBuildDate><atom:link href="https://jenkinsdev.us/tags/ocr/index.xml" rel="self" type="application/rss+xml"/><item><title>Rhythm ToDo List and Development Notes</title><link>https://jenkinsdev.us/handwritten-notes/rhythm-todo-list-and-development-notes/</link><pubDate>Wed, 04 Jun 2025 16:28:43 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/rhythm-todo-list-and-development-notes/</guid><description>Rollbar In for Rhythm
+Foot Control Pad for Computer
+Rhythm TODO: System Playlists Search/Playlist = yet-driven Client Authentication AdSvc System Test Server Test Client Client: Finish Designs Client: Can Resume Spot on App boot Coming Soon: Can make playlists Client: iOS Bottom Nav Bar (spacing iOS) Ensure autoplay works (80%) Search playlist screen Queue → Page; Keep Playing Allow Ben to use Cmd block: get X(64 Diamonds -Igns Flick diamond Blue if you aren&amp;rsquo;t Ben; death!</description><content>&lt;p>&lt;strong>Rollbar In for Rhythm&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Foot Control Pad for Computer&lt;/strong>&lt;/p>
+&lt;h3 id="rhythm-todo">Rhythm TODO:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> System Playlists&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Search/Playlist = yet-driven&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Client Authentication&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> AdSvc System
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Test Server&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Test Client&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Client: Finish Designs&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Client: Can Resume Spot on App boot&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Coming Soon: Can make playlists&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Client: iOS&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Bottom Nav Bar (spacing iOS)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Ensure autoplay works (80%)&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Search playlist screen&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Queue → Page; Keep Playing&lt;/li>
+&lt;/ul>
+&lt;h3 id="allow-ben-to-use-cmd-block">Allow Ben to use Cmd block:&lt;/h3>
+&lt;ul>
+&lt;li>get X(64 Diamonds
+-Igns Flick diamond Blue&lt;/li>
+&lt;li>if you aren&amp;rsquo;t Ben; death!&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>&lt;strong>Diagram Description:&lt;/strong>
+There is a simple line drawing that appears to be an L-shaped or boot-shaped outline drawn in blue ink, possibly representing the &amp;ldquo;Foot Control Pad for Computer&amp;rdquo; mentioned at the top of the notes.&lt;/p></content></item><item><title>Mobile App Development and Monetization Notes</title><link>https://jenkinsdev.us/handwritten-notes/mobile-app-development-and-monetization-notes/</link><pubDate>Wed, 04 Jun 2025 16:28:36 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/mobile-app-development-and-monetization-notes/</guid><description>Triple Dot - App Requirements App Login - Registration Cache video, queue, comfort-style Reload on app start Coming soon - Location Changes (No Playback) [Scribbled marking/emphasis]
+CPI Metrics $30K/month = $1175 $300K/day = Licensing SDK Integration Amplitude SDK Appsflyer Facebook Ads SDK Revenue Calculations $15,000/day
+x 30
+= $500,000
+√ 5,000
+$245,000
+Organic Growth Targets 1700 organic
+↓
+2700 organic in our system
+Diagram Description: There are several blue pen markings throughout, including underlines, boxes around text, checkboxes (□), and a scribbled emphasis mark.</description><content>&lt;h3 id="triple-dot---app-requirements">Triple Dot - App Requirements&lt;/h3>
+&lt;ul>
+&lt;li>App Login - Registration&lt;/li>
+&lt;li>Cache video, queue, comfort-style&lt;/li>
+&lt;li>Reload on app start&lt;/li>
+&lt;li>Coming soon - &lt;del>Location&lt;/del> Changes (No Playback)&lt;/li>
+&lt;/ul>
+&lt;p>[Scribbled marking/emphasis]&lt;/p>
+&lt;h3 id="cpi-metrics">CPI Metrics&lt;/h3>
+&lt;ul>
+&lt;li>$30K/month = $1175&lt;/li>
+&lt;li>$300K/day = Licensing&lt;/li>
+&lt;/ul>
+&lt;h3 id="sdk-integration">SDK Integration&lt;/h3>
+&lt;ul>
+&lt;li>Amplitude SDK&lt;/li>
+&lt;li>&lt;del>Appsflyer&lt;/del>&lt;/li>
+&lt;li>Facebook Ads SDK&lt;/li>
+&lt;/ul>
+&lt;h3 id="revenue-calculations">Revenue Calculations&lt;/h3>
+&lt;p>$15,000/day&lt;br>
+x 30&lt;br>
+= $500,000&lt;br>
+√ 5,000&lt;br>
+&lt;strong>$245,000&lt;/strong>&lt;/p>
+&lt;h3 id="organic-growth-targets">Organic Growth Targets&lt;/h3>
+&lt;p>1700 organic&lt;br>
+↓&lt;br>
+2700 organic in our system&lt;/p>
+&lt;hr>
+&lt;p>&lt;strong>Diagram Description:&lt;/strong> There are several blue pen markings throughout, including underlines, boxes around text, checkboxes (□), and a scribbled emphasis mark. The layout appears to be informal meeting notes or planning documentation with various calculations and crossed-out items indicating revisions or completed tasks.&lt;/p></content></item><item><title>Smart Home Server and Development Notes</title><link>https://jenkinsdev.us/handwritten-notes/smart-home-server-and-development-notes/</link><pubDate>Wed, 04 Jun 2025 16:28:29 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/smart-home-server-and-development-notes/</guid><description>Smart Home Server Architecture Embedded MQTT Broker
+Located in a MQTT program, w/ GTOAC pub/sub functionality System Components:
+Linux &amp;ndash; systemd startup script Windows &amp;ndash; startup PS1 script Both connect to: Docker Container w/ MQTT Broker
+Network Setup: Contains some of the Raspberry Pi devices connected in a grid pattern
+Development Updates - 2025-02-15 Upload 2.3.14 Android/iOS
+Include 2.0.2 FlutterEarn SDK update [unclear] Shuffle to each of the test tracks [unclear] outage Program YouTube Search</description><content>&lt;h3 id="smart-home-server-architecture">Smart Home Server Architecture&lt;/h3>
+&lt;p>&lt;strong>Embedded MQTT Broker&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Located in a MQTT program, w/ GTOAC&lt;/li>
+&lt;li>pub/sub functionality&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>System Components:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Linux&lt;/strong> &amp;ndash; systemd startup script&lt;/li>
+&lt;li>&lt;strong>Windows&lt;/strong> &amp;ndash; startup PS1 script&lt;/li>
+&lt;/ul>
+&lt;p>Both connect to: &lt;strong>Docker Container w/ MQTT Broker&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Network Setup:&lt;/strong>
+Contains some of the Raspberry Pi devices connected in a grid pattern&lt;/p>
+&lt;hr>
+&lt;h3 id="development-updates---2025-02-15">Development Updates - 2025-02-15&lt;/h3>
+&lt;p>&lt;strong>Upload 2.3.14 Android/iOS&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Include 2.0.2 FlutterEarn SDK update&lt;/li>
+&lt;li>[unclear] Shuffle to each of the test tracks&lt;/li>
+&lt;li>[unclear] outage&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Program YouTube Search&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Scratch CofE GO 2
+&lt;ul>
+&lt;li>Hiring Pioneers (Unity) - iOS Organic - Playful Left ~ 100k online&lt;/li>
+&lt;li>Table in January&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="project-status-questions">Project Status Questions&lt;/h3>
+&lt;p>&lt;strong>Are these scraped?&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Linkin Park&lt;/li>
+&lt;li>Lauren Daigle&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Note:&lt;/strong> Meaning poor search results is due to it being not scraped yet&lt;/p>
+&lt;hr>
+&lt;p>&lt;em>Date: 2025-02-15&lt;/em>&lt;/p>
+&lt;h3 id="diagram-explanation">Diagram Explanation&lt;/h3>
+&lt;p>The notes contain a simple network architecture diagram showing:&lt;/p>
+&lt;ol>
+&lt;li>A Smart Home Server setup with Linux/Windows startup scripts connecting to a Docker container running an MQTT broker&lt;/li>
+&lt;li>A grid pattern of connected devices (likely Raspberry Pi units) that form part of the home automation network&lt;/li>
+&lt;li>The MQTT broker handles pub/sub messaging for the entire system&lt;/li>
+&lt;/ol></content></item><item><title>Product Development Notes and Feature Planning</title><link>https://jenkinsdev.us/handwritten-notes/product-development-notes-and-feature-planning/</link><pubDate>Wed, 04 Jun 2025 16:28:12 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/product-development-notes-and-feature-planning/</guid><description>Playful Records [unclear] off-boards Line v2.3.5 Social Auth (REM) Line v2.3.4 (App Usage Data Filtering) v2.3.5 (Onboarding Wizard v2) Social Audit Implementation Implemented: 0 Major or build 4 test talk
+[Diagram: A table/matrix structure with bullet points and checkboxes, appears to be a feature tracking grid with multiple rows and columns]
+iOS Features [Diagram: Similar table structure with bullet points organized in rows]
+Search RPI Focus Get Click ROAS
+Visibility &amp;amp; Observability for Business Analytics</description><content>&lt;h3 id="playful-records">Playful Records&lt;/h3>
+&lt;ul>
+&lt;li>&lt;del>[unclear] off-boards Line&lt;/del>&lt;/li>
+&lt;li>&lt;del>v2.3.5 Social Auth (REM) Line&lt;/del>&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> v2.3.4 (App Usage Data Filtering)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> v2.3.5 (Onboarding Wizard v2)&lt;/li>
+&lt;/ul>
+&lt;h3 id="social-audit-implementation">Social Audit Implementation&lt;/h3>
+&lt;p>&lt;strong>Implemented:&lt;/strong> 0 Major or build 4 test talk&lt;/p>
+&lt;p>[Diagram: A table/matrix structure with bullet points and checkboxes, appears to be a feature tracking grid with multiple rows and columns]&lt;/p>
+&lt;h3 id="ios-features">iOS Features&lt;/h3>
+&lt;p>[Diagram: Similar table structure with bullet points organized in rows]&lt;/p>
+&lt;h3 id="search-rpi-focus">Search RPI Focus&lt;/h3>
+&lt;p>Get Click ROAS&lt;/p>
+&lt;p>&lt;strong>Visibility &amp;amp; Observability for Business Analytics&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Spend/IAP changes to beta&lt;/li>
+&lt;li>Up Click ROAS&lt;/li>
+&lt;/ul>
+&lt;p>Get $300 by spending $175&lt;/p>
+&lt;h3 id="click-roas-plans---pushing-focus-on-iaps">Click ROAS Plans - Pushing Focus on IAPs&lt;/h3>
+&lt;h3 id="uservoice-features">UserVoice Features&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Prod&lt;/strong>&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Frontend Change Sync?&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Workers Staging&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Global Remote Config&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Worker Job (TIME Advancement)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Push Notifications (Scheduled Send)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Update Segment Concrete to use Cube 3 + time&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Query Optimizations&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Soumei Step Patching (Client)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Soumei Stop Event Template&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Enable Stack&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> ARM&lt;/li>
+&lt;/ul>
+&lt;h3 id="tiktok--fb--apps-flyer">TikTok + FB + Apps Flyer&lt;/h3>
+&lt;ul>
+&lt;li>Keep Link clock&lt;/li>
+&lt;li>deferred&lt;/li>
+&lt;/ul>
+&lt;h3 id="big-updates-now">Big Updates Now&lt;/h3>
+&lt;p>Then Analytics Ramp&lt;/p>
+&lt;hr>
+&lt;p>&lt;strong>Note:&lt;/strong> The image contains several hand-drawn tables/matrices with bullet points and checkboxes that appear to be feature tracking grids. Some text is crossed out with strikethroughs, and there are various arrows and connecting lines between sections indicating relationships or workflow between different features and tasks.&lt;/p></content></item><item><title>Product Development Meeting Notes - October 22, 2024</title><link>https://jenkinsdev.us/handwritten-notes/product-development-meeting-notes---october-22--2024/</link><pubDate>Wed, 04 Jun 2025 16:28:06 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/product-development-meeting-notes---october-22--2024/</guid><description>Subsequent By Default
+Playful Rewards: ☑️ Test Attribution ☐ Push Up Social Auth (Staging + Client Builds + Firebase) ☐ App Usage Tracking Sync w/ Adam: What are our goals exactly ← Z.3.4 Here is what we provide summary ☑️ Send Adam Credentials encrypt Changes for [Lead Account-auth] ☐ Onboarding Wizard v2 (Quick vs Big) UserWise ☐ Mongo 5 → 6 ☑️ Staging ☐ Production ☐ Frontend Changes &amp;gt;_&amp;lt; ☐ FlowRefs during?</description><content>&lt;p>&lt;em>Subsequent By Default&lt;/em>&lt;/p>
+&lt;h3 id="playful-rewards">Playful Rewards:&lt;/h3>
+&lt;ul>
+&lt;li>☑️ Test Attribution&lt;/li>
+&lt;li>☐ Push Up Social Auth (Staging + Client Builds + Firebase)&lt;/li>
+&lt;li>☐ App Usage Tracking Sync w/ Adam:
+&lt;ul>
+&lt;li>What are our goals exactly ← &lt;strong>Z.3.4&lt;/strong>&lt;/li>
+&lt;li>Here is what we provide summary&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>☑️ Send Adam Credentials encrypt Changes for [Lead Account-auth]&lt;/li>
+&lt;li>☐ Onboarding Wizard v2 (Quick vs Big)&lt;/li>
+&lt;/ul>
+&lt;h3 id="userwise">UserWise&lt;/h3>
+&lt;ul>
+&lt;li>☐ Mongo 5 → 6
+&lt;ul>
+&lt;li>☑️ Staging ☐ Production&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>☐ Frontend Changes &amp;gt;_&amp;lt;&lt;/li>
+&lt;li>☐ FlowRefs during?&lt;/li>
+&lt;li>☐ Global Revise config&lt;/li>
+&lt;li>☐ Worker Job (time)&lt;/li>
+&lt;li>☐ Push Notifications (scheduled send)&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>V2.3.4&lt;/strong>
+Filter Out Recently Played (90-days) ⭐&lt;/p>
+&lt;h3 id="pepperfun-call-notes">Pepperfun Call Notes:&lt;/h3>
+&lt;ul>
+&lt;li>☑️ Q1/Q2, for LiveOps: UW then?&lt;/li>
+&lt;li>☑️ GCP??? Do we host for them?&lt;/li>
+&lt;li>☑️ How do we integrate UW ↔ PT
+&lt;ul>
+&lt;li>UW would be a nice frontend&lt;/li>
+&lt;li>They would need custom features&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>☑️ Start SaaS → Self-Hosted (pre-live)&lt;/li>
+&lt;/ul>
+&lt;h3 id="pubsub-realtime-flow">PubSub Realtime Flow&lt;/h3>
+&lt;ul>
+&lt;li>☐ They provide segments to us.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>&lt;strong>Diagram Description:&lt;/strong>
+At the top of the page, there&amp;rsquo;s a diamond-shaped diagram with &amp;ldquo;Push Out RTTR DEN to be Client&amp;rdquo; written inside it, with &amp;ldquo;Subsequent By Default&amp;rdquo; noted above.&lt;/p>
+&lt;p>There&amp;rsquo;s also a box labeled &amp;ldquo;OMG&amp;rdquo; in the middle section, and &amp;ldquo;GCP&amp;rdquo; appears in a box at the bottom right of the notes.&lt;/p>
+&lt;p>&lt;em>Date: 2024-10-22&lt;/em>&lt;/p></content></item><item><title>Development Tasks - June 3rd, 2025</title><link>https://jenkinsdev.us/handwritten-notes/development-tasks---june-3rd--2025/</link><pubDate>Wed, 04 Jun 2025 15:39:43 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/development-tasks---june-3rd--2025/</guid><description>#H 2025-06-03
+Client: Double-Check Social Auth iOS/Google • Android/Google iOS/Apple • Android/Apple Backend: Fix game overview link color Push Notification creds json for Kiwi General LEVELUP Design tweaks ATUS creds → Firebase Additional Tasks: Create Amplitude onboarding Funnel Personal Notes: Personal Property Dentist 3:11 (!!!) Internet Op: transparency</description><content>&lt;p>&lt;strong>#H 2025-06-03&lt;/strong>&lt;/p>
+&lt;h3 id="client">Client:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Double-Check Social Auth&lt;/strong>
+&lt;ul>
+&lt;li>iOS/Google • Android/Google&lt;/li>
+&lt;li>iOS/Apple • Android/Apple&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="backend">Backend:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Fix game overview link color&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Push Notification creds json for Kiwi&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>General LEVELUP Design tweaks&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>ATUS creds → Firebase&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h3 id="additional-tasks">Additional Tasks:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Create Amplitude onboarding Funnel&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="personal-notes">Personal Notes:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;del>Personal Property&lt;/del>&lt;/li>
+&lt;li>Dentist 3:11 (!!!)&lt;/li>
+&lt;li>Internet&lt;/li>
+&lt;li>Op: transparency&lt;/li>
+&lt;/ul></content></item><item><title>Project Planning Notes - 2025-06-02</title><link>https://jenkinsdev.us/handwritten-notes/project-planning-notes---2025-06-02/</link><pubDate>Tue, 03 Jun 2025 18:52:39 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/project-planning-notes---2025-06-02/</guid><description>Concerns: Remove (count, ponder id, count-sub) idx [unclear: or favor of optiscript] Deploy to staging } following Test in staging } Deploy to production Kiwi: &amp;ldquo;Tap to copy&amp;rdquo; should probably be pressable Add zip shade brush (location shade) Level up pre-entry Update app icon Boxed Notes: Cesgnap onset What do we do if we can&amp;rsquo;t get fluent to raise caps Block glass pact Block playful snap after loose pay Apploin internally - Ad creation #on Cool hire a Additional Notes: -PP Tax</description><content>&lt;h3 id="concerns">Concerns:&lt;/h3>
+&lt;ul>
+&lt;li>Remove (count, ponder id, count-sub) idx [unclear: or favor of optiscript]&lt;/li>
+&lt;li>Deploy to staging } following&lt;/li>
+&lt;li>Test in staging }&lt;/li>
+&lt;li>Deploy to production&lt;/li>
+&lt;/ul>
+&lt;h3 id="kiwi">Kiwi:&lt;/h3>
+&lt;ul>
+&lt;li>&amp;ldquo;Tap to copy&amp;rdquo; should probably be pressable&lt;/li>
+&lt;li>Add zip shade brush (location shade)&lt;/li>
+&lt;li>Level up pre-entry&lt;/li>
+&lt;li>Update app icon&lt;/li>
+&lt;/ul>
+&lt;h3 id="boxed-notes">Boxed Notes:&lt;/h3>
+&lt;ul>
+&lt;li>Cesgnap onset&lt;/li>
+&lt;li>What do we do if we can&amp;rsquo;t get fluent to raise caps&lt;/li>
+&lt;li>Block glass pact&lt;/li>
+&lt;li>Block playful snap after loose pay&lt;/li>
+&lt;li>Apploin internally - Ad creation #on
+&lt;ul>
+&lt;li>Cool hire a&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="additional-notes">Additional Notes:&lt;/h3>
+&lt;p>-PP Tax&lt;/p>
+&lt;h3 id="second-boxed-section">Second Boxed Section:&lt;/h3>
+&lt;ul>
+&lt;li>Intellifirst ai&lt;/li>
+&lt;li>Renderbook → ATD → Obsidian&lt;/li>
+&lt;li>Personal shop&lt;/li>
+&lt;li>Op: transparency&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Diagrams Present:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Two rectangular boxes containing additional notes and project details&lt;/li>
+&lt;li>The layout suggests this is a meeting or planning document with multiple streams of tasks and considerations&lt;/li>
+&lt;/ul></content></item><item><title>Appuser Effect System Design Notes</title><link>https://jenkinsdev.us/handwritten-notes/appuser-effect-system-design-notes/</link><pubDate>Tue, 03 Jun 2025 18:52:33 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/appuser-effect-system-design-notes/</guid><description>Date: 2025-05-30
+Appuser Effect Structure Appuser Effect / \ Appuser Effect Key Components:
+Appusers: Jobs/Archive - stores records (Appuser Effect) Appusers: AppuserSpecialOffers: {Claim, process} - both offer examples of AppuserEffect creation AppuserEffects: Jobs: Complex - more appuser effects = more complex Player: Appusers: Advice: CeaseReward - shows usage of Appuser Effect + Effect to cease bonus rewards Effect should be RewardableSub Earn Sources Fluent Presage offers Presage Magic Receipts Presage surveys Revli Moshbox/Besitos Kruiser System Flow Diagram POST Find or Create Find or Create (send code) → (Idle 24-hour → (appuser archive Effect) Effect) Event Processing Receive Earn Source → Appusers: AppuserEffects: Apply Earn Modifiers Event (Reward, appuser) BOOSTED - Add another use reward record</description><content>&lt;p>&lt;strong>Date:&lt;/strong> 2025-05-30&lt;/p>
+&lt;h3 id="appuser-effect-structure">Appuser Effect Structure&lt;/h3>
+&lt;pre tabindex="0">&lt;code>Appuser Effect
+/ \
+Appuser Effect
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Key Components:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Appusers:&lt;/strong> Jobs/Archive - stores records (Appuser Effect)&lt;/li>
+&lt;li>&lt;strong>Appusers:&lt;/strong> AppuserSpecialOffers: {Claim, process} - both offer examples of AppuserEffect creation&lt;/li>
+&lt;li>&lt;strong>AppuserEffects:&lt;/strong> Jobs: Complex - more appuser effects = more complex&lt;/li>
+&lt;li>&lt;strong>Player:&lt;/strong> Appusers: Advice: CeaseReward - shows usage of Appuser Effect + Effect to cease bonus rewards
+&lt;ul>
+&lt;li>Effect should be RewardableSub&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="earn-sources">Earn Sources&lt;/h3>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Fluent&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Presage offers&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Presage Magic Receipts&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Presage surveys&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Revli&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Moshbox/Besitos&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Kruiser&lt;/li>
+&lt;/ul>
+&lt;h3 id="system-flow-diagram">System Flow Diagram&lt;/h3>
+&lt;pre tabindex="0">&lt;code>POST Find or Create Find or Create
+(send code) → (Idle 24-hour → (appuser archive
+Effect) Effect)
+&lt;/code>&lt;/pre>&lt;h3 id="event-processing">Event Processing&lt;/h3>
+&lt;pre tabindex="0">&lt;code>Receive Earn Source → Appusers: AppuserEffects: Apply Earn Modifiers
+Event (Reward, appuser)
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>BOOSTED&lt;/strong> - Add another use reward record&lt;/p>
+&lt;hr>
+&lt;p>&lt;em>Note: This appears to be technical documentation for a reward/effect system in a software application, detailing how user effects are structured, various earning sources, and the flow of processing rewards and bonuses.&lt;/em>&lt;/p></content></item><item><title>Sprint Planning Notes - October 28, 2024</title><link>https://jenkinsdev.us/handwritten-notes/sprint-planning-notes---october-28--2024/</link><pubDate>Mon, 02 Jun 2025 13:33:57 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/sprint-planning-notes---october-28--2024/</guid><description>Date: 2024-10-28
+Playful Rewards: ☑️ Test Attribution ☐ Push Up Social Auth (Staging + Client Builds + Firebase) ☐ App Usage Tracking Sync w/ Adam: What are our goals exactly ← 2.3.4 How to what we provide summary ☑️ Send Adam Credentials.enc.yml changes for [lead-accar-auth] ☐ Onboarding Wizard v2 (Quick vs Big) Version 2.3.4 Filter Out Recently Played (90-days) ⭐ UserWise ☐ Mongo 5 → 6 ● Staging ☐ Production ☐ Pandemic Changes &amp;gt;_&amp;lt; ☐ workers during?</description><content>&lt;p>&lt;strong>Date:&lt;/strong> 2024-10-28&lt;/p>
+&lt;h3 id="playful-rewards">Playful Rewards:&lt;/h3>
+&lt;ul>
+&lt;li>☑️ Test Attribution&lt;/li>
+&lt;li>☐ Push Up Social Auth (Staging + Client Builds + Firebase)&lt;/li>
+&lt;li>☐ App Usage Tracking Sync w/ Adam:
+&lt;ul>
+&lt;li>What are our goals exactly ← 2.3.4&lt;/li>
+&lt;li>How to what we provide summary&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>☑️ Send Adam Credentials.enc.yml changes for [lead-accar-auth]&lt;/li>
+&lt;li>☐ Onboarding Wizard v2 (Quick vs Big)&lt;/li>
+&lt;/ul>
+&lt;h3 id="version-234">Version 2.3.4&lt;/h3>
+&lt;ul>
+&lt;li>Filter Out Recently Played (90-days) ⭐&lt;/li>
+&lt;/ul>
+&lt;h3 id="userwise">UserWise&lt;/h3>
+&lt;ul>
+&lt;li>☐ Mongo 5 → 6&lt;/li>
+&lt;li>● Staging ☐ Production&lt;/li>
+&lt;li>☐ Pandemic Changes &amp;gt;_&amp;lt;&lt;/li>
+&lt;li>☐ workers during?&lt;/li>
+&lt;li>☐ Global Revise config&lt;/li>
+&lt;li>☐ Worker Job (time)&lt;/li>
+&lt;li>☐ Push Notifications (scheduled send)&lt;/li>
+&lt;/ul>
+&lt;p>[Diagram: Diamond shape containing &amp;ldquo;Push Out RTA Den Love Check RAS&amp;rdquo;]&lt;/p>
+&lt;h3 id="perpetual-call-notes">Perpetual Call Notes:&lt;/h3>
+&lt;ul>
+&lt;li>☑️ Q1/Q2 for LiveOps; UW then?&lt;/li>
+&lt;li>☑️ GCP??? Do we host for them?&lt;/li>
+&lt;li>☑️ How do we integrate UW ⟷ PT
+&lt;ul>
+&lt;li>UW would be a nice frontend&lt;/li>
+&lt;li>They would need custom features&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>☑️ Start SaaS → Self-Hosted (pre-live)&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>PubSub Realtime Flow&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>☑️ PubSub Realtime Flow&lt;/li>
+&lt;li>☐ They provide segments to us&lt;/li>
+&lt;/ul>
+&lt;p>[Box diagram labeled &amp;ldquo;AUG&amp;rdquo;]
+[Box diagram labeled &amp;ldquo;SCP&amp;rdquo;]&lt;/p>
+&lt;p>&lt;strong>Notes:&lt;/strong> The document contains several diagrams including a diamond shape with technical terms and rectangular boxes with abbreviations. There are various task lists with checkboxes, some completed and others pending. The handwriting shows sprint planning activities with technical implementation details and integration discussions.&lt;/p></content></item><item><title>Software Development Notes - Playful Rounds and Technical Features</title><link>https://jenkinsdev.us/handwritten-notes/software-development-notes---playful-rounds-and-technical-features/</link><pubDate>Mon, 02 Jun 2025 13:33:49 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/software-development-notes---playful-rounds-and-technical-features/</guid><description>Playful Rounds [unclear] of integration done v2.3.5 Social Admin tool v2.3.4 (App Usage Data Filtering) v2.3.5 (Onboarding Wizard v2) Important Note Box TikTok + FB + Apps Flag
+Keep link dark deferred Social Audit Implementation ongoing/onboard or batch or built 4 test toolkit Categories include:
+●Android ▲Google [unclear] ●[unclear] ●[unclear] ▲Skype [unclear] ●[unclear] ●iOS ▲Google ●[unclear] ●[unclear] ●SendGrid ▲Skype [unclear] ●Login ▲Login [unclear] UserWise Features Design to C/Post:
+Frontend Change Sync?</description><content>&lt;h3 id="playful-rounds">Playful Rounds&lt;/h3>
+&lt;ul>
+&lt;li>[unclear] of integration done&lt;/li>
+&lt;li>v2.3.5 Social Admin tool&lt;/li>
+&lt;li>v2.3.4 (App Usage Data Filtering)&lt;/li>
+&lt;li>v2.3.5 (Onboarding Wizard v2)&lt;/li>
+&lt;/ul>
+&lt;h3 id="important-note-box">Important Note Box&lt;/h3>
+&lt;p>&lt;strong>TikTok + FB + Apps Flag&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Keep link dark&lt;/li>
+&lt;li>deferred&lt;/li>
+&lt;/ul>
+&lt;h3 id="social-audit-implementation">Social Audit Implementation&lt;/h3>
+&lt;ul>
+&lt;li>ongoing/onboard or batch or built 4 test toolkit&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Categories include:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>●Android ▲Google [unclear] ●[unclear]&lt;/li>
+&lt;li>●[unclear] ▲Skype [unclear] ●[unclear]&lt;/li>
+&lt;li>●iOS&lt;/li>
+&lt;li>▲Google ●[unclear] ●[unclear]&lt;/li>
+&lt;li>●SendGrid ▲Skype [unclear]&lt;/li>
+&lt;li>●Login ▲Login [unclear]&lt;/li>
+&lt;/ul>
+&lt;h3 id="userwise-features">UserWise Features&lt;/h3>
+&lt;p>&lt;strong>Design to C/Post:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Frontend Change Sync?&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Workers during&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Global Remote Config&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Worker Job (TIME Management)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Push Notifications (Scheduled Send)&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Additional Features:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Upload segment Generate to use one ? time&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Query Optimizations&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Sentinel Step patching (Cloud)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Journey [unclear] Event Template&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Enable Stack&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> ARM&lt;/li>
+&lt;/ul>
+&lt;h3 id="scratch-rpi-focus">Scratch RPI Focus&lt;/h3>
+&lt;ul>
+&lt;li>Get Cloud ROAS&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Visibility &amp;amp; Observability for Business Analytics:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Spades! TAP changes to [unclear]&lt;/li>
+&lt;li>Up [unclear] Cloud ROAs&lt;/li>
+&lt;/ul>
+&lt;h3 id="cost-optimization">Cost Optimization&lt;/h3>
+&lt;ul>
+&lt;li>Get $200 by spending $175&lt;/li>
+&lt;/ul>
+&lt;h3 id="client-roles">Client Roles&lt;/h3>
+&lt;ul>
+&lt;li>Means pushing focus on TAPs&lt;/li>
+&lt;/ul>
+&lt;h3 id="big-updates-now">Big Updates Now&lt;/h3>
+&lt;ul>
+&lt;li>then Analytics Revamp&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>&lt;strong>Diagram Description:&lt;/strong> The image contains handwritten notes organized in sections with various technical items, checkboxes, and bullet points. There are some boxes drawn around important sections, particularly around the TikTok/FB note at the top right. The handwriting includes both printed and cursive styles, with some text crossed out or edited.&lt;/p></content></item><item><title>LED Strip Simulator &amp; App Playtime Tracking System Design</title><link>https://jenkinsdev.us/handwritten-notes/led-strip-simulator---app-playtime-tracking-system-design/</link><pubDate>Mon, 02 Jun 2025 13:33:43 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/led-strip-simulator---app-playtime-tracking-system-design/</guid><description>Architecture Overview [Diagram showing system flow]:
+Computer/Server → MQTT → Property PI → LED Strip (146 Strip) ↓ 5v External Power Hardware Specifications AllOZ: Speed Run components Dimensions: 10 x 12 grid configuration Power: External 5v power supply required Software Components EEPROM (LED Strip Simulator) Features: Zone Handwriting OIC → Upload Jobs Intervals: &amp;ldquo;daily&amp;rdquo; / &amp;ldquo;hourly&amp;rdquo; Package Name: [unclear] App Playtime Tracking System AppPlayTimeScheduleWorker AppPlayTimeTrackingWorker Scheduled Worker System [Diagram showing worker flow]:</description><content>&lt;h3 id="architecture-overview">Architecture Overview&lt;/h3>
+&lt;p>&lt;strong>[Diagram showing system flow]:&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>Computer/Server → MQTT → Property PI → LED Strip (146 Strip)
+↓
+5v External Power
+&lt;/code>&lt;/pre>&lt;h3 id="hardware-specifications">Hardware Specifications&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>AllOZ&lt;/strong>: Speed Run components&lt;/li>
+&lt;li>&lt;strong>Dimensions&lt;/strong>: 10 x 12 grid configuration&lt;/li>
+&lt;li>&lt;strong>Power&lt;/strong>: External 5v power supply required&lt;/li>
+&lt;/ul>
+&lt;h3 id="software-components">Software Components&lt;/h3>
+&lt;h4 id="eeprom-led-strip-simulator">EEPROM (LED Strip Simulator)&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>Features&lt;/strong>:
+&lt;ul>
+&lt;li>Zone Handwriting&lt;/li>
+&lt;li>OIC → Upload Jobs&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Intervals&lt;/strong>: &amp;ldquo;daily&amp;rdquo; / &amp;ldquo;hourly&amp;rdquo;&lt;/li>
+&lt;li>&lt;strong>Package Name&lt;/strong>: [unclear]&lt;/li>
+&lt;/ul>
+&lt;h4 id="app-playtime-tracking-system">App Playtime Tracking System&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>AppPlayTimeScheduleWorker&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>AppPlayTimeTrackingWorker&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h4 id="scheduled-worker-system">Scheduled Worker System&lt;/h4>
+&lt;p>&lt;strong>[Diagram showing worker flow]:&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>Scheduled Worker (runs every hour)
+↓
+Pull tracking worker scheduling/config
+↓
+(if config interval changed)
+↓
+Cancel/Unqueue Work (&amp;#34;PR AppPlaytime Tracker&amp;#34;) + Enqueue/MagicWork
+&lt;/code>&lt;/pre>&lt;h4 id="shared-preferences--interval-management">Shared Preferences &amp;amp; Interval Management&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>Interval&lt;/strong>: Set → Package → Interval&lt;/li>
+&lt;li>&lt;strong>Config&lt;/strong>: If interval changed → get package name &amp;amp; interval&lt;/li>
+&lt;li>&lt;strong>Tracking Worker&lt;/strong>: Manages scheduling updates&lt;/li>
+&lt;/ul>
+&lt;h4 id="appplaytimetrackingworker-details">AppPlaytimeTrackingWorker Details&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>Frequency&lt;/strong>: Every X minutes (run @interval hourly)&lt;/li>
+&lt;li>&lt;strong>Query&lt;/strong>: &amp;ldquo;Only query for this every 8.1 day&amp;rdquo;&lt;/li>
+&lt;li>&lt;strong>Questions tracked&lt;/strong>:
+&lt;ul>
+&lt;li>Query → Has it been 1 hour?&lt;/li>
+&lt;li>If daily → Has it been 75 1 day?&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="implementation-notes">Implementation Notes&lt;/h3>
+&lt;ul>
+&lt;li>Take CPF then spread it out&lt;/li>
+&lt;li>Feeling good about current progress&lt;/li>
+&lt;li>Corn Rate with Ham Interface integration planned&lt;/li>
+&lt;/ul>
+&lt;h3 id="diagram-explanations">Diagram Explanations&lt;/h3>
+&lt;ol>
+&lt;li>&lt;strong>System Architecture&lt;/strong>: Shows the flow from computer/server through MQTT to the LED strip setup&lt;/li>
+&lt;li>&lt;strong>Worker Scheduling Flow&lt;/strong>: Illustrates how the background workers manage app playtime tracking and scheduling&lt;/li>
+&lt;li>&lt;strong>Hardware Layout&lt;/strong>: Shows the physical configuration of the LED strip array (10x12 grid)&lt;/li>
+&lt;/ol></content></item><item><title>Project Meeting Notes - Tuned Global and TikTok Integration</title><link>https://jenkinsdev.us/handwritten-notes/project-meeting-notes---tuned-global-and-tiktok-integration/</link><pubDate>Mon, 02 Jun 2025 13:33:34 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/project-meeting-notes---tuned-global-and-tiktok-integration/</guid><description>Call Notes: Tuned Global Apps to see? Search/Rec APIs Existing: Many object search (Rec contextual to store) Upcoming: Adobe shutting us off (traffic)
+Update package from [unclear] Maga AppLovin Rewarded Videos Ad
+System Architecture Diagram [Box diagram showing]:
+Wilson Scoring System → Elastic Scoring System Universal Music Group in Tuned Catalogue Music in Demo TikTok Integration TikTok in Store???
+3% margin to user 47% for us Pre-tagging Tuned Global for Cold Start [Diamond-shaped diagram showing]:</description><content>&lt;h3 id="call-notes">Call Notes:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Tuned Global&lt;/strong>&lt;/li>
+&lt;li>Apps to see?&lt;/li>
+&lt;li>Search/Rec APIs&lt;/li>
+&lt;li>Existing: Many object search (Rec contextual to store)&lt;/li>
+&lt;li>Upcoming:&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Adobe shutting us off (traffic)&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Update package from [unclear] Maga&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>AppLovin Rewarded Videos Ad&lt;/strong>&lt;/p>
+&lt;h3 id="system-architecture-diagram">System Architecture Diagram&lt;/h3>
+&lt;p>[Box diagram showing]:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Wilson Scoring System&lt;/strong> → &lt;strong>Elastic Scoring System&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Universal Music Group in Tuned Catalogue&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Music in Demo&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h3 id="tiktok-integration">TikTok Integration&lt;/h3>
+&lt;p>&lt;strong>TikTok in Store???&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>3% margin to user&lt;/li>
+&lt;li>47% for us&lt;/li>
+&lt;/ul>
+&lt;h3 id="pre-tagging-tuned-global-for-cold-start">Pre-tagging Tuned Global for Cold Start&lt;/h3>
+&lt;p>[Diamond-shaped diagram showing]:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Playful Rewards (userwise)&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Playful Rhythm&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h3 id="technical-details">Technical Details&lt;/h3>
+&lt;ul>
+&lt;li>Per hour&lt;/li>
+&lt;li>All packages&lt;/li>
+&lt;li>Android only&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Phased Out Issues with guided install:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> UX optimizations + segment optimizations&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> PR Android app time (Ollue/tracking)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Rhythm?&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>New stored → go update?&lt;/strong>
+&lt;strong>Storage&lt;/strong>
+&lt;strong>Parsing? [unclear]&amp;hellip;&lt;/strong>&lt;/p>
+&lt;h3 id="release">RELEASE&lt;/h3>
+&lt;p>&lt;strong>UW Updates&lt;/strong>
+&lt;strong>L7 Time Tracking&lt;/strong>
+→ &lt;strong>Segment (easy filtering?)&lt;/strong>
+→ &lt;strong>Updates&lt;/strong>
+→ &lt;strong>Rhythm&lt;/strong>&lt;/p>
+&lt;h3 id="diagrams-present">Diagrams Present:&lt;/h3>
+&lt;ol>
+&lt;li>A rectangular box diagram showing the Wilson/Elastic scoring system and Universal Music Group integration&lt;/li>
+&lt;li>A diamond-shaped flow diagram showing the Playful Rewards and Rhythm components&lt;/li>
+&lt;li>Various connecting arrows and flow indicators throughout the notes&lt;/li>
+&lt;/ol></content></item><item><title>Development Tasks and Roadmap - May 29, 2025</title><link>https://jenkinsdev.us/handwritten-notes/development-tasks-and-roadmap---may-29--2025/</link><pubDate>Thu, 29 May 2025 14:28:05 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/development-tasks-and-roadmap---may-29--2025/</guid><description>IntelliJ: RocketBook → Tabled RocketBook → Markdown → Obsidian
+General ToDo Remove david@lucense.io Lucky/Kiwi G&amp;amp;P Audit Screen Adobe/Playtime SDK upgrade to 3.1.0 : Playful Rewards Server ToDo Save new onboarding Kiwi Data Add promo code enabling Add 10% boost functionality Swap Remaining Keys Update AppLovin to support Kiwi Add New Kiwi Content Sections Cleave Section Horizontal Hotlink Section Level up Game Overview Client ToDo Update app-id to be Kiwi Update DoTs + Gender to match [unclear: Swah/Oth] Update last name autofill [Empty checkbox item] This appears to be a development roadmap with tasks divided into general, server-side, and client-side categories.</description><content>&lt;p>&lt;strong>IntelliJ:&lt;/strong>
+RocketBook → Tabled
+RocketBook → Markdown → Obsidian&lt;/p>
+&lt;h3 id="general-todo">General ToDo&lt;/h3>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Remove &lt;a href="mailto:david@lucense.io">david@lucense.io&lt;/a> Lucky/Kiwi G&amp;amp;P Audit Screen&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Adobe/Playtime SDK upgrade to 3.1.0 : Playful Rewards&lt;/li>
+&lt;/ul>
+&lt;h3 id="server-todo">Server ToDo&lt;/h3>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Save new onboarding Kiwi Data&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Add promo code enabling&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Add 10% boost functionality&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Swap Remaining Keys&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Update AppLovin to support Kiwi&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Add New Kiwi Content Sections
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Cleave Section Horizontal&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Hotlink Section&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Level up Game Overview&lt;/li>
+&lt;/ul>
+&lt;h3 id="client-todo">Client ToDo&lt;/h3>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Update app-id to be Kiwi&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Update DoTs + Gender to match [unclear: Swah/Oth]&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Update last name autofill&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> [Empty checkbox item]&lt;/li>
+&lt;/ul>
+&lt;p>This appears to be a development roadmap with tasks divided into general, server-side, and client-side categories. The note includes integration plans for various tools and platforms, particularly focusing on a &amp;ldquo;Kiwi&amp;rdquo; project with SDK upgrades and new content sections.&lt;/p></content></item></channel></rss>

@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JenkinsDev :: Into the mind of an aspiring polymathic autodidact</title><link>https://jenkinsdev.us/</link><description>Recent content on JenkinsDev :: Into the mind of an aspiring polymathic autodidact</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 05 Jun 2025 14:04:00 +0000</lastBuildDate><atom:link href="https://jenkinsdev.us/index.xml" rel="self" type="application/rss+xml"/><item><title>A Different Programmer’s Book List</title><link>https://jenkinsdev.us/notes/technology/a-different-programmer-s-book-list/</link><pubDate>Thu, 05 Jun 2025 14:04:00 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/a-different-programmer-s-book-list/</guid><description>https://x.com/0xglitchbyte/status/1775529740981477715?s=46&amp;amp;t=wzJBGH_k-cdpzRzQDCggLA</description><content>&lt;p>&lt;a href="https://x.com/0xglitchbyte/status/1775529740981477715?s=46&amp;amp;t=wzJBGH_k-cdpzRzQDCggLA">https://x.com/0xglitchbyte/status/1775529740981477715?s=46&amp;amp;t=wzJBGH_k-cdpzRzQDCggLA&lt;/a>&lt;/p></content></item><item><title>AMD ROCm vs HIP SDK</title><link>https://jenkinsdev.us/notes/technology/amd-rocm-vs-hip-sdk/</link><pubDate>Thu, 05 Jun 2025 14:04:00 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/amd-rocm-vs-hip-sdk/</guid><description>Source
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JenkinsDev :: Into the mind of an aspiring polymathic autodidact</title><link>https://jenkinsdev.us/</link><description>Recent content on JenkinsDev :: Into the mind of an aspiring polymathic autodidact</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 05 Jun 2025 14:21:21 +0000</lastBuildDate><atom:link href="https://jenkinsdev.us/index.xml" rel="self" type="application/rss+xml"/><item><title>A Different Programmer’s Book List</title><link>https://jenkinsdev.us/notes/technology/a-different-programmer-s-book-list/</link><pubDate>Thu, 05 Jun 2025 14:21:21 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/a-different-programmer-s-book-list/</guid><description>https://x.com/0xglitchbyte/status/1775529740981477715?s=46&amp;amp;t=wzJBGH_k-cdpzRzQDCggLA</description><content>&lt;p>&lt;a href="https://x.com/0xglitchbyte/status/1775529740981477715?s=46&amp;amp;t=wzJBGH_k-cdpzRzQDCggLA">https://x.com/0xglitchbyte/status/1775529740981477715?s=46&amp;amp;t=wzJBGH_k-cdpzRzQDCggLA&lt;/a>&lt;/p></content></item><item><title>AMD ROCm vs HIP SDK</title><link>https://jenkinsdev.us/notes/technology/amd-rocm-vs-hip-sdk/</link><pubDate>Thu, 05 Jun 2025 14:21:21 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/amd-rocm-vs-hip-sdk/</guid><description>Source
 ROCm vs HIP SDK ROCm is AMD&amp;rsquo;s &amp;ldquo;open-source platform for GPU computing&amp;rdquo; w/ a particular focus on HPC (High-Performance Computing) and AI.
 HIP SDK is a small subset of the ROCm intiative: the focus of enabling conversion of CUDA-specific applications to portable apps which work across AMD &amp;amp; NVIDIA.</description><content>&lt;p>&lt;a href="https://community.amd.com/t5/instinct-accelerators/available-now-new-hip-sdk-helps-democratize-gpu-computing/ba-p/621029">Source&lt;/a>&lt;/p>
 &lt;h3 id="rocm-vs-hip-sdk">ROCm vs HIP SDK&lt;/h3>
 &lt;p>&lt;strong>ROCm&lt;/strong> is AMD&amp;rsquo;s &amp;ldquo;open-source platform for GPU computing&amp;rdquo; w/ a particular focus on HPC (High-Performance Computing) and AI.&lt;/p>
-&lt;p>&lt;strong>HIP SDK&lt;/strong> is a small subset of the ROCm intiative: the focus of enabling conversion of CUDA-specific applications to portable apps which work across AMD &amp;amp; NVIDIA.&lt;/p></content></item><item><title>Ancient Sumerians</title><link>https://jenkinsdev.us/notes/history/ancient-sumerians/</link><pubDate>Thu, 05 Jun 2025 14:04:00 +0000</pubDate><guid>https://jenkinsdev.us/notes/history/ancient-sumerians/</guid><description>Historical West-Asian region situated roughly around today&amp;rsquo;s Iraq and parts of Iran, Syria, Kuwait, &amp;amp; Turkey.
+&lt;p>&lt;strong>HIP SDK&lt;/strong> is a small subset of the ROCm intiative: the focus of enabling conversion of CUDA-specific applications to portable apps which work across AMD &amp;amp; NVIDIA.&lt;/p></content></item><item><title>Ancient Sumerians</title><link>https://jenkinsdev.us/notes/history/ancient-sumerians/</link><pubDate>Thu, 05 Jun 2025 14:21:21 +0000</pubDate><guid>https://jenkinsdev.us/notes/history/ancient-sumerians/</guid><description>Historical West-Asian region situated roughly around today&amp;rsquo;s Iraq and parts of Iran, Syria, Kuwait, &amp;amp; Turkey.
 People slept on their rooftops, due to excessive heat Uruk (first large city in the Mesopotamia) Epic of Gilgamesh (Uruk King) https://en.m.wikipedia.org/wiki/Epic_of_Gilgamesh</description><content>&lt;p>Historical West-Asian region situated roughly around today&amp;rsquo;s Iraq and parts of Iran, Syria, Kuwait, &amp;amp; Turkey.&lt;/p>
 &lt;ul>
 &lt;li>People slept on their rooftops, due to excessive heat&lt;/li>
 &lt;li>Uruk (first large city in the Mesopotamia)&lt;/li>
 &lt;li>Epic of Gilgamesh (Uruk King)&lt;/li>
 &lt;li>&lt;a href="https://en.m.wikipedia.org/wiki/Epic_of_Gilgamesh">https://en.m.wikipedia.org/wiki/Epic_of_Gilgamesh&lt;/a>&lt;/li>
-&lt;/ul></content></item><item><title>BBQ Sauce Ratios</title><link>https://jenkinsdev.us/notes/cooking/bbq-sauce-ratios/</link><pubDate>Thu, 05 Jun 2025 14:04:00 +0000</pubDate><guid>https://jenkinsdev.us/notes/cooking/bbq-sauce-ratios/</guid><description>&amp;ldquo;Red&amp;rdquo; Tomato-based BBQ Sauce Per 6 servings:
+&lt;/ul></content></item><item><title>BBQ Sauce Ratios</title><link>https://jenkinsdev.us/notes/cooking/bbq-sauce-ratios/</link><pubDate>Thu, 05 Jun 2025 14:21:21 +0000</pubDate><guid>https://jenkinsdev.us/notes/cooking/bbq-sauce-ratios/</guid><description>&amp;ldquo;Red&amp;rdquo; Tomato-based BBQ Sauce Per 6 servings:
 1/2 cup Tomato Sauce ~1 Tbsp of acidity (e.g. vinegars) ~2 Tbsp of sweet (e.g. brown sugar, molasses) ~1-3 Tbsp of spicy (e.g. hot sauce) Seasoning (warm, earthy + salt) Korean BBQ Sauce Per 14 servings:
 3/4 cup sweet 3/4 cup low-sodium umami (soy sauce, worcestershire, &amp;hellip;) 1/4 cup water 1 1/2 Tbsp spice (chili paste, hot sauce, etc.) 1 Tbsp acidity (e.g. rice wine vinegar) Seasoning (warm, earthy, spicy) 1 Tbsp cornstarch (any thickening agent) 1 Tbsp water (thickening agent activator)</description><content>&lt;h4 id="red-tomato-based-bbq-sauce">&amp;ldquo;Red&amp;rdquo; Tomato-based BBQ Sauce&lt;/h4>
 &lt;p>&lt;strong>Per 6 servings:&lt;/strong>&lt;/p>
@@ -32,7 +32,7 @@ People slept on their rooftops, due to excessive heat Uruk (first large city in 
 &lt;li>Seasoning (warm, earthy, spicy)&lt;/li>
 &lt;li>1 Tbsp cornstarch (any thickening agent)&lt;/li>
 &lt;li>1 Tbsp water (thickening agent activator)&lt;/li>
-&lt;/ul></content></item><item><title>Bromelain (Pineapple Enzyme)</title><link>https://jenkinsdev.us/notes/cooking/bromelain--pineapple-enzyme/</link><pubDate>Thu, 05 Jun 2025 14:04:00 +0000</pubDate><guid>https://jenkinsdev.us/notes/cooking/bromelain--pineapple-enzyme/</guid><description>Common Names: bromelain, pineapple enzyme, pineapple extract Latin Names: (pineapple plant) Ananas comosus
+&lt;/ul></content></item><item><title>Bromelain (Pineapple Enzyme)</title><link>https://jenkinsdev.us/notes/cooking/bromelain--pineapple-enzyme/</link><pubDate>Thu, 05 Jun 2025 14:21:21 +0000</pubDate><guid>https://jenkinsdev.us/notes/cooking/bromelain--pineapple-enzyme/</guid><description>Common Names: bromelain, pineapple enzyme, pineapple extract Latin Names: (pineapple plant) Ananas comosus
 What is it? Group of enzymes which can be found in the stem and fruit of a pineapple Medicinal Usages: Dietary Supplement which can assist w/ pain &amp;amp; swelling Especially the gut, mouth, &amp;amp; nasal regions after an injury or surgery Potentially helpful w/ side-effects of osteoarthritis, cancer, digestive problems, and muscle soreness Topical bromelain can be used to assist w/ burn healing Several studies1 show the benefits of using bromelain to remove dead skin after a burn References Rosenberg L, Krieger Y, Bogdanov-Berezovski A, et al.</description><content>&lt;p>&lt;strong>Common Names:&lt;/strong> bromelain, pineapple enzyme, pineapple extract
 &lt;strong>Latin Names:&lt;/strong> (pineapple plant) &lt;em>Ananas comosus&lt;/em>&lt;/p>
 &lt;h3 id="what-is-it">What is it?&lt;/h3>
@@ -62,7 +62,7 @@ What is it? Group of enzymes which can be found in the stem and fruit of a pinea
 &lt;p>Rosenberg L, Krieger Y, Bogdanov-Berezovski A, et al. &lt;a href="https://www.ncbi.nlm.nih.gov/pubmed/24074719">A novel rapid and selective enzymatic debridement agent for burn wound management: a multi-center RCT.&lt;/a> &lt;em>Burns.&lt;/em> 2014;40(3):466-474.&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></content></item><item><title>Business Tips (Tweets)</title><link>https://jenkinsdev.us/notes/business/business-tips--tweets/</link><pubDate>Thu, 05 Jun 2025 14:04:00 +0000</pubDate><guid>https://jenkinsdev.us/notes/business/business-tips--tweets/</guid><description>Loom Lead Magnet (Greg Isenberg) No one talks about this but you can use Loom as a &amp;ldquo;lead magnet&amp;rdquo; in 10 minutes or less:
+&lt;/div></content></item><item><title>Business Tips (Tweets)</title><link>https://jenkinsdev.us/notes/business/business-tips--tweets/</link><pubDate>Thu, 05 Jun 2025 14:21:21 +0000</pubDate><guid>https://jenkinsdev.us/notes/business/business-tips--tweets/</guid><description>Loom Lead Magnet (Greg Isenberg) No one talks about this but you can use Loom as a &amp;ldquo;lead magnet&amp;rdquo; in 10 minutes or less:
 Record a Loom jam packed with value Request email to view loom Share Loom link on social or paid ads Get thousands of emails You now know there&amp;rsquo;s demand for your product https://x.com/gregisenberg/status/1751618325208007046?s=46&amp;amp;t=wzJBGH_k-cdpzRzQDCggLA
 Engineering + Product-Minded i talk a lot about how engineers should be more product minded</description><content>&lt;h3 id="loom-lead-magnet-greg-isenberg">Loom Lead Magnet (Greg Isenberg)&lt;/h3>
 &lt;blockquote>
@@ -83,11 +83,11 @@ Engineering + Product-Minded i talk a lot about how engineers should be more pro
 &lt;p>so many of our tools lack taste, simplicity and optimize for things that don’t matter&lt;/p>
 &lt;/blockquote>
 &lt;p>&lt;a href="https://x.com/thdxr/status/1763376813655417252?s=46&amp;amp;t=wzJBGH_k-cdpzRzQDCggLA">https://x.com/thdxr/status/1763376813655417252?s=46&amp;amp;t=wzJBGH_k-cdpzRzQDCggLA&lt;/a>&lt;/p>
-&lt;p>Personal Q: What is the median of those two?&lt;/p></content></item><item><title>CSS Tips &amp; Tricks</title><link>https://jenkinsdev.us/notes/technology/css-tips---tricks/</link><pubDate>Thu, 05 Jun 2025 14:04:00 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/css-tips---tricks/</guid><description>Overlay a Gradient (or Image) Over Text background-image: ...; background-clip: text; color: trasparent;</description><content>&lt;h3 id="overlay-a-gradient-or-image-over-text">Overlay a Gradient (or Image) Over Text&lt;/h3>
+&lt;p>Personal Q: What is the median of those two?&lt;/p></content></item><item><title>CSS Tips &amp; Tricks</title><link>https://jenkinsdev.us/notes/technology/css-tips---tricks/</link><pubDate>Thu, 05 Jun 2025 14:21:21 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/css-tips---tricks/</guid><description>Overlay a Gradient (or Image) Over Text background-image: ...; background-clip: text; color: trasparent;</description><content>&lt;h3 id="overlay-a-gradient-or-image-over-text">Overlay a Gradient (or Image) Over Text&lt;/h3>
 &lt;pre tabindex="0">&lt;code>background-image: ...;
 background-clip: text;
 color: trasparent;
-&lt;/code>&lt;/pre></content></item><item><title>Databases</title><link>https://jenkinsdev.us/notes/technology/databases/</link><pubDate>Thu, 05 Jun 2025 14:04:00 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/databases/</guid><description>ScyllaDB Website
+&lt;/code>&lt;/pre></content></item><item><title>Databases</title><link>https://jenkinsdev.us/notes/technology/databases/</link><pubDate>Thu, 05 Jun 2025 14:21:21 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/databases/</guid><description>ScyllaDB Website
 Marketing: &amp;ldquo;ScyllaDB’s close-to-the-metal architecture handles millions of OPS with predictable single-digit millisecond latencies.&amp;rdquo; Wide Column vs Document Sources: https://lp.scylladb.com/scylladb-mongodb-comparison.pdf https://www.scylladb.com/glossary/wide-column-database/ Data Model: &amp;ldquo;MongoDB applies a JSON based document data model, ScyllaDB a wide-column data model.&amp;rdquo; Apache Cassandra Marketing: &amp;ldquo;Manage massive amounts of data, fast, without losing sleep&amp;rdquo; MongoDB Marketing: &amp;ldquo;You don&amp;rsquo;t need a separate database to support transactions, rich search, or genAI. The world&amp;rsquo;s most popular document database is now the world&amp;rsquo;s most versatile developer data platform.</description><content>&lt;h3 id="scylladb">ScyllaDB&lt;/h3>
 &lt;p>&lt;a href="https://www.scylladb.com/">Website&lt;/a>&lt;/p>
 &lt;ul>
@@ -157,13 +157,13 @@ Marketing: &amp;ldquo;ScyllaDB’s close-to-the-metal architecture handles milli
 &lt;h3 id="orientdb">OrientDB&lt;/h3>
 &lt;h3 id="rethinkdb">RethinkDB&lt;/h3>
 &lt;h3 id="influxdb">InfluxDB&lt;/h3>
-&lt;h3 id="redis">Redis&lt;/h3></content></item><item><title>Flash Memory</title><link>https://jenkinsdev.us/notes/technology/flash-memory/</link><pubDate>Thu, 05 Jun 2025 14:04:00 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/flash-memory/</guid><description>Definition: Electronic, nonvolatile memory storage device (differing from mechanical and electro-mechanical)
+&lt;h3 id="redis">Redis&lt;/h3></content></item><item><title>Flash Memory</title><link>https://jenkinsdev.us/notes/technology/flash-memory/</link><pubDate>Thu, 05 Jun 2025 14:21:21 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/flash-memory/</guid><description>Definition: Electronic, nonvolatile memory storage device (differing from mechanical and electro-mechanical)
 Real-World Usage Solid State Drives (SSDs) Serial Flash</description><content>&lt;p>&lt;strong>Definition:&lt;/strong> Electronic, nonvolatile memory storage device &lt;!-- raw HTML omitted -->(differing from mechanical and electro-mechanical)&lt;!-- raw HTML omitted -->&lt;/p>
 &lt;h3 id="real-world-usage">Real-World Usage&lt;/h3>
 &lt;ul>
 &lt;li>Solid State Drives (SSDs)&lt;/li>
 &lt;li>Serial Flash&lt;/li>
-&lt;/ul></content></item><item><title>Foundation Models</title><link>https://jenkinsdev.us/notes/technology/foundation-models/</link><pubDate>Thu, 05 Jun 2025 14:04:00 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/foundation-models/</guid><description>A type of ML model that is trained on a broad dataset. These models are generally used for general or broad use cases, and may be adaptable through fine-tuning.
+&lt;/ul></content></item><item><title>Foundation Models</title><link>https://jenkinsdev.us/notes/technology/foundation-models/</link><pubDate>Thu, 05 Jun 2025 14:21:21 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/foundation-models/</guid><description>A type of ML model that is trained on a broad dataset. These models are generally used for general or broad use cases, and may be adaptable through fine-tuning.
 Foundation models like the ones powering OpenAI’s ChatGPT, can cost hundreds of millions of dollars to train.
 The term was coined in Aug. 2021 at Stanford.
 ——
@@ -171,7 +171,7 @@ Foundation models are near universally based on Transformers.</description><cont
 &lt;p>Foundation models like the ones powering OpenAI’s ChatGPT, can cost hundreds of millions of dollars to train.&lt;/p>
 &lt;p>The term was coined in Aug. 2021 at Stanford.&lt;/p>
 &lt;p>——&lt;/p>
-&lt;p>Foundation models are near universally based on &lt;a href="https://jenkinsdev.us/notes/technology/transformers/">Transformers&lt;/a>.&lt;/p></content></item><item><title>FreeCAD 3D Printing Notes</title><link>https://jenkinsdev.us/notes/cnc-3d-printing/freecad-3d-printing-notes/</link><pubDate>Thu, 05 Jun 2025 14:04:00 +0000</pubDate><guid>https://jenkinsdev.us/notes/cnc-3d-printing/freecad-3d-printing-notes/</guid><description>Avoiding Common Pitfalls Always ensure that 3D objects are solid PartDesign Workbench will notify you of any operations that would prevent the model from staying solid. Part Workbench has a Check Geometry tool, which can check for further defects Ensure your dimensions align properly Dimensions are vital: 1 millimeter in FreeCAD is 1 millimeter in real life Control degradation of the model, during transformation w/ the slicer (FreeCAD file -&amp;gt; a G-Code dialect) No printer will be able to directly create a 1:1 replica of the 3D object.</description><content>&lt;h2 id="avoiding-common-pitfalls">Avoiding Common Pitfalls&lt;/h2>
+&lt;p>Foundation models are near universally based on &lt;a href="https://jenkinsdev.us/notes/technology/transformers/">Transformers&lt;/a>.&lt;/p></content></item><item><title>FreeCAD 3D Printing Notes</title><link>https://jenkinsdev.us/notes/cnc-3d-printing/freecad-3d-printing-notes/</link><pubDate>Thu, 05 Jun 2025 14:21:21 +0000</pubDate><guid>https://jenkinsdev.us/notes/cnc-3d-printing/freecad-3d-printing-notes/</guid><description>Avoiding Common Pitfalls Always ensure that 3D objects are solid PartDesign Workbench will notify you of any operations that would prevent the model from staying solid. Part Workbench has a Check Geometry tool, which can check for further defects Ensure your dimensions align properly Dimensions are vital: 1 millimeter in FreeCAD is 1 millimeter in real life Control degradation of the model, during transformation w/ the slicer (FreeCAD file -&amp;gt; a G-Code dialect) No printer will be able to directly create a 1:1 replica of the 3D object.</description><content>&lt;h2 id="avoiding-common-pitfalls">Avoiding Common Pitfalls&lt;/h2>
 &lt;ul>
 &lt;li>Always &lt;strong>ensure&lt;/strong> that &lt;strong>3D objects&lt;/strong> are &lt;strong>solid&lt;/strong>
 &lt;ul>
@@ -198,7 +198,7 @@ Foundation models are near universally based on Transformers.</description><cont
 &lt;li>&lt;a href="https://wiki.freecad.org/Manual:Preparing_models_for_3D_printing#Generating_G-code">Generate G-Code&lt;/a>&lt;/li>
 &lt;/ol>
 &lt;h2 id="useful-links">Useful Links&lt;/h2>
-&lt;p>&lt;strong>Preparing Models for 3D Printing:&lt;/strong> &lt;a href="https://wiki.freecad.org/Manual:Preparing_models_for_3D_printing">https://wiki.freecad.org/Manual:Preparing_models_for_3D_printing&lt;/a>&lt;/p></content></item><item><title>Hyrum’s Law</title><link>https://jenkinsdev.us/notes/technology/hyrum-s-law/</link><pubDate>Thu, 05 Jun 2025 14:04:00 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/hyrum-s-law/</guid><description>With a sufficient number of users of an API,
+&lt;p>&lt;strong>Preparing Models for 3D Printing:&lt;/strong> &lt;a href="https://wiki.freecad.org/Manual:Preparing_models_for_3D_printing">https://wiki.freecad.org/Manual:Preparing_models_for_3D_printing&lt;/a>&lt;/p></content></item><item><title>Hyrum’s Law</title><link>https://jenkinsdev.us/notes/technology/hyrum-s-law/</link><pubDate>Thu, 05 Jun 2025 14:21:21 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/hyrum-s-law/</guid><description>With a sufficient number of users of an API,
 it does not matter what you promise in the contract:
 all observable behaviors of your system
 will be depended on by somebody.
@@ -208,7 +208,7 @@ it does not matter what you promise in the contract:&lt;br>
 all observable behaviors of your system&lt;br>
 will be depended on by somebody.&lt;/p>
 &lt;/blockquote>
-&lt;p>&lt;a href="https://www.hyrumslaw.com/">Source&lt;/a>&lt;/p></content></item><item><title>Just-In-Time vs Just-In-Case</title><link>https://jenkinsdev.us/notes/knowledge/just-in-time-vs-just-in-case/</link><pubDate>Thu, 05 Jun 2025 14:04:00 +0000</pubDate><guid>https://jenkinsdev.us/notes/knowledge/just-in-time-vs-just-in-case/</guid><description>The difference between just-in-case and just-in-time is like the difference between training and trying. Person A never learned Algebra and never uses it. Person B learned Algebra in grade school and uses it daily. It would be hard to learn Algebra just in time. And the likelihood that Person B would use Algebra, if they had not learned it, is slim-to-nil What is the perfect balance of Just-In-Time learning vs Just-In-Case?</description><content>&lt;ul>
+&lt;p>&lt;a href="https://www.hyrumslaw.com/">Source&lt;/a>&lt;/p></content></item><item><title>Just-In-Time vs Just-In-Case</title><link>https://jenkinsdev.us/notes/knowledge/just-in-time-vs-just-in-case/</link><pubDate>Thu, 05 Jun 2025 14:21:21 +0000</pubDate><guid>https://jenkinsdev.us/notes/knowledge/just-in-time-vs-just-in-case/</guid><description>The difference between just-in-case and just-in-time is like the difference between training and trying. Person A never learned Algebra and never uses it. Person B learned Algebra in grade school and uses it daily. It would be hard to learn Algebra just in time. And the likelihood that Person B would use Algebra, if they had not learned it, is slim-to-nil What is the perfect balance of Just-In-Time learning vs Just-In-Case?</description><content>&lt;ul>
 &lt;li>The difference between just-in-case and just-in-time is like the difference between training and trying.&lt;/li>
 &lt;li>Person A never learned Algebra and never uses it. Person B learned Algebra in grade school and uses it daily.
 &lt;ul>
@@ -218,7 +218,7 @@ will be depended on by somebody.&lt;/p>
 &lt;/ul>
 &lt;p>&lt;strong>What is the perfect balance of Just-In-Time learning vs Just-In-Case?&lt;/strong> Is a difficult question to answer.&lt;/p>
 &lt;p>One cannot simply learn something Just-In-Time if they do not know a solution or problem exists.&lt;/p>
-&lt;p>&lt;strong>Source:&lt;/strong> &lt;a href="https://www.johndcook.com/blog/2010/03/03/just-in-case-versus-just-in-time/">https://www.johndcook.com/blog/2010/03/03/just-in-case-versus-just-in-time/&lt;/a>&lt;/p></content></item><item><title>K-Factor (Viral Coefficient)</title><link>https://jenkinsdev.us/notes/business/k-factor--viral-coefficient/</link><pubDate>Thu, 05 Jun 2025 14:04:00 +0000</pubDate><guid>https://jenkinsdev.us/notes/business/k-factor--viral-coefficient/</guid><description>What is it? The K-factor is the average number of referral signups, per unique inviting user.
+&lt;p>&lt;strong>Source:&lt;/strong> &lt;a href="https://www.johndcook.com/blog/2010/03/03/just-in-case-versus-just-in-time/">https://www.johndcook.com/blog/2010/03/03/just-in-case-versus-just-in-time/&lt;/a>&lt;/p></content></item><item><title>K-Factor (Viral Coefficient)</title><link>https://jenkinsdev.us/notes/business/k-factor--viral-coefficient/</link><pubDate>Thu, 05 Jun 2025 14:21:21 +0000</pubDate><guid>https://jenkinsdev.us/notes/business/k-factor--viral-coefficient/</guid><description>What is it? The K-factor is the average number of referral signups, per unique inviting user.
 K-Factor Scale 0.15 - 0.20 = ideal minimum 0.40 = good 0.70 = outstanding 1 = viral</description><content>&lt;h2 id="what-is-it">What is it?&lt;/h2>
 &lt;p>The K-factor is the average number of referral signups, per &lt;em>unique inviting user&lt;/em>.&lt;/p>
 &lt;h2 id="k-factor-scale">K-Factor Scale&lt;/h2>
@@ -231,9 +231,9 @@ K-Factor Scale 0.15 - 0.20 = ideal minimum 0.40 = good 0.70 = outstanding 1 = vi
 &lt;p>1 = viral&lt;/p>
 &lt;/blockquote>
 &lt;/li>
-&lt;/ul></content></item><item><title>Key Words of Astronomy</title><link>https://jenkinsdev.us/notes/science/key-words-of-astronomy/</link><pubDate>Thu, 05 Jun 2025 14:04:00 +0000</pubDate><guid>https://jenkinsdev.us/notes/science/key-words-of-astronomy/</guid><description>Astronomy: A branching field of Science that focuses on the study of Planetary Science, Stellar Astronomy, Galactic Astronomy and more!
+&lt;/ul></content></item><item><title>Key Words of Astronomy</title><link>https://jenkinsdev.us/notes/science/key-words-of-astronomy/</link><pubDate>Thu, 05 Jun 2025 14:21:21 +0000</pubDate><guid>https://jenkinsdev.us/notes/science/key-words-of-astronomy/</guid><description>Astronomy: A branching field of Science that focuses on the study of Planetary Science, Stellar Astronomy, Galactic Astronomy and more!
 Astrophysics: A branch of astronomy thay focuses on the study of celestial objects and phenomena (e.g. stars, planets, asteroids, black holes, etc.). Primarily focused on unearthing the physical processes and rules that govern the behavior of these objects.</description><content>&lt;p>&lt;strong>Astronomy:&lt;/strong> A branching field of Science that focuses on the study of Planetary Science, Stellar Astronomy, Galactic Astronomy and more!&lt;/p>
-&lt;p>&lt;strong>Astrophysics:&lt;/strong> A branch of astronomy thay focuses on the study of celestial objects and phenomena (e.g. stars, planets, asteroids, black holes, etc.). Primarily focused on unearthing the physical processes and rules that govern the behavior of these objects.&lt;/p></content></item><item><title>Korean</title><link>https://jenkinsdev.us/notes/language/korean/</link><pubDate>Thu, 05 Jun 2025 14:04:00 +0000</pubDate><guid>https://jenkinsdev.us/notes/language/korean/</guid><description>Learn To Read Korean In 15 Minutes
+&lt;p>&lt;strong>Astrophysics:&lt;/strong> A branch of astronomy thay focuses on the study of celestial objects and phenomena (e.g. stars, planets, asteroids, black holes, etc.). Primarily focused on unearthing the physical processes and rules that govern the behavior of these objects.&lt;/p></content></item><item><title>Korean</title><link>https://jenkinsdev.us/notes/language/korean/</link><pubDate>Thu, 05 Jun 2025 14:21:21 +0000</pubDate><guid>https://jenkinsdev.us/notes/language/korean/</guid><description>Learn To Read Korean In 15 Minutes
 Comic strip explaining the basics of the Korean alphabet Hangeul through “Romanization”
 https://ai.glossika.com/blog/korean-hangul-pronunciation
 A deeper dive into the Hangeul alphabet + “Romanization” cheat sheet</description><content>&lt;p>&lt;a href="https://www.ryanestrada.com/learntoreadkoreanin15minutes/">Learn To Read Korean In 15 Minutes&lt;/a>&lt;/p>
@@ -243,14 +243,14 @@ A deeper dive into the Hangeul alphabet + “Romanization” cheat sheet</descri
 &lt;p>&lt;a href="https://ai.glossika.com/blog/korean-hangul-pronunciation">https://ai.glossika.com/blog/korean-hangul-pronunciation&lt;/a>&lt;/p>
 &lt;blockquote>
 &lt;p>A deeper dive into the Hangeul alphabet + “Romanization” cheat sheet&lt;/p>
-&lt;/blockquote></content></item><item><title>Mamba Model</title><link>https://jenkinsdev.us/notes/technology/mamba-model/</link><pubDate>Thu, 05 Jun 2025 14:04:00 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/mamba-model/</guid><description>Why? Foundation Models
+&lt;/blockquote></content></item><item><title>Mamba Model</title><link>https://jenkinsdev.us/notes/technology/mamba-model/</link><pubDate>Thu, 05 Jun 2025 14:21:21 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/mamba-model/</guid><description>Why? Foundation Models
 Linear Attention Gated Convolution Recurrent Models</description><content>&lt;h3 id="why">Why?&lt;/h3>
 &lt;p>&lt;a href="https://jenkinsdev.us/notes/technology/foundation-models/">Foundation Models&lt;/a>&lt;/p>
 &lt;ul>
 &lt;li>Linear Attention&lt;/li>
 &lt;li>Gated Convolution&lt;/li>
 &lt;li>Recurrent Models&lt;/li>
-&lt;/ul></content></item><item><title>Memory Layouts</title><link>https://jenkinsdev.us/notes/technology/memory-layouts/</link><pubDate>Thu, 05 Jun 2025 14:04:00 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/memory-layouts/</guid><description>Vector A vector data structure can make use of an extremely sparse memory structure
+&lt;/ul></content></item><item><title>Memory Layouts</title><link>https://jenkinsdev.us/notes/technology/memory-layouts/</link><pubDate>Thu, 05 Jun 2025 14:21:21 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/memory-layouts/</guid><description>Vector A vector data structure can make use of an extremely sparse memory structure
 --------------------------------------------------- | destructor_fn | size | capacity | data[0] | ... | --------------------------------------------------- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^ Vector Metadata Vector Data Generally speaking, the user would get back a pointer to the first element of the vector Internal logic will be able to access the memory of the metadata</description><content>&lt;h3 id="vector">Vector&lt;/h3>
 &lt;p>A &lt;em>vector&lt;/em> data structure can make use of an extremely sparse memory structure&lt;/p>
 &lt;pre tabindex="0">&lt;code>---------------------------------------------------
@@ -261,7 +261,7 @@ Vector Metadata Vector Data
 &lt;/code>&lt;/pre>&lt;ul>
 &lt;li>Generally speaking, the user would get back a pointer to the first element of the vector&lt;/li>
 &lt;li>Internal logic will be able to access the memory of the metadata&lt;/li>
-&lt;/ul></content></item><item><title>Mutual Funds vs ETFs</title><link>https://jenkinsdev.us/notes/finance/mutual-funds-vs-etfs/</link><pubDate>Thu, 05 Jun 2025 14:04:00 +0000</pubDate><guid>https://jenkinsdev.us/notes/finance/mutual-funds-vs-etfs/</guid><description>Mutual Funds are actively managed by a fund manager or a full team (though passively managed fund have a bit of popularity)
+&lt;/ul></content></item><item><title>Mutual Funds vs ETFs</title><link>https://jenkinsdev.us/notes/finance/mutual-funds-vs-etfs/</link><pubDate>Thu, 05 Jun 2025 14:21:21 +0000</pubDate><guid>https://jenkinsdev.us/notes/finance/mutual-funds-vs-etfs/</guid><description>Mutual Funds are actively managed by a fund manager or a full team (though passively managed fund have a bit of popularity)
 ETFs are always passively managed
 Mutual Funds generally have a minimum investment amount (e.g. in the $500 - $5,000 min range)
 ETFs are bought and sold like stock and therefore are bought &amp;amp; sold similarly. They can even be shorted
@@ -287,7 +287,7 @@ Mutual Funds will almost always have much higher expenses, especially due to the
 &lt;li>
 &lt;p>&lt;strong>ETFs&lt;/strong> generally track a market index or sector sub-index&lt;/p>
 &lt;/li>
-&lt;/ul></content></item><item><title>Practical Electronics For Inventors (Book Notes)</title><link>https://jenkinsdev.us/notes/technology/practical-electronics-for-inventors--book-notes/</link><pubDate>Thu, 05 Jun 2025 14:04:00 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/practical-electronics-for-inventors--book-notes/</guid><description>Definitions (A) ampere or amp (p6) Unit of current Interchangeable unit for 1 C/s (C) coulomb (p6) Unit of electrical charge Voltage potential difference or just potential (NOT potential energy) (V) volt (p14) Unit of measure of Voltage 1 volt = 1 joule / 1 coulomb Power (p14) power = dW/dt Chapter 2: Theory Voltage To get a mental image of how a battery generates an EMF through a circuit, we envision that chemical reactions inside yield free electrons that quickly build in number within the negative terminal region (anode material), causing an electron concentration.</description><content>&lt;h2 id="definitions">Definitions&lt;/h2>
+&lt;/ul></content></item><item><title>Practical Electronics For Inventors (Book Notes)</title><link>https://jenkinsdev.us/notes/technology/practical-electronics-for-inventors--book-notes/</link><pubDate>Thu, 05 Jun 2025 14:21:21 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/practical-electronics-for-inventors--book-notes/</guid><description>Definitions (A) ampere or amp (p6) Unit of current Interchangeable unit for 1 C/s (C) coulomb (p6) Unit of electrical charge Voltage potential difference or just potential (NOT potential energy) (V) volt (p14) Unit of measure of Voltage 1 volt = 1 joule / 1 coulomb Power (p14) power = dW/dt Chapter 2: Theory Voltage To get a mental image of how a battery generates an EMF through a circuit, we envision that chemical reactions inside yield free electrons that quickly build in number within the negative terminal region (anode material), causing an electron concentration.</description><content>&lt;h2 id="definitions">Definitions&lt;/h2>
 &lt;ul>
 &lt;li>&lt;strong>(A) &lt;em>ampere&lt;/em> or &lt;em>amp&lt;/em>&lt;/strong> (p6)
 &lt;ul>
@@ -323,7 +323,7 @@ Mutual Funds will almost always have much higher expenses, especially due to the
 &lt;p>To get a mental image of how a battery generates an EMF through a circuit, we envision that chemical reactions inside yield free electrons that quickly build in number within the negative terminal region (anode material), causing an electron concentration. This concentration is full of repulsive force (electrons repel) that can be viewed as a kind of &amp;ldquo;electrical pressure&amp;rdquo;&lt;/p>
 &lt;p>With a load (e.g., flashlight lamp, &amp;hellip;) placed between the battery&amp;rsquo;s terminals, electrons from the battery&amp;rsquo;s negative terminal attempt to alleviate this pressure by dispersing into the circuit. These electrons increase the concentration of free electrons within the end of the conductor attached to the negative terminal. Even a small percentage difference in free electron concentration in one region gives rise to great repulsive forces between free electrons.
 &lt;em>(p11) 2.3.1 The Mechanisms of Voltage&lt;/em>&lt;/p>
-&lt;/blockquote></content></item><item><title>Random Technical Resources</title><link>https://jenkinsdev.us/notes/technology/random-technical-resources/</link><pubDate>Thu, 05 Jun 2025 14:04:00 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/random-technical-resources/</guid><description>getdeploying
+&lt;/blockquote></content></item><item><title>Random Technical Resources</title><link>https://jenkinsdev.us/notes/technology/random-technical-resources/</link><pubDate>Thu, 05 Jun 2025 14:21:21 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/random-technical-resources/</guid><description>getdeploying
 Discover, filter and compare cloud providers of all shapes and sizes.
 cybersectools
 Compilation of many types of cyber security tools and other resources.
@@ -339,7 +339,7 @@ Hardware &amp;ldquo;hacking&amp;rdquo; wiki</description><content>&lt;p>&lt;a hr
 &lt;p>&lt;a href="https://www.hardbreak.wiki/hardware-hacking/introduction">hardbreak&lt;/a>&lt;/p>
 &lt;blockquote>
 &lt;p>Hardware &amp;ldquo;hacking&amp;rdquo; wiki&lt;/p>
-&lt;/blockquote></content></item><item><title>Staff Engineering Archetypes</title><link>https://jenkinsdev.us/notes/business/staff-engineering-archetypes/</link><pubDate>Thu, 05 Jun 2025 14:04:00 +0000</pubDate><guid>https://jenkinsdev.us/notes/business/staff-engineering-archetypes/</guid><description>Source
+&lt;/blockquote></content></item><item><title>Staff Engineering Archetypes</title><link>https://jenkinsdev.us/notes/business/staff-engineering-archetypes/</link><pubDate>Thu, 05 Jun 2025 14:21:21 +0000</pubDate><guid>https://jenkinsdev.us/notes/business/staff-engineering-archetypes/</guid><description>Source
 Tech Lead Focus on partnering with a small amount of Engineering Managers (1-3 generally) Guides approach and execution of technical bits, generally in a focused area Tech Lead Manager may also exists, but is on the Engineering Manager track (not Staff-plus) Architect Combines technical prowess and organizational leadership knowledge to guide direction, quality, and execution in critical paths Solver Digs very deep into arbitrarily difficult or complex problem areas Very strong technical skills are necessary Can focus on a specific area for an extended amount of time, or can jump between “hotspots” Right Hand Generally only present in very large organizations Acts as an extension to an executive, providing additional processing/bandwidth Generally acts on the scope and authority of whom they’re assisting</description><content>&lt;p>&lt;a href="https://staffeng.com/guides/staff-archetypes/">Source&lt;/a>&lt;/p>
 &lt;h3 id="tech-lead">Tech Lead&lt;/h3>
 &lt;ul>
@@ -362,9 +362,9 @@ Tech Lead Focus on partnering with a small amount of Engineering Managers (1-3 g
 &lt;li>Generally only present in very large organizations&lt;/li>
 &lt;li>Acts as an extension to an executive, providing additional processing/bandwidth&lt;/li>
 &lt;li>Generally acts on the scope and authority of whom they’re assisting&lt;/li>
-&lt;/ul></content></item><item><title>Startup Funding</title><link>https://jenkinsdev.us/notes/business/startup-funding/</link><pubDate>Thu, 05 Jun 2025 14:04:00 +0000</pubDate><guid>https://jenkinsdev.us/notes/business/startup-funding/</guid><description>▪︎ TinySeed is an alternative to the usual Venture Capital funding ▪︎ Even raising $100k is considered semi-bootstrapping ▪︎ Finding Angel Investors or other low investment options are better for 90+% of startups</description><content>&lt;p>▪︎ TinySeed is an alternative to the usual Venture Capital funding
+&lt;/ul></content></item><item><title>Startup Funding</title><link>https://jenkinsdev.us/notes/business/startup-funding/</link><pubDate>Thu, 05 Jun 2025 14:21:21 +0000</pubDate><guid>https://jenkinsdev.us/notes/business/startup-funding/</guid><description>▪︎ TinySeed is an alternative to the usual Venture Capital funding ▪︎ Even raising $100k is considered semi-bootstrapping ▪︎ Finding Angel Investors or other low investment options are better for 90+% of startups</description><content>&lt;p>▪︎ TinySeed is an alternative to the usual Venture Capital funding
 ▪︎ Even raising $100k is considered semi-bootstrapping
-▪︎ Finding Angel Investors or other low investment options are better for 90+% of startups&lt;/p></content></item><item><title>Startup Ideas</title><link>https://jenkinsdev.us/notes/business/startup-ideas/</link><pubDate>Thu, 05 Jun 2025 14:04:00 +0000</pubDate><guid>https://jenkinsdev.us/notes/business/startup-ideas/</guid><description>SISP - Solution In Search of a Problem
+▪︎ Finding Angel Investors or other low investment options are better for 90+% of startups&lt;/p></content></item><item><title>Startup Ideas</title><link>https://jenkinsdev.us/notes/business/startup-ideas/</link><pubDate>Thu, 05 Jun 2025 14:21:21 +0000</pubDate><guid>https://jenkinsdev.us/notes/business/startup-ideas/</guid><description>SISP - Solution In Search of a Problem
 Tar Pit Ideas - Ideas that seem tantalizing, and are theoretically easy to solve. However, you will get stuck for months or years trying to solve the problem. (Social Media Co. trying to consolidate communication)
 Q1) Is/are the founder(s) fit for the market?
 Q2) How large is the market?
@@ -379,14 +379,14 @@ Q3) How accute is this problem? (Care of the problem, for consumers of your prod
 &lt;p>Q6) Are there any proxy businesses that can proven your idea?&lt;/p>
 &lt;p>Q7) Is this a problem you want to work on for years?&lt;/p>
 &lt;p>Q8) Is this a scalable business?&lt;/p>
-&lt;p>Q9) Is this a good idea space? A good idea space is one which has a good hit rate of success.&lt;/p></content></item><item><title>TanStack Query</title><link>https://jenkinsdev.us/notes/technology/tanstack-query/</link><pubDate>Thu, 05 Jun 2025 14:04:00 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/tanstack-query/</guid><description>Opinions Queries In Hooks or Contexts The documentation and articles across the web show examples of direct usage of useQuery (for a good reason, it is THE interface after all!).
+&lt;p>Q9) Is this a good idea space? A good idea space is one which has a good hit rate of success.&lt;/p></content></item><item><title>TanStack Query</title><link>https://jenkinsdev.us/notes/technology/tanstack-query/</link><pubDate>Thu, 05 Jun 2025 14:21:21 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/tanstack-query/</guid><description>Opinions Queries In Hooks or Contexts The documentation and articles across the web show examples of direct usage of useQuery (for a good reason, it is THE interface after all!).
 However, as your codebase scales, your application will benefit from using hooks or contexts. This enables logical abstractions that can enhance your query&amp;rsquo;s data.
 Mutations, derived values, and the data/metadata of the query itself may be provided through a singular interface.</description><content>&lt;h2 id="opinions">Opinions&lt;/h2>
 &lt;h4 id="queries-in-hooks-or-contexts">Queries In Hooks or Contexts&lt;/h4>
 &lt;p>The documentation and articles across the web show examples of direct usage of &lt;code>useQuery&lt;/code> (for a good reason, it is THE interface after all!).&lt;/p>
 &lt;p>However, as your codebase scales, your application will benefit from using hooks or contexts. This enables logical abstractions that can enhance your query&amp;rsquo;s data.&lt;/p>
 &lt;p>Mutations, derived values, and the data/metadata of the query itself may be provided through a singular interface.&lt;/p>
-&lt;p>As always, do not prematurely optimize for what does not matter. But, food for thought&lt;/p></content></item><item><title>Transformers</title><link>https://jenkinsdev.us/notes/technology/transformers/</link><pubDate>Thu, 05 Jun 2025 14:04:00 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/transformers/</guid><description>What is it? A deep learning architecture which is based on multi-head attention.
+&lt;p>As always, do not prematurely optimize for what does not matter. But, food for thought&lt;/p></content></item><item><title>Transformers</title><link>https://jenkinsdev.us/notes/technology/transformers/</link><pubDate>Thu, 05 Jun 2025 14:21:21 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/transformers/</guid><description>What is it? A deep learning architecture which is based on multi-head attention.
 Transformers were introduced to the world through a 2017 paper by eight scientists at Google: “Attention Is All You Need”. A paper which is seen as the turning point of modern artificial intelligence.
 Why was it created? Previously, ML architectures such as recurrent architectures, long short-term memory took much longer to train.
 Transformers enabled more efficient training, and by proxy made possible the wave of LLMs (Large Language Models) we have access to today.</description><content>&lt;h3 id="what-is-it">What is it?&lt;/h3>
@@ -394,7 +394,7 @@ Transformers enabled more efficient training, and by proxy made possible the wav
 &lt;p>Transformers were introduced to the world through a 2017 paper by eight scientists at Google: &lt;a href="https://en.m.wikipedia.org/wiki/Attention_Is_All_You_Need">“Attention Is All You Need”&lt;/a>. A paper which is seen as the turning point of modern artificial intelligence.&lt;/p>
 &lt;h3 id="why-was-it-created">Why was it created?&lt;/h3>
 &lt;p>Previously, ML architectures such as recurrent architectures, long short-term memory took much longer to train.&lt;/p>
-&lt;p>Transformers enabled more efficient training, and by proxy made possible the wave of LLMs (Large Language Models) we have access to today.&lt;/p></content></item><item><title>Triangle Trigonometric Functions</title><link>https://jenkinsdev.us/notes/maths/triangle-trigonometric-functions/</link><pubDate>Thu, 05 Jun 2025 14:04:00 +0000</pubDate><guid>https://jenkinsdev.us/notes/maths/triangle-trigonometric-functions/</guid><description>Sine Right Triangles sin(θ) = opposite / hypotenuse Non-Right Triangle a / sin(A) = b / sin(B) = c / sin(C) Cosine Right Triangle cos(θ) = adjacent / hypotenuse Tangent Right Triangle tan(θ) = opposite / adjacent</description><content>&lt;h3 id="sine">Sine&lt;/h3>
+&lt;p>Transformers enabled more efficient training, and by proxy made possible the wave of LLMs (Large Language Models) we have access to today.&lt;/p></content></item><item><title>Triangle Trigonometric Functions</title><link>https://jenkinsdev.us/notes/maths/triangle-trigonometric-functions/</link><pubDate>Thu, 05 Jun 2025 14:21:21 +0000</pubDate><guid>https://jenkinsdev.us/notes/maths/triangle-trigonometric-functions/</guid><description>Sine Right Triangles sin(θ) = opposite / hypotenuse Non-Right Triangle a / sin(A) = b / sin(B) = c / sin(C) Cosine Right Triangle cos(θ) = adjacent / hypotenuse Tangent Right Triangle tan(θ) = opposite / adjacent</description><content>&lt;h3 id="sine">Sine&lt;/h3>
 &lt;h4 id="right-triangles">Right Triangles&lt;/h4>
 &lt;ul>
 &lt;li>sin(θ) = opposite / hypotenuse&lt;/li>
@@ -412,11 +412,614 @@ Transformers enabled more efficient training, and by proxy made possible the wav
 &lt;h4 id="right-triangle-1">Right Triangle&lt;/h4>
 &lt;ul>
 &lt;li>tan(θ) = opposite / adjacent&lt;/li>
-&lt;/ul></content></item><item><title>Useful &amp; Cool AI Tools</title><link>https://jenkinsdev.us/notes/technology/useful---cool-ai-tools/</link><pubDate>Thu, 05 Jun 2025 14:04:00 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/useful---cool-ai-tools/</guid><description>Meshy
+&lt;/ul></content></item><item><title>Useful &amp; Cool AI Tools</title><link>https://jenkinsdev.us/notes/technology/useful---cool-ai-tools/</link><pubDate>Thu, 05 Jun 2025 14:21:21 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/useful---cool-ai-tools/</guid><description>Meshy
 A set of generative AI tools, offering Text to 3D, Image to 3D, AI Texturing, &amp;amp; Text to Voxel (as of writing).</description><content>&lt;p>&lt;a href="https://meshy.ai/">Meshy&lt;/a>&lt;/p>
 &lt;blockquote>
 &lt;p>A set of generative AI tools, offering Text to 3D, Image to 3D, AI Texturing, &amp;amp; Text to Voxel (as of writing).&lt;/p>
-&lt;/blockquote></content></item><item><title>Vector Databases</title><link>https://jenkinsdev.us/notes/technology/vector-databases/</link><pubDate>Thu, 05 Jun 2025 14:04:00 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/vector-databases/</guid><description>Technical Primer</description><content>&lt;p>&lt;a href="https://tge-data-web.nyc3.digitaloceanspaces.com/docs/Vector%20Databases%20-%20A%20Technical%20Primer.pdf">Technical Primer&lt;/a>&lt;/p></content></item><item><title>A better AI-powered Development Environment</title><link>https://jenkinsdev.us/posts/supermaven-and-nvim/</link><pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate><guid>https://jenkinsdev.us/posts/supermaven-and-nvim/</guid><description>So&amp;hellip; Why exactly? LLM-powered coding suggestions have been a hot topic since they were first introduced to the mainstream development industry with the launch of GitHub&amp;rsquo;s Copilot program. Some developers swear by their productivity gains (and some stats show it is helpful), while droves of other developers have found themselves turning off LLM-powered suggestions for a plethora of reasons: too distracting, too much reliability on the suggestions, less engaging work, and honestly much more.</description><content>&lt;h2 id="so-why-exactly">So&amp;hellip; Why exactly?&lt;/h2>
+&lt;/blockquote></content></item><item><title>Vector Databases</title><link>https://jenkinsdev.us/notes/technology/vector-databases/</link><pubDate>Thu, 05 Jun 2025 14:21:21 +0000</pubDate><guid>https://jenkinsdev.us/notes/technology/vector-databases/</guid><description>Technical Primer</description><content>&lt;p>&lt;a href="https://tge-data-web.nyc3.digitaloceanspaces.com/docs/Vector%20Databases%20-%20A%20Technical%20Primer.pdf">Technical Primer&lt;/a>&lt;/p></content></item><item><title>Rhythm ToDo List and Development Notes</title><link>https://jenkinsdev.us/handwritten-notes/rhythm-todo-list-and-development-notes/</link><pubDate>Wed, 04 Jun 2025 16:28:43 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/rhythm-todo-list-and-development-notes/</guid><description>Rollbar In for Rhythm
+Foot Control Pad for Computer
+Rhythm TODO: System Playlists Search/Playlist = yet-driven Client Authentication AdSvc System Test Server Test Client Client: Finish Designs Client: Can Resume Spot on App boot Coming Soon: Can make playlists Client: iOS Bottom Nav Bar (spacing iOS) Ensure autoplay works (80%) Search playlist screen Queue → Page; Keep Playing Allow Ben to use Cmd block: get X(64 Diamonds -Igns Flick diamond Blue if you aren&amp;rsquo;t Ben; death!</description><content>&lt;p>&lt;strong>Rollbar In for Rhythm&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Foot Control Pad for Computer&lt;/strong>&lt;/p>
+&lt;h3 id="rhythm-todo">Rhythm TODO:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> System Playlists&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Search/Playlist = yet-driven&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Client Authentication&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> AdSvc System
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Test Server&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Test Client&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Client: Finish Designs&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Client: Can Resume Spot on App boot&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Coming Soon: Can make playlists&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Client: iOS&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Bottom Nav Bar (spacing iOS)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Ensure autoplay works (80%)&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Search playlist screen&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Queue → Page; Keep Playing&lt;/li>
+&lt;/ul>
+&lt;h3 id="allow-ben-to-use-cmd-block">Allow Ben to use Cmd block:&lt;/h3>
+&lt;ul>
+&lt;li>get X(64 Diamonds
+-Igns Flick diamond Blue&lt;/li>
+&lt;li>if you aren&amp;rsquo;t Ben; death!&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>&lt;strong>Diagram Description:&lt;/strong>
+There is a simple line drawing that appears to be an L-shaped or boot-shaped outline drawn in blue ink, possibly representing the &amp;ldquo;Foot Control Pad for Computer&amp;rdquo; mentioned at the top of the notes.&lt;/p></content></item><item><title>Mobile App Development and Monetization Notes</title><link>https://jenkinsdev.us/handwritten-notes/mobile-app-development-and-monetization-notes/</link><pubDate>Wed, 04 Jun 2025 16:28:36 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/mobile-app-development-and-monetization-notes/</guid><description>Triple Dot - App Requirements App Login - Registration Cache video, queue, comfort-style Reload on app start Coming soon - Location Changes (No Playback) [Scribbled marking/emphasis]
+CPI Metrics $30K/month = $1175 $300K/day = Licensing SDK Integration Amplitude SDK Appsflyer Facebook Ads SDK Revenue Calculations $15,000/day
+x 30
+= $500,000
+√ 5,000
+$245,000
+Organic Growth Targets 1700 organic
+↓
+2700 organic in our system
+Diagram Description: There are several blue pen markings throughout, including underlines, boxes around text, checkboxes (□), and a scribbled emphasis mark.</description><content>&lt;h3 id="triple-dot---app-requirements">Triple Dot - App Requirements&lt;/h3>
+&lt;ul>
+&lt;li>App Login - Registration&lt;/li>
+&lt;li>Cache video, queue, comfort-style&lt;/li>
+&lt;li>Reload on app start&lt;/li>
+&lt;li>Coming soon - &lt;del>Location&lt;/del> Changes (No Playback)&lt;/li>
+&lt;/ul>
+&lt;p>[Scribbled marking/emphasis]&lt;/p>
+&lt;h3 id="cpi-metrics">CPI Metrics&lt;/h3>
+&lt;ul>
+&lt;li>$30K/month = $1175&lt;/li>
+&lt;li>$300K/day = Licensing&lt;/li>
+&lt;/ul>
+&lt;h3 id="sdk-integration">SDK Integration&lt;/h3>
+&lt;ul>
+&lt;li>Amplitude SDK&lt;/li>
+&lt;li>&lt;del>Appsflyer&lt;/del>&lt;/li>
+&lt;li>Facebook Ads SDK&lt;/li>
+&lt;/ul>
+&lt;h3 id="revenue-calculations">Revenue Calculations&lt;/h3>
+&lt;p>$15,000/day&lt;br>
+x 30&lt;br>
+= $500,000&lt;br>
+√ 5,000&lt;br>
+&lt;strong>$245,000&lt;/strong>&lt;/p>
+&lt;h3 id="organic-growth-targets">Organic Growth Targets&lt;/h3>
+&lt;p>1700 organic&lt;br>
+↓&lt;br>
+2700 organic in our system&lt;/p>
+&lt;hr>
+&lt;p>&lt;strong>Diagram Description:&lt;/strong> There are several blue pen markings throughout, including underlines, boxes around text, checkboxes (□), and a scribbled emphasis mark. The layout appears to be informal meeting notes or planning documentation with various calculations and crossed-out items indicating revisions or completed tasks.&lt;/p></content></item><item><title>Smart Home Server and Development Notes</title><link>https://jenkinsdev.us/handwritten-notes/smart-home-server-and-development-notes/</link><pubDate>Wed, 04 Jun 2025 16:28:29 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/smart-home-server-and-development-notes/</guid><description>Smart Home Server Architecture Embedded MQTT Broker
+Located in a MQTT program, w/ GTOAC pub/sub functionality System Components:
+Linux &amp;ndash; systemd startup script Windows &amp;ndash; startup PS1 script Both connect to: Docker Container w/ MQTT Broker
+Network Setup: Contains some of the Raspberry Pi devices connected in a grid pattern
+Development Updates - 2025-02-15 Upload 2.3.14 Android/iOS
+Include 2.0.2 FlutterEarn SDK update [unclear] Shuffle to each of the test tracks [unclear] outage Program YouTube Search</description><content>&lt;h3 id="smart-home-server-architecture">Smart Home Server Architecture&lt;/h3>
+&lt;p>&lt;strong>Embedded MQTT Broker&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Located in a MQTT program, w/ GTOAC&lt;/li>
+&lt;li>pub/sub functionality&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>System Components:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Linux&lt;/strong> &amp;ndash; systemd startup script&lt;/li>
+&lt;li>&lt;strong>Windows&lt;/strong> &amp;ndash; startup PS1 script&lt;/li>
+&lt;/ul>
+&lt;p>Both connect to: &lt;strong>Docker Container w/ MQTT Broker&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>Network Setup:&lt;/strong>
+Contains some of the Raspberry Pi devices connected in a grid pattern&lt;/p>
+&lt;hr>
+&lt;h3 id="development-updates---2025-02-15">Development Updates - 2025-02-15&lt;/h3>
+&lt;p>&lt;strong>Upload 2.3.14 Android/iOS&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Include 2.0.2 FlutterEarn SDK update&lt;/li>
+&lt;li>[unclear] Shuffle to each of the test tracks&lt;/li>
+&lt;li>[unclear] outage&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Program YouTube Search&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Scratch CofE GO 2
+&lt;ul>
+&lt;li>Hiring Pioneers (Unity) - iOS Organic - Playful Left ~ 100k online&lt;/li>
+&lt;li>Table in January&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="project-status-questions">Project Status Questions&lt;/h3>
+&lt;p>&lt;strong>Are these scraped?&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Linkin Park&lt;/li>
+&lt;li>Lauren Daigle&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Note:&lt;/strong> Meaning poor search results is due to it being not scraped yet&lt;/p>
+&lt;hr>
+&lt;p>&lt;em>Date: 2025-02-15&lt;/em>&lt;/p>
+&lt;h3 id="diagram-explanation">Diagram Explanation&lt;/h3>
+&lt;p>The notes contain a simple network architecture diagram showing:&lt;/p>
+&lt;ol>
+&lt;li>A Smart Home Server setup with Linux/Windows startup scripts connecting to a Docker container running an MQTT broker&lt;/li>
+&lt;li>A grid pattern of connected devices (likely Raspberry Pi units) that form part of the home automation network&lt;/li>
+&lt;li>The MQTT broker handles pub/sub messaging for the entire system&lt;/li>
+&lt;/ol></content></item><item><title>Product Development Notes and Feature Planning</title><link>https://jenkinsdev.us/handwritten-notes/product-development-notes-and-feature-planning/</link><pubDate>Wed, 04 Jun 2025 16:28:12 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/product-development-notes-and-feature-planning/</guid><description>Playful Records [unclear] off-boards Line v2.3.5 Social Auth (REM) Line v2.3.4 (App Usage Data Filtering) v2.3.5 (Onboarding Wizard v2) Social Audit Implementation Implemented: 0 Major or build 4 test talk
+[Diagram: A table/matrix structure with bullet points and checkboxes, appears to be a feature tracking grid with multiple rows and columns]
+iOS Features [Diagram: Similar table structure with bullet points organized in rows]
+Search RPI Focus Get Click ROAS
+Visibility &amp;amp; Observability for Business Analytics</description><content>&lt;h3 id="playful-records">Playful Records&lt;/h3>
+&lt;ul>
+&lt;li>&lt;del>[unclear] off-boards Line&lt;/del>&lt;/li>
+&lt;li>&lt;del>v2.3.5 Social Auth (REM) Line&lt;/del>&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> v2.3.4 (App Usage Data Filtering)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> v2.3.5 (Onboarding Wizard v2)&lt;/li>
+&lt;/ul>
+&lt;h3 id="social-audit-implementation">Social Audit Implementation&lt;/h3>
+&lt;p>&lt;strong>Implemented:&lt;/strong> 0 Major or build 4 test talk&lt;/p>
+&lt;p>[Diagram: A table/matrix structure with bullet points and checkboxes, appears to be a feature tracking grid with multiple rows and columns]&lt;/p>
+&lt;h3 id="ios-features">iOS Features&lt;/h3>
+&lt;p>[Diagram: Similar table structure with bullet points organized in rows]&lt;/p>
+&lt;h3 id="search-rpi-focus">Search RPI Focus&lt;/h3>
+&lt;p>Get Click ROAS&lt;/p>
+&lt;p>&lt;strong>Visibility &amp;amp; Observability for Business Analytics&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Spend/IAP changes to beta&lt;/li>
+&lt;li>Up Click ROAS&lt;/li>
+&lt;/ul>
+&lt;p>Get $300 by spending $175&lt;/p>
+&lt;h3 id="click-roas-plans---pushing-focus-on-iaps">Click ROAS Plans - Pushing Focus on IAPs&lt;/h3>
+&lt;h3 id="uservoice-features">UserVoice Features&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Prod&lt;/strong>&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Frontend Change Sync?&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Workers Staging&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Global Remote Config&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Worker Job (TIME Advancement)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Push Notifications (Scheduled Send)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Update Segment Concrete to use Cube 3 + time&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Query Optimizations&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Soumei Step Patching (Client)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Soumei Stop Event Template&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Enable Stack&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> ARM&lt;/li>
+&lt;/ul>
+&lt;h3 id="tiktok--fb--apps-flyer">TikTok + FB + Apps Flyer&lt;/h3>
+&lt;ul>
+&lt;li>Keep Link clock&lt;/li>
+&lt;li>deferred&lt;/li>
+&lt;/ul>
+&lt;h3 id="big-updates-now">Big Updates Now&lt;/h3>
+&lt;p>Then Analytics Ramp&lt;/p>
+&lt;hr>
+&lt;p>&lt;strong>Note:&lt;/strong> The image contains several hand-drawn tables/matrices with bullet points and checkboxes that appear to be feature tracking grids. Some text is crossed out with strikethroughs, and there are various arrows and connecting lines between sections indicating relationships or workflow between different features and tasks.&lt;/p></content></item><item><title>Product Development Meeting Notes - October 22, 2024</title><link>https://jenkinsdev.us/handwritten-notes/product-development-meeting-notes---october-22--2024/</link><pubDate>Wed, 04 Jun 2025 16:28:06 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/product-development-meeting-notes---october-22--2024/</guid><description>Subsequent By Default
+Playful Rewards: ☑️ Test Attribution ☐ Push Up Social Auth (Staging + Client Builds + Firebase) ☐ App Usage Tracking Sync w/ Adam: What are our goals exactly ← Z.3.4 Here is what we provide summary ☑️ Send Adam Credentials encrypt Changes for [Lead Account-auth] ☐ Onboarding Wizard v2 (Quick vs Big) UserWise ☐ Mongo 5 → 6 ☑️ Staging ☐ Production ☐ Frontend Changes &amp;gt;_&amp;lt; ☐ FlowRefs during?</description><content>&lt;p>&lt;em>Subsequent By Default&lt;/em>&lt;/p>
+&lt;h3 id="playful-rewards">Playful Rewards:&lt;/h3>
+&lt;ul>
+&lt;li>☑️ Test Attribution&lt;/li>
+&lt;li>☐ Push Up Social Auth (Staging + Client Builds + Firebase)&lt;/li>
+&lt;li>☐ App Usage Tracking Sync w/ Adam:
+&lt;ul>
+&lt;li>What are our goals exactly ← &lt;strong>Z.3.4&lt;/strong>&lt;/li>
+&lt;li>Here is what we provide summary&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>☑️ Send Adam Credentials encrypt Changes for [Lead Account-auth]&lt;/li>
+&lt;li>☐ Onboarding Wizard v2 (Quick vs Big)&lt;/li>
+&lt;/ul>
+&lt;h3 id="userwise">UserWise&lt;/h3>
+&lt;ul>
+&lt;li>☐ Mongo 5 → 6
+&lt;ul>
+&lt;li>☑️ Staging ☐ Production&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>☐ Frontend Changes &amp;gt;_&amp;lt;&lt;/li>
+&lt;li>☐ FlowRefs during?&lt;/li>
+&lt;li>☐ Global Revise config&lt;/li>
+&lt;li>☐ Worker Job (time)&lt;/li>
+&lt;li>☐ Push Notifications (scheduled send)&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>V2.3.4&lt;/strong>
+Filter Out Recently Played (90-days) ⭐&lt;/p>
+&lt;h3 id="pepperfun-call-notes">Pepperfun Call Notes:&lt;/h3>
+&lt;ul>
+&lt;li>☑️ Q1/Q2, for LiveOps: UW then?&lt;/li>
+&lt;li>☑️ GCP??? Do we host for them?&lt;/li>
+&lt;li>☑️ How do we integrate UW ↔ PT
+&lt;ul>
+&lt;li>UW would be a nice frontend&lt;/li>
+&lt;li>They would need custom features&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>☑️ Start SaaS → Self-Hosted (pre-live)&lt;/li>
+&lt;/ul>
+&lt;h3 id="pubsub-realtime-flow">PubSub Realtime Flow&lt;/h3>
+&lt;ul>
+&lt;li>☐ They provide segments to us.&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>&lt;strong>Diagram Description:&lt;/strong>
+At the top of the page, there&amp;rsquo;s a diamond-shaped diagram with &amp;ldquo;Push Out RTTR DEN to be Client&amp;rdquo; written inside it, with &amp;ldquo;Subsequent By Default&amp;rdquo; noted above.&lt;/p>
+&lt;p>There&amp;rsquo;s also a box labeled &amp;ldquo;OMG&amp;rdquo; in the middle section, and &amp;ldquo;GCP&amp;rdquo; appears in a box at the bottom right of the notes.&lt;/p>
+&lt;p>&lt;em>Date: 2024-10-22&lt;/em>&lt;/p></content></item><item><title>Development Tasks - June 3rd, 2025</title><link>https://jenkinsdev.us/handwritten-notes/development-tasks---june-3rd--2025/</link><pubDate>Wed, 04 Jun 2025 15:39:43 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/development-tasks---june-3rd--2025/</guid><description>#H 2025-06-03
+Client: Double-Check Social Auth iOS/Google • Android/Google iOS/Apple • Android/Apple Backend: Fix game overview link color Push Notification creds json for Kiwi General LEVELUP Design tweaks ATUS creds → Firebase Additional Tasks: Create Amplitude onboarding Funnel Personal Notes: Personal Property Dentist 3:11 (!!!) Internet Op: transparency</description><content>&lt;p>&lt;strong>#H 2025-06-03&lt;/strong>&lt;/p>
+&lt;h3 id="client">Client:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Double-Check Social Auth&lt;/strong>
+&lt;ul>
+&lt;li>iOS/Google • Android/Google&lt;/li>
+&lt;li>iOS/Apple • Android/Apple&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="backend">Backend:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Fix game overview link color&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Push Notification creds json for Kiwi&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>General LEVELUP Design tweaks&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>ATUS creds → Firebase&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h3 id="additional-tasks">Additional Tasks:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Create Amplitude onboarding Funnel&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h3 id="personal-notes">Personal Notes:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;del>Personal Property&lt;/del>&lt;/li>
+&lt;li>Dentist 3:11 (!!!)&lt;/li>
+&lt;li>Internet&lt;/li>
+&lt;li>Op: transparency&lt;/li>
+&lt;/ul></content></item><item><title>Project Planning Notes - 2025-06-02</title><link>https://jenkinsdev.us/handwritten-notes/project-planning-notes---2025-06-02/</link><pubDate>Tue, 03 Jun 2025 18:52:39 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/project-planning-notes---2025-06-02/</guid><description>Concerns: Remove (count, ponder id, count-sub) idx [unclear: or favor of optiscript] Deploy to staging } following Test in staging } Deploy to production Kiwi: &amp;ldquo;Tap to copy&amp;rdquo; should probably be pressable Add zip shade brush (location shade) Level up pre-entry Update app icon Boxed Notes: Cesgnap onset What do we do if we can&amp;rsquo;t get fluent to raise caps Block glass pact Block playful snap after loose pay Apploin internally - Ad creation #on Cool hire a Additional Notes: -PP Tax</description><content>&lt;h3 id="concerns">Concerns:&lt;/h3>
+&lt;ul>
+&lt;li>Remove (count, ponder id, count-sub) idx [unclear: or favor of optiscript]&lt;/li>
+&lt;li>Deploy to staging } following&lt;/li>
+&lt;li>Test in staging }&lt;/li>
+&lt;li>Deploy to production&lt;/li>
+&lt;/ul>
+&lt;h3 id="kiwi">Kiwi:&lt;/h3>
+&lt;ul>
+&lt;li>&amp;ldquo;Tap to copy&amp;rdquo; should probably be pressable&lt;/li>
+&lt;li>Add zip shade brush (location shade)&lt;/li>
+&lt;li>Level up pre-entry&lt;/li>
+&lt;li>Update app icon&lt;/li>
+&lt;/ul>
+&lt;h3 id="boxed-notes">Boxed Notes:&lt;/h3>
+&lt;ul>
+&lt;li>Cesgnap onset&lt;/li>
+&lt;li>What do we do if we can&amp;rsquo;t get fluent to raise caps&lt;/li>
+&lt;li>Block glass pact&lt;/li>
+&lt;li>Block playful snap after loose pay&lt;/li>
+&lt;li>Apploin internally - Ad creation #on
+&lt;ul>
+&lt;li>Cool hire a&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="additional-notes">Additional Notes:&lt;/h3>
+&lt;p>-PP Tax&lt;/p>
+&lt;h3 id="second-boxed-section">Second Boxed Section:&lt;/h3>
+&lt;ul>
+&lt;li>Intellifirst ai&lt;/li>
+&lt;li>Renderbook → ATD → Obsidian&lt;/li>
+&lt;li>Personal shop&lt;/li>
+&lt;li>Op: transparency&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Diagrams Present:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Two rectangular boxes containing additional notes and project details&lt;/li>
+&lt;li>The layout suggests this is a meeting or planning document with multiple streams of tasks and considerations&lt;/li>
+&lt;/ul></content></item><item><title>Appuser Effect System Design Notes</title><link>https://jenkinsdev.us/handwritten-notes/appuser-effect-system-design-notes/</link><pubDate>Tue, 03 Jun 2025 18:52:33 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/appuser-effect-system-design-notes/</guid><description>Date: 2025-05-30
+Appuser Effect Structure Appuser Effect / \ Appuser Effect Key Components:
+Appusers: Jobs/Archive - stores records (Appuser Effect) Appusers: AppuserSpecialOffers: {Claim, process} - both offer examples of AppuserEffect creation AppuserEffects: Jobs: Complex - more appuser effects = more complex Player: Appusers: Advice: CeaseReward - shows usage of Appuser Effect + Effect to cease bonus rewards Effect should be RewardableSub Earn Sources Fluent Presage offers Presage Magic Receipts Presage surveys Revli Moshbox/Besitos Kruiser System Flow Diagram POST Find or Create Find or Create (send code) → (Idle 24-hour → (appuser archive Effect) Effect) Event Processing Receive Earn Source → Appusers: AppuserEffects: Apply Earn Modifiers Event (Reward, appuser) BOOSTED - Add another use reward record</description><content>&lt;p>&lt;strong>Date:&lt;/strong> 2025-05-30&lt;/p>
+&lt;h3 id="appuser-effect-structure">Appuser Effect Structure&lt;/h3>
+&lt;pre tabindex="0">&lt;code>Appuser Effect
+/ \
+Appuser Effect
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Key Components:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Appusers:&lt;/strong> Jobs/Archive - stores records (Appuser Effect)&lt;/li>
+&lt;li>&lt;strong>Appusers:&lt;/strong> AppuserSpecialOffers: {Claim, process} - both offer examples of AppuserEffect creation&lt;/li>
+&lt;li>&lt;strong>AppuserEffects:&lt;/strong> Jobs: Complex - more appuser effects = more complex&lt;/li>
+&lt;li>&lt;strong>Player:&lt;/strong> Appusers: Advice: CeaseReward - shows usage of Appuser Effect + Effect to cease bonus rewards
+&lt;ul>
+&lt;li>Effect should be RewardableSub&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="earn-sources">Earn Sources&lt;/h3>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Fluent&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Presage offers&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Presage Magic Receipts&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Presage surveys&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Revli&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Moshbox/Besitos&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Kruiser&lt;/li>
+&lt;/ul>
+&lt;h3 id="system-flow-diagram">System Flow Diagram&lt;/h3>
+&lt;pre tabindex="0">&lt;code>POST Find or Create Find or Create
+(send code) → (Idle 24-hour → (appuser archive
+Effect) Effect)
+&lt;/code>&lt;/pre>&lt;h3 id="event-processing">Event Processing&lt;/h3>
+&lt;pre tabindex="0">&lt;code>Receive Earn Source → Appusers: AppuserEffects: Apply Earn Modifiers
+Event (Reward, appuser)
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>BOOSTED&lt;/strong> - Add another use reward record&lt;/p>
+&lt;hr>
+&lt;p>&lt;em>Note: This appears to be technical documentation for a reward/effect system in a software application, detailing how user effects are structured, various earning sources, and the flow of processing rewards and bonuses.&lt;/em>&lt;/p></content></item><item><title>Sprint Planning Notes - October 28, 2024</title><link>https://jenkinsdev.us/handwritten-notes/sprint-planning-notes---october-28--2024/</link><pubDate>Mon, 02 Jun 2025 13:33:57 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/sprint-planning-notes---october-28--2024/</guid><description>Date: 2024-10-28
+Playful Rewards: ☑️ Test Attribution ☐ Push Up Social Auth (Staging + Client Builds + Firebase) ☐ App Usage Tracking Sync w/ Adam: What are our goals exactly ← 2.3.4 How to what we provide summary ☑️ Send Adam Credentials.enc.yml changes for [lead-accar-auth] ☐ Onboarding Wizard v2 (Quick vs Big) Version 2.3.4 Filter Out Recently Played (90-days) ⭐ UserWise ☐ Mongo 5 → 6 ● Staging ☐ Production ☐ Pandemic Changes &amp;gt;_&amp;lt; ☐ workers during?</description><content>&lt;p>&lt;strong>Date:&lt;/strong> 2024-10-28&lt;/p>
+&lt;h3 id="playful-rewards">Playful Rewards:&lt;/h3>
+&lt;ul>
+&lt;li>☑️ Test Attribution&lt;/li>
+&lt;li>☐ Push Up Social Auth (Staging + Client Builds + Firebase)&lt;/li>
+&lt;li>☐ App Usage Tracking Sync w/ Adam:
+&lt;ul>
+&lt;li>What are our goals exactly ← 2.3.4&lt;/li>
+&lt;li>How to what we provide summary&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>☑️ Send Adam Credentials.enc.yml changes for [lead-accar-auth]&lt;/li>
+&lt;li>☐ Onboarding Wizard v2 (Quick vs Big)&lt;/li>
+&lt;/ul>
+&lt;h3 id="version-234">Version 2.3.4&lt;/h3>
+&lt;ul>
+&lt;li>Filter Out Recently Played (90-days) ⭐&lt;/li>
+&lt;/ul>
+&lt;h3 id="userwise">UserWise&lt;/h3>
+&lt;ul>
+&lt;li>☐ Mongo 5 → 6&lt;/li>
+&lt;li>● Staging ☐ Production&lt;/li>
+&lt;li>☐ Pandemic Changes &amp;gt;_&amp;lt;&lt;/li>
+&lt;li>☐ workers during?&lt;/li>
+&lt;li>☐ Global Revise config&lt;/li>
+&lt;li>☐ Worker Job (time)&lt;/li>
+&lt;li>☐ Push Notifications (scheduled send)&lt;/li>
+&lt;/ul>
+&lt;p>[Diagram: Diamond shape containing &amp;ldquo;Push Out RTA Den Love Check RAS&amp;rdquo;]&lt;/p>
+&lt;h3 id="perpetual-call-notes">Perpetual Call Notes:&lt;/h3>
+&lt;ul>
+&lt;li>☑️ Q1/Q2 for LiveOps; UW then?&lt;/li>
+&lt;li>☑️ GCP??? Do we host for them?&lt;/li>
+&lt;li>☑️ How do we integrate UW ⟷ PT
+&lt;ul>
+&lt;li>UW would be a nice frontend&lt;/li>
+&lt;li>They would need custom features&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>☑️ Start SaaS → Self-Hosted (pre-live)&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>PubSub Realtime Flow&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>☑️ PubSub Realtime Flow&lt;/li>
+&lt;li>☐ They provide segments to us&lt;/li>
+&lt;/ul>
+&lt;p>[Box diagram labeled &amp;ldquo;AUG&amp;rdquo;]
+[Box diagram labeled &amp;ldquo;SCP&amp;rdquo;]&lt;/p>
+&lt;p>&lt;strong>Notes:&lt;/strong> The document contains several diagrams including a diamond shape with technical terms and rectangular boxes with abbreviations. There are various task lists with checkboxes, some completed and others pending. The handwriting shows sprint planning activities with technical implementation details and integration discussions.&lt;/p></content></item><item><title>Software Development Notes - Playful Rounds and Technical Features</title><link>https://jenkinsdev.us/handwritten-notes/software-development-notes---playful-rounds-and-technical-features/</link><pubDate>Mon, 02 Jun 2025 13:33:49 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/software-development-notes---playful-rounds-and-technical-features/</guid><description>Playful Rounds [unclear] of integration done v2.3.5 Social Admin tool v2.3.4 (App Usage Data Filtering) v2.3.5 (Onboarding Wizard v2) Important Note Box TikTok + FB + Apps Flag
+Keep link dark deferred Social Audit Implementation ongoing/onboard or batch or built 4 test toolkit Categories include:
+●Android ▲Google [unclear] ●[unclear] ●[unclear] ▲Skype [unclear] ●[unclear] ●iOS ▲Google ●[unclear] ●[unclear] ●SendGrid ▲Skype [unclear] ●Login ▲Login [unclear] UserWise Features Design to C/Post:
+Frontend Change Sync?</description><content>&lt;h3 id="playful-rounds">Playful Rounds&lt;/h3>
+&lt;ul>
+&lt;li>[unclear] of integration done&lt;/li>
+&lt;li>v2.3.5 Social Admin tool&lt;/li>
+&lt;li>v2.3.4 (App Usage Data Filtering)&lt;/li>
+&lt;li>v2.3.5 (Onboarding Wizard v2)&lt;/li>
+&lt;/ul>
+&lt;h3 id="important-note-box">Important Note Box&lt;/h3>
+&lt;p>&lt;strong>TikTok + FB + Apps Flag&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Keep link dark&lt;/li>
+&lt;li>deferred&lt;/li>
+&lt;/ul>
+&lt;h3 id="social-audit-implementation">Social Audit Implementation&lt;/h3>
+&lt;ul>
+&lt;li>ongoing/onboard or batch or built 4 test toolkit&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Categories include:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>●Android ▲Google [unclear] ●[unclear]&lt;/li>
+&lt;li>●[unclear] ▲Skype [unclear] ●[unclear]&lt;/li>
+&lt;li>●iOS&lt;/li>
+&lt;li>▲Google ●[unclear] ●[unclear]&lt;/li>
+&lt;li>●SendGrid ▲Skype [unclear]&lt;/li>
+&lt;li>●Login ▲Login [unclear]&lt;/li>
+&lt;/ul>
+&lt;h3 id="userwise-features">UserWise Features&lt;/h3>
+&lt;p>&lt;strong>Design to C/Post:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Frontend Change Sync?&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Workers during&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Global Remote Config&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Worker Job (TIME Management)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Push Notifications (Scheduled Send)&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Additional Features:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Upload segment Generate to use one ? time&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Query Optimizations&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Sentinel Step patching (Cloud)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Journey [unclear] Event Template&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Enable Stack&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> ARM&lt;/li>
+&lt;/ul>
+&lt;h3 id="scratch-rpi-focus">Scratch RPI Focus&lt;/h3>
+&lt;ul>
+&lt;li>Get Cloud ROAS&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Visibility &amp;amp; Observability for Business Analytics:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Spades! TAP changes to [unclear]&lt;/li>
+&lt;li>Up [unclear] Cloud ROAs&lt;/li>
+&lt;/ul>
+&lt;h3 id="cost-optimization">Cost Optimization&lt;/h3>
+&lt;ul>
+&lt;li>Get $200 by spending $175&lt;/li>
+&lt;/ul>
+&lt;h3 id="client-roles">Client Roles&lt;/h3>
+&lt;ul>
+&lt;li>Means pushing focus on TAPs&lt;/li>
+&lt;/ul>
+&lt;h3 id="big-updates-now">Big Updates Now&lt;/h3>
+&lt;ul>
+&lt;li>then Analytics Revamp&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;p>&lt;strong>Diagram Description:&lt;/strong> The image contains handwritten notes organized in sections with various technical items, checkboxes, and bullet points. There are some boxes drawn around important sections, particularly around the TikTok/FB note at the top right. The handwriting includes both printed and cursive styles, with some text crossed out or edited.&lt;/p></content></item><item><title>LED Strip Simulator &amp; App Playtime Tracking System Design</title><link>https://jenkinsdev.us/handwritten-notes/led-strip-simulator---app-playtime-tracking-system-design/</link><pubDate>Mon, 02 Jun 2025 13:33:43 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/led-strip-simulator---app-playtime-tracking-system-design/</guid><description>Architecture Overview [Diagram showing system flow]:
+Computer/Server → MQTT → Property PI → LED Strip (146 Strip) ↓ 5v External Power Hardware Specifications AllOZ: Speed Run components Dimensions: 10 x 12 grid configuration Power: External 5v power supply required Software Components EEPROM (LED Strip Simulator) Features: Zone Handwriting OIC → Upload Jobs Intervals: &amp;ldquo;daily&amp;rdquo; / &amp;ldquo;hourly&amp;rdquo; Package Name: [unclear] App Playtime Tracking System AppPlayTimeScheduleWorker AppPlayTimeTrackingWorker Scheduled Worker System [Diagram showing worker flow]:</description><content>&lt;h3 id="architecture-overview">Architecture Overview&lt;/h3>
+&lt;p>&lt;strong>[Diagram showing system flow]:&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>Computer/Server → MQTT → Property PI → LED Strip (146 Strip)
+↓
+5v External Power
+&lt;/code>&lt;/pre>&lt;h3 id="hardware-specifications">Hardware Specifications&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>AllOZ&lt;/strong>: Speed Run components&lt;/li>
+&lt;li>&lt;strong>Dimensions&lt;/strong>: 10 x 12 grid configuration&lt;/li>
+&lt;li>&lt;strong>Power&lt;/strong>: External 5v power supply required&lt;/li>
+&lt;/ul>
+&lt;h3 id="software-components">Software Components&lt;/h3>
+&lt;h4 id="eeprom-led-strip-simulator">EEPROM (LED Strip Simulator)&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>Features&lt;/strong>:
+&lt;ul>
+&lt;li>Zone Handwriting&lt;/li>
+&lt;li>OIC → Upload Jobs&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;strong>Intervals&lt;/strong>: &amp;ldquo;daily&amp;rdquo; / &amp;ldquo;hourly&amp;rdquo;&lt;/li>
+&lt;li>&lt;strong>Package Name&lt;/strong>: [unclear]&lt;/li>
+&lt;/ul>
+&lt;h4 id="app-playtime-tracking-system">App Playtime Tracking System&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>AppPlayTimeScheduleWorker&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>AppPlayTimeTrackingWorker&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h4 id="scheduled-worker-system">Scheduled Worker System&lt;/h4>
+&lt;p>&lt;strong>[Diagram showing worker flow]:&lt;/strong>&lt;/p>
+&lt;pre tabindex="0">&lt;code>Scheduled Worker (runs every hour)
+↓
+Pull tracking worker scheduling/config
+↓
+(if config interval changed)
+↓
+Cancel/Unqueue Work (&amp;#34;PR AppPlaytime Tracker&amp;#34;) + Enqueue/MagicWork
+&lt;/code>&lt;/pre>&lt;h4 id="shared-preferences--interval-management">Shared Preferences &amp;amp; Interval Management&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>Interval&lt;/strong>: Set → Package → Interval&lt;/li>
+&lt;li>&lt;strong>Config&lt;/strong>: If interval changed → get package name &amp;amp; interval&lt;/li>
+&lt;li>&lt;strong>Tracking Worker&lt;/strong>: Manages scheduling updates&lt;/li>
+&lt;/ul>
+&lt;h4 id="appplaytimetrackingworker-details">AppPlaytimeTrackingWorker Details&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>Frequency&lt;/strong>: Every X minutes (run @interval hourly)&lt;/li>
+&lt;li>&lt;strong>Query&lt;/strong>: &amp;ldquo;Only query for this every 8.1 day&amp;rdquo;&lt;/li>
+&lt;li>&lt;strong>Questions tracked&lt;/strong>:
+&lt;ul>
+&lt;li>Query → Has it been 1 hour?&lt;/li>
+&lt;li>If daily → Has it been 75 1 day?&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="implementation-notes">Implementation Notes&lt;/h3>
+&lt;ul>
+&lt;li>Take CPF then spread it out&lt;/li>
+&lt;li>Feeling good about current progress&lt;/li>
+&lt;li>Corn Rate with Ham Interface integration planned&lt;/li>
+&lt;/ul>
+&lt;h3 id="diagram-explanations">Diagram Explanations&lt;/h3>
+&lt;ol>
+&lt;li>&lt;strong>System Architecture&lt;/strong>: Shows the flow from computer/server through MQTT to the LED strip setup&lt;/li>
+&lt;li>&lt;strong>Worker Scheduling Flow&lt;/strong>: Illustrates how the background workers manage app playtime tracking and scheduling&lt;/li>
+&lt;li>&lt;strong>Hardware Layout&lt;/strong>: Shows the physical configuration of the LED strip array (10x12 grid)&lt;/li>
+&lt;/ol></content></item><item><title>Project Meeting Notes - Tuned Global and TikTok Integration</title><link>https://jenkinsdev.us/handwritten-notes/project-meeting-notes---tuned-global-and-tiktok-integration/</link><pubDate>Mon, 02 Jun 2025 13:33:34 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/project-meeting-notes---tuned-global-and-tiktok-integration/</guid><description>Call Notes: Tuned Global Apps to see? Search/Rec APIs Existing: Many object search (Rec contextual to store) Upcoming: Adobe shutting us off (traffic)
+Update package from [unclear] Maga AppLovin Rewarded Videos Ad
+System Architecture Diagram [Box diagram showing]:
+Wilson Scoring System → Elastic Scoring System Universal Music Group in Tuned Catalogue Music in Demo TikTok Integration TikTok in Store???
+3% margin to user 47% for us Pre-tagging Tuned Global for Cold Start [Diamond-shaped diagram showing]:</description><content>&lt;h3 id="call-notes">Call Notes:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>Tuned Global&lt;/strong>&lt;/li>
+&lt;li>Apps to see?&lt;/li>
+&lt;li>Search/Rec APIs&lt;/li>
+&lt;li>Existing: Many object search (Rec contextual to store)&lt;/li>
+&lt;li>Upcoming:&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Adobe shutting us off (traffic)&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Update package from [unclear] Maga&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>AppLovin Rewarded Videos Ad&lt;/strong>&lt;/p>
+&lt;h3 id="system-architecture-diagram">System Architecture Diagram&lt;/h3>
+&lt;p>[Box diagram showing]:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Wilson Scoring System&lt;/strong> → &lt;strong>Elastic Scoring System&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Universal Music Group in Tuned Catalogue&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Music in Demo&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h3 id="tiktok-integration">TikTok Integration&lt;/h3>
+&lt;p>&lt;strong>TikTok in Store???&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>3% margin to user&lt;/li>
+&lt;li>47% for us&lt;/li>
+&lt;/ul>
+&lt;h3 id="pre-tagging-tuned-global-for-cold-start">Pre-tagging Tuned Global for Cold Start&lt;/h3>
+&lt;p>[Diamond-shaped diagram showing]:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Playful Rewards (userwise)&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Playful Rhythm&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h3 id="technical-details">Technical Details&lt;/h3>
+&lt;ul>
+&lt;li>Per hour&lt;/li>
+&lt;li>All packages&lt;/li>
+&lt;li>Android only&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Phased Out Issues with guided install:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> UX optimizations + segment optimizations&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> PR Android app time (Ollue/tracking)&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Rhythm?&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>New stored → go update?&lt;/strong>
+&lt;strong>Storage&lt;/strong>
+&lt;strong>Parsing? [unclear]&amp;hellip;&lt;/strong>&lt;/p>
+&lt;h3 id="release">RELEASE&lt;/h3>
+&lt;p>&lt;strong>UW Updates&lt;/strong>
+&lt;strong>L7 Time Tracking&lt;/strong>
+→ &lt;strong>Segment (easy filtering?)&lt;/strong>
+→ &lt;strong>Updates&lt;/strong>
+→ &lt;strong>Rhythm&lt;/strong>&lt;/p>
+&lt;h3 id="diagrams-present">Diagrams Present:&lt;/h3>
+&lt;ol>
+&lt;li>A rectangular box diagram showing the Wilson/Elastic scoring system and Universal Music Group integration&lt;/li>
+&lt;li>A diamond-shaped flow diagram showing the Playful Rewards and Rhythm components&lt;/li>
+&lt;li>Various connecting arrows and flow indicators throughout the notes&lt;/li>
+&lt;/ol></content></item><item><title>Development Tasks and Roadmap - May 29, 2025</title><link>https://jenkinsdev.us/handwritten-notes/development-tasks-and-roadmap---may-29--2025/</link><pubDate>Thu, 29 May 2025 14:28:05 +0000</pubDate><guid>https://jenkinsdev.us/handwritten-notes/development-tasks-and-roadmap---may-29--2025/</guid><description>IntelliJ: RocketBook → Tabled RocketBook → Markdown → Obsidian
+General ToDo Remove david@lucense.io Lucky/Kiwi G&amp;amp;P Audit Screen Adobe/Playtime SDK upgrade to 3.1.0 : Playful Rewards Server ToDo Save new onboarding Kiwi Data Add promo code enabling Add 10% boost functionality Swap Remaining Keys Update AppLovin to support Kiwi Add New Kiwi Content Sections Cleave Section Horizontal Hotlink Section Level up Game Overview Client ToDo Update app-id to be Kiwi Update DoTs + Gender to match [unclear: Swah/Oth] Update last name autofill [Empty checkbox item] This appears to be a development roadmap with tasks divided into general, server-side, and client-side categories.</description><content>&lt;p>&lt;strong>IntelliJ:&lt;/strong>
+RocketBook → Tabled
+RocketBook → Markdown → Obsidian&lt;/p>
+&lt;h3 id="general-todo">General ToDo&lt;/h3>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Remove &lt;a href="mailto:david@lucense.io">david@lucense.io&lt;/a> Lucky/Kiwi G&amp;amp;P Audit Screen&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Adobe/Playtime SDK upgrade to 3.1.0 : Playful Rewards&lt;/li>
+&lt;/ul>
+&lt;h3 id="server-todo">Server ToDo&lt;/h3>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Save new onboarding Kiwi Data&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Add promo code enabling&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Add 10% boost functionality&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Swap Remaining Keys&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Update AppLovin to support Kiwi&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Add New Kiwi Content Sections
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Cleave Section Horizontal&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Hotlink Section&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Level up Game Overview&lt;/li>
+&lt;/ul>
+&lt;h3 id="client-todo">Client ToDo&lt;/h3>
+&lt;ul>
+&lt;li>&lt;input disabled="" type="checkbox"> Update app-id to be Kiwi&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Update DoTs + Gender to match [unclear: Swah/Oth]&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Update last name autofill&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> [Empty checkbox item]&lt;/li>
+&lt;/ul>
+&lt;p>This appears to be a development roadmap with tasks divided into general, server-side, and client-side categories. The note includes integration plans for various tools and platforms, particularly focusing on a &amp;ldquo;Kiwi&amp;rdquo; project with SDK upgrades and new content sections.&lt;/p></content></item><item><title>A better AI-powered Development Environment</title><link>https://jenkinsdev.us/posts/supermaven-and-nvim/</link><pubDate>Mon, 15 Jul 2024 00:00:00 +0000</pubDate><guid>https://jenkinsdev.us/posts/supermaven-and-nvim/</guid><description>So&amp;hellip; Why exactly? LLM-powered coding suggestions have been a hot topic since they were first introduced to the mainstream development industry with the launch of GitHub&amp;rsquo;s Copilot program. Some developers swear by their productivity gains (and some stats show it is helpful), while droves of other developers have found themselves turning off LLM-powered suggestions for a plethora of reasons: too distracting, too much reliability on the suggestions, less engaging work, and honestly much more.</description><content>&lt;h2 id="so-why-exactly">So&amp;hellip; Why exactly?&lt;/h2>
 &lt;p>LLM-powered coding suggestions have been a hot topic since they were &lt;a href="https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/">first introduced to the mainstream development industry with the launch of GitHub&amp;rsquo;s Copilot program&lt;/a>. Some developers swear by their productivity gains (and some stats show it is helpful), while droves of other developers have found themselves turning off LLM-powered suggestions for a plethora of reasons: too distracting, too much reliability on the suggestions, less engaging work, and honestly much more.&lt;/p>
 &lt;p>I don&amp;rsquo;t think anyone is wrong here. I think AI pair programming is likely going to become the future of an ideal development environment, but&amp;hellip; The way we currently deliver AI-powered suggestions just won&amp;rsquo;t cut it in the long-term IMO.&lt;/p>
 &lt;p>So, here is my rather basic premise: use a completion engine, wire up LSPs &amp;amp; your LLM of choice to that completion engine, and then manage suggestions through a singular interface.&lt;/p>
