@@ -28,7 +28,7 @@ Of course this power came from the decades of compounding knowledge and repetiti
 
 Maybe *THIS* was the moment where it felt like "magic" for the software field. It felt like AI was really learning software development, but most knew it was a facade. It was akin to doing a card trick for your friends: maybe you could throw them off with your sleight-of-hand, but you weren't performing "real magic". You were just playing an elaborate 'trick'.
 
-It could help you cut out tons of boilerplate, but it was far from a silver-bullet. It completely failed at new-new concepts:
+It could help you cut out tons of boilerplate, but it was far from a silver-bullet. It completely failed at net-new concepts:
 
 - **Need to develop something novel?** That's on you, *bud*. 
 - **Work in a newer, or fast evolving, language?** You may get a semblence of code, but I doubt it would work.
