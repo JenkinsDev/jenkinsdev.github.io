@@ -15,7 +15,7 @@ Most people understood AI would become a force-multiplier, but it was still more
 
 Overall, it inspired the sort of awe that [Akinator](https://akinator.com) did in the mid-2000's. Intruiging to play with, but generally not overly useful. Felt little like magic.
 
-### Things started to change... On second thought - no, not really.
+### Things started to change... On second thought - only a little.
 
 Then something happened around late-2023. Or was it mid-2024? Honestly, the exact timing evades me. But, a new service was thrust upon the software community. It sent shockwaves for months. Doomsayers said our time was over; software engineers were no longer needed and we should find a new job, and quick. Pollyannas thought they wielded a superpower. Stubborn individuals denied to even give it more than a quick glance before dismissal... It was the one and only: GitHub Copilot.
 
@@ -24,9 +24,7 @@ GitHub Copilot proved itself to be "sort of useful" in the end. No, not as a ful
 Of course this power came from the decades of compounding knowledge and repetitive code examples it was trained on. It excelled in spitting information back out that it was trained on:
 
 - **Needed to sort an array?** Name your method + a docblock and it'd generate an autocomplete for you.
-- **Wanted to implement the Fisher-Yates shuffle algorithm? Maybe A* path finding?** There are probably hundreds of thousands of examples within its training dataset. It's got you covered.
-
-#### Really, it was just a magic trick
+- **Wanted to implement the Fisher-Yates shuffle algorithm? Maybe a path finding algorithm?** There are probably hundreds of thousands of examples within its training dataset. Its got you covered.
 
 Maybe *THIS* was the moment where it felt like "magic" for the software field. It felt like AI was really learning software development, but most knew it was a facade. It was akin to doing a card trick for your friends: maybe you could throw them off with your sleight-of-hand, but you weren't performing "real magic". You were just playing an elaborate 'trick'.
 
