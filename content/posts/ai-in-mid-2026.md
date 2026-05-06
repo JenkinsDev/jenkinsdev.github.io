@@ -5,9 +5,7 @@ tags: [ai, coding-agents, ai-harnesses, moving-fast, development, leadership]
 description: Here's how I'm using generative AI to help propel my performace, while controlling quality of output. From software, graphic & UI/UX design, general workflows, tracking my knowledge, and everything in between.
 ---
 
-## Where it all started
-
-### Magic, but not really useful
+## Where it all started: Magic, but not really useful
 
 Let's rewind all the way back to 2022/2023 - a time when LLMs were introduced and 'AI' was relatively new to the general public.
 
@@ -15,7 +13,7 @@ Most people understood AI would become a force-multiplier, but it was still more
 
 Overall, it inspired the sort of awe that [Akinator](https://akinator.com) did in the mid-2000's. Intruiging to play with, but generally not overly useful. Felt little like magic.
 
-### Things started to change... On second thought - only a little.
+## Then things changed... Only a little
 
 Then something happened around late-2023. Or was it mid-2024? Honestly, the exact timing evades me. But, a new service was thrust upon the software community. It sent shockwaves for months. Doomsayers said our time was over; software engineers were no longer needed and we should find a new job, and quick. Pollyannas thought they wielded a superpower. Stubborn individuals denied to even give it more than a quick glance before dismissal... It was the one and only: GitHub Copilot.
 
@@ -36,7 +34,7 @@ It could help you cut out tons of boilerplate, but it was far from a silver-bull
 
 Hell, tools & IDEs like cursor were coming out of the woodwork. But these all were bandages for the symptom, not a fix for the root cause. Perhaps this was the correct move at the time, but it has slowly felt like a huge waste of human-hours. Though, I'd be amiss to ignore that best-practices were learned and folded into the products and AI models that came after.
 
-### Okay.. It really changed this time
+## Okay... It really changed this time
 
 In 2025 something really changed. It wasn't just model quality (which was proving to be on the rise), nor model efficiency (which was also getting better), and it also wasn't random symptom fixes like one-off tools that provided longer-term memory or guidance markdown files (they helped)... No, what really changed was the advent of Claude Code, and subsequently Codex. We got what soon became known as "Agent Harnesses".
 
