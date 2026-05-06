@@ -34,7 +34,7 @@ It could help you cut out tons of boilerplate, but it was far from a silver-bull
 - **Work in a newer, or fast evolving, language?** You may get a semblence of code, but I doubt it would work.
 - **Need to pull in context from other files?** Pft, that limited context window was your enemy.
 
-Hell, tools & IDEs like cursor were coming out of the woodwork. But these all were bandages for the symptom, not a fix for the root cause. Perhaps this was the correct move at the time, but it has slowly felt like a huage waste of human-hours. Though, I'd be amiss to ignore that best-practices were learned and folded into the products and AI models that came after.
+Hell, tools & IDEs like cursor were coming out of the woodwork. But these all were bandages for the symptom, not a fix for the root cause. Perhaps this was the correct move at the time, but it has slowly felt like a huge waste of human-hours. Though, I'd be amiss to ignore that best-practices were learned and folded into the products and AI models that came after.
 
 ### Okay.. It really changed this time
 
@@ -44,6 +44,6 @@ In 2025 something really changed. It wasn't just model quality (which was provin
 
 Agent harnesses changed a lot. You could probably call earlier tools like Cursor an agent harness, but this felt different. A CLI-based agent harness gave the power of the command line, not just your raw code &amp; the model.
 
-A harness could call on *tools*. These tools translate to system executable calls: `ls`, `cd`, `grep`, `cat`, `curl` (oh god), etc. The models felt more alive, could crawl AND evolve your codebase (or crash your computer, [delete your production database](https://x.com/lifeof_jer/status/2048103471019434248)) by stringing together learned skills and tools.
+A harness could call on *tools*. These tools translate to system executable calls: `ls`, `cd`, `grep`, `cat`, `curl` (oh god), etc. The models felt more alive, could crawl AND evolve your codebase. It could also crash your computer AND [delete your production database](https://x.com/lifeof_jer/status/2048103471019434248)) in one fell swoop.
 
 This was akin to the moment a layman gets a power tool - sure they can use it, but the real benefit is seen when a highly-skilled contractor uses it. It's democratizing and lower's the threshold for entry into software development, but it won't turn everyone into a software developer. It will, however, be an introduction for *many* new faces in spaces that software resides.
