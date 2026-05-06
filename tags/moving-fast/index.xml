@@ -13,7 +13,7 @@ Most people understood AI would become a force-multiplier, but it was still more
 &lt;li>&lt;strong>Wanted to implement the Fisher-Yates shuffle algorithm? Maybe a path finding algorithm?&lt;/strong> There are probably hundreds of thousands of examples within its training dataset. Its got you covered.&lt;/li>
 &lt;/ul>
 &lt;p>Maybe &lt;em>THIS&lt;/em> was the moment where it felt like &amp;ldquo;magic&amp;rdquo; for the software field. It felt like AI was really learning software development, but most knew it was a facade. It was akin to doing a card trick for your friends: maybe you could throw them off with your sleight-of-hand, but you weren&amp;rsquo;t performing &amp;ldquo;real magic&amp;rdquo;. You were just playing an elaborate &amp;rsquo;trick&amp;rsquo;.&lt;/p>
-&lt;p>It could help you cut out tons of boilerplate, but it was far from a silver-bullet. It completely failed at new-new concepts:&lt;/p>
+&lt;p>It could help you cut out tons of boilerplate, but it was far from a silver-bullet. It completely failed at net-new concepts:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>Need to develop something novel?&lt;/strong> That&amp;rsquo;s on you, &lt;em>bud&lt;/em>.&lt;/li>
 &lt;li>&lt;strong>Work in a newer, or fast evolving, language?&lt;/strong> You may get a semblence of code, but I doubt it would work.&lt;/li>
