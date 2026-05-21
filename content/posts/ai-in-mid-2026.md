@@ -1,5 +1,5 @@
 ---
-title: AI In Mid-2026 (Draft, In-Progress)
+title: AI In Mid-2026 (Incomplete Thoughts / Draft)
 date: 2026-05-04
 tags: [ai, coding-agents, ai-harnesses, moving-fast, development, leadership]
 description: Here's how I'm using generative AI to help propel my performace, while controlling quality of output. From software, graphic & UI/UX design, general workflows, tracking my knowledge, and everything in between.
