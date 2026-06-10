@@ -14,6 +14,11 @@
   --green-glow: #00FF4133;
   --dark: #0A0A0A;
   --darker: #050505;
+
+  /* Background grid overlay */
+  --grid-size: 44px;
+  --grid-line: rgba(0, 167, 225, 0.06);
+  --grid-node: rgba(0, 167, 225, 0.13);
 }
 
 @custom-media --phone (max-width: 684px);

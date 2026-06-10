@@ -94,22 +94,35 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  filter: grayscale(1.0) blur(2px);
+  /* Dim + desaturate the photo here so text contrast is safe no matter
+     which image loads. The grid no longer has to do the darkening. */
+  filter: grayscale(1) blur(3px) brightness(0.32) contrast(1.05);
+  /* Scale up slightly so the blur doesn't reveal soft edges. */
+  transform: scale(1.04);
 }
 
 .body-overlay {
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.85);
   height: 100%;
   width: 100%;
   z-index: 1;
 
-  background-image: 
-    linear-gradient(0deg, var(--darker) 50%, transparent 50%),
-    linear-gradient(90deg, var(--darker) 50%, transparent 50%);
-  background-size: 7px 7px;
+  /* Purely decorative now: a crisp, evenly-spaced grid with a faint node
+     centered in each cell, plus a soft vignette for depth. Because the photo
+     is already dimmed, the cells can be large and clean without hurting
+     readability. */
+  background-image:
+    radial-gradient(circle at center, var(--grid-node) 0 1px, transparent 1.5px),
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px),
+    radial-gradient(ellipse at center, rgba(5, 5, 5, 0.35) 0%, rgba(5, 5, 5, 0.78) 100%);
+  background-size:
+    var(--grid-size) var(--grid-size),
+    var(--grid-size) var(--grid-size),
+    var(--grid-size) var(--grid-size),
+    cover;
 }
 
 .body-wrapper { position: relative; z-index: 10; }
