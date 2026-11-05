@@ -71,6 +71,7 @@ body::after {
   text-decoration: none;
   cursor: pointer;
 }
+.fp-glyph { display: block; width: 24px; height: 24px; fill: currentColor; } /* 3px per pixel */
 @media (hover: hover) and (pointer: fine) { .fp-icon:hover { border-color: var(--cyan); color: var(--cyan); } }
 .fp-icon[aria-pressed="true"] { color: var(--dim); }
 

@@ -149,13 +149,22 @@
     wrong: () => tone(220, { duration: 0.45, type: "sawtooth", volume: 0.07, slideTo: 110 }),
   };
 
+  // Pixel icons as SVG (8×8 grids), so they sit dead centre whatever fonts the device has.
+  const ICONS = {
+    back: ["...##...", "..##....", ".##.....", "########", "########", ".##.....", "..##....", "...##..."],
+    sound: [".....#..", ".....##.", ".....#.#", ".....#..", ".....#..", "..####..", ".#####..", "..###..."],
+    off: ["##....##", ".##..##.", "..####..", "...##...", "...##...", "..####..", ".##..##.", "##....##"],
+  };
+  FP.icon = (name) => `<svg class="fp-glyph" viewBox="0 0 8 8" aria-hidden="true" shape-rendering="crispEdges">${ICONS[name]
+    .flatMap((row, y) => [...row].map((c, x) => (c === "#" ? `<rect x="${x}" y="${y}" width="1" height="1"/>` : ""))).join("")}</svg>`;
+
   /** Wire any button as the sound on/off toggle. The setting is saved for the whole arcade. */
   FP.muteButton = (btn) => {
     const sync = () => {
       const muted = S() ? S().muted : true;
       btn.setAttribute("aria-pressed", String(muted));
       btn.setAttribute("aria-label", muted ? "Sound off" : "Sound on");
-      btn.textContent = muted ? "×" : "♪";
+      btn.innerHTML = FP.icon(muted ? "off" : "sound");
     };
     btn.addEventListener("click", () => {
       if (!S()) return;
@@ -172,7 +181,7 @@
   FP.shell = ({ title, back = "../" }) => {
     const bar = document.createElement("header");
     bar.className = "fp-bar";
-    bar.innerHTML = `<a class="fp-icon" href="${back}" aria-label="Back to the arcade">←</a>
+    bar.innerHTML = `<a class="fp-icon" href="${back}" aria-label="Back to the arcade">${FP.icon("back")}</a>
       <span class="fp-bar-title"></span>
       <button class="fp-icon" type="button"></button>`;
     bar.querySelector(".fp-bar-title").textContent = title;
