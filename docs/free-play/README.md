@@ -12,7 +12,10 @@ The hub is a grid of game cards: each shows a pixel preview of the game, its nam
 | Quick Draw | 1P vs computer / 2P | live | `static/fun/quick-draw/` |
 | Air Puck | 1P vs computer / 2P | live | `static/fun/air-puck/` |
 | Stack It | Solo / 1P vs computer / 2P | live | `static/fun/stack-it/` |
-| TILT! | ? | locked teaser | n/a |
+| TILT! | 1P vs computer / 2P | live | `static/fun/tilt/` |
+| Window Post | 1P vs computer / 2P | live | `static/fun/window-post/` |
+| Borrowed Blocks | 1P vs computer / 2P | live | `static/fun/borrowed-blocks/` |
+| ? (next game) | ? | locked teaser | n/a |
 
 Each game's spec and as-built notes are in `features/free-play-games/notes/<slug>.md`.
 
@@ -37,6 +40,10 @@ Each game's spec and as-built notes are in `features/free-play-games/notes/<slug
   - 1P vs computer / 2P rounds: the first player builds until their pile falls, then the other builds a fresh pile and must beat that height (a dashed line in the first player's colour). Passing it wins the round at once; falling first loses it. Who starts alternates. A banner names whose turn it is, and the height box shows the builder's name in their colour. Best of 3, 5 or 7.
   - Fairness rules, found by simulating thousands of drops (`tests/free-play/stack-it.test.mjs`): nothing is perfectly round (tyres lie flat, melons and snowmen have flat bottoms, the snowman has a hat), weights stay within 3:1 (the physics engine squashes very light things under very heavy ones), objects fall straight down from the hook, and a hard object never follows a hard one.
   - The hub preview is a real pile built by the Hard computer, using the game's own physics and drawing.
+- **TILT!:** Take turns tilting a shared wooden maze. Both marked marbles roll together; get yours into its matching cup without helping the other player. Preview both stops, then press ROLL. 1P against four computer levels or 2P on one screen, three symmetric trays, 12 turns and no timer. The first player alternates each game.
+- **Window Post:** Take turns throwing parcels into eight apartment windows worth 1–3 points. Delivered windows close for both couriers. Set angle and power, account for the steady wind, then THROW. Eight total throws; highest score wins. 1P against Easy / Medium / Hard / Impossible, or 2P on one screen. Touch sliders and keyboard controls; rematches alternate who starts.
+- **Borrowed Blocks:** Pick a shape from a shared three-piece rack and fit it onto your board. Both 4×4 boards stay visible; each has two blocked cells. Rotate and preview before placing. Covered squares score one each, with six turns per player and no timer. 1P against Easy / Medium / Hard / Impossible, or 2P sharing the screen. Tap or drag to aim; arrows, R and Enter work on a keyboard. Pass only when nothing fits. Ties stand; rematches alternate starts.
+- These three were built in parallel by GPT-6.1 Sol agents (one folder each) from the shortlist in `features/free-play-games/notes/game-ideas.md`, then reviewed and integrated: as-built notes, simulations and tunes are in each game's notes file. Each has `rules.js` (DOM-free rules + computer), `render.js`, `game.js` and `preview.js` (registers its hub scene).
 
 ## Where things live
 
@@ -52,10 +59,11 @@ static/fun/                 ← published verbatim by Hugo at /fun/
   shared/engine.js          FP: layout, shell, screens, loop, input, saving, sounds, pixel emoji
   shared/controls.js        FP.controlCards(): the Controls section on setup screens (cards styled in crt.css)
   vendor/planck.min.js      Planck.js 1.4.3 (MIT, licence in the file header): 2D physics for Stack It
-  <game-slug>/              one folder per game
+  <game-slug>/              one folder per game (newer games: rules.js, render.js, game.js, preview.js)
 
 layouts/partials/           ← site overrides of the Hugo theme: the FREE PLAY header button (header.html + extended_head.html)
 tests/free-play/            ← Node tests for game logic: `node --test tests/free-play/`
+scripts/fun-version.mjs     ← stamps ?v=<time> on every local script/stylesheet link in static/fun; run before each deploy
 docs/free-play/             ← this documentation (not published)
 features/free-play-games/   ← plan, checklist, per-game specs, engine spec, design review
 features/hub-redesign/      ← hub plan and design history
@@ -209,3 +217,10 @@ Pushing to `main` deploys via `.github/workflows` (Hugo 0.121.2 → GitHub Pages
 - **Process:** one game at a time, spec → build → user review → live. GPT-6.1 has been used for design reviews and isolated changes.
 
 Full history: `features/hub-redesign/notes/design-history.md`.
+
+## Deploying
+
+1. `node --test tests/free-play/` (all pass).
+2. `node scripts/fun-version.mjs` — stamps `?v=<time>` on every local `.js`/`.css` link in `static/fun/**/*.html`. GitHub Pages lets browsers cache files for 10 minutes (phones often longer), so without this a deploy can look like it "didn't come through". `shared/sound.js` and `shared/music.js` pass their own `?v=` on to `music.js` and `tracks.js`.
+3. Commit and push to `main`; the GitHub Pages workflow builds Hugo and publishes in about a minute.
+

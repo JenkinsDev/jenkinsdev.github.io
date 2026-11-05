@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Throw paper parcels into open windows. Play against the computer or a friend.">
+<meta name="theme-color" content="#0b0a10"><title>Window Post · FREE PLAY</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23e7c08a' d='M2 4h12v9H2z'/%3E%3Cpath stroke='%23895744' d='M8 4v9M2 8h12'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=VT323&family=Silkscreen:wght@400;700&display=swap">
+<link rel="stylesheet" href="../shared/crt.css?v=202611052235"><link rel="stylesheet" href="game.css?v=202611052235">
+<script defer src="../shared/sound.js?v=202611052235"></script><script defer src="../shared/engine.js?v=202611052235"></script><script defer src="../shared/controls.js?v=202611052235"></script>
+<script defer src="rules.js?v=202611052235"></script><script defer src="render.js?v=202611052235"></script><script defer src="game.js?v=202611052235"></script>
+</head>
+<body><main class="wp">
+<section class="screen setup" data-screen="title">
+<h1 class="logo">WINDOW<br>POST</h1><p class="lede">Land a parcel in an open window.</p>
+<div class="option"><h2 class="option-label" id="players-label">Players</h2><div class="chips" id="modes" role="group" aria-labelledby="players-label"><button class="chip" data-mode="1p">1P</button><button class="chip" data-mode="2p">2P</button></div><p id="mode-rule"></p></div>
+<div class="option" id="level-option"><h2 class="option-label" id="level-label">Computer</h2><div class="chips" id="levels" role="group" aria-labelledby="level-label"></div></div>
+<p class="match-rule">Eight throws. Closed windows stay closed. Most points wins.</p>
+<div class="option controls"><h2 class="option-label">Controls</h2><div class="control-cards" id="control-cards"></div></div>
+<button class="fp-btn" id="play" data-autofocus>PLAY</button>
+</section>
+<section class="screen playing" data-screen="play" hidden>
+<div class="scoreboard"><div id="score-0" class="score"></div><div class="weather"><span id="wind"></span><span id="remaining"></span></div><div id="score-1" class="score"></div></div>
+<p id="banner" role="status" aria-live="polite"></p>
+<div class="stage"><canvas id="scene" width="240" height="180" aria-label="A brick building with eight numbered windows and two couriers"></canvas></div>
+<fieldset id="aim-panel"><legend id="aim-owner">Your parcel</legend><div class="sliders"><label for="angle">Angle <output id="angle-value">50°</output><input id="angle" type="range" min="20" max="80" value="50"></label><label for="power">Power <output id="power-value">60</output><input id="power" type="range" min="30" max="100" value="60"></label></div><button class="fp-btn" id="throw">THROW</button></fieldset>
+</section>
+<section class="screen over" data-screen="over" hidden><h2 id="result"></h2><p id="final-score"></p><p>Eight throws complete.</p><div class="actions"><button class="fp-btn" id="rematch" data-autofocus>REMATCH</button><button class="fp-btn secondary" id="setup">SETUP</button></div></section>
+</main></body></html>

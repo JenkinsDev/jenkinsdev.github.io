@@ -162,9 +162,10 @@
 
   // Load the tunes, then play this page's: the hub's theme at /fun/, each game's own at /fun/<slug>/.
   const here = document.currentScript && document.currentScript.src.replace(/[^/]*$/, "");
+  const version = ((document.currentScript && document.currentScript.src.match(/\?.*$/)) || [""])[0];
   if (here && window.location) {
     const el = document.createElement("script");
-    el.src = here + "tracks.js";
+    el.src = here + "tracks.js" + version; // same ?v= as this file, so a deploy refreshes it too
     el.onload = () => {
       const m = /\/fun\/([^/]+)\//.exec(location.pathname);
       const key = m && FunMusic.TRACKS[m[1]] ? m[1] : "hub";

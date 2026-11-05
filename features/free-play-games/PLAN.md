@@ -15,7 +15,10 @@ Fill the FREE PLAY arcade (`/fun/`) with original games that kids and adults bot
 | 2 | Quick Draw: wait for the !, tap first | 2P | not started |
 | 3 | Air Puck: air hockey, one player at each end | 2P | not started |
 | 4 | Stack It: stack ridiculous real objects | Solo / 1P vs computer / 2P | live |
-| 5 | TILT!: teaser; idea TBD (tilt maze, pinball…) | ? | idea |
+| 5 | TILT!: shared-marble maze | 1P vs computer / 2P | live |
+| 6 | Window Post: parcels into windows | 1P vs computer / 2P | live |
+| 7 | Borrowed Blocks: shared-rack packing | 1P vs computer / 2P | live |
+| 8 | Arcade Jenga (owner's idea) | ? | idea |
 
 The user chose Higher or Lower to go first.
 

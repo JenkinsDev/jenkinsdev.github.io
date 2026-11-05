@@ -58,5 +58,9 @@
 - [x] Quick Draw 1P: one full-width DRAW button (Sonnet 5.5)
 - [x] Top-bar icons are pixel SVGs (`FP.icon`), centred on phones
 - [x] Stack It built and live: Solo / 1P vs computer / 2P, Planck.js physics, fairness tuned by simulation, own tune, real hub preview
-- [ ] Sol: game idea shortlist in `notes/game-ideas.md` (in progress)
+- [x] Sol: game idea shortlist in `notes/game-ideas.md`; owner chose TILT!, Window Post, Borrowed Blocks
+- [x] Hub on phones: two compact cards per row; Quick Draw buildings capped on tall screens
+- [x] TILT!, Window Post, Borrowed Blocks built in parallel by Sol agents, reviewed (Window Post: sill points moved into the window glass; Borrowed Blocks: icon CSS leak fixed + polish pass), integrated: registry, hub scripts, tunes
+- [x] Cache-busting: `scripts/fun-version.mjs` before each deploy
+- [ ] Next: the owner's arcade Jenga idea (teaser "?" slot on the hub)
 
