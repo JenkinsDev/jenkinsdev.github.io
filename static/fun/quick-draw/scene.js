@@ -90,7 +90,7 @@
     px(0, horizon, W, 1, "#6b4228");
 
     // water tower behind the sheriff's office
-    const bhgt = Math.max(26, Math.round(horizon * 0.44));
+    const bhgt = Math.min(38, Math.max(26, Math.round(horizon * 0.44))); // capped: a tall phone screen gets more sky, not skyscrapers
     const tx = W - 32, ty = horizon - bhgt - 14;
     px(tx, ty + 9, 1, bhgt + 6, "#3a1d12"); px(tx + 11, ty + 9, 1, bhgt + 6, "#3a1d12"); px(tx, ty + 16, 12, 1, "#3a1d12");
     px(tx - 2, ty + 1, 16, 8, "#5a2f1c"); px(tx - 2, ty + 3, 16, 1, "#3a1d12"); px(tx - 2, ty + 6, 16, 1, "#3a1d12");

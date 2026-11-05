@@ -2,7 +2,7 @@
 
 Original browser games for kids and adults, served at **`jenkinsdev.us/fun/`** and played mostly on an iPad. There are no ads, accounts or tracking.
 
-The hub is a grid of game cards: each shows a pixel preview of the game, its name, 1P/2P tags, a one-line description, five stat bars and its own PLAY button (or "Coming soon"). Three columns on desktop, two on tablet, one row per game on phones. Every page of the main site links to it with a FREE PLAY button under the header.
+The hub is a grid of game cards: each shows a pixel preview of the game, its name, 1P/2P tags, a one-line description, five stat bars and its own PLAY button (or "Coming soon"). Three columns on desktop, two on tablet. Phones also get two columns of compact cards (preview, name, tags, description, PLAY); the stat bars and Replay button are left out there because they are too small at half a phone's width. Every page of the main site links to it with a FREE PLAY button under the header.
 
 ## Games
 
