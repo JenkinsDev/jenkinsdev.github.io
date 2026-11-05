@@ -1,0 +1,179 @@
+/*
+ * FREE PLAY shared look. The hub and every game link this first.
+ * It provides the colour/font tokens, the page base, and the CRT *effect*
+ * (scanlines, vignette, glow) over the whole viewport. There is no monitor frame.
+ */
+:root {
+  --room: #0b0a10;
+  --screen: #0d1226;
+  --ink: #120a20;
+  --text: #e8f6ff;
+  --soft: #b9c6d8;
+  --muted: #96a5bb; /* secondary text people still need to read */
+  --dim: #5d6678; /* only for unavailable controls */
+  --line: #2a3150;
+  --pink: #ff3da0;
+  --cyan: #00e5ff;
+  --sun: #ffd23f;
+  --green: #37e27d;
+  --red: #ff3d3d;
+  --orange: #ff7a1a;
+  --font-title: "Bungee Inline", "Bungee", "Arial Black", sans-serif;
+  --font-sign: "Bungee", "Arial Black", sans-serif;
+  --font-screen: "VT323", ui-monospace, monospace;
+  --font-pixel: "Silkscreen", ui-monospace, monospace;
+  --tap: 48px;
+}
+
+* { box-sizing: border-box; }
+html {
+  min-height: 100%;
+  background: radial-gradient(ellipse 90% 70% at 50% 40%, #141b3c 0%, var(--screen) 45%, var(--room) 100%) fixed, var(--room);
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  color: var(--text);
+  font: 1.25rem/1.2 var(--font-screen);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* The CRT effect: fixed over everything, never blocks input. */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0 1px, transparent 1px 3px),
+    radial-gradient(ellipse at 50% 50%, transparent 65%, rgba(0, 0, 0, 0.25) 100%);
+}
+
+/* Glowing pixel text helpers */
+.glow-pink { color: var(--pink); text-shadow: 2px 2px 0 rgba(0, 229, 255, 0.6); }
+.glow { text-shadow: 0 0 8px currentColor; }
+
+/* Round icon button (mute, back) */
+.fp-icon {
+  display: inline-grid;
+  place-items: center;
+  width: var(--tap);
+  height: var(--tap);
+  padding: 0;
+  border: 2px solid var(--line);
+  border-radius: 50%;
+  background: rgba(5, 6, 12, 0.7);
+  color: var(--soft);
+  font: 1.4rem/1 var(--font-screen);
+  text-decoration: none;
+  cursor: pointer;
+}
+@media (hover: hover) and (pointer: fine) { .fp-icon:hover { border-color: var(--cyan); color: var(--cyan); } }
+.fp-icon[aria-pressed="true"] { color: var(--dim); }
+
+/* Big arcade button */
+.fp-btn {
+  display: inline-grid;
+  place-items: center;
+  min-height: 52px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 4px;
+  font: 700 0.95rem var(--font-pixel);
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--accent, var(--sun));
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.fp-btn { transition: transform 0.12s ease, box-shadow 0.12s ease, filter 0.12s ease; }
+@media (hover: hover) and (pointer: fine) {
+  .fp-btn:not(:disabled):not([aria-disabled="true"]):hover { transform: translateY(-1px); filter: brightness(1.06); box-shadow: 0 5px 0 rgba(0, 0, 0, 0.5); }
+}
+.fp-btn:not(:disabled):not([aria-disabled="true"]):active { transform: translateY(2px); filter: brightness(0.96); box-shadow: 0 2px 0 rgba(0, 0, 0, 0.5); transition-duration: 40ms; }
+.fp-btn:is(:disabled, [aria-disabled="true"]) { background: #232036; color: var(--dim); box-shadow: none; cursor: default; transform: none; filter: none; }
+.fp-btn.secondary { background: transparent; color: var(--soft); border: 2px solid var(--line); box-shadow: none; }
+@media (hover: hover) and (pointer: fine) {
+  .fp-btn.secondary:not(:disabled):not([aria-disabled="true"]):hover { border-color: var(--soft); box-shadow: none; }
+}
+.fp-btn.secondary:active { box-shadow: none; }
+
+/* Setup options: a small label over a row of chips (one is chosen: aria-pressed="true") */
+.option-label { margin: 0; font: 700 0.75rem var(--font-pixel); letter-spacing: 0.1em; color: var(--muted); text-transform: uppercase; }
+.chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.chip {
+  min-height: 48px;
+  padding: 6px 14px;
+  border: 2px solid var(--line);
+  border-radius: 4px;
+  background: rgba(5, 6, 12, 0.6);
+  color: var(--soft);
+  font: 1.2rem/1.1 var(--font-screen);
+  cursor: pointer;
+  transition: border-color 0.12s ease, color 0.12s ease, background-color 0.12s ease;
+}
+.chip small { display: block; color: var(--muted); font-size: 0.95rem; }
+@media (hover: hover) and (pointer: fine) { .chip:hover { border-color: #4a5580; color: #fff; } }
+.chip[aria-pressed="true"] { border-color: var(--accent, var(--sun)); color: #fff; background: color-mix(in srgb, var(--accent, var(--sun)), #05060c 85%); }
+
+button, a { touch-action: manipulation; }
+:focus-visible { outline: 2px dashed var(--cyan); outline-offset: 4px; }
+
+/* Standard top bar from FP.shell(): ← Arcade · game name · sound */
+.fp-bar {
+  display: grid;
+  grid-template-columns: var(--tap) 1fr var(--tap);
+  align-items: center;
+  gap: 12px;
+  padding: max(10px, env(safe-area-inset-top)) 14px 10px;
+}
+.fp-bar-title { text-align: center; font: 400 1.1rem/1 var(--font-sign); color: var(--soft); letter-spacing: 0.04em; }
+
+/* Pixel art from FP.pixel.emoji(): size it with CSS width */
+.fp-pixel { display: block; image-rendering: pixelated; image-rendering: crisp-edges; }
+
+/* Controls section on setup screens, from FP.controlCards() (shared/controls.js): one card per player, keys as key caps */
+.control-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); gap: 12px; max-width: 560px; width: 100%; margin: 0 auto; }
+.control-card {
+  --p: #ff3d3d;
+  display: grid;
+  gap: 8px;
+  justify-items: center;
+  padding: 12px 10px;
+  border: 2px solid var(--line);
+  border-top: 3px solid var(--p);
+  border-radius: 4px;
+  background: rgba(5, 6, 12, 0.6);
+}
+.control-card.p1 { --p: #2c7bff; }
+.control-cards.single { max-width: 300px; }
+html[data-layout="phone"] .control-card .keys { display: none; } /* no keyboard on phones */
+.control-who { font: 400 1rem/1 var(--font-sign); color: var(--p); letter-spacing: 0.04em; }
+.control-how { margin: 0; font-size: 1.15rem; color: var(--soft); }
+.keys { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px; }
+.keys kbd {
+  display: inline-grid;
+  place-items: center;
+  min-width: 30px;
+  height: 30px;
+  padding: 0 6px;
+  border: 2px solid #3a4468;
+  border-bottom-width: 4px;
+  border-radius: 4px;
+  background: #11162a;
+  font: 700 0.75rem var(--font-pixel);
+  color: var(--text);
+}
+.keys .or { align-self: center; padding: 0 4px; color: var(--muted); font-size: 1.05rem; }
+
+@keyframes fp-blink { 50% { opacity: 0; } }
+.blink { animation: fp-blink 1.1s steps(1) infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}
