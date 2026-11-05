@@ -25,9 +25,9 @@ window.FP_GAMES = [
     hook: "Air hockey on one screen.",
   },
   {
-    slug: "stack-it", name: "Stack It", live: false, players: 1,
+    slug: "stack-it", name: "Stack It", live: true, players: [1, 2],
     scene: "stack", color: "#ff3da0", stats: [2, 2, 4, 3, 5],
-    hook: "Stack odd objects as high as you can before the pile falls.",
+    hook: "Drop things from a crane and stack them as high as you can.",
   },
   {
     slug: "tilt", name: "TILT!", live: false, players: 1, teaser: true,

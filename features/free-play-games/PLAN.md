@@ -14,7 +14,7 @@ Fill the FREE PLAY arcade (`/fun/`) with original games that kids and adults bot
 | 1 | Higher or Lower: real-fact comparisons, streaks, rankings | 1P | spec drafted |
 | 2 | Quick Draw: wait for the !, tap first | 2P | not started |
 | 3 | Air Puck: air hockey, one player at each end | 2P | not started |
-| 4 | Stack It: stack ridiculous real objects | 1P | not started |
+| 4 | Stack It: stack ridiculous real objects | Solo / 1P vs computer / 2P | live |
 | 5 | TILT!: teaser; idea TBD (tilt maze, pinball…) | ? | idea |
 
 The user chose Higher or Lower to go first.

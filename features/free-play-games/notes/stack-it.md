@@ -33,3 +33,9 @@ No wind, no special power-ups, no rotating the object before dropping (maybe lat
 ## Open technical decision
 Stacking needs solid rigid-body physics (rotation, friction, resting contact without jitter). Either vendor a small
 proven engine (Planck.js, a Box2D port, MIT) into `static/fun/vendor/`, or write our own in `stack-it/physics.js`.
+
+## As built (2026-11-05)
+- Files: `objects.js` (catalogue + art), `physics.js` (window.SK: world, crane, settle, falls, height, computer), `render.js` (window.SKRender), `game.js`, tests in `tests/free-play/stack-it.test.mjs`.
+- **Rounds changed after user feedback** ("2P is confusing, and it doesn't say whose turn it is"): instead of alternating drops on one pile, each player builds their own pile; the second must beat the first's height. Turn banner + builder's name in the height box + target line.
+- **Fairness changes after user feedback** ("not sure round items are fair") and simulation: round objects got flat sides; weights capped at 3:1 (a fridge 0.1 m off-centre on a toaster used to topple because the toaster was 12× lighter); objects drop straight down (no sideways carry) from 0.6 m above the pile. Simulated averages: Easy ≈ 3.4 things, Medium ≈ 5, Hard ≈ 7, Impossible ≈ 10.
+- Pixel art is painted from the physics outlines at the current scale (one art pixel ≈ 3 CSS pixels) with a 1-pixel dark outline; rotated objects stay chunky.

@@ -82,4 +82,22 @@
     },
     order: ["A", "A", "B", "A"],
   };
+
+  // Stack It: a bouncy, careful little tune, G major.
+  T["stack-it"] = {
+    bpm: 128,
+    parts: {
+      A: {
+        lead: "G4:2 B4:2 D5:2 G5:2 F#5:2 D5:2 B4:4  C5:2 E5:2 G5:2 E5:2 D5:4 R:4  G4:2 B4:2 D5:2 G5:2 A5:2 G5:2 E5:4  D5:2 C5:2 B4:2 A4:2 G4:8",
+        bass: [pump("G2", "D3"), pump("C3", "G2"), pump("E2", "B2"), pump("D3", "A2")].join(" "),
+        drums: rep("k:2 h:2 s:2 h:2 k:2 h:2 s:2 h:2"),
+      },
+      B: {
+        lead: "E5:4 D5:2 C5:2 B4:4 G4:4  A4:2 B4:2 C5:2 D5:2 E5:8  F#5:4 E5:2 D5:2 C5:4 A4:4  B4:2 D5:2 F#5:2 A5:2 G5:8",
+        bass: [pump("C3", "G2"), pump("A2", "E3"), pump("D3", "A2"), pump("G2", "D3")].join(" "),
+        drums: rep("k:2 h:2 s:2 h:2 k:2 h:2 s:2 h:2"),
+      },
+    },
+    order: ["A", "A", "B", "A"],
+  };
 })();

@@ -11,7 +11,7 @@ The hub is a grid of game cards: each shows a pixel preview of the game, its nam
 | Higher or Lower | 1P | live | `static/fun/higher-or-lower/` |
 | Quick Draw | 1P vs computer / 2P | live | `static/fun/quick-draw/` |
 | Air Puck | 1P vs computer / 2P | live | `static/fun/air-puck/` |
-| Stack It | 1P | idea | n/a |
+| Stack It | Solo / 1P vs computer / 2P | live | `static/fun/stack-it/` |
 | TILT! | ? | locked teaser | n/a |
 
 Each game's spec and as-built notes are in `features/free-play-games/notes/<slug>.md`.
@@ -23,6 +23,7 @@ Each game's spec and as-built notes are in `features/free-play-games/notes/<slug
 - **Quick Draw:**
   - A reaction duel in a pixel-art western town at sunset. Wait for the **!**, then hit DRAW. Drawing early loses the round.
   - 1P vs the computer (Easy / Medium / Hard / Impossible) or 2P with a DRAW button each (keys A and L).
+  - In 1P there is a single full-width DRAW button (the computer has no pad), which is easy to hit on a phone. 2P keeps two pads.
   - Best of 3, 5 or 7. Fastest draw saved.
 - **Air Puck:**
   - Air hockey on a neon rink with rounded corners. Drag your mallet with a finger or the mouse, or use the keys (WASD for P1, arrows for P2).
@@ -30,6 +31,12 @@ Each game's spec and as-built notes are in `features/free-play-games/notes/<slug
   - 1P vs the computer (the four levels) or 2P with multi-touch. First to 3, 5 or 7.
   - The setup screen has a separate **Controls** section: one card per player showing how to move on this device (drag / mouse, plus the keys as key caps), next to a saved **Keyboard sensitivity** slider (1–10, in 1P and 2P, hidden on phones). 5 = normal, 1 about half speed, 10 about 1.6×.
   - Hit and wall sounds are limited to one per frame with a short cooldown, because a mallet pressing on the puck reports many hits in a row.
+- **Stack It:**
+  - A crane swings an object over a stone plinth; tap (or Space / Enter) to drop it straight down. 18 real things (fridge, piano, cat, snowman in a top hat…) as pixel art, with real physics from Planck.js (`static/fun/vendor/planck.min.js`, MIT, Box2D port).
+  - Solo: stack until something hits the ground; the height is the score (feet, with metres underneath), best saved, shown as a dashed gold line.
+  - 1P vs computer / 2P rounds: the first player builds until their pile falls, then the other builds a fresh pile and must beat that height (a dashed line in the first player's colour). Passing it wins the round at once; falling first loses it. Who starts alternates. A banner names whose turn it is, and the height box shows the builder's name in their colour. Best of 3, 5 or 7.
+  - Fairness rules, found by simulating thousands of drops (`tests/free-play/stack-it.test.mjs`): nothing is perfectly round (tyres lie flat, melons and snowmen have flat bottoms, the snowman has a hat), weights stay within 3:1 (the physics engine squashes very light things under very heavy ones), objects fall straight down from the hook, and a hard object never follows a hard one.
+  - The hub preview is a real pile built by the Hard computer, using the game's own physics and drawing.
 
 ## Where things live
 
@@ -41,9 +48,10 @@ static/fun/                 ← published verbatim by Hugo at /fun/
   shared/crt.css            tokens, fonts, page base, CRT effect, buttons, chips, top bar (link it first)
   shared/sound.js           FunSound: tiny WebAudio helper (also loads music.js on every page)
   shared/music.js           FunMusic: chiptune player (pulse lead, triangle bass, noise drums); plays the page's tune
-  shared/tracks.js          the tunes: hub, higher-or-lower, quick-draw, air-puck (original compositions)
+  shared/tracks.js          the tunes: hub, higher-or-lower, quick-draw, air-puck, stack-it (original compositions)
   shared/engine.js          FP: layout, shell, screens, loop, input, saving, sounds, pixel emoji
   shared/controls.js        FP.controlCards(): the Controls section on setup screens (cards styled in crt.css)
+  vendor/planck.min.js      Planck.js 1.4.3 (MIT, licence in the file header): 2D physics for Stack It
   <game-slug>/              one folder per game
 
 layouts/partials/           ← site overrides of the Hugo theme: the FREE PLAY header button (header.html + extended_head.html)
@@ -106,7 +114,7 @@ Spec and reasoning: `features/free-play-games/notes/engine.md`. A helper only mo
 
 ### Game contract
 
-- **Standalone page.** Plain HTML, CSS and JS with no build step and no frameworks. Load `../shared/crt.css`, `../shared/sound.js`, `../shared/engine.js` (and `../shared/controls.js` for the setup Controls section) first, and use `FunSound` / `FP.sfx` rather than your own `AudioContext`.
+- **Standalone page.** Plain HTML, CSS and JS with no build step and no frameworks (a vendored library in `vendor/` only when a game clearly needs it, like physics for Stack It). Load `../shared/crt.css`, `../shared/sound.js`, `../shared/engine.js` (and `../shared/controls.js` for the setup Controls section) first, and use `FunSound` / `FP.sfx` rather than your own `AudioContext`.
 - **Way back:** use `FP.shell()` for the top bar.
 - **Phone, tablet and desktop.** Every game designs all three layouts and works in both tablet orientations. Touch targets ≥ 44px.
 - **Real buttons for actions.** Quick Draw uses a DRAW button per player, not "tap anywhere".

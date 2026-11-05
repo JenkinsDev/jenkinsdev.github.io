@@ -55,3 +55,8 @@
 - [x] Music starts immediately where the browser reports sound is allowed (getAutoplayPolicy); otherwise on the first tap or key
 - [ ] User listens to the music on a real device and tells me what to change (tempo, loudness, a separate music toggle?)
 - [ ] GPT-6.1 Sol: preview concepts + build them into the hub (running). Review when done
+- [x] Quick Draw 1P: one full-width DRAW button (Sonnet 5.5)
+- [x] Top-bar icons are pixel SVGs (`FP.icon`), centred on phones
+- [x] Stack It built and live: Solo / 1P vs computer / 2P, Planck.js physics, fairness tuned by simulation, own tune, real hub preview
+- [ ] Sol: game idea shortlist in `notes/game-ideas.md` (in progress)
+

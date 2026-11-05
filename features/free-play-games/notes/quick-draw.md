@@ -20,7 +20,8 @@ Two cowboys face off in a pixel-art western town at sunset. Each round: "Get rea
 - Mode, level and rounds are saved. The fastest human draw on the device is saved too.
 
 ## Controls
-- A big **DRAW** button per player under the scene: P1 red on the left, P2 blue on the right. In 1P, the right button is a disabled "COMPUTER · LEVEL" plate.
+- 2P: a big **DRAW** button per player under the scene, P1 red on the left, P2 blue on the right.
+- 1P: one full-width red DRAW button. The computer's pad (`#pad-1`) is hidden and `.controls` gets the `solo` class (set in `startMatch()`); the round result shows in the status text and score.
 - **Keys:** 2P uses A (P1) and L (P2); 1P uses Space, Enter or A.
 - Buttons react on `pointerdown`, not click.
 - A press's timestamp is when the finger landed. If that's before the signal, it's a foul even if the event is handled just after (`judge()` in duel.js).
