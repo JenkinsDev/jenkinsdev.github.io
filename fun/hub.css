@@ -41,24 +41,29 @@ main { width: 100%; max-width: 1280px; margin: 0 auto; padding: 28px clamp(16px,
   .list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 
-/* Phone cards keep the actual game scenes wide enough to read. */
+/* Phones: two compact cards per row (live scene, name, tags, one line, PLAY). The stat bars and the replay
+   button are left out here: at half a phone's width they're too small to read or hit, and scenes restart
+   whenever they scroll back into view. */
 @media (max-width: 759px) {
   .top { padding-top: 20px; }
-  main { padding-top: 20px; }
-  .list { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  main { padding: 18px 12px 0; }
+  .list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
   .row {
-    grid-template-columns: minmax(104px, 38%) 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "thumb info" "stats stats" "go go";
-    gap: 10px 12px;
-    padding: 10px;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "thumb" "info" "go";
+    gap: 8px;
+    padding: 8px;
     border: 2px solid var(--line);
-    border-left: 4px solid var(--accent);
+    border-top: 3px solid var(--accent);
   }
-  .row.live { border-color: var(--line); border-left-color: var(--accent); }
-  .row-name { font-size: 1.25rem; line-height: 1.05; }
-  .row-players { display: block; margin: 4px 0 0; font-size: 1.05rem; }
-  .row-hook { margin: 4px 0 0; font-size: 1.1rem; }
+  .row.live { border-color: var(--line); border-top-color: var(--accent); }
+  .row .stats, .row .preview-replay { display: none; }
+  .row-name { font-size: 1.05rem; line-height: 1.05; }
+  .row-players { margin: 6px 0 0; }
+  .row-hook { margin: 6px 0 0; font-size: 1.02rem; line-height: 1.1; color: var(--soft); }
+  .row .fp-btn { min-height: 44px; padding-inline: 8px; }
+  .row-soon { min-height: 44px; font-size: 1rem; }
 }
 footer { padding: 28px 16px 24px; text-align: center; }
 .credit { display: inline-block; min-height: 44px; padding: 14px 10px; font: 0.95rem var(--font-screen); letter-spacing: 0.08em; color: #4d4a5c; text-decoration: none; }
@@ -76,7 +81,4 @@ footer { padding: 28px 16px 24px; text-align: center; }
 .preview-replay:focus-visible { outline: 2px solid var(--accent); outline-offset: -3px; }
 .preview:focus-within { box-shadow: 0 0 0 1px var(--accent); }
 @media (hover: hover) { .live:hover .preview { box-shadow: 0 0 0 1px var(--accent); } }
-@media (max-width: 759px) {
-  .row { grid-template-columns: minmax(0, 1fr); grid-template-areas: "thumb" "info" "stats" "go"; grid-template-rows: auto auto auto auto; }
-}
 @media (prefers-reduced-motion: reduce) { .preview-replay { display: none; } }
