@@ -92,6 +92,7 @@ Hugo copies everything in `static/` to the site root, so `static/fun/index.html`
 | `FP.sfx` | Shared sounds: move, start, nope, tick, right, wrong |
 | `FP.muteButton(btn)` | Wire any button as the arcade-wide sound toggle (saved as `arcade:muted`) |
 | `FP.pixel.emoji(char, size)` | Emoji drawn into a tiny canvas, shown as crisp pixel art |
+| `FP.icon(name)` | Pixel icon as an inline SVG (`back`, `sound`, `off`); use these instead of text glyphs like ← or ♪, which phones draw off-centre with fallback fonts |
 
 Spec and reasoning: `features/free-play-games/notes/engine.md`. A helper only moves into the engine once two games need it.
 
