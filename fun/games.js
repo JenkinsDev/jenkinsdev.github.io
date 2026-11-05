@@ -30,7 +30,22 @@ window.FP_GAMES = [
     hook: "Drop things from a crane and stack them as high as you can.",
   },
   {
-    slug: "tilt", name: "TILT!", live: false, players: 1, teaser: true,
+    slug: "tilt", name: "TILT!", live: true, players: [1, 2],
+    scene: "tilt", color: "#dfb57a", stats: [5, 1, 3, 0, 2],
+    hook: "Roll your marble into its cup. Both marbles move.",
+  },
+  {
+    slug: "window-post", name: "Window Post", live: true, players: [1, 2],
+    scene: "window-post", color: "#4fd18b", stats: [3, 1, 4, 1, 3],
+    hook: "Throw parcels into open windows. A window you hit closes.",
+  },
+  {
+    slug: "borrowed-blocks", name: "Borrowed Blocks", live: true, players: [1, 2],
+    scene: "borrowed-blocks", color: "#9b7bff", stats: [5, 0, 3, 2, 1],
+    hook: "Pick from a shared rack and fit more squares on your board.",
+  },
+  {
+    slug: "soon", name: "Next game", live: false, players: 1, teaser: true,
     scene: "soon", color: "#8a7fa8", stats: [0, 0, 0, 0, 0],
     hook: "Not built yet.",
   },

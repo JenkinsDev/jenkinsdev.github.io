@@ -100,4 +100,58 @@
     },
     order: ["A", "A", "B", "A"],
   };
+
+  // TILT!: a rolling, thoughtful tune, D major.
+  T["tilt"] = {
+    bpm: 112,
+    parts: {
+      A: {
+        lead: "D5:3 F#5:1 A5:2 F#5:2 E5:4 D5:4  B4:2 D5:2 F#5:4 E5:2 D5:2 A4:4  G4:3 B4:1 D5:2 G5:2 F#5:4 E5:4  A4:2 C#5:2 E5:2 G5:2 F#5:4 D5:4",
+        bass: [pump("D3", "A2"), pump("B2", "F#3"), pump("G2", "D3"), pump("A2", "E3")].join(" "),
+        drums: rep("k:4 h:2 h:2 s:4 h:2 R:2"),
+      },
+      B: {
+        lead: "F#5:2 E5:2 D5:4 A4:3 B4:1 D5:4  G5:2 F#5:2 E5:4 C#5:4 A4:4  B4:2 D5:2 G5:3 F#5:1 E5:4 D5:4  C#5:2 E5:2 A5:4 F#5:2 E5:2 D5:4",
+        bass: [pump("B2", "F#3"), pump("A2", "E3"), pump("G2", "D3"), pump("D3", "A2")].join(" "),
+        drums: rep("k:4 h:2 R:2 s:4 h:2 h:2"),
+      },
+    },
+    order: ["A", "B", "A", "B"],
+  };
+
+  // Window Post: a breezy street tune, D major.
+  T["window-post"] = {
+    bpm: 112,
+    parts: {
+      A: {
+        lead: "D5:3 F#5:1 A5:2 R:2 B5:2 A5:2 F#5:4 E5:2 F#5:2 G5:4 A5:2 F#5:2 E5:4 D5:2 A4:2 D5:2 F#5:2 E5:4 B4:4 C#5:2 E5:2 A5:4 G5:2 E5:2 D5:4",
+        bass: "D3:4 A2:4 D3:4 A2:4 G2:4 D3:4 G2:4 A2:4 B2:4 F#3:4 B2:4 G2:4 A2:4 E3:4 A2:4 D3:4",
+        drums: "k:2 h:2 R:2 h:2 s:2 h:2 R:2 h:2 k:2 h:2 R:2 h:2 s:2 h:2 k:2 h:2 k:2 h:2 R:2 h:2 s:2 h:2 R:2 h:2 k:2 h:2 k:2 h:2 s:2 h:2 R:2 h:2"
+      },
+      B: {
+        lead: "B5:2 A5:2 F#5:4 D5:3 E5:1 F#5:4 G5:2 B5:2 A5:2 G5:2 F#5:4 E5:4 F#5:2 A5:2 D6:4 C#6:2 A5:2 F#5:4 E5:2 G5:2 F#5:2 E5:2 D5:6 R:2",
+        bass: "B2:4 F#3:4 B2:4 F#3:4 G2:4 D3:4 A2:4 E3:4 D3:4 A2:4 B2:4 F#3:4 G2:4 A2:4 D3:6 R:2",
+        drums: "k:2 h:2 R:2 h:2 s:2 h:2 k:2 h:2 k:2 h:2 R:2 h:2 s:2 h:2 R:2 h:2 k:2 h:2 R:2 h:2 s:2 h:2 k:2 h:2 k:2 h:2 R:2 h:2 s:2 h:2 R:4"
+      }
+    },
+    order: ["A", "B", "A", "B"]
+  };
+
+  // Borrowed Blocks: a steady puzzle tune, D minor.
+  T["borrowed-blocks"] = {
+    bpm: 112,
+    parts: {
+      A: {
+        lead: "D5:2 F5:2 A5:4 F5:2 E5:2 D5:4  C5:2 E5:2 G5:4 E5:4 R:4  Bb4:2 D5:2 F5:2 A5:2 G5:4 F5:4  E5:2 D5:2 C#5:4 D5:4 R:4",
+        bass: [pump("D3", "A2"), pump("C3", "G2"), pump("Bb2", "F3"), pump("A2", "E3")].join(" "),
+        drums: rep("k:2 h:2 s:2 R:2 k:2 h:2 s:2 h:2"),
+      },
+      B: {
+        lead: "A5:2 F5:2 D5:4 E5:2 F5:2 A5:4  G5:2 E5:2 C5:4 D5:4 E5:4  F5:2 D5:2 Bb4:4 D5:2 F5:2 G5:4  E5:2 C#5:2 A4:4 D5:4 R:4",
+        bass: [pump("D3", "A2"), pump("C3", "G2"), pump("Bb2", "F3"), pump("A2", "E3")].join(" "),
+        drums: rep("k:2 h:2 s:2 h:2 k:2 R:2 s:2 h:2"),
+      },
+    },
+    order: ["A", "B", "A", "B"],
+  };
 })();

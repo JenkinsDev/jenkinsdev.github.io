@@ -101,9 +101,10 @@
 
   // Background music lives in shared/music.js; load it next to this file on every page that has sound.
   const here = document.currentScript && document.currentScript.src.replace(/[^/]*$/, "");
+  const version = ((document.currentScript && document.currentScript.src.match(/\?.*$/)) || [""])[0];
   if (here && document.documentElement.dataset.music !== "off") {
     const el = document.createElement("script");
-    el.src = here + "music.js";
+    el.src = here + "music.js" + version; // same ?v= as this file, so a deploy refreshes it too
     document.head.append(el);
   }
 
