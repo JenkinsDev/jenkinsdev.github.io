@@ -1,0 +1,57 @@
+# FREE PLAY Games — TODO
+
+- [x] Confirm the first game: user chose **Higher or Lower**
+- [x] Game 1: spec drafted in `notes/higher-or-lower.md`; rewritten plainly, with the invented extras (top-10, initials, rank titles) removed
+- [x] Game 1: spec approved (US units default, pixelated emoji)
+- [x] Hub: removed the monitor frame. The CRT effect now comes from shared `shared/crt.css` over the whole page
+- [x] Hub: phone layout redone as one row per game with its own button (< 760px); wide screens keep the roster + card. Checked at 1280 and 390, no console errors
+- [x] Engine: user wants all games to share an engine for the basics, with web + mobile layouts. Spec drafted in `notes/engine.md`
+- [ ] Engine: user OKs the spec
+- [ ] Engine: build `shared/engine.js` alongside game 1, then move the hub onto it
+- [x] Hub: "rankings" meant the x/5 stat bars. Expanded to 5 stats: BRAINS, SPEED, SKILL, LUCK, SILLY (the user is open to other categories)
+- [x] Hub: removed filler (1UP/2UP, CREDITS ∞, FP-1000, tagline, ◆ glyphs, "new challenger" line); rewrote the hooks plainly
+- [x] Engine built: `shared/engine.js` (layout, shell, screens, loop, animate, input, store, sfx, pixel emoji)
+- [x] Game 1 v1 built (random pairs within a category); 10 logic tests pass; works on desktop and phone
+- [x] Game 1: user rejected the questions ("astronaut vs Earth", "trees vs universe"). They want random pairs kept for variety, but every question must make sense at a glance and never be a trick
+- [x] Pairing rules: pairs are 1.25×–20× apart (never near-ties, never silly mismatches); sizes only tall-vs-tall or long-vs-long; "How many" category dropped; items with no sensible partner removed (ant, honeybee, snail, ISS, Saturn V launch, housefly, candle, the Earth, the universe, light)
+- [x] Bracketed name parts shown as a small note on the card, kept out of the question; temperatures get commas
+- [x] 13 logic tests pass (incl. "every item has a sensible partner"); played on phone with no console errors
+- [x] New round format (user's idea): both numbers hidden, one question ("Which is heavier?"), tap a card, both count up, the winner turns green. Focus goes to the question so neither card looks pre-selected
+- [x] Desktop/tablet fill the screen: bigger cards and art, result space reserved so the cards don't jump. Checked at 1440×900, 820×1180 and 390×844: no overflow, no console errors
+- [x] Higher or Lower: 214 items (35+ per category, each file split by category); both cards share a unit within a round
+- [x] Engine storage moved to IndexedDB (in-memory copy, FP.ready, one-time migration from localStorage, verified in browser incl. reload)
+- [x] Higher or Lower set live on the hub
+- [x] Hub: player info shown only as 1P / 2P tags (no words); games can be [1, 2]; Air Puck is now 1P or 2P
+- [x] Buttons: hover lift + glow, press-down, no sticky hover on touch (shared .fp-btn)
+- [x] Quick Draw built: duel.js rules (6 tests incl. early-by-timestamp foul), town-at-sunset pixel scene (scene.js), DRAW buttons for P1/P2 (A / L keys, Space in 1P), computer Easy/Medium/Hard, first to 3, fastest draw saved
+- [x] Quick Draw fixes from user: tumbleweed removed; cowboys planted on the street with shadows (no bobbing)
+- [x] Quick Draw set live on the hub (user asked for its button)
+- [x] GPT-6.1 design review (notes/design-review-gpt.md) applied: steady PLAY button (no blinking), calmer hover/press, CRT effect at half strength, --muted text token, one shared chip + secondary-button style, no ▶ in button labels, simpler hub selection, "Coming soon" text instead of disabled buttons, still scenes under reduced motion, Higher or Lower units grid, Quick Draw levels grid + crisper signal + SETUP button
+- [x] Not applied: review #1 (old Quick Draw pad layout, already replaced) and #5 (emoji avatars, already removed); "remove 1P/2P tags on phones" (conflicts with the user's tags-only rule)
+- [ ] Ask the user: hide the five stat bars on phone rows to shorten them (the reviewer's suggestion)?
+- [x] Temperature dropped: the user streaked 11 because everyone already knows the order (freezer vs boiling, Sun vs lava)
+- [x] Loudness dropped too: same problem (the user agreed). dB numbers don't help, since the answer only depends on which is louder
+- [x] Made it harder ("not too easy"): pairs capped at 10× apart; difficulty steps at streaks 3 / 8 / 15 (3–10×, 1.8–3×, 1.4–1.8×, 1.25–1.4×)
+- [x] Re-paired orphans: removed ladybug and tortoise speed; added the Titanic, the Brooklyn Bridge, the oldest cave painting, a summer worker bee and a giant sequoia
+- [ ] Game 1: verify phone / tablet / desktop layouts (390, 768, 1024, 1440; tablet in both orientations), touch + keyboard, no console errors
+- [ ] Game 1: user review → set `live: true` in `games.js`
+- [ ] Game 2: (pick after game 1 ships)
+- [x] Hub previews now show the real games: Higher or Lower's two cards with reveal; Quick Draw's own town (QDScene.paint shared with the hub)
+- [x] FREE PLAY lettering: tighter cyan shadow (site header link + hub title)
+- [x] Quick Draw art redone: 14×21 cowboys with hat band, eye, neckerchief (band + shaded triangle), vest/shirt, buckle, holster; real revolver (hammer, cylinder, barrel, grip); buildings with planks, stepped false fronts, readable SALOON / SHERIFF signs (3×5 pixel font), framed lit windows, porch on posts, batwing doors, lantern, boardwalk
+- [x] Quick Draw rounds option: Best of 3 / 5 / 7 (default 5, saved); 20 tests pass; verified a best-of-3 2P match ends at 2–0
+- [x] GPT-6.1: header FREE PLAY link on its own full-width row at every size (reviewed: OK)
+- [x] GPT-6.1: hub desktop layout is now a grid of self-contained game cards with their own PLAY buttons (reviewed; fixed one regression: the TILT! teaser was showing its name, tag and empty stats, now a locked "?" again)
+- [x] Quick Draw scene: cowboys stand further back up the street; buildings shorter (details compacted to fit)
+- [x] Quick Draw: Impossible computer level (reacts in 105–135 ms, never jumps early); difficulty buttons 4-across on wide screens, 2×2 on phones; setup screen fits a phone without scrolling
+- [x] Docs: README rewritten to match the current state (games, engine, storage, header link, gotchas, tests); Quick Draw as-built note; memories updated (+ keep-docs-current)
+- [x] Air Puck built (spec notes/air-puck.md): physics.js (rounded corners, sub-steps, computer for either side), render.js (neon rink, air holes, creases, mallets, trail), game.js (touch drag / mouse / WASD + arrows, 1P vs 4 levels or 2P, first to 3/5/7, goal pauses + serve), hub preview = live CPU-vs-CPU on the real rink; 35 tests pass; checked desktop (mouse) and phone portrait (two simultaneous touches)
+- [x] Air Puck set live (user: "make air puck playable"); controls still open to feedback
+- [x] Air Puck: fixed the glitchy rapid-hit audio (one sound per frame, cooldown, softer triangle tone; 184 raw hits → 52 sounds in 20 s Hard vs Hard)
+- [x] Background music: shared/music.js chiptune player + shared/tracks.js with 4 original tunes (hub, Higher or Lower, Quick Draw, Air Puck); loaded by sound.js, picks the tune from the URL, starts after the first tap, follows the sound button; 4 music tests (39 total)
+- [x] Air Puck: Keyboard sensitivity slider (1–10, saved), clearly labelled with a one-line explanation, in 1P and 2P on non-phone screens
+- [x] Air Puck setup: description separated from a per-player Controls section (key caps); controls and sensitivity side by side on wide screens; setup fits a laptop screen without scrolling
+- [x] Same Controls section on Quick Draw and Higher or Lower; cards + key caps moved to `shared/controls.js` (`FP.controlCards`) and `shared/crt.css`
+- [x] Music starts immediately where the browser reports sound is allowed (getAutoplayPolicy); otherwise on the first tap or key
+- [ ] User listens to the music on a real device and tells me what to change (tempo, loudness, a separate music toggle?)
+- [ ] GPT-6.1 Sol: preview concepts + build them into the hub (running). Review when done

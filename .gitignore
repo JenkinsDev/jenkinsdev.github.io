@@ -2,3 +2,5 @@ public/
 node_modules/
 
 themes/terminal/node_modules/
+.playwright-mcp/
+.DS_Store

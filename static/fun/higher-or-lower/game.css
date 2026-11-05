@@ -1,0 +1,119 @@
+/* Higher or Lower. Base look from ../shared/crt.css; layout switches on html[data-layout]. */
+.hol { --accent: var(--sun); width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 clamp(14px, 3vw, 32px) 32px; }
+.screen[hidden] { display: none !important; }
+
+/* ---------- title ---------- */
+.title-screen { display: grid; gap: 22px; justify-items: center; text-align: center; padding-top: 2vh; }
+.logo { margin: 0; display: grid; gap: 4px; font: 400 clamp(2.4rem, 9vw, 4.4rem)/0.95 var(--font-title); }
+.logo .up { color: var(--green); text-shadow: 3px 3px 0 #0b5a2c; }
+.logo .down { color: var(--red); text-shadow: 3px 3px 0 #6b0d16; }
+.logo .or { font: 1.6rem var(--font-screen); color: var(--soft); }
+.lede { margin: 0; max-width: 34ch; color: var(--soft); }
+.option { display: grid; gap: 8px; width: 100%; max-width: 760px; }
+.play { min-width: 220px; }
+#units { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 460px; margin: 0 auto; width: 100%; }
+
+/* ---------- play ---------- */
+.play-screen { display: grid; gap: 14px; }
+.hud { display: flex; justify-content: space-between; align-items: baseline; font: 700 0.8rem var(--font-pixel); letter-spacing: 0.08em; text-transform: uppercase; }
+.hud-cat { color: var(--cyan); }
+.hud-streak { color: var(--soft); }
+.hud-streak b { font: 400 1.6rem var(--font-sign); color: var(--sun); margin-left: 6px; }
+
+.arena { display: grid; grid-template-columns: 1fr auto 1fr; gap: 14px; align-items: stretch; }
+.vs { align-self: center; font: 400 1.4rem var(--font-sign); color: var(--dim); }
+.prompt:focus { outline: none; }
+.prompt { margin: 0; text-align: center; font: 400 clamp(1.5rem, 4.5vw, 2.2rem)/1.1 var(--font-sign); color: #fff; }
+
+.item {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  gap: 10px;
+  padding: 16px 14px;
+  border: 3px solid var(--line);
+  border-radius: 6px;
+  background: rgba(5, 6, 12, 0.6);
+  text-align: center;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.12s ease;
+}
+@media (hover: hover) and (pointer: fine) { .item:not(:disabled):hover { border-color: var(--sun); transform: translateY(-3px); } }
+.item:not(:disabled):active { transform: translateY(1px); }
+.item:disabled { cursor: default; }
+.item-text { display: grid; gap: 4px; justify-items: inherit; }
+.item .art { display: block; width: min(180px, 70%); aspect-ratio: 1; }
+.item .art canvas { width: 100%; height: 100%; }
+.item-name { margin: 0; font: 1.5rem/1.1 var(--font-screen); color: #fff; }
+.item-note { margin: 0; font-size: 1.05rem; color: var(--muted); }
+.item-note:empty { display: none; }
+.item-value { margin: 0; font: 400 clamp(1.4rem, 3.4vw, 2.2rem)/1.05 var(--font-sign); color: var(--sun); min-height: 1.1em; }
+.item-value small { font: 1.1rem var(--font-screen); color: var(--soft); vertical-align: 0.15em; }
+.item.winner .item-value { color: var(--green); }
+.item.right { border-color: var(--green); box-shadow: 0 0 22px rgba(55, 226, 125, 0.35); }
+.item.wrong { border-color: var(--red); box-shadow: 0 0 22px rgba(255, 61, 61, 0.35); }
+.item.wrong { animation: shake 0.35s ease; }
+@keyframes shake { 20%, 60% { transform: translateX(-6px); } 40%, 80% { transform: translateX(6px); } }
+
+.result { display: grid; gap: 8px; justify-items: center; text-align: center; max-width: 640px; margin: 0 auto; }
+.result[hidden] { display: none; }
+.verdict { margin: 0; font: 400 1.6rem var(--font-sign); }
+.verdict.right { color: var(--green); }
+.verdict.wrong { color: var(--red); }
+.ratio { margin: 0; font-size: 1.35rem; color: #fff; }
+.fact { margin: 0; font-size: 1.2rem; color: var(--soft); max-width: 46ch; }
+.next { min-width: 200px; margin-top: 6px; }
+
+/* ---------- game over ---------- */
+.over-screen { display: grid; gap: 14px; justify-items: center; text-align: center; padding-top: 2vh; }
+.over-title { margin: 0; font: 400 clamp(2.2rem, 8vw, 3.6rem)/1 var(--font-title); color: var(--red); text-shadow: 3px 3px 0 #6b0d16; }
+.over-score { margin: 0; font-size: 1.5rem; }
+.over-score b { font: 400 2.6rem var(--font-sign); color: var(--sun); margin-left: 8px; vertical-align: -4px; }
+.over-best { margin: 0; color: var(--soft); }
+.missed { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; width: 100%; max-width: 640px; }
+.missed .mini { display: grid; justify-items: center; gap: 4px; padding: 12px; border: 2px solid var(--line); border-radius: 6px; background: rgba(5, 6, 12, 0.6); }
+.missed .mini canvas { width: 64px; height: 64px; }
+.missed .mini b { font: 400 1.2rem var(--font-sign); color: var(--sun); }
+.over-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+
+/* ---------- tablet + desktop: fill the screen, bigger cards ---------- */
+html:not([data-layout="phone"]) .hol { max-width: 1320px; padding-bottom: 0; }
+html:not([data-layout="phone"]) .screen { min-height: calc(100dvh - 76px); padding-bottom: 20px; } /* 76px = the top bar */
+html:not([data-layout="phone"]) .title-screen,
+html:not([data-layout="phone"]) .over-screen { align-content: center; padding-top: 0; }
+html:not([data-layout="phone"]) .play-screen {
+  grid-template-rows: auto auto 1fr auto; /* hud, prompt, cards (take the room), result */
+  gap: clamp(12px, 2.2vh, 24px);
+}
+html:not([data-layout="phone"]) .prompt { font-size: clamp(2rem, 4.2vh, 3rem); }
+html:not([data-layout="phone"]) .arena { gap: clamp(14px, 2vw, 28px); }
+html:not([data-layout="phone"]) .vs { font-size: 1.8rem; }
+html:not([data-layout="phone"]) .item { align-content: center; gap: clamp(10px, 2vh, 20px); padding: clamp(16px, 3vh, 32px) 18px; }
+html:not([data-layout="phone"]) .item .art { width: min(300px, 32vh, 75%); }
+html:not([data-layout="phone"]) .item-name { font-size: clamp(1.5rem, 2.8vh, 2.1rem); }
+html:not([data-layout="phone"]) .item-note { font-size: 1.25rem; }
+html:not([data-layout="phone"]) .item-value { font-size: clamp(2rem, 5vh, 3.2rem); }
+html:not([data-layout="phone"]) .item-value small { font-size: 1.35rem; }
+/* keep the result's space reserved so the cards never jump when it appears */
+html:not([data-layout="phone"]) .result { min-height: 190px; align-content: start; }
+html:not([data-layout="phone"]) .result[hidden] { display: grid; visibility: hidden; }
+html:not([data-layout="phone"]) .verdict { font-size: 2rem; }
+html:not([data-layout="phone"]) .ratio { font-size: 1.5rem; }
+html:not([data-layout="phone"]) .fact { font-size: 1.3rem; }
+
+/* ---------- phone: stack the cards, compact rows ---------- */
+html[data-layout="phone"] .arena { grid-template-columns: 1fr; gap: 8px; }
+html[data-layout="phone"] .vs { justify-self: center; font-size: 1rem; }
+html[data-layout="phone"] .item { grid-template-columns: 84px 1fr; justify-items: start; align-items: center; text-align: left; padding: 10px 12px; }
+html[data-layout="phone"] .item .art { width: 84px; }
+html[data-layout="phone"] .item-name { font-size: 1.25rem; }
+html[data-layout="phone"] .item-value { font-size: 1.35rem; }
+
+/* short landscape screens (phones on their side): keep it to one screen */
+@media (max-height: 520px) and (orientation: landscape) {
+  .item .art { width: 96px; }
+  .item { padding: 10px; gap: 6px; }
+}

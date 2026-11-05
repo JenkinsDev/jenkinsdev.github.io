@@ -1,0 +1,27 @@
+<header class="header">
+  <div class="header__inner">
+    {{ partial "logo.html" . }}
+
+    {{ if len $.Site.Menus }}
+      <div class="menu-trigger">menu</div>
+    {{ end }}
+  </div>
+  {{ if len $.Site.Menus }}
+    {{ partial "menu.html" . }}
+  {{ end }}
+  {{/* Site override of the theme header: adds the FREE PLAY arcade link below the logo and menu, on every page and screen size. */}}
+  <a class="fp-link" href="{{ "fun/" | absURL }}" title="FREE PLAY: games">
+    <svg class="fp-link-icon" viewBox="0 0 12 12" aria-hidden="true" shape-rendering="crispEdges">
+      <rect x="4" y="0" width="4" height="4" fill="#ff3d3d"/>
+      <rect x="5" y="1" width="1" height="1" fill="#ff9a9a"/>
+      <rect x="5.5" y="4" width="1" height="4" fill="#b9c6d8"/>
+      <rect x="1" y="8" width="10" height="3" fill="#2c7bff"/>
+      <rect x="1" y="11" width="10" height="1" fill="#16408a"/>
+      <rect x="8" y="9" width="2" height="1" fill="#ffd23f"/>
+    </svg>
+    <span class="fp-link-text">
+      <span class="fp-link-title">FREE PLAY</span>
+      <span class="fp-link-sub">games</span>
+    </span>
+  </a>
+</header>

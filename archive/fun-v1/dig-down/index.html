@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Dig all the way to the middle of the Earth, one scroll at a time.">
+    <meta name="theme-color" content="#6fa8dc">
+    <title>Dig to the Middle of the Earth!</title>
+    <link rel="stylesheet" href="../shared/fun.css">
+    <link rel="stylesheet" href="toy.css">
+    <script src="../shared/paper.js"></script>
+    <script defer src="../shared/sound.js"></script>
+    <script defer src="data.js"></script>
+    <script defer src="art.js"></script>
+    <script defer src="toy.js"></script>
+    <script defer src="fx.js"></script>
+  </head>
+  <body>
+    <a class="fun-home" href="../" aria-label="Back to all toys">🏠</a>
+    <div id="bg" aria-hidden="true"></div>
+    <div id="glow" aria-hidden="true"></div>
+
+    <aside class="meter" aria-label="Depth meter">
+      <span class="fun-tape" aria-hidden="true"></span>
+      <div class="m-label" id="mLabel">DEPTH</div>
+      <div class="m-ft"><b id="ft">0.0</b> ft</div>
+      <div class="m-m"><span id="mt">0.0</span> metres</div>
+      <div class="m-km" id="km" hidden></div>
+      <div class="m-rec">Your record: <span id="rec">none yet</span></div>
+    </aside>
+    <div class="ruler" aria-hidden="true"><div class="ruler-pin" id="pin"></div></div>
+    <div class="digger" id="digger" aria-hidden="true"><div class="dg" id="dg"></div></div>
+
+    <main id="world" aria-label="The dig, from the garden down to the middle of the Earth">
+      <header class="sky">
+        <h1 class="title">Dig to the Middle of the Earth!</h1>
+        <svg class="sky-sun" aria-hidden="true"><use href="#sun"/></svg>
+        <svg class="sky-cloud c1" aria-hidden="true"><use href="#cloud"/></svg>
+        <svg class="sky-cloud c2" aria-hidden="true"><use href="#cloud"/></svg>
+        <div class="grass"></div>
+      </header>
+      <div class="shaft" aria-hidden="true"></div>
+    </main>
+
+    <section class="finale" id="finale" aria-label="The centre of the Earth">
+      <article class="fin-card" id="finCard">
+        <span class="fun-tape" aria-hidden="true"></span>
+        <svg class="fin-star" aria-hidden="true"><use href="#star"/></svg>
+        <h2>You made it!</h2>
+        <p class="big">You dug 6,371 km!</p>
+        <p>This is the very middle of the Earth. It's about as hot as the surface of the Sun down here!</p>
+        <svg class="art bus" aria-hidden="true"><use href="#bus"/></svg>
+        <p class="cmp-title">That's like...</p>
+        <ul class="cmp">
+          <li>about <b>530,000</b> school buses end to end</li>
+          <li>about <b>720</b> Mount Everests stacked up</li>
+          <li>a <b>7 hour</b> trip on a jet plane</li>
+          <li>about <b>53 days</b> of walking, non-stop</li>
+        </ul>
+        <div class="btns">
+          <button class="fun-btn" id="keep" type="button" aria-label="Keep going out the other side of the Earth">Keep going?</button>
+          <button class="fun-btn alt" id="climb" type="button" aria-label="Climb back up to the top">Climb back up</button>
+        </div>
+      </article>
+      <article class="fin-card other" id="other" hidden>
+        <span class="fun-tape" aria-hidden="true"></span>
+        <svg class="art whale" aria-hidden="true"><use href="#whale"/></svg>
+        <h2 tabindex="-1">Splash! The other side!</h2>
+        <p>You popped out in the middle of the Indian Ocean. For most of the USA, that's what's on the other side of the Earth!</p>
+        <p>Most of our planet is ocean, so most holes come out wet. Hello, whale!</p>
+        <p class="small">Dig from Spain? You'd pop out near New Zealand.</p>
+        <div class="btns"><button class="fun-btn alt" id="climb2" type="button" aria-label="Climb back up to the top">Climb back up</button></div>
+      </article>
+    </section>
+
+    <button class="fun-btn dig-btn" id="faster" type="button" aria-pressed="false" aria-label="Dig faster: scroll down automatically">Dig faster!</button>
+    <div class="toast" id="toast" aria-hidden="true"><span class="fun-tape"></span>You made it!<br>You dug 6,371 km!</div>
+    <canvas id="confetti" aria-hidden="true"></canvas>
+    <p class="sr" id="live" aria-live="polite"></p>
+  </body>
+</html>

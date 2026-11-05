@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Air hockey on one screen. Play the computer or a friend.">
+    <meta name="theme-color" content="#0b0a10">
+    <title>Air Puck · FREE PLAY</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%2300e5ff'/%3E%3Ccircle cx='8' cy='8' r='4' fill='%23fff'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=VT323&family=Silkscreen:wght@400;700&display=swap">
+    <link rel="stylesheet" href="../shared/crt.css">
+    <link rel="stylesheet" href="game.css">
+    <script defer src="../shared/sound.js"></script>
+    <script defer src="../shared/engine.js"></script>
+    <script defer src="../shared/controls.js"></script>
+    <script defer src="physics.js"></script>
+    <script defer src="render.js"></script>
+    <script defer src="game.js"></script>
+  </head>
+  <body>
+    <main class="ap">
+      <!-- SETUP -->
+      <section class="screen title-screen" data-screen="title">
+        <h1 class="logo">AIR PUCK</h1>
+        <p class="lede">Knock the puck into the other goal. Your mallet stays on your side of the centre line.</p>
+
+        <div class="option">
+          <h2 class="option-label" id="mode-label">Players</h2>
+          <div class="chips" id="modes" role="group" aria-labelledby="mode-label">
+            <button type="button" class="chip" data-mode="1p">1P</button>
+            <button type="button" class="chip" data-mode="2p">2P</button>
+          </div>
+        </div>
+        <div class="option" id="level-option">
+          <h2 class="option-label" id="level-label">Computer</h2>
+          <div class="chips" id="levels" role="group" aria-labelledby="level-label"></div>
+        </div>
+        <div class="option">
+          <h2 class="option-label" id="goals-label">Goals to win</h2>
+          <div class="chips" id="goals" role="group" aria-labelledby="goals-label"></div>
+        </div>
+        <div class="option controls">
+          <h2 class="option-label" id="controls-label">Controls</h2>
+          <div class="control-cards" id="control-cards" aria-labelledby="controls-label"></div>
+          <div class="sense-box" id="sense-option">
+            <div class="sense">
+              <label class="sense-label" for="sense">Keyboard sensitivity</label>
+              <input type="range" id="sense" min="1" max="10" step="1" value="5" aria-describedby="sense-help">
+              <output id="sense-value" for="sense">5</output>
+            </div>
+            <p class="sense-help" id="sense-help">How fast the keys move your mallet. Lower is more precise, higher is quicker.</p>
+          </div>
+        </div>
+        <button class="fp-btn play" id="play" type="button" data-autofocus>PLAY</button>
+      </section>
+
+      <!-- MATCH -->
+      <section class="screen play-screen" data-screen="play" hidden>
+        <div class="stage" id="stage">
+          <canvas class="rink" id="rink" aria-label="Air hockey rink"></canvas>
+          <div class="score score-0"><span class="who" id="name-0"></span><b id="score-0">0</b></div>
+          <div class="score score-1"><span class="who" id="name-1"></span><b id="score-1">0</b></div>
+          <p class="banner" id="banner" aria-live="assertive"></p>
+        </div>
+      </section>
+
+      <!-- MATCH OVER -->
+      <section class="screen over-screen" data-screen="over" hidden>
+        <h2 class="over-title" id="over-title"></h2>
+        <p class="over-score" id="over-score"></p>
+        <div class="over-actions">
+          <button class="fp-btn" id="again" type="button" data-autofocus>REMATCH</button>
+          <button class="fp-btn secondary" id="change" type="button">SETUP</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

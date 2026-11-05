@@ -1,0 +1,126 @@
+/*
+ * Shared kit for jenkinsdev.us/fun. Every toy links this first.
+ * Look: real, handmade, kitchen-table. Crayon on paper, tape, plastic magnets.
+ * NOT: glossy rounded cards, pastel gradient blobs, emoji-as-art.
+ * Pair with shared/paper.js, which injects the SVG filters:
+ *   filter: url(#crayon)  → wobbly, grainy crayon look for hand-drawn SVG art
+ *   filter: url(#wobble)  → wobble only (for text or outlines)
+ */
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Patrick+Hand&display=swap");
+
+:root {
+  --font: "Patrick Hand", "Comic Neue", "Marker Felt", cursive;        /* handwriting: body, captions */
+  --font-display: "Lilita One", "Arial Black", Impact, sans-serif;      /* chunky: plastic magnets, headlines */
+
+  --ink: #2a2522;          /* soft pencil-black, never pure #000 */
+  --ink-soft: #6e625a;
+  --paper: #fbf7ee;        /* printer paper */
+  --card: #fffdf7;
+  --kraft: #c9a274;        /* brown paper bag */
+  --tape: rgba(240, 226, 178, 0.82);
+
+  /* crayon box (names kept from v1 so toys keep working) */
+  --sun: #f7c531;          /* yellow crayon */
+  --tomato: #e8432e;       /* red-orange */
+  --berry: #8a4fbf;        /* violet; use sparingly */
+  --sky: #2f7fd6;          /* blue */
+  --mint: #3aa356;         /* green */
+  --bubblegum: #f27ba6;    /* pink */
+  --orange: #f2892b;
+
+  /* construction paper (muted, slightly faded) */
+  --cp-red: #d8584a;
+  --cp-blue: #6f9fd0;
+  --cp-green: #8cbf6b;
+  --cp-yellow: #f3d36b;
+  --cp-orange: #ee9a5a;
+
+  --radius: 6px;           /* paper is barely rounded */
+  --radius-sm: 4px;
+  --shadow: 2px 3px 0 rgba(42, 37, 34, 0.22);
+  --shadow-lift: 0 10px 18px -6px rgba(42, 37, 34, 0.35), 0 2px 3px rgba(42, 37, 34, 0.18);
+  --tap: 64px;
+
+  /* fine paper grain; add to any surface: background-image: var(--grain) */
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .2 0 0 0 0 .17 0 0 0 0 .14 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; }
+
+body {
+  font-family: var(--font);
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: var(--ink);
+  background: var(--paper) var(--grain);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Cut-out paper button with a hand-drawn edge */
+.fun-btn {
+  font: 1.35rem/1 var(--font-display);
+  letter-spacing: 0.02em;
+  min-height: var(--tap);
+  min-width: var(--tap);
+  padding: 0 1.4rem;
+  border: 3px solid var(--ink);
+  border-radius: 255px 18px 225px 18px / 18px 225px 18px 255px;
+  background: var(--cp-yellow) var(--grain);
+  color: var(--ink);
+  box-shadow: 3px 4px 0 var(--ink);
+  cursor: pointer;
+  transform: rotate(-1deg);
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+  touch-action: manipulation;
+}
+.fun-btn:hover { transform: rotate(1deg); }
+.fun-btn:active { transform: translate(3px, 4px); box-shadow: 0 0 0 var(--ink); }
+.fun-btn:focus-visible { outline: 3px dashed var(--sky); outline-offset: 5px; }
+
+/* Masking-tape strip: <span class="fun-tape"></span> inside a position:relative parent */
+.fun-tape {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  width: 96px;
+  height: 28px;
+  margin-left: -48px;
+  background: var(--tape) var(--grain);
+  transform: rotate(-4deg);
+  clip-path: polygon(2% 8%, 6% 0, 12% 10%, 18% 2%, 26% 9%, 34% 1%, 44% 8%, 55% 0, 66% 9%, 76% 2%, 86% 10%, 94% 1%, 100% 9%, 98% 92%, 92% 100%, 84% 91%, 74% 99%, 62% 90%, 50% 100%, 38% 92%, 26% 100%, 16% 91%, 8% 100%, 0 92%);
+  pointer-events: none;
+}
+
+/* Home: a round plastic fridge magnet. <a class="fun-home" href="../" aria-label="Back to all toys">🏠</a> */
+.fun-home {
+  position: fixed;
+  top: 14px;
+  left: 14px;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  width: var(--tap);
+  height: var(--tap);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 32% 28%, rgba(255, 255, 255, 0.75) 0 9%, transparent 22%),
+    radial-gradient(circle at 50% 60%, #f0553f, #b92a1b 75%);
+  box-shadow: var(--shadow-lift), inset 0 -4px 6px rgba(0, 0, 0, 0.25);
+  font-size: 1.9rem;
+  text-decoration: none;
+  transition: transform 0.12s ease;
+}
+.fun-home:hover { transform: rotate(-8deg) scale(1.05); }
+.fun-home:active { transform: scale(0.94); }
+.fun-home:focus-visible { outline: 3px dashed var(--sky); outline-offset: 4px; }
+
+/* Handwritten note text helper */
+.fun-hand { font-family: var(--font); }
+.fun-display { font-family: var(--font-display); letter-spacing: 0.02em; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

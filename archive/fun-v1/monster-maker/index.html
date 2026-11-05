@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Monster Maker</title>
+  <meta name="description" content="Build a silly monster with eyes, horns, spots and more!">
+  <link rel="stylesheet" href="../shared/fun.css">
+  <link rel="stylesheet" href="toy.css">
+  <script src="../shared/paper.js"></script>
+  <script defer src="../shared/sound.js"></script>
+  <script defer src="parts.js"></script>
+  <script defer src="parts2.js"></script>
+  <script defer src="toy.js"></script>
+</head>
+<body>
+  <a class="fun-home" href="../" aria-label="Back to all toys">🏠</a>
+  <button id="surprise" class="fun-btn surprise" aria-label="Surprise me"><span aria-hidden="true">🎲</span><span class="lbl">Surprise me</span></button>
+
+  <header class="top">
+    <button id="bubble" class="bubble" aria-label="New silly name"><span class="fun-tape"></span><span id="name">Wobbly Snorfle</span></button>
+  </header>
+
+  <main class="stage">
+    <span class="fun-tape t1"></span><span class="fun-tape t2"></span>
+    <button id="poke" class="poke" aria-label="Tap the monster to hear it talk">
+      <svg id="monster" viewBox="0 0 400 440" role="img" aria-label="Your monster">
+        <g class="breathe"><g id="react" class="react"></g></g>
+      </svg>
+    </button>
+  </main>
+
+  <section class="tray" aria-label="Monster parts">
+    <nav id="tabs" class="tabs" aria-label="Part types"></nav>
+    <div id="opts" class="opts" role="group" aria-label="Choices"></div>
+  </section>
+</body>
+</html>

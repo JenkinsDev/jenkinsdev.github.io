@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>How Many Me's?</title>
+  <meta name="description" content="Measure the world in YOU! Tell us how tall you are, then see how many of you fit in a giraffe, a whale and the Moon.">
+  <link rel="stylesheet" href="../shared/fun.css">
+  <link rel="stylesheet" href="toy.css">
+  <script src="../shared/paper.js"></script>
+  <script defer src="../shared/sound.js"></script>
+  <script defer src="data.js"></script>
+  <script defer src="art.js"></script>
+  <script defer src="art2.js"></script>
+  <script defer src="stage.js"></script>
+  <script defer src="toy.js"></script>
+</head>
+<body>
+  <a class="fun-home" href="../" aria-label="Back to all toys">🏠</a>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="me" viewBox="0 0 60 120" overflow="visible"></symbol></svg>
+
+  <div class="corner">
+    <button id="mute" class="fun-btn mini" aria-label="Sound on" aria-pressed="false"><span aria-hidden="true">🔊</span></button>
+    <button id="change" class="fun-btn mini" aria-label="Change me" hidden>Change me</button>
+  </div>
+
+  <main id="setup" class="setup">
+    <section class="left">
+      <div class="sheet hero" id="hero">
+        <span class="fun-tape"></span>
+        <div class="tag" id="tag" aria-hidden="true"></div>
+        <svg id="heroFig" viewBox="-20 -30 100 147" role="img" aria-label="Your little me"><g filter="url(#wobble)"><use href="#me" width="60" height="120"/></g></svg>
+      </div>
+    </section>
+    <section class="right">
+      <h1 class="title">How Many <span>Me's?</span></h1>
+      <p class="lead">Tell us how tall you are. Then we measure the whole world in <b>YOU</b>!</p>
+      <div class="slide">
+        <button id="less" class="fun-btn step" aria-label="A little shorter">&minus;</button>
+        <div class="tape-wrap"><input id="height" type="range" min="30" max="66" step="1" aria-label="How tall are you?"></div>
+        <button id="more" class="fun-btn step" aria-label="A little taller">+</button>
+      </div>
+      <p class="readout" id="readout" aria-live="polite"></p>
+      <div class="row"><span class="lbl">Shirt</span><div id="colors" role="group" aria-label="Shirt colour"></div></div>
+      <div class="row"><span class="lbl">Skin</span><div id="skins" role="group" aria-label="Skin colour"></div></div>
+      <div class="row"><span class="lbl">Hat</span><div id="hats" role="group" aria-label="Hat"></div></div>
+      <button id="go" class="fun-btn go">Let's go!</button>
+    </section>
+  </main>
+
+  <div id="journey" class="journey" hidden>
+    <div id="track" class="track" tabindex="-1" role="region" aria-roledescription="carousel" aria-label="Things to measure in you"></div>
+    <nav class="nav" aria-label="Move through the things">
+      <button id="prev" class="fun-btn step" aria-label="Previous thing">&larr;</button>
+      <div class="tapebar" id="prog" role="progressbar" aria-valuemin="1" aria-label="How far you've come"><span class="lab" id="proglab"></span><span class="mk" id="mk" aria-hidden="true"></span></div>
+      <button id="next" class="fun-btn step" aria-label="Next thing">&rarr;</button>
+    </nav>
+  </div>
+</body>
+</html>

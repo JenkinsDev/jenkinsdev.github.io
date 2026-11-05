@@ -1,0 +1,107 @@
+/* Monster Maker: fridge door, a drawing on paper, kraft tray, plastic magnets, star stickers. */
+html, body { height: 100%; overflow: hidden; }
+body {
+  display: flex; flex-direction: column; height: 100dvh;
+  background: #e6eae7 var(--grain); /* off-white fridge door */
+}
+button { font-family: var(--font-display); color: var(--ink); touch-action: manipulation; }
+.bubble:focus-visible, .tab:focus-visible, .opt:focus-visible, .poke:focus-visible { outline: 3px dashed var(--sky); outline-offset: 5px; }
+
+/* Name on a ruled index card */
+.top { flex: none; position: relative; z-index: 2; display: flex; justify-content: center; padding: 22px 100px 0; }
+.surprise { position: fixed; top: 14px; right: 14px; z-index: 1000; display: flex; align-items: center; gap: 0.5rem; background-color: var(--cp-orange); rotate: 2deg; }
+.surprise > span:first-child { font-size: 1.8rem; }
+.bubble {
+  position: relative; min-height: 80px; padding: 0.1em 1em 0 56px; border: 0; border-radius: 3px; cursor: pointer;
+  font: clamp(2rem, 5vw, 3.2rem)/78px var(--font-display); letter-spacing: 0.02em;
+  background-color: var(--card);
+  background-image: var(--grain),
+    linear-gradient(90deg, transparent 0 38px, rgba(232, 67, 46, 0.55) 38px 40px, transparent 40px),
+    repeating-linear-gradient(transparent 0 38px, rgba(47, 127, 214, 0.38) 38px 40px);
+  box-shadow: var(--shadow); rotate: -1.6deg;
+}
+.bubble.pop { animation: slap 0.3s ease-out; }
+@keyframes slap { 0% { transform: scale(1.12) rotate(3deg); } 100% { transform: none; } }
+
+/* Stage: a sheet of graph paper taped to the door */
+.stage {
+  flex: 1; min-height: 0; position: relative; margin: 18px 18px 10px; border-radius: 3px; rotate: 0.4deg;
+  background-color: var(--card);
+  background-image: var(--grain),
+    repeating-linear-gradient(0deg, transparent 0 31px, rgba(47, 127, 214, 0.13) 31px 32px),
+    repeating-linear-gradient(90deg, transparent 0 31px, rgba(47, 127, 214, 0.13) 31px 32px);
+  box-shadow: var(--shadow);
+}
+.stage .t1 { left: 14%; rotate: -8deg; }
+.stage .t2 { left: auto; right: 10%; rotate: 9deg; }
+.poke { display: block; width: 100%; height: 100%; padding: 0; border: 0; background: none; cursor: pointer; }
+#monster { display: block; width: 100%; height: 100%; overflow: visible; }
+.breathe, .react { transform-box: view-box; transform-origin: 200px 416px; }
+.breathe { animation: breathe 3.4s ease-in-out infinite; }
+@keyframes breathe { 0%, 100% { transform: scale(1, 1) rotate(0); } 50% { transform: scale(1.025, 0.96) rotate(0.6deg); } }
+.react.squish { animation: squish 0.6s; }
+@keyframes squish {
+  0% { transform: scale(1, 1); } 22% { transform: scale(1.24, 0.7); } 48% { transform: scale(0.88, 1.17); }
+  72% { transform: scale(1.05, 0.96); } 100% { transform: scale(1, 1); }
+}
+.react.bounce { animation: bounce 0.5s ease-out; }
+@keyframes bounce { 0% { transform: scale(0.85, 1.12) translateY(-24px); } 60% { transform: scale(1.06, 0.94); } 100% { transform: scale(1, 1); } }
+/* parts get slapped on like stickers */
+.snap { transform-box: fill-box; transform-origin: 50% 60%; animation: snap 0.28s ease-out; }
+@keyframes snap { 0% { transform: scale(1.4) rotate(-6deg); opacity: 0; } 100% { transform: none; opacity: 1; } }
+.ball { transform-box: fill-box; transform-origin: 50% 50%; transition: transform 0.07s; }
+.blink .ball { transform: scaleY(0.08); }
+.mw { transform-box: fill-box; transform-origin: 50% 0; }
+.talk .mw { animation: talk 0.16s ease-in-out infinite alternate; }
+@keyframes talk { from { transform: scaleY(1); } to { transform: scale(0.9, 1.4); } }
+
+/* Tray: kraft paper with a torn top edge */
+.tray {
+  flex: none; display: flex; flex-direction: column; align-items: center; gap: 16px;
+  padding: 30px 12px calc(14px + env(safe-area-inset-bottom));
+  background: var(--kraft) var(--grain);
+  clip-path: polygon(0 12px, 4% 4px, 9% 11px, 15% 3px, 22% 10px, 30% 2px, 38% 9px, 47% 3px, 55% 11px, 63% 4px, 71% 10px, 80% 2px, 88% 9px, 95% 3px, 100% 10px, 100% 100%, 0 100%);
+}
+.tabs { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
+/* plastic fridge magnets */
+.tab {
+  display: grid; place-items: center; width: 72px; height: 72px; padding: 0; border: 0; border-radius: 50%; cursor: pointer;
+  background: radial-gradient(circle at 30% 25%, rgba(255, 255, 255, 0.7) 0 7%, transparent 20%), var(--c);
+  box-shadow: 2px 4px 5px rgba(42, 37, 34, 0.4), inset 0 -5px 7px rgba(0, 0, 0, 0.22);
+  transition: transform 0.12s;
+}
+.tab svg { width: 44px; height: 44px; }
+.tab[aria-pressed="true"] { transform: translateY(-8px) scale(1.1) rotate(-4deg); box-shadow: var(--shadow-lift), inset 0 -5px 7px rgba(0, 0, 0, 0.22); }
+.tab:active { transform: scale(0.94); }
+.opts { display: grid; grid-template-columns: repeat(6, 96px); gap: 14px; justify-content: center; }
+/* paper cards */
+.opt {
+  position: relative; aspect-ratio: 1; padding: 3px; border: 0; border-radius: 3px; cursor: pointer;
+  background: var(--card) var(--grain); box-shadow: var(--shadow); transition: transform 0.12s, box-shadow 0.12s;
+}
+.opt:nth-child(6n + 1) { rotate: -1.8deg; } .opt:nth-child(6n + 2) { rotate: 1.2deg; } .opt:nth-child(6n + 3) { rotate: -0.6deg; }
+.opt:nth-child(6n + 4) { rotate: 2deg; } .opt:nth-child(6n + 5) { rotate: -1.2deg; } .opt:nth-child(6n) { rotate: 0.8deg; }
+.opt svg { display: block; width: 100%; height: 100%; }
+.opt:active { transform: translate(2px, 3px); box-shadow: none; }
+.opt[aria-pressed="true"] { transform: translateY(-8px) scale(1.05); box-shadow: var(--shadow-lift); }
+/* gold star sticker on the chosen card */
+.opt[aria-pressed="true"]::after {
+  content: ""; position: absolute; top: -14px; right: -12px; width: 34px; height: 34px; rotate: 12deg;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='M20 2l5.2 11.6 12.6 1.3-9.4 8.5 2.7 12.4L20 29l-11.1 6.8 2.7-12.4-9.4-8.5 12.6-1.3z' fill='%23f7c531' stroke='%23b8860b' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+  filter: drop-shadow(1px 2px 1px rgba(42, 37, 34, 0.35));
+}
+
+@media (max-width: 700px) {
+  .top { padding: 90px 12px 0; }
+  .surprise { padding: 0; width: var(--tap); justify-content: center; }
+  .lbl { display: none; }
+  .tab { width: 66px; height: 66px; }
+  .tabs { gap: 8px; }
+  .opts { grid-template-columns: repeat(3, 96px); }
+  .stage { margin: 16px 10px 8px; }
+}
+@media (max-height: 560px) and (min-width: 701px) {
+  .opts { grid-template-columns: repeat(6, 76px); }
+  .tab { width: 64px; height: 64px; }
+}
+@media (prefers-reduced-motion: reduce) { .breathe, .talk .mw { animation: none; } }

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Wait for the signal, then tap first. Play the computer or a friend.">
+    <meta name="theme-color" content="#0b0a10">
+    <title>Quick Draw · FREE PLAY</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%23ff7a1a'/%3E%3Crect x='7' y='3' width='2' height='7' fill='%23fff'/%3E%3Crect x='7' y='11.5' width='2' height='2' fill='%23fff'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=VT323&family=Silkscreen:wght@400;700&display=swap">
+    <link rel="stylesheet" href="../shared/crt.css">
+    <link rel="stylesheet" href="game.css">
+    <script defer src="../shared/sound.js"></script>
+    <script defer src="../shared/engine.js"></script>
+    <script defer src="../shared/controls.js"></script>
+    <script defer src="duel.js"></script>
+    <script defer src="scene.js"></script>
+    <script defer src="game.js"></script>
+  </head>
+  <body>
+    <main class="qd">
+      <!-- TITLE -->
+      <section class="screen title-screen" data-screen="title">
+        <h1 class="logo">QUICK DRAW</h1>
+        <p class="lede">Wait for the <b>!</b> then hit DRAW. Draw too early and you lose the round.</p>
+
+        <div class="option">
+          <h2 class="option-label" id="mode-label">Players</h2>
+          <div class="chips" id="modes" role="group" aria-labelledby="mode-label">
+            <button type="button" class="chip" data-mode="1p">1P</button>
+            <button type="button" class="chip" data-mode="2p">2P</button>
+          </div>
+        </div>
+        <div class="option" id="level-option">
+          <h2 class="option-label" id="level-label">Computer</h2>
+          <div class="chips" id="levels" role="group" aria-labelledby="level-label"></div>
+        </div>
+        <div class="option">
+          <h2 class="option-label" id="rounds-label">Rounds</h2>
+          <div class="chips" id="rounds" role="group" aria-labelledby="rounds-label"></div>
+        </div>
+        <div class="option controls">
+          <h2 class="option-label" id="controls-label">Controls</h2>
+          <div class="control-cards" id="control-cards" aria-labelledby="controls-label"></div>
+        </div>
+        <button class="fp-btn play" id="play" type="button" data-autofocus>PLAY</button>
+        <p class="best" id="best"></p>
+      </section>
+
+      <!-- DUEL -->
+      <section class="screen duel-screen" data-screen="duel" hidden>
+        <div class="stage">
+          <canvas class="scene" id="scene" aria-hidden="true"></canvas>
+          <div class="score score-0"><span class="who" id="name-0"></span><b id="score-0">0</b></div>
+          <div class="score score-1"><b id="score-1">0</b><span class="who" id="name-1"></span></div>
+          <div class="center" aria-live="assertive">
+            <p class="status" id="status"></p>
+            <p class="signal" id="signal" hidden>!</p>
+            <p class="detail" id="detail"></p>
+          </div>
+        </div>
+        <div class="controls">
+          <button class="draw-btn p0" id="pad-0" type="button"><span class="draw-label">DRAW</span><span class="draw-key" id="key-0"></span></button>
+          <button class="draw-btn p1" id="pad-1" type="button"><span class="draw-label">DRAW</span><span class="draw-key" id="key-1"></span></button>
+        </div>
+      </section>
+
+      <!-- MATCH OVER -->
+      <section class="screen over-screen" data-screen="over" hidden>
+        <h2 class="over-title" id="over-title"></h2>
+        <p class="over-score" id="over-score"></p>
+        <p class="over-fastest" id="over-fastest"></p>
+        <div class="over-actions">
+          <button class="fp-btn" id="again" type="button" data-autofocus>REMATCH</button>
+          <button class="fp-btn secondary" id="change" type="button">SETUP</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

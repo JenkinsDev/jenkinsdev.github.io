@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Two real things. Pick the one that's higher.">
+    <meta name="theme-color" content="#0b0a10">
+    <title>Higher or Lower · FREE PLAY</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%23ffd23f'/%3E%3Cpath d='M8 3 L12 7 H4 Z M8 13 L4 9 H12 Z' fill='%23120a20'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=VT323&family=Silkscreen:wght@400;700&display=swap">
+    <link rel="stylesheet" href="../shared/crt.css">
+    <link rel="stylesheet" href="game.css">
+    <script defer src="../shared/sound.js"></script>
+    <script defer src="../shared/engine.js"></script>
+    <script defer src="../shared/controls.js"></script>
+    <script defer src="data/categories.js"></script>
+    <script defer src="data/weight.js"></script>
+    <script defer src="data/size.js"></script>
+    <script defer src="data/speed.js"></script>
+    <script defer src="data/ago.js"></script>
+    <script defer src="data/life.js"></script>
+    <script defer src="format.js"></script>
+    <script defer src="pick.js"></script>
+    <script defer src="game.js"></script>
+  </head>
+  <body>
+    <main class="hol">
+      <!-- TITLE -->
+      <section class="screen title-screen" data-screen="title">
+        <h1 class="logo"><span class="up">▲ HIGHER</span><span class="or">or</span><span class="down">▼ LOWER</span></h1>
+        <p class="lede">Pick the heavier, faster, taller, older or longer-lived thing.</p>
+
+        <div class="option">
+          <h2 class="option-label" id="cat-label">Category</h2>
+          <div class="chips" id="cats" role="group" aria-labelledby="cat-label"></div>
+        </div>
+        <div class="option">
+          <h2 class="option-label" id="units-label">Units</h2>
+          <div class="chips" id="units" role="group" aria-labelledby="units-label">
+            <button type="button" class="chip" data-units="us">US<small>lb, ft, mph</small></button>
+            <button type="button" class="chip" data-units="metric">Metric<small>kg, m, km/h</small></button>
+          </div>
+        </div>
+        <div class="option controls">
+          <h2 class="option-label" id="controls-label">Controls</h2>
+          <div class="control-cards" id="control-cards" aria-labelledby="controls-label"></div>
+        </div>
+        <button class="fp-btn play" id="play" type="button" data-autofocus>PLAY</button>
+      </section>
+
+      <!-- PLAY -->
+      <section class="screen play-screen" data-screen="play" hidden>
+        <div class="hud">
+          <span class="hud-cat" id="hud-cat"></span>
+          <span class="hud-streak">Streak <b id="streak">0</b></span>
+        </div>
+
+        <h2 class="prompt" id="prompt"></h2>
+
+        <div class="arena">
+          <button class="item" id="card-a" type="button">
+            <span class="art"></span>
+            <span class="item-text"><span class="item-name"></span><span class="item-note"></span><span class="item-value"></span></span>
+          </button>
+          <div class="vs" aria-hidden="true">or</div>
+          <button class="item" id="card-b" type="button">
+            <span class="art"></span>
+            <span class="item-text"><span class="item-name"></span><span class="item-note"></span><span class="item-value"></span></span>
+          </button>
+        </div>
+
+        <div class="result" id="result" hidden>
+          <p class="verdict" id="verdict"></p>
+          <p class="ratio" id="ratio"></p>
+          <p class="fact" id="fact"></p>
+          <button class="fp-btn next" id="next" type="button">NEXT</button>
+        </div>
+      </section>
+
+      <!-- GAME OVER -->
+      <section class="screen over-screen" data-screen="over" hidden>
+        <h2 class="over-title">Game over</h2>
+        <p class="over-score">Streak <b id="final">0</b></p>
+        <p class="over-best" id="best-note"></p>
+        <div class="missed" id="missed"></div>
+        <div class="over-actions">
+          <button class="fp-btn" id="again" type="button" data-autofocus>PLAY AGAIN</button>
+          <button class="fp-btn secondary" id="change" type="button">CHANGE CATEGORY</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

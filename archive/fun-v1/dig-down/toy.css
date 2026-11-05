@@ -1,0 +1,158 @@
+/* Dig to the Middle of the Earth: crayon + paper look. Pixel positions use --surf (ground line) + --y (dig distance). */
+:root {
+  --surf: clamp(300px, 36vh, 440px);
+  --yc: 25500px;
+  --cardw: min(90vw, 390px);
+  --rule: rgba(47, 127, 214, 0.35);
+}
+html { scroll-behavior: auto; }
+body { overflow-x: hidden; background: #8b5a2b; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+button { font-family: inherit; color: inherit; }
+
+/* fixed colour that changes with depth + paper grain and crayon scribble */
+#bg { position: fixed; inset: 0; z-index: -2; background: #8b5a2b; }
+#bg::after {
+  content: ""; position: absolute; inset: 0; background-image: var(--grain),
+    repeating-linear-gradient(115deg, rgba(0, 0, 0, 0.07) 0 3px, transparent 3px 19px),
+    repeating-linear-gradient(60deg, rgba(255, 255, 255, 0.06) 0 2px, transparent 2px 23px);
+}
+#glow { position: fixed; inset: 0; z-index: -1; opacity: 0; pointer-events: none;
+  background: radial-gradient(ellipse at 50% 45%, rgba(255, 244, 180, 0.9), rgba(255, 210, 70, 0) 68%); }
+
+#world { position: relative; height: calc(var(--surf) + var(--yc) + 300px); }
+.card, .deco, .find, .ff, .centre, .tear, .strata { position: absolute; top: calc(var(--surf) + var(--y)); }
+
+/* sky: blue construction paper */
+.sky { position: absolute; inset: 0 0 auto 0; height: var(--surf); z-index: 1; overflow: hidden;
+  background: var(--cp-blue) var(--grain); border-bottom: 3px solid var(--ink); }
+.title { position: absolute; top: 88px; left: 0; right: 0; margin: 0 auto; max-width: 30rem; padding: 0 12px; text-align: center;
+  font: clamp(1.9rem, 7.4vw, 3.5rem)/1.02 var(--font-display); letter-spacing: 0.02em; color: var(--ink);
+  text-shadow: 3px 3px 0 var(--cp-yellow); transform: rotate(-1.5deg); }
+.sky-sun { position: absolute; left: 4%; bottom: 40px; width: 90px; height: 90px; opacity: 0.95; }
+.sky-cloud { position: absolute; width: 120px; height: 60px; }
+.c1 { right: 8%; bottom: 44px; } .c2 { left: 26%; bottom: 70px; width: 90px; height: 45px; }
+.grass { position: absolute; left: 0; right: 0; bottom: -2px; height: 34px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='34'%3E%3Cpath d='M0 34 L6 8 L13 34 L22 2 L30 34 L38 10 L46 34 Z' fill='%233aa356' stroke='%232a2522' stroke-width='3' stroke-linejoin='round'/%3E%3C/svg%3E") repeat-x bottom; }
+
+.shaft { position: absolute; left: 50%; width: 96px; margin-left: -48px; top: var(--surf); height: calc(var(--yc) + 300px); z-index: 1;
+  background: rgba(30, 18, 8, 0.28); border-inline: 3px dashed rgba(42, 37, 34, 0.4); }
+
+/* torn construction-paper layer edges */
+.tear { left: -2%; width: 104%; height: 64px; z-index: 1; pointer-events: none; }
+.strata { left: 0; width: 280px; height: 28px; z-index: 1; opacity: 0.5; pointer-events: none; }
+
+.deco { z-index: 1; width: var(--w); height: var(--w); pointer-events: none; opacity: 0.92; }
+
+/* index-card discoveries */
+.reveal { opacity: 0; transform: translateY(40px) scale(0.94); transition: opacity 0.45s ease, transform 0.5s ease; }
+.reveal.in { opacity: 1; transform: none; }
+.card { z-index: 3; left: calc(50% + var(--off, 0px)); width: var(--cardw); margin-left: calc(var(--cardw) / -2); rotate: var(--rot, 0deg);
+  padding: 20px 18px 16px; text-align: center; background: var(--card) var(--grain); border-radius: var(--radius);
+  box-shadow: var(--shadow), 0 0 0 1px rgba(42, 37, 34, 0.12); border-top: 6px solid var(--tomato);
+  --rot: 0deg; }
+.card::before { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+  background: repeating-linear-gradient(transparent 0 27px, var(--rule) 27px 28px); mask: linear-gradient(transparent 118px, #000 118px); -webkit-mask: linear-gradient(transparent 118px, #000 118px); }
+.card > * { position: relative; }
+.card .fun-tape { position: absolute; top: -17px; }
+.chip { display: inline-block; font: 1rem/1 var(--font-display); letter-spacing: 0.03em; padding: 5px 10px; background: var(--cp-orange) var(--grain);
+  border: 2px solid var(--ink); border-radius: 3px 8px 3px 6px; transform: rotate(-2deg); }
+.card .art { display: block; width: 100%; height: 104px; margin: 6px 0 2px; }
+.card h3 { margin: 0.1rem 0 0.3rem; font: 1.6rem/1.1 var(--font-display); letter-spacing: 0.02em; }
+.fact { margin: 0.2rem 0 0.7rem; font-size: 1.3rem; line-height: 28px; }
+.joke { margin: 0 auto; max-width: 92%; padding: 8px 12px; font-size: 1.3rem; line-height: 1.2; background: var(--cp-yellow) var(--grain);
+  box-shadow: 2px 3px 0 rgba(42, 37, 34, 0.25); rotate: -1.5deg; }
+.poke { position: absolute; inset: 0; width: 100%; height: 100%; background: transparent; border: 0; cursor: pointer; touch-action: manipulation; }
+.poke:focus-visible, .find:focus-visible { outline: 3px dashed var(--sky); outline-offset: 6px; }
+.wig { animation: wig 0.6s ease; }
+@keyframes wig {
+  0%, 100% { rotate: var(--rot, 0deg); scale: 1; }
+  25% { rotate: calc(var(--rot, 0deg) - 4deg); scale: 1.04; }
+  50% { rotate: calc(var(--rot, 0deg) + 4deg); }
+  75% { rotate: calc(var(--rot, 0deg) - 2deg); scale: 1.02; }
+}
+
+/* silly finds: scraps with a handwritten note */
+.find { z-index: 4; width: 140px; padding: 0; border: 0; background: none; cursor: pointer; display: grid; justify-items: center; gap: 4px; touch-action: manipulation; }
+.find.l { left: 2%; } .find.r { right: 14px; }
+.find .art, .find .em { width: 82px; height: 82px; display: block; }
+.find .em { font-size: 3.1rem; line-height: 82px; text-align: center; }
+.bubble { font-size: 1.15rem; line-height: 1.1; padding: 5px 8px; background: var(--card) var(--grain); box-shadow: 2px 3px 0 rgba(42, 37, 34, 0.3); rotate: 2deg; }
+.find.r .bubble { rotate: -2deg; }
+
+/* fast-forward banner: hazard-striped paper */
+.ff { left: 0; right: 0; height: 78px; z-index: 2; display: grid; place-items: center; border-block: 3px solid var(--ink);
+  background: repeating-linear-gradient(-45deg, var(--cp-yellow) 0 20px, var(--cp-orange) 20px 40px); }
+.ff .pill { padding: 6px 16px; font: 1.35rem/1.1 var(--font-display); letter-spacing: 0.02em; text-align: center; background: var(--card) var(--grain);
+  border: 2px solid var(--ink); box-shadow: 3px 3px 0 rgba(42, 37, 34, 0.35); rotate: -1deg; max-width: 92vw; }
+.ff b { color: var(--tomato); font-weight: 400; }
+
+.centre { left: 50%; margin-left: -130px; width: 260px; height: 260px; z-index: 2; display: grid; place-items: center; text-align: center;
+  font: 1.7rem/1 var(--font-display); border: 5px solid var(--ink); border-radius: 50%; filter: url(#wobble);
+  background: radial-gradient(circle at 38% 32%, #fffbe0, #ffe27a 45%, #f7a928 80%); box-shadow: 0 0 0 16px rgba(255, 255, 255, 0.4), 0 0 90px 36px rgba(255, 226, 122, 0.85); }
+
+/* depth meter: a paper note taped to the screen */
+.meter { position: fixed; top: 14px; right: 16px; z-index: 30; min-width: 132px; padding: 14px 14px 10px; text-align: right; rotate: 1.5deg;
+  background: var(--card) var(--grain); box-shadow: var(--shadow-lift); border-radius: 3px; }
+.meter .fun-tape { width: 70px; margin-left: -35px; top: -12px; height: 22px; }
+.m-label { font-size: 1rem; letter-spacing: 0.12em; color: var(--ink-soft); }
+.m-ft { font: clamp(1.4rem, 5.4vw, 2rem)/1.05 var(--font-display); } .m-ft small { font-size: 0.55em; }
+.m-m, .m-km { font-size: 1.2rem; line-height: 1.1; }
+.m-rec { margin-top: 4px; padding-top: 3px; border-top: 2px dashed var(--ink-soft); font-size: 1rem; color: var(--ink-soft); }
+
+/* measuring tape down the right edge */
+.ruler { position: fixed; z-index: 25; right: 2px; top: 150px; bottom: 96px; width: 16px; border: 2px solid var(--ink); background: var(--sun);
+  background-image: repeating-linear-gradient(transparent 0 9px, rgba(42, 37, 34, 0.7) 9px 11px); }
+.ruler-pin { position: absolute; left: -12px; top: 0; width: 0; height: 0; border: 9px solid transparent; border-left: 14px solid var(--tomato); will-change: transform; }
+
+.digger { position: fixed; z-index: 20; left: 50%; width: 100px; height: 118px; margin-left: -50px; top: calc(var(--surf) - 116px); pointer-events: none; }
+.dg { width: 100%; height: 100%; transform-origin: 50% 100%; rotate: -2deg; }
+.dg svg { width: 100%; height: 100%; overflow: visible; }
+.digger { transition: opacity 0.4s; }
+body.past .digger { opacity: 0; }
+.digging .dg { animation: bob 0.3s ease-in-out infinite alternate; }
+@keyframes bob { from { transform: translateY(0) rotate(-4deg); } to { transform: translateY(-5px) rotate(4deg); } }
+
+.dig-btn { position: fixed; z-index: 30; bottom: 18px; left: 0; right: 0; margin: auto; width: fit-content; background: var(--cp-yellow) var(--grain); }
+.dig-btn.on { background: var(--cp-red) var(--grain); color: #fff; }
+body.at-end .dig-btn { display: none; }
+
+.toast { position: fixed; z-index: 60; left: 50%; top: 42%; width: min(88vw, 480px); padding: 26px 18px 18px; text-align: center; pointer-events: none;
+  background: var(--card) var(--grain); font: clamp(1.8rem, 7vw, 2.8rem)/1.1 var(--font-display); box-shadow: var(--shadow-lift);
+  opacity: 0; transform: translate(-50%, -40%) rotate(-3deg) scale(0.9); transition: opacity 0.3s, transform 0.4s; }
+.toast.show { opacity: 1; transform: translate(-50%, -50%) rotate(-3deg) scale(1); }
+#confetti { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 50; pointer-events: none; }
+
+/* ending */
+.finale { position: relative; z-index: 3; min-height: 100vh; padding: 3.5rem 0 4rem; display: grid; gap: 3rem; justify-items: center; align-content: start; }
+.fin-card { position: relative; width: min(92vw, 560px); padding: 30px 22px 24px; text-align: center; rotate: -1deg;
+  background: var(--card) var(--grain), repeating-linear-gradient(transparent 0 31px, var(--rule) 31px 32px); background-blend-mode: normal;
+  box-shadow: var(--shadow-lift); border-radius: var(--radius); }
+.fin-card.other { rotate: 1.2deg; }
+.fin-card h2 { margin: 0; font: clamp(2.4rem, 10vw, 3.8rem)/1 var(--font-display); letter-spacing: 0.02em; color: var(--tomato); text-shadow: 2px 3px 0 var(--ink); }
+.big { margin: 0.4rem 0; font: clamp(1.8rem, 7vw, 2.6rem)/1.1 var(--font-display); }
+.fin-card p { margin: 0.5rem 0; font-size: 1.4rem; line-height: 32px; }
+.fin-card .small { font-size: 1.2rem; color: var(--ink-soft); }
+.fin-star { position: absolute; right: -16px; top: -26px; width: 84px; height: 84px; rotate: 14deg; filter: drop-shadow(2px 3px 0 rgba(42, 37, 34, 0.3)); }
+.fin-card .art { display: block; margin: 0.4rem auto; width: min(70%, 240px); height: 90px; }
+.cmp-title { font-family: var(--font-display); font-size: 1.5rem !important; }
+.cmp { margin: 0 auto; padding: 0; list-style: none; font-size: 1.35rem; line-height: 32px; }
+.cmp li::before { content: "\2605  "; color: var(--sun); text-shadow: 1px 1px 0 var(--ink); }
+.cmp b { font-weight: 400; background: var(--cp-yellow); padding: 0 5px; }
+.btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-top: 18px; }
+.fun-btn.alt { background: var(--cp-green) var(--grain); }
+
+@media (max-width: 759px) {
+  :root { --surf: clamp(380px, 38vh, 440px); }
+  .title { top: 142px; }
+}
+@media (min-width: 760px) {
+  .card { --off: calc(var(--dir, 1) * min(24vw, 270px)); --cardw: min(90vw, 360px); }
+  .title { top: 24px; }
+  .find.l { left: 4%; } .find.r { right: 8%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; }
+  .digging .dg { animation: none; }
+}
+.deco svg, .strata svg { display: block; width: 100%; height: 100%; }

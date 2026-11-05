@@ -1,0 +1,49 @@
+{{/* Site additions to the theme's <head>: styles for the FREE PLAY header link (see layouts/partials/header.html). */}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=VT323&display=swap">
+<style>
+  .header { flex-wrap: wrap; }
+  .header .fp-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex-basis: 100%;
+    justify-content: center;
+    min-height: 48px;
+    margin: 0.9rem 0 0.25rem;
+    padding: 0.55rem 0.8rem;
+    border: 2px solid #ff3da0;
+    border-radius: 4px;
+    background: #0b0a10;
+    color: #ff3da0;
+    text-decoration: none;
+    box-shadow: 0 4px 0 #6b0d3a;
+    transition: transform 0.12s ease, box-shadow 0.12s ease, filter 0.12s ease;
+    white-space: nowrap;
+  }
+  .header .fp-link:hover, .header .fp-link:focus-visible {
+    transform: translateY(-1px);
+    filter: brightness(1.12);
+    box-shadow: 0 5px 0 #6b0d3a;
+    border-bottom: 2px solid #ff3da0; /* the theme underlines links on hover; keep the button's own border */
+  }
+  .header .fp-link:active { transform: translateY(3px); box-shadow: 0 1px 0 #6b0d3a; transition-duration: 40ms; }
+  .header .fp-link:focus-visible { outline: 2px dashed #00e5ff; outline-offset: 4px; }
+  .fp-link-icon { width: 26px; height: 26px; image-rendering: pixelated; transition: transform 0.12s ease; }
+  .header .fp-link:hover .fp-link-icon { transform: rotate(-8deg); }
+  .fp-link-text { display: grid; grid-auto-flow: column; align-items: baseline; gap: 0.5rem; line-height: 1; }
+  .fp-link-title { font: 400 1.3rem/1 "Bungee", "Arial Black", sans-serif; color: #ff3da0; text-shadow: 1px 1px 0 rgba(0, 229, 255, 0.55); letter-spacing: 0.03em; }
+  .fp-link-sub { font: 1rem/1 "VT323", monospace; color: #b9c6d8; margin-top: 3px; }
+  /* Keep navigation beside the logo; let its items wrap within the available space. */
+  @media (min-width: 685px) {
+    .header > .menu { flex-basis: 0; flex-grow: 1; min-width: 0; justify-content: flex-end; }
+    .header .menu__inner--desktop { justify-content: flex-end; }
+  }
+  @media (max-width: 684px) {
+    .header__inner { width: 100%; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .header .fp-link, .fp-link-icon { transition: none; }
+  }
+</style>
