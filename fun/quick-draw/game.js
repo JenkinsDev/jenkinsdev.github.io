@@ -114,6 +114,8 @@
     const two = state.mode === "2p";
     const keys = FP.layout.current.size !== "phone"; // show keyboard keys where there's likely a keyboard
     pads[1].disabled = !two; // in 1P the computer draws for itself
+    pads[1].hidden = !two; // ...so the player gets one full-width DRAW button
+    $("controls").classList.toggle("solo", !two);
     names().forEach((n, i) => { $("name-" + i).textContent = n; });
     $("key-0").textContent = keys ? (two ? "A" : "Space") : "";
     $("key-1").textContent = keys && two ? "L" : "";

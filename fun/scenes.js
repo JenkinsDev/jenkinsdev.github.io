@@ -31,8 +31,11 @@
   // one shared live match for the Air Puck preview
   const puckSim = { world: null, last: 0, clock: 0, resumeAt: 0, conceded: 0, trail: [], flash: null };
 
-  /** Canvas size per scene: the town, the cards and the rink need more pixels than the simple loops. */
-  window.FP_SCENE_SIZES = { hol: [240, 180], draw: [192, 144], puck: [384, 288] };
+  // one shared real pile for the Stack It preview, built by the Hard computer
+  const stackSim = { game: null, last: 0, kind: null, phase: "aim", aimT: 0, fallT: 0, stillT: 0, aim: 0, camY: -0.3, wait: 0, placed: 0 };
+
+  /** Canvas size per scene: the town, the cards, the rink and the pile need more pixels than the simple loops. */
+  window.FP_SCENE_SIZES = { hol: [240, 180], draw: [192, 144], puck: [384, 288], stack: [192, 144] };
 
   window.FP_SCENES = {
     // Higher or Lower: the real round layout. Two cards, "?" on both, then the numbers
@@ -68,14 +71,35 @@
       g.textAlign = "center";
       g.fillText(pair.q, W / 2, 17);
     },
+    // Stack It: the game's own crane, objects and physics. The computer stacks until the pile
+    // falls or reaches 7 things, then starts again.
     stack(g, t) {
-      R(g, "#2a1040", 0, 0, 64, 48); R(g, "#3a1858", 0, 42, 64, 6);
-      const s = Math.round(Math.sin(t / 400) * 1.5);
-      R(g, "#8a7fa8", 20, 40, 24, 2); R(g, "#1a1a1a", 22, 33, 20, 7); R(g, "#fff", 23, 37, 18, 2);
-      R(g, "#c0c6cf", 25 + s, 27, 14, 6); R(g, "#ff8fc7", 26 + s * 2, 20, 12, 7); R(g, "#fff", 26 + s * 2, 23, 12, 1);
-      ellipse(g, 32 + s * 3, 16, 5, 3, "#ff7a1a"); R(g, "#ff7a1a", 28 + s * 3, 11, 1, 2); R(g, "#ff7a1a", 35 + s * 3, 11, 1, 2);
-      const sw = Math.round(Math.sin(t / 500) * 8);
-      R(g, "#8a7fa8", (32 + sw / 2) | 0, 0, 1, 4); ellipse(g, 32 + sw, 6, 3, 2, "#ffd23f");
+      if (!window.SK || !window.SKRender) return;
+      const sim = stackSim;
+      const next = () => { sim.kind = SKObjects.deal(sim.kind); sim.phase = "aim"; sim.aimT = 0; sim.aim = SK.aim(sim.game, "hard"); };
+      if (!sim.game) { sim.game = SK.newGame(); sim.kind = null; sim.placed = 0; sim.camY = -0.3; sim.last = t; next(); }
+      const dt = Math.min(0.1, Math.max(0, (t - sim.last) / 1000));
+      sim.last = t;
+      SK.step(sim.game, dt);
+      if (sim.phase === "aim") {
+        sim.aimT += dt;
+        if (SK.cpuShouldDrop(sim.game, sim.kind, "hard", sim.aim, sim.aimT)) {
+          const h = SK.hook(sim.game, sim.aimT);
+          SK.drop(sim.game, sim.kind, h.x, SK.hangY(sim.game, sim.kind), h.vx);
+          sim.phase = "fall"; sim.fallT = 0; sim.stillT = 0;
+        }
+      } else if (sim.phase === "fall") {
+        sim.fallT += dt;
+        sim.stillT = SK.settled(sim.game) ? sim.stillT + dt : 0;
+        if (SK.fallen(sim.game).length) { sim.phase = "done"; sim.wait = 1.6; }
+        else if (sim.fallT > 0.5 && sim.stillT > 0.3) { if (++sim.placed >= 7) { sim.phase = "done"; sim.wait = 1.6; } else next(); }
+      } else if ((sim.wait -= dt) <= 0) sim.game = null;
+      if (!sim.game) return;
+      const view = { w: g.canvas.width, h: g.canvas.height, ppm: Math.floor(g.canvas.height / 4.6) }, kind = sim.kind; // closer than the game, so the small card reads
+      const top = SK.hangY(sim.game, kind) + SKObjects.bounds(SKObjects.OBJECTS[kind]).maxY + 1.0;
+      sim.camY += (Math.max(-0.3, top - view.h / view.ppm) - sim.camY) * Math.min(1, dt * 2.5);
+      const held = sim.phase === "aim" ? { kind, x: SK.hook(sim.game, sim.aimT).x, y: SK.hangY(sim.game, kind) } : null;
+      SKRender.paint(g, view, { game: sim.game, held, camY: sim.camY, t, line: null });
     },
     // Quick Draw: the game's own town (quick-draw/scene.js). Wait, "!", one draws, the other falls.
     // The winner alternates each loop.
@@ -141,5 +165,6 @@
   window.FP_SCENES.puck.reset = () => {
     Object.assign(puckSim, { world: null, last: 0, clock: 0, pending: 0, resumeAt: 0, conceded: 0, trail: [], flash: null });
   };
+  window.FP_SCENES.stack.reset = () => { stackSim.game = null; };
   window.FP_SCENE_STILLS = { hol: 3100, draw: 2100, puck: 0, stack: 0, soon: 0 };
 })();

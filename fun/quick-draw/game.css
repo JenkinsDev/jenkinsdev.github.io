@@ -71,6 +71,8 @@ html[data-layout="phone"] #levels { grid-template-columns: repeat(2, minmax(0, 1
 .detail { margin: 0; font: 400 clamp(1.1rem, 2.6vh, 1.6rem)/1 var(--font-sign); color: #fff3a0; text-shadow: 2px 2px 0 rgba(60, 14, 6, 0.8); min-height: 1em; }
 
 .duel-screen .controls { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.duel-screen .controls.solo { grid-template-columns: 1fr; } /* 1P: one full-width DRAW button, the computer has no pad */
+.draw-btn[hidden] { display: none; }
 .draw-btn {
   --c: #ff3d3d;
   display: grid;

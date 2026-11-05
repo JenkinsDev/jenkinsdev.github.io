@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Drop things from a crane and stack them as high as you can. Play solo, the computer or a friend.">
+    <meta name="theme-color" content="#0b0a10">
+    <title>Stack It · FREE PLAY</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%23ff3da0'/%3E%3Crect x='3' y='10' width='10' height='3' fill='%23fff'/%3E%3Crect x='5' y='6' width='6' height='4' fill='%23fff'/%3E%3Crect x='6' y='3' width='4' height='3' fill='%23fff'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=VT323&family=Silkscreen:wght@400;700&display=swap">
+    <link rel="stylesheet" href="../shared/crt.css">
+    <link rel="stylesheet" href="game.css">
+    <script defer src="../shared/sound.js"></script>
+    <script defer src="../shared/engine.js"></script>
+    <script defer src="../shared/controls.js"></script>
+    <script defer src="../vendor/planck.min.js"></script>
+    <script defer src="objects.js"></script>
+    <script defer src="physics.js"></script>
+    <script defer src="render.js"></script>
+    <script defer src="game.js"></script>
+  </head>
+  <body>
+    <main class="sk">
+      <!-- SETUP -->
+      <section class="screen title-screen" data-screen="title">
+        <h1 class="logo">STACK IT</h1>
+        <p class="lede">Drop each thing from the crane onto the pile. Don't let anything hit the ground.</p>
+
+        <div class="option">
+          <h2 class="option-label" id="mode-label">Players</h2>
+          <div class="chips" id="modes" role="group" aria-labelledby="mode-label">
+            <button type="button" class="chip" data-mode="solo">Solo</button>
+            <button type="button" class="chip" data-mode="1p">1P</button>
+            <button type="button" class="chip" data-mode="2p">2P</button>
+          </div>
+          <p class="mode-rule" id="mode-rule"></p>
+        </div>
+        <div class="option" id="level-option">
+          <h2 class="option-label" id="level-label">Computer</h2>
+          <div class="chips" id="levels" role="group" aria-labelledby="level-label"></div>
+        </div>
+        <div class="option" id="rounds-option">
+          <h2 class="option-label" id="rounds-label">Rounds</h2>
+          <div class="chips" id="rounds" role="group" aria-labelledby="rounds-label"></div>
+        </div>
+        <div class="option controls">
+          <h2 class="option-label" id="controls-label">Controls</h2>
+          <div class="control-cards" id="control-cards" aria-labelledby="controls-label"></div>
+        </div>
+        <button class="fp-btn play" id="play" type="button" data-autofocus>PLAY</button>
+        <p class="best" id="best"></p>
+      </section>
+
+      <!-- PLAY -->
+      <section class="screen play-screen" data-screen="play" hidden>
+        <div class="stage" id="stage">
+          <canvas class="scene" id="scene" aria-label="The crane and the pile"></canvas>
+          <div class="hud" id="solo-hud">
+            <span class="hud-who" id="hud-who"></span>
+            <span class="hud-height"><b id="height">0</b> ft</span>
+            <span class="hud-sub" id="height-m"></span>
+          </div>
+          <div class="score score-0" id="chip-0"><span class="who" id="name-0"></span><b id="score-0">0</b></div>
+          <div class="score score-1" id="chip-1"><span class="who" id="name-1"></span><b id="score-1">0</b></div>
+          <p class="banner" id="banner" aria-live="assertive"></p>
+        </div>
+      </section>
+
+      <!-- OVER -->
+      <section class="screen over-screen" data-screen="over" hidden>
+        <h2 class="over-title" id="over-title"></h2>
+        <p class="over-score" id="over-score"></p>
+        <p class="over-note" id="over-note"></p>
+        <div class="over-actions">
+          <button class="fp-btn" id="again" type="button" data-autofocus>PLAY AGAIN</button>
+          <button class="fp-btn secondary" id="change" type="button">SETUP</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
