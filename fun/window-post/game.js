@@ -11,7 +11,7 @@
     $('levels').querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', b.dataset.level === state.level));
     $('level-option').hidden = state.mode !== '1p';
     $('mode-rule').textContent = state.mode === '1p' ? 'Take turns with the computer.' : 'Take turns with a friend on this screen.';
-    const how = 'Set angle and power. Tap THROW.';
+    const how = 'Drag back on the picture, then let go.';
     FP.controlCards($('control-cards'), state.mode === '1p' ? [{ who: 'You', how, keys: [['Left', 'Right', 'Up', 'Down', 'Enter']] }] : [
       { who: 'Player 1', how, keys: [['A', 'D', 'W', 'S', 'Space']] }, { who: 'Player 2', how, keys: [['Left', 'Right', 'Up', 'Down', 'Enter']] }]);
     FP.screens.go('title');
@@ -25,10 +25,11 @@
     state[key] = b.dataset[key]; store.set(key, state[key]); FP.sfx.move(); setup();
   });
   function controls() {
-    for (const key of ['angle', 'power']) { $(key).value = state.aim[key]; $(key + '-value').textContent = state.aim[key] + (key === 'angle' ? '°' : ''); }
+    $('angle-value').textContent = state.aim.angle + '°'; $('power-value').textContent = state.aim.power;
+    $('power-bar').style.width = Math.round((state.aim.power - 30) / 70 * 100) + '%';
     const g = state.game, active = state.phase === 'aim' && human();
-    $('aim-panel').disabled = !active;
-    $('throw').textContent = state.phase === 'flight' ? 'IN FLIGHT' : active ? 'THROW' : 'WAIT';
+    $('aim-hint').textContent = state.phase === 'flight' ? 'In flight…' : state.phase !== 'aim' ? '' : !active ? 'The computer is aiming'
+      : drag && drag.pulled ? 'Let go to throw' : 'Drag back on the picture, then let go';
     $('aim-owner').textContent = names()[g.turn] + (g.turn === 0 && state.mode === '1p' ? 'r parcel' : "'s parcel");
   }
   function status(message) {
@@ -50,11 +51,30 @@
   }
   function shoot() {
     if (state.phase !== 'aim') return;
+    drag = null; state.cpuAim = false;
     state.shot = WP.flight(state.game, state.aim); state.phase = 'flight'; state.wait = 0; controls();
     FunSound.tone(280, { duration: .09, volume: .04, slideTo: 420 });
   }
-  $('throw').addEventListener('click', () => { if (human()) shoot(); });
-  for (const key of ['angle', 'power']) $(key).addEventListener('input', () => { state.aim[key] = Number($(key).value); controls(); });
+  // Drag to aim, like a catapult: press anywhere on the picture and pull away from where the parcel should go.
+  // The pull direction sets the angle, its length sets the power, and letting go throws.
+  let drag = null;
+  const stage = document.querySelector('.stage'), fullPull = () => Math.max(90, $('scene').getBoundingClientRect().width * 0.32);
+  stage.addEventListener('pointerdown', e => {
+    if (state.phase !== 'aim' || !human() || drag) return;
+    drag = { id: e.pointerId, x: e.clientX, y: e.clientY, pulled: false };
+    stage.setPointerCapture(e.pointerId); e.preventDefault();
+  });
+  stage.addEventListener('pointermove', e => {
+    if (!drag || e.pointerId !== drag.id) return;
+    const aim = WP.fromPull(drag.x - e.clientX, e.clientY - drag.y, fullPull());
+    drag.pulled = !!aim; if (aim) state.aim = aim;
+    controls();
+  });
+  stage.addEventListener('pointerup', e => {
+    if (!drag || e.pointerId !== drag.id) return;
+    if (drag.pulled && state.phase === 'aim') shoot(); else { drag = null; controls(); }
+  });
+  stage.addEventListener('pointercancel', () => { drag = null; if (state.game) controls(); });
   function keyChange(player, key, delta) {
     if (state.phase !== 'aim' || !human() || (state.mode === '2p' && state.game.turn !== player)) return false;
     if (key === 'throw') { shoot(); return; }
@@ -71,7 +91,10 @@
   FP.loop(dt => {
     if (state.phase === 'idle' || state.phase === 'over') return;
     state.time += dt; state.wait += dt;
-    if (state.phase === 'aim' && !human() && state.wait > .8) { state.aim = WP.computer(state.game, state.level); shoot(); }
+    if (state.phase === 'aim' && !human()) {
+      if (!state.cpuAim && state.wait > .4) { state.cpuAim = true; state.aim = WP.computer(state.game, state.level); controls(); }
+      if (state.wait > 1.1) shoot();
+    }
     if (state.phase === 'flight' && state.wait >= (FP.reducedMotion ? .12 : state.shot.time)) {
       const hit = state.shot.hit;
       if (hit >= 0) { state.game.closedAt[hit] = state.time - (FP.reducedMotion ? .18 : 0); FP.sfx.right(); } else FP.sfx.wrong();
@@ -95,7 +118,7 @@
       const t = FP.reducedMotion ? .7 : state.wait;
       parcel = { x: p.x - t * 12, y: Math.min(165, p.y + t * 30 - Math.sin(t * 6) * 7), spin: FP.reducedMotion ? 0 : t * 5 };
     }
-    WPRender.paint(g, state.game, { time: state.time, aim: state.aim, guide: state.phase === 'aim', parcel, still: FP.reducedMotion });
+    WPRender.paint(g, state.game, { time: state.time, aim: state.aim, guide: state.phase === 'aim', pull: state.phase === 'aim' && ((drag && drag.pulled) || state.cpuAim), parcel, still: FP.reducedMotion });
   }).start();
   FP.ready.then(() => {
     const mode = store.get('mode', '1p'), level = store.get('level', 'medium');
