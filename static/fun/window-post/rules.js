@@ -51,7 +51,8 @@
     if (result.hit >= 0 && game.windows[result.hit].owner === null) {
       const w = game.windows[result.hit]; w.owner = game.turn; game.scores[game.turn] += w.points;
     }
-    game.throws++; game.turn = 1 - game.turn; game.over = game.throws >= 8;
+    game.throws++; game.turn = 1 - game.turn;
+    game.over = game.windows.every(w => w.owner !== null);
   }
   function search(game, step = 1) {
     const best = Array(8).fill(null);

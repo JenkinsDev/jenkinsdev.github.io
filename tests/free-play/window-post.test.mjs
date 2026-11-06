@@ -22,19 +22,33 @@ test('every window is reachable at every allowed wind across varied layouts', ()
   }
   console.log('Window Post reachability:', checks);
 });
-test('deliveries close windows for both players; exactly eight throws finish a match', () => {
+test('deliveries close windows for both players; the match lasts until every window is delivered', () => {
   const g = WP.create(rng(412)); const shot = WP.flight(g, WP.computer(g, 'impossible'));
   WP.deliver(g, shot); const score = g.scores[0]; assert.ok(score > 0);
-  WP.deliver(g, shot); assert.equal(g.scores[1], 0);
-  for (let i = 2; i < 8; i++) WP.deliver(g, { hit: -1 });
-  assert.ok(g.over); WP.deliver(g, { hit: -1 }); assert.equal(g.throws, 8);
+  assert.equal(g.windows[shot.hit].owner, 0);
+  WP.deliver(g, shot); assert.equal(g.scores[1], 0, 'a closed window cannot be scored again');
+  WP.deliver(g, { hit: -1 });
+  assert.equal(g.over, false, 'misses do not end the match while windows remain open');
+  g.windows.forEach((w, i) => { if (w.owner === null) WP.deliver(g, { hit: i }); });
+  assert.ok(g.over);
+  assert.ok(g.windows.every(w => w.owner !== null));
+  assert.equal(g.scores[0] + g.scores[1], 16);
+  const throws = g.throws;
+  WP.deliver(g, { hit: -1 }); assert.equal(g.throws, throws);
 });
 test('computer levels improve in paired matches, with alternating starts', () => {
   const levels = ['easy', 'medium', 'hard', 'impossible']; const points = [0, 0, 0, 0], wins = [0, 0, 0, 0], games = [0, 0, 0, 0];
   let first = 0, decisive = 0;
   for (let a = 0; a < 4; a++) for (let b = a + 1; b < 4; b++) for (let seed = 1; seed <= 12; seed++) for (let start = 0; start < 2; start++) {
     const g = WP.create(rng(seed * 1821), start), random = rng(seed * 713 + start);
-    while (!g.over) { const level = levels[g.turn === 0 ? a : b]; WP.deliver(g, WP.flight(g, WP.computer(g, level, random))); }
+    let steps = 0;
+    while (!g.over) {
+      const level = levels[g.turn === 0 ? a : b];
+      WP.deliver(g, WP.flight(g, WP.computer(g, level, random)));
+      assert.ok(++steps < 200, 'a match should finish once every window is delivered');
+    }
+    assert.ok(g.windows.every(w => w.owner !== null));
+    assert.equal(g.scores[0] + g.scores[1], 16);
     points[a] += g.scores[0]; points[b] += g.scores[1]; games[a]++; games[b]++;
     const winner = g.scores[0] === g.scores[1] ? -1 : g.scores[0] > g.scores[1] ? 0 : 1;
     if (winner < 0) { wins[a] += .5; wins[b] += .5; } else { wins[winner === 0 ? a : b]++; decisive++; if (winner === start) first++; }

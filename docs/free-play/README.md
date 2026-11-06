@@ -13,7 +13,8 @@ The hub is a grid of game cards: each shows a pixel preview of the game, its nam
 | Air Puck | 1P vs computer / 2P | live | `static/fun/air-puck/` |
 | Stack It | Solo / 1P vs computer / 2P | live | `static/fun/stack-it/` |
 | Window Post | 1P vs computer / 2P | live | `static/fun/window-post/` |
-| ? (next game) | ? | locked teaser | n/a |
+| Tug of War | 1P vs computer / 2P | live | `static/fun/tug-of-war/` |
+| Rocket Lander | 1P vs computer / 2P | live | `static/fun/rocket-lander/` |
 
 Each game's spec and as-built notes are in `features/free-play-games/notes/<slug>.md`.
 
@@ -38,7 +39,9 @@ Each game's spec and as-built notes are in `features/free-play-games/notes/<slug
   - 1P vs computer / 2P rounds: the first player builds until their pile falls, then the other builds a fresh pile and must beat that height (a dashed line in the first player's colour). Passing it wins the round at once; falling first loses it. Who starts alternates. A banner names whose turn it is, and the height box shows the builder's name in their colour. Best of 3, 5 or 7.
   - Fairness rules, found by simulating thousands of drops (`tests/free-play/stack-it.test.mjs`): nothing is perfectly round (tyres lie flat, melons and snowmen have flat bottoms, the snowman has a hat), weights stay within 3:1 (the physics engine squashes very light things under very heavy ones), objects fall straight down from the hook, and a hard object never follows a hard one.
   - The hub preview is a real pile built by the Hard computer, using the game's own physics and drawing.
-- **Window Post:** Take turns throwing parcels into eight apartment windows worth 1–3 points. Delivered windows close for both couriers. Aim like a catapult: press anywhere on the picture, pull back away from the windows (direction sets the angle, length sets the power) and let go. A short pull or a tap does nothing. Account for the steady wind. Eight total throws; highest score wins. 1P against Easy / Medium / Hard / Impossible, or 2P on one screen. Keyboard: arrows/WASD for angle and power, Enter/Space to throw. The computer shows its pull before it throws; rematches alternate who starts.
+- **Window Post:** Take turns throwing parcels into eight apartment windows worth 1–3 points. Delivered windows close for both couriers. Aim like a catapult: press anywhere on the picture, pull back away from the windows (direction sets the angle, length sets the power) and let go. A short pull or a tap does nothing. Account for the steady wind. Play continues until every window has a parcel; highest score wins. 1P against Easy / Medium / Hard / Impossible, or 2P on one screen. Keyboard: arrows/WASD for angle and power, Enter/Space to throw. The computer shows its pull before it throws; rematches alternate who starts.
+- **Tug of War:** Two sides mash a shared rope. Each tap tugs a flag toward your post; first over the line wins the round, best of three. Occasional banana peels, super sneakers and party sparkles spice a round. 1P against Easy / Medium / Hard / Impossible, or 2P on one screen. Touch pads on each half; A and L (or the matching arrows) on a keyboard.
+- **Rocket Lander:** Race a friend or the computer to a soft landing. The same rocket feels floaty on Pluto and the Moon, familiar on Mars and Earth, and heavy in Jupiter’s clouds (there is no solid ground — you aim at a floating pad). 1P against Easy / Medium / Hard / Impossible, or 2P split-screen. On-screen rotate/thrust buttons, plus arrows and WASD.
 - Window Post was built by a GPT-6.1 Sol agent from the shortlist in `features/free-play-games/notes/game-ideas.md`, then reviewed and integrated. It has `rules.js` (DOM-free rules + computer), `render.js`, `game.js` and `preview.js` (registers its hub scene). TILT! and Borrowed Blocks were built alongside it and removed on 2026-11-06: TILT! confused players and Borrowed Blocks was flat. Their notes stay in `features/free-play-games/notes/`.
 
 ## Where things live
@@ -51,7 +54,7 @@ static/fun/                 ← published verbatim by Hugo at /fun/
   shared/crt.css            tokens, fonts, page base, CRT effect, buttons, chips, top bar (link it first)
   shared/sound.js           FunSound: tiny WebAudio helper (also loads music.js on every page)
   shared/music.js           FunMusic: chiptune player (pulse lead, triangle bass, noise drums); plays the page's tune
-  shared/tracks.js          the tunes: hub, higher-or-lower, quick-draw, air-puck, stack-it (original compositions)
+  shared/tracks.js          the tunes: hub, higher-or-lower, quick-draw, air-puck, stack-it, window-post, tug-of-war, rocket-lander (original compositions)
   shared/engine.js          FP: layout, shell, screens, loop, input, saving, sounds, pixel emoji
   shared/controls.js        FP.controlCards(): the Controls section on setup screens (cards styled in crt.css)
   vendor/planck.min.js      Planck.js 1.4.3 (MIT, licence in the file header): 2D physics for Stack It

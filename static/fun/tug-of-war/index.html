@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Mash your side of the rope. First to pull the flag over the line wins the round.">
+<meta name="theme-color" content="#0b0a10"><title>Tug of War · FREE PLAY</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg?v=202611061251">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=202611061251">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=VT323&family=Silkscreen:wght@400;700&display=swap">
+<link rel="stylesheet" href="../shared/crt.css?v=202611061940"><link rel="stylesheet" href="game.css?v=202611061940">
+<script defer src="../shared/sound.js?v=202611061940"></script><script defer src="../shared/engine.js?v=202611061940"></script><script defer src="../shared/controls.js?v=202611061940"></script>
+<script defer src="rules.js?v=202611061940"></script><script defer src="render.js?v=202611061940"></script><script defer src="game.js?v=202611061940"></script>
+</head>
+<body><main class="tw">
+<section class="screen setup" data-screen="title">
+<h1 class="logo">TUG OF<br>WAR</h1>
+<p class="lede">Tap your side faster than the other side.</p>
+<div class="option"><h2 class="option-label" id="players-label">Players</h2><div class="chips" id="modes" role="group" aria-labelledby="players-label"><button type="button" class="chip" data-mode="1p">1P</button><button type="button" class="chip" data-mode="2p">2P</button></div><p id="mode-rule"></p></div>
+<div class="option" id="level-option"><h2 class="option-label" id="level-label">Computer</h2><div class="chips" id="levels" role="group" aria-labelledby="level-label"></div></div>
+<p class="match-rule">Best of three. First to pull the flag over your line wins the round.</p>
+<div class="option controls"><h2 class="option-label">Controls</h2><div class="control-cards" id="control-cards"></div></div>
+<button class="fp-btn" id="play" type="button" data-autofocus>PLAY</button>
+</section>
+<section class="screen playing" data-screen="play" hidden>
+<div class="scoreboard">
+  <div class="score s0"><span id="name-0">You</span><b id="score-0">0</b></div>
+  <div class="clock"><span id="timer"></span></div>
+  <div class="score s1"><b id="score-1">0</b><span id="name-1">Computer</span></div>
+</div>
+<p id="banner"></p>
+<p id="live" class="visually-hidden" role="status" aria-live="assertive"></p>
+<div class="stage" id="stage">
+  <canvas id="scene" width="240" height="180" aria-label="Two fighters tugging a rope over a mud pit at sunset"></canvas>
+</div>
+<div class="strip" id="strip">
+  <button class="pad p0" id="pad-0" type="button"><span class="burst" aria-hidden="true"></span><span class="pad-label">PULL!</span><span class="pad-key" id="key-0"></span></button>
+  <button class="pad p1" id="pad-1" type="button"><span class="burst" aria-hidden="true"></span><span class="pad-label">PULL!</span><span class="pad-key" id="key-1"></span></button>
+  <div class="cpu-badge" id="cpu-badge" hidden><span class="cpu-mark">TEAM</span><span class="cpu-name">CPU</span><span class="cpu-level" id="cpu-level"></span></div>
+</div>
+</section>
+<section class="screen over" data-screen="over" hidden>
+<h2 class="over-title" id="result"></h2>
+<p class="over-score" id="final-score"></p>
+<p class="over-note" id="over-note">Best of three.</p>
+<div class="actions"><button class="fp-btn" id="again" type="button" data-autofocus>REMATCH</button><button class="fp-btn secondary" id="change" type="button">SETUP</button></div>
+</section>
+</main></body></html>

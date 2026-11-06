@@ -119,4 +119,43 @@
     order: ["A", "B", "A", "B"]
   };
 
+
+  // Tug of War: a stomping tug, C major.
+  T["tug-of-war"] = {
+    bpm: 120,
+    parts: {
+      A: {
+        lead: "C5:2 E5:2 G5:2 C6:2 B5:2 G5:2 E5:4  F5:2 A5:2 C6:2 A5:2 G5:4 E5:4  C5:2 E5:2 G5:2 E5:2 A5:2 G5:2 F5:4  E5:2 D5:2 E5:2 G5:2 C5:8",
+        bass: "C3:4 G2:4 C3:4 G2:4 F2:4 C3:4 F2:4 G2:4 A2:4 E3:4 A2:4 F2:4 G2:4 D3:4 G2:4 C3:4",
+        drums: "k:2 h:2 s:2 h:2 k:2 h:2 s:2 h:2 k:2 h:2 s:2 h:2 k:2 k:2 s:2 h:2 k:2 h:2 s:2 h:2 k:2 h:2 s:2 h:2 k:2 h:2 s:2 h:2 k:2 h:2 s:2 h:2"
+      },
+      B: {
+        lead: "A5:2 G5:2 E5:4 C5:2 D5:2 E5:4  F5:4 A5:4 G5:2 F5:2 E5:4  D5:2 F5:2 A5:4 G5:4 E5:4  D5:2 E5:2 C5:4 R:8",
+        bass: "A2:4 E3:4 A2:4 E3:4 F2:4 C3:4 G2:4 D3:4 C3:4 G2:4 A2:4 E3:4 F2:4 G2:4 C3:8",
+        drums: "k:2 h:2 s:2 h:2 k:2 k:2 s:2 h:2 k:2 h:2 s:2 h:2 k:2 h:2 s:2 h:2 k:2 h:2 s:2 h:2 k:2 h:2 s:2 h:2 k:2 h:2 s:2 h:2 R:4 k:2 h:2"
+      }
+    },
+    order: ["A", "B", "A", "B"]
+  };
+
+
+
+  // Rocket Lander: a spare floating tune in C major.
+  T["rocket-lander"] = {
+    bpm: 98,
+    parts: {
+      A: {
+        lead: "C5:4 E5:4 G5:8  A5:4 G5:4 E5:8  F5:4 A5:4 G5:4 E5:4  D5:8 C5:8",
+        bass: "C3:8 G2:8  A2:8 E2:8  F2:8 C3:8  G2:8 C3:8",
+        drums: "k:4 h:4 s:4 h:4 k:4 h:4 s:4 h:4 k:4 h:4 s:4 h:4 k:4 h:4 s:4 h:4"
+      },
+      B: {
+        lead: "E5:4 G5:4 B5:8  A5:4 F5:4 D5:8  E5:4 C5:4 D5:4 E5:4  G5:8 R:8",
+        bass: "E2:8 B2:8  F2:8 C3:8  C3:8 G2:8  G2:8 C3:8",
+        drums: "k:4 h:4 s:4 h:4 k:4 h:4 s:4 h:4 k:4 h:4 s:4 h:4 k:4 R:4 s:4 h:4"
+      }
+    },
+    order: ["A", "B", "A", "B"]
+  };
+
 })();

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Fire the thrusters and set the rocket down gently. Gravity changes on every world.">
+<meta name="theme-color" content="#0b0a10"><title>Rocket Lander · FREE PLAY</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg?v=202611061251">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=202611061251">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=VT323&family=Silkscreen:wght@400;700&display=swap">
+<link rel="stylesheet" href="../shared/crt.css?v=202611061304"><link rel="stylesheet" href="game.css?v=202611061304">
+<script defer src="../shared/sound.js?v=202611061304"></script><script defer src="../shared/engine.js?v=202611061304"></script><script defer src="../shared/controls.js?v=202611061304"></script>
+<script defer src="rules.js?v=202611061304"></script><script defer src="render.js?v=202611061304"></script><script defer src="game.js?v=202611061304"></script>
+</head>
+<body><main class="rl">
+<section class="screen setup" data-screen="title">
+<h1 class="logo">ROCKET<br>LANDER</h1>
+<p class="lede">Fire the thrusters and set down gently. Gravity changes on every world.</p>
+<div class="option"><h2 class="option-label" id="players-label">Players</h2><div class="chips" id="modes" role="group" aria-labelledby="players-label"><button type="button" class="chip" data-mode="1p">1P</button><button type="button" class="chip" data-mode="2p">2P</button></div><p id="mode-rule"></p></div>
+<div class="option" id="level-option"><h2 class="option-label" id="level-label">Computer</h2><div class="chips" id="levels" role="group" aria-labelledby="level-label"></div></div>
+<div class="option" id="world-option"><h2 class="option-label" id="world-label">World</h2><div class="chips" id="worlds" role="group" aria-labelledby="world-label"></div></div>
+<p class="match-rule">Best of three. Land upright and gently on the pad.</p>
+<div class="option controls"><h2 class="option-label">Controls</h2><div class="control-cards" id="control-cards"></div></div>
+<button class="fp-btn" id="play" type="button" data-autofocus>PLAY</button>
+</section>
+<section class="screen playing" data-screen="play" hidden>
+<div class="scoreboard">
+  <div class="score" id="score-wrap-0"><span id="name-0">You</span><b id="score-0">0</b></div>
+  <div class="meta"><span id="world-tag">Moon</span><b id="timer">45.0</b></div>
+  <div class="score" id="score-wrap-1"><span id="name-1">Computer</span><b id="score-1">0</b></div>
+</div>
+<p id="banner">Land upright and gently on the pad.</p>
+<p id="live" class="visually-hidden" role="status" aria-live="polite"></p>
+<div class="arena">
+  <div class="cluster p1" id="cluster-1">
+    <button type="button" class="pad" data-p="1" data-act="left" aria-label="Rotate left">◀</button>
+    <button type="button" class="pad thrust" data-p="1" data-act="thrust">THRUST</button>
+    <button type="button" class="pad" data-p="1" data-act="right" aria-label="Rotate right">▶</button>
+  </div>
+  <div class="views" id="views">
+    <div class="view" id="view-wrap-0"><div class="hud"><div class="fuel"><span class="fuel-name">FUEL</span><span class="fuel-meter" aria-hidden="true"><i id="fuel-bar-0"></i></span><b id="fuel-0">100</b></div></div><canvas id="view-0" width="240" height="180" aria-label="Your rocket"></canvas></div>
+    <div class="split" aria-hidden="true"><span class="vs">VS</span></div>
+    <div class="view" id="view-wrap-1"><div class="hud"><div class="fuel"><span class="fuel-name">FUEL</span><span class="fuel-meter" aria-hidden="true"><i id="fuel-bar-1"></i></span><b id="fuel-1">100</b></div></div><canvas id="view-1" width="240" height="180" aria-label="The other rocket"></canvas></div>
+  </div>
+  <div class="cluster p0" id="cluster-0">
+    <button type="button" class="pad" data-p="0" data-act="left" aria-label="Rotate left">◀</button>
+    <button type="button" class="pad thrust" data-p="0" data-act="thrust">THRUST</button>
+    <button type="button" class="pad" data-p="0" data-act="right" aria-label="Rotate right">▶</button>
+  </div>
+</div>
+<p id="fact" hidden><span id="fact-text"></span></p>
+</section>
+<section class="screen over" data-screen="over" hidden>
+<h2 id="result"></h2>
+<p id="final-score"></p>
+<p>Best of three.</p>
+<div class="actions"><button class="fp-btn" id="rematch" type="button" data-autofocus>REMATCH</button><button class="fp-btn secondary" id="setup" type="button">SETUP</button></div>
+</section>
+</main></body></html>

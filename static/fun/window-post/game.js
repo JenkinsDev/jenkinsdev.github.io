@@ -40,7 +40,8 @@
       $('score-' + i).classList.toggle('active', g.turn === i);
     });
     $('banner').textContent = message || (state.mode === '1p' && g.turn === 0 ? 'Your turn' : names()[g.turn] + "'s turn");
-    $('remaining').textContent = 'Throw ' + Math.min(8, g.throws + 1) + ' of 8';
+    const open = g.windows.filter(w => w.owner === null).length;
+    $('remaining').textContent = open + (open === 1 ? ' window open' : ' windows open');
     controls();
   }
   function begin() {

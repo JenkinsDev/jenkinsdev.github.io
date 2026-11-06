@@ -61,9 +61,21 @@
       r(x, 135, 9, 3, colors[p]); r(x + 6, 138, 5, 2, colors[p]); r(x + 6, 140, 1, 1, '#302e35');
       r(x + 8, 148, active ? 6 : 2, 3, '#e9b785'); r(x - 2, 149, 6, 6, '#ba8c59');
     });
-    r(34, 89, 2, 39, '#5c6c62'); r(34, 90, 20, 1, '#5c6c62');
-    const dir = game.wind >= 0 ? 1 : -1, fx = dir > 0 ? 35 : 54;
-    for (let i = 0; i < 17; i++) r(fx + i * dir, 91 + i / 5, 1, Math.max(2, 7 - i / 3), i % 5 < 3 ? '#eac68e' : '#b9694e');
+    // Windsock planted in the yard between the thrower and the building, shaft to the pavement.
+    const poleX = 48;
+    r(poleX, 54, 2, 112, '#5c6c62');
+    r(poleX - 2, 164, 6, 3, '#3f4c44');
+    r(poleX - 1, 52, 4, 5, '#6d7e73');
+    const dir = game.wind > 0 ? 1 : game.wind < 0 ? -1 : 0;
+    const gust = Math.abs(game.wind);
+    if (!dir) {
+      for (let i = 0; i < 28; i++) r(poleX + 2, 57 + i, Math.max(2, 8 - (i >> 2)), 1, i % 4 < 2 ? '#eac68e' : '#b9694e');
+    } else {
+      const drop = 0.25 + (18 - gust) * 0.06;
+      const len = 14 + (gust >> 1);
+      const fx = dir > 0 ? poleX + 2 : poleX - 1;
+      for (let i = 0; i < len; i++) r(fx + i * dir, 57 + i * drop, 1, Math.max(2, 9 - i / 2.5), i % 5 < 3 ? '#eac68e' : '#b9694e');
+    }
     // the pull: a band from the courier's hand back the way it was dragged, with the parcel on the end
     if (view.pull && view.aim) {
       const back = view.aim.angle * Math.PI / 180, length = 4 + view.aim.power * 0.14;

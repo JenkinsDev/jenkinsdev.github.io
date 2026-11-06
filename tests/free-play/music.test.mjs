@@ -20,7 +20,7 @@ test("note names become frequencies", () => {
 });
 
 test("there's a tune for the hub and for each built game", () => {
-  for (const key of ["hub", "higher-or-lower", "quick-draw", "air-puck", "stack-it", "window-post"]) assert.ok(FunMusic.TRACKS[key], `missing ${key}`);
+  for (const key of ["hub", "higher-or-lower", "quick-draw", "air-puck", "stack-it", "window-post", "tug-of-war", "rocket-lander"]) assert.ok(FunMusic.TRACKS[key], `missing ${key}`);
 });
 
 test("every tune compiles, every channel loops at the same length, in whole bars", () => {

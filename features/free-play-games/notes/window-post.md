@@ -4,7 +4,7 @@ Window Post is built in `static/fun/window-post/`. It uses the shared shell, lay
 
 ## Rules and presentation
 
-Two couriers alternate eight total throws, four each. P1 wears red (`#ff3d3d`); P2 wears blue (`#2c7bff`). They throw from the same pavement spot. A parcel entering an open window earns its printed points and closes its shutters for both players. Highest score wins; equal scores draw. Rematches alternate the starting courier. There is no aiming timer.
+Two couriers alternate throws until every one of the eight windows has a parcel. Misses pass the turn; they do not end the match. P1 wears red (`#ff3d3d`); P2 wears blue (`#2c7bff`). They throw from the same pavement spot. A parcel entering an open window earns its printed points and closes its shutters for both players. Highest score wins; equal scores draw. Rematches alternate the starting courier. There is no aiming timer.
 
 The original brick apartment building has eight windows, cream sills, green shutters, balcony rails, a striped awning, planters and a cat. Upper windows are worth 2 or 3 points; lower windows are worth 1 or 2. Three-point mouths are 17×18 logical pixels, two-point mouths 21×23, one-point mouths 26×23. Swept intersections include two pixels of forgiveness on every side. The four values in each row rotate between matches; the facade shifts horizontally and individual window heights vary. There are always two windows at each of 1 and 3 points and four at 2 points.
 
@@ -14,13 +14,13 @@ The active courier stands at the throwing spot, with a colour mark under their f
 
 ## Controls and setup
 
-1P plays the computer; 2P shares the screen and takes turns using the same two sliders and THROW button. Setup saves mode and computer level through `FP.store("window-post")` after `FP.ready`. Eight throws is fixed, so there is no match-length selector.
+1P plays the computer; 2P shares the screen and takes turns using the same two sliders and THROW button. Setup saves mode and computer level through `FP.store("window-post")` after `FP.ready`. Play continues until all eight windows are delivered, so there is no match-length selector.
 
 - 1P: Left/Right change angle; Up/Down change power; Enter throws. A/D, W/S and Space also work.
 - 2P P1: A/D angle, W/S power, Space throws.
 - 2P P2: Left/Right angle, Up/Down power, Enter throws.
 - Left/A raises the arc; Right/D lowers it. Keyboard changes use two-unit steps. Native focused sliders also accept arrow keys.
-- Touch and mouse: angle/power sliders, then THROW. Sliders are 44 px tall. The panel sits below the building in portrait and alongside it in landscape.
+- Touch and mouse: angle/power sliders, then THROW. Sliders are 44 px tall. The panel sits below the building in both portrait and landscape, so the playfield keeps its horizontal room.
 
 ## Computer
 
@@ -40,10 +40,10 @@ Error is clamped and rounded to the legal range. No level sees future input, mov
 `node --test tests/free-play/window-post.test.mjs` contains five tests, including:
 
 - Reachability: 12 varied layouts × every one of the 37 allowed winds × eight windows = **3,552 successful checks**. Every solution is replayed through the real flight function with all windows initially open.
-- Computer tournament: every pair of levels, 12 layouts, both starting positions = **144 matches**. Match points (win=1, draw=½) were Easy **0.0%**, Medium **51.4%**, Hard **68.8%**, Impossible **79.9%**. Aggregate scored points were 307 / 557 / 609 / 642.
-- Starting courier won **59 of 109 decisive matches (54.1%)**. The remaining 35 matches drew. Starts alternate in play and in the tournament. These are finite seeded samples, not a guarantee for every board.
+- Computer tournament: every pair of levels, 12 layouts, both starting positions = **144 matches**, now played until every window is delivered (scores always sum to 16). Match points (win=1, draw=½) were Easy **0.7%**, Medium **50.0%**, Hard **71.5%**, Impossible **77.8%**. Aggregate scored points were 364 / 612 / 652 / 676.
+- Starting courier won **59 of 103 decisive matches (57.3%)**. The remaining 41 matches drew. Starts alternate in play and in the tournament. These are finite seeded samples, not a guarantee for every board.
 - No universal best throw: exhaustively considers all 4,331 legal angle/power pairs. Every throw earning three points on the first board fails to earn three on at least one of seven other boards.
-- Scoring, shared closure, eight-throw termination, legal computer settings and two-second flight cap are checked separately.
+- Scoring, shared closure, all-windows termination (misses do not end a match), legal computer settings and two-second flight cap are checked separately.
 
 ## Hub integration
 
@@ -65,7 +65,7 @@ Suggested registry entry:
 
 README text:
 
-> **Window Post:** Take turns throwing parcels into eight apartment windows worth 1–3 points. Delivered windows close for both couriers. Set angle and power, account for the steady wind, then THROW. Eight total throws; highest score wins. 1P against Easy / Medium / Hard / Impossible, or 2P on one screen. Touch sliders and keyboard controls; rematches alternate who starts.
+> **Window Post:** Take turns throwing parcels into eight apartment windows worth 1–3 points. Delivered windows close for both couriers. Set angle and power, account for the steady wind, then THROW. Play continues until every window has a parcel; highest score wins. 1P against Easy / Medium / Hard / Impossible, or 2P on one screen. Touch sliders and keyboard controls; rematches alternate who starts.
 
 ## Music
 

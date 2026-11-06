@@ -4,18 +4,19 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="description" content="Throw paper parcels into open windows. Play against the computer or a friend.">
 <meta name="theme-color" content="#0b0a10"><title>Window Post · FREE PLAY</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23e7c08a' d='M2 4h12v9H2z'/%3E%3Cpath stroke='%23895744' d='M8 4v9M2 8h12'/%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="favicon.svg?v=202611061251">
+<link rel="apple-touch-icon" href="apple-touch-icon.png?v=202611061251">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=VT323&family=Silkscreen:wght@400;700&display=swap">
-<link rel="stylesheet" href="../shared/crt.css?v=202611061505"><link rel="stylesheet" href="game.css?v=202611061505">
-<script defer src="../shared/sound.js?v=202611061505"></script><script defer src="../shared/engine.js?v=202611061505"></script><script defer src="../shared/controls.js?v=202611061505"></script>
-<script defer src="rules.js?v=202611061505"></script><script defer src="render.js?v=202611061505"></script><script defer src="game.js?v=202611061505"></script>
+<link rel="stylesheet" href="../shared/crt.css?v=202611061144"><link rel="stylesheet" href="game.css?v=202611061146">
+<script defer src="../shared/sound.js?v=202611061144"></script><script defer src="../shared/engine.js?v=202611061144"></script><script defer src="../shared/controls.js?v=202611061144"></script>
+<script defer src="rules.js?v=202611061151"></script><script defer src="render.js?v=202611061144"></script><script defer src="game.js?v=202611061151"></script>
 </head>
 <body><main class="wp">
 <section class="screen setup" data-screen="title">
 <h1 class="logo">WINDOW<br>POST</h1><p class="lede">Land a parcel in an open window.</p>
 <div class="option"><h2 class="option-label" id="players-label">Players</h2><div class="chips" id="modes" role="group" aria-labelledby="players-label"><button class="chip" data-mode="1p">1P</button><button class="chip" data-mode="2p">2P</button></div><p id="mode-rule"></p></div>
 <div class="option" id="level-option"><h2 class="option-label" id="level-label">Computer</h2><div class="chips" id="levels" role="group" aria-labelledby="level-label"></div></div>
-<p class="match-rule">Eight throws. Closed windows stay closed. Most points wins.</p>
+<p class="match-rule">Land a parcel in every window. Closed windows stay closed. Most points wins.</p>
 <div class="option controls"><h2 class="option-label">Controls</h2><div class="control-cards" id="control-cards"></div></div>
 <button class="fp-btn" id="play" data-autofocus>PLAY</button>
 </section>
@@ -25,5 +26,5 @@
 <div class="stage"><canvas id="scene" width="240" height="180" aria-label="A brick building with eight numbered windows and two couriers"></canvas></div>
 <div id="aim-panel"><span id="aim-owner">Your parcel</span><span id="aim-read"><span id="angle-value">50°</span> · power <span id="power-value">60</span></span><span class="meter" aria-hidden="true"><i id="power-bar"></i></span><span id="aim-hint"></span></div>
 </section>
-<section class="screen over" data-screen="over" hidden><h2 id="result"></h2><p id="final-score"></p><p>Eight throws complete.</p><div class="actions"><button class="fp-btn" id="rematch" data-autofocus>REMATCH</button><button class="fp-btn secondary" id="setup">SETUP</button></div></section>
+<section class="screen over" data-screen="over" hidden><h2 id="result"></h2><p id="final-score"></p><p>Every window has a parcel.</p><div class="actions"><button class="fp-btn" id="rematch" data-autofocus>REMATCH</button><button class="fp-btn secondary" id="setup">SETUP</button></div></section>
 </main></body></html>
