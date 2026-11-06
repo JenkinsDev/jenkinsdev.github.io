@@ -344,4 +344,7 @@ test('each 2P control cluster sits in the same seat as that player\'s view', () 
   assert.ok(p1.includes('id="seat-score-1"') && p1.includes('id="seat-timer-1"'));
   assert.match(css, /html\.rl-mobile \.rl\.two \.scoreboard/);
   assert.match(css, /html\.rl-mobile \.rl\.two #banner/);
+  assert.match(html, /id="split-back"/);
+  assert.match(html, /id="split-mute"/);
+  assert.match(css, /html\.rl-mobile:has\(\.rl\.two \.playing:not\(\[hidden\]\)\) \.fp-bar/);
 });

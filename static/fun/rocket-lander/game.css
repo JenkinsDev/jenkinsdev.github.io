@@ -246,3 +246,40 @@ html.rl-mobile .rl.two .seat-timer {
 }
 html.rl-mobile .rl.two .seat-timer.low { color: #ff8d8d; }
 html.rl-mobile .rl.two .fuel { width: 112px; }
+
+.split-icon { display: none; }
+
+/* Mobile 2P play: drop the title bar and park back/music on the VS split. */
+html.rl-mobile:has(.rl.two .playing:not([hidden])) .fp-bar { display: none !important; }
+html.rl-mobile:has(.rl.two .playing:not([hidden])) .playing {
+  height: 100dvh;
+  padding-top: env(safe-area-inset-top, 0px);
+}
+html.rl-mobile:has(.rl.two .playing:not([hidden])) .rl {
+  padding-top: 0;
+}
+html.rl-mobile .rl.two .split-icon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  flex: 0 0 44px;
+  padding: 0;
+  border: 2px solid var(--line);
+  border-radius: 50%;
+  background: rgba(5, 6, 12, 0.88);
+  color: var(--soft);
+  text-decoration: none;
+  cursor: pointer;
+  touch-action: manipulation;
+  z-index: 5;
+}
+html.rl-mobile .rl.two .split-icon .fp-glyph { width: 22px; height: 22px; fill: currentColor; }
+html.rl-mobile .rl.two .split-icon[aria-pressed="true"] { color: var(--dim); }
+html.rl-mobile .rl.two .split { gap: 10px; z-index: 4; }
+html.rl-mobile[data-orient="portrait"] .rl.two .arena { grid-template-rows: minmax(0, 1fr) 52px minmax(0, 1fr); }
+html.rl-mobile[data-orient="portrait"] .rl.two .split { min-height: 52px; }
+html.rl-mobile[data-orient="landscape"] .rl.two .arena { grid-template-columns: minmax(0, 1fr) 52px minmax(0, 1fr); }
+html.rl-mobile[data-orient="landscape"] .rl.two .split { flex-direction: column; min-width: 52px; }

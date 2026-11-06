@@ -12,6 +12,18 @@
   const names = () => state.mode === "1p" ? ["You", "Computer"] : ["Player 1", "Player 2"];
   const labels = () => state.mode === "1p" ? ["YOU", "CPU"] : ["P1", "P2"];
   FP.shell({ title: "Rocket Lander" });
+  $("split-back").innerHTML = FP.icon("back");
+  FP.muteButton($("split-mute"));
+  if (window.FunSound && FunSound.onMute) {
+    FunSound.onMute(() => {
+      const muted = FunSound.muted;
+      document.querySelectorAll(".fp-bar button, #split-mute").forEach((btn) => {
+        btn.setAttribute("aria-pressed", String(muted));
+        btn.setAttribute("aria-label", muted ? "Sound off" : "Sound on");
+        btn.innerHTML = FP.icon(muted ? "off" : "sound");
+      });
+    });
+  }
   ["easy", "medium", "hard", "impossible"].forEach((level) => {
     const b = document.createElement("button"); b.type = "button"; b.className = "chip"; b.dataset.level = level;
     b.textContent = level[0].toUpperCase() + level.slice(1); $("levels").append(b);
