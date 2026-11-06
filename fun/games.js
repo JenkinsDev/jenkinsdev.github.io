@@ -32,11 +32,16 @@ window.FP_GAMES = [
   {
     slug: "window-post", name: "Window Post", live: true, players: [1, 2],
     scene: "window-post", color: "#4fd18b", stats: [3, 1, 4, 1, 3],
-    hook: "Throw parcels into open windows. A window you hit closes.",
+    hook: "Throw parcels into every open window. A window you hit closes.",
   },
   {
-    slug: "soon", name: "Next game", live: false, players: 1, teaser: true,
-    scene: "soon", color: "#8a7fa8", stats: [0, 0, 0, 0, 0],
-    hook: "Not built yet.",
+    slug: "tug-of-war", name: "Tug of War", live: true, players: [1, 2],
+    scene: "tug", color: "#ff8c42", stats: [1, 5, 2, 3, 4],
+    hook: "Mash your side of the rope. First to pull the flag over the line wins the round.",
+  },
+  {
+    slug: "rocket-lander", name: "Rocket Lander", live: true, players: [1, 2],
+    scene: "lander", color: "#7eb8ff", stats: [3, 2, 5, 1, 2],
+    hook: "Fire the thrusters and set down gently. Gravity changes on every world.",
   },
 ];
