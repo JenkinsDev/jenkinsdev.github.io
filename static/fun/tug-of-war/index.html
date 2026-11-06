@@ -1,15 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
 <meta name="description" content="Mash your side of the rope. First to pull the flag over the line wins the round.">
 <meta name="theme-color" content="#0b0a10"><title>Tug of War · FREE PLAY</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg?v=202611061251">
 <link rel="apple-touch-icon" href="apple-touch-icon.png?v=202611061251">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=VT323&family=Silkscreen:wght@400;700&display=swap">
-<link rel="stylesheet" href="../shared/crt.css?v=202611061940"><link rel="stylesheet" href="game.css?v=202611061940">
-<script defer src="../shared/sound.js?v=202611061940"></script><script defer src="../shared/engine.js?v=202611061940"></script><script defer src="../shared/controls.js?v=202611061940"></script>
-<script defer src="rules.js?v=202611061940"></script><script defer src="render.js?v=202611061940"></script><script defer src="game.js?v=202611061940"></script>
+<link rel="stylesheet" href="../shared/crt.css?v=202611061530"><link rel="stylesheet" href="game.css?v=202611061530">
+<script defer src="../shared/sound.js?v=202611061530"></script><script defer src="../shared/engine.js?v=202611061530"></script><script defer src="../shared/controls.js?v=202611061530"></script>
+<script defer src="rules.js?v=202611061530"></script><script defer src="render.js?v=202611061530"></script><script defer src="game.js?v=202611061530"></script>
 </head>
 <body><main class="tw">
 <section class="screen setup" data-screen="title">
@@ -31,10 +31,12 @@
 <p id="live" class="visually-hidden" role="status" aria-live="assertive"></p>
 <div class="stage" id="stage">
   <canvas id="scene" width="240" height="180" aria-label="Two fighters tugging a rope over a mud pit at sunset"></canvas>
+  <a class="split-icon" id="split-back" href="../" aria-label="Back to the arcade"></a>
+  <button class="split-icon" id="split-mute" type="button"></button>
 </div>
 <div class="strip" id="strip">
-  <button class="pad p0" id="pad-0" type="button"><span class="burst" aria-hidden="true"></span><span class="pad-label">PULL!</span><span class="pad-key" id="key-0"></span></button>
-  <button class="pad p1" id="pad-1" type="button"><span class="burst" aria-hidden="true"></span><span class="pad-label">PULL!</span><span class="pad-key" id="key-1"></span></button>
+  <button class="pad p0" id="pad-0" type="button"><span class="burst" aria-hidden="true"></span><span class="seat-hud"><span class="seat-who" id="pad-name-0">You</span><b id="pad-score-0">0</b><span class="seat-clock" id="pad-clock-0"></span></span><span class="pad-label">PULL!</span><span class="pad-key" id="key-0"></span></button>
+  <button class="pad p1" id="pad-1" type="button"><span class="burst" aria-hidden="true"></span><span class="seat-hud"><span class="seat-who" id="pad-name-1">Computer</span><b id="pad-score-1">0</b><span class="seat-clock" id="pad-clock-1"></span></span><span class="pad-label">PULL!</span><span class="pad-key" id="key-1"></span></button>
   <div class="cpu-badge" id="cpu-badge" hidden><span class="cpu-mark">TEAM</span><span class="cpu-name">CPU</span><span class="cpu-level" id="cpu-level"></span></div>
 </div>
 </section>
