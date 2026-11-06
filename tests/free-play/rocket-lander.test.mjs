@@ -308,3 +308,36 @@ test('pad cue points toward an off-camera pad and hides when the pad is visible'
   assert.equal(RLRender.padCue({ pad: 2, padX: 4, padY: 0 }, 10, 16, 12, 12).dir, 'down-left');
   assert.equal(RLRender.padCue({ pad: 2, padX: 26, padY: 0 }, 10, 16, 12, 12).dir, 'down-right');
 });
+
+test('each 2P control cluster sits in the same seat as that player\'s view', () => {
+  const html = readFileSync('static/fun/rocket-lander/index.html', 'utf8');
+  const css = readFileSync('static/fun/rocket-lander/game.css', 'utf8');
+  const seat = (id) => {
+    const start = html.indexOf(`id="${id}"`);
+    assert.ok(start > 0, id);
+    const from = html.lastIndexOf('<div', start);
+    let depth = 0, i = from;
+    while (i < html.length) {
+      const open = html.indexOf('<div', i);
+      const close = html.indexOf('</div>', i);
+      if (close < 0) break;
+      if (open >= 0 && open < close) { depth++; i = open + 4; }
+      else { depth--; i = close + 6; if (depth === 0) return html.slice(from, i); }
+    }
+    return '';
+  };
+  const p0 = seat('seat-0'), p1 = seat('seat-1');
+  assert.ok(p0.includes('id="view-wrap-0"') && p0.includes('id="view-0"'));
+  assert.ok(p0.includes('id="cluster-0"') && p0.includes('data-p="0"') && !p0.includes('data-p="1"'));
+  assert.ok(p1.includes('id="view-wrap-1"') && p1.includes('id="view-1"'));
+  assert.ok(p1.includes('id="cluster-1"') && p1.includes('data-p="1"') && !p1.includes('data-p="0"'));
+  assert.match(p0, /data-p="0"[^>]*data-act="left"/);
+  assert.match(p0, /data-p="0"[^>]*data-act="thrust"/);
+  assert.match(p0, /data-p="0"[^>]*data-act="right"/);
+  assert.match(p1, /data-p="1"[^>]*data-act="left"/);
+  assert.match(p1, /data-p="1"[^>]*data-act="thrust"/);
+  assert.match(p1, /data-p="1"[^>]*data-act="right"/);
+  assert.match(css, /\.rl\.two \.seat\.p1 \{ order: -2; transform: rotate\(180deg\); \}/);
+  assert.match(css, /\.rl\.two \.seat\.p0 \.cluster \{ order: -1; \}/);
+  assert.match(css, /#view-wrap-1 \{ display: none !important; \}/);
+});

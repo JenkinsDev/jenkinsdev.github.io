@@ -49,8 +49,14 @@
       c.height = Math.round(box.height * state.dpr);
     });
   }
-  new ResizeObserver(resize).observe($("views"));
-  FP.layout.on(() => { resize(); clearHolds(); });
+  function mobileChrome() {
+    const l = FP.layout.current || { size: "desktop", w: innerWidth, h: innerHeight };
+    const mobile = l.size === "phone" || l.h <= 520 || Math.min(l.w, l.h) < 500;
+    document.documentElement.classList.toggle("rl-mobile", mobile);
+  }
+  new ResizeObserver(resize).observe($("arena"));
+  FP.layout.on(() => { mobileChrome(); resize(); clearHolds(); });
+  mobileChrome();
   function clearHolds() {
     state.holds.forEach((h) => { h.left.clear(); h.right.clear(); h.thrust.clear(); });
   }
@@ -210,6 +216,22 @@
     });
     if (FP.reducedMotion) $("banner").classList.add("static"); else $("banner").classList.remove("static");
   }).start();
+  window.__rocketLander = {
+    snapshot() {
+      if (!state.game) return { phase: state.phase, mode: state.mode, rockets: null };
+      return {
+        phase: state.phase,
+        mode: state.mode,
+        holds: state.holds.map((h) => ({ left: h.left.size, right: h.right.size, thrust: h.thrust.size })),
+        rockets: state.game.rockets.map((r) => ({
+          x: r.x, y: r.y, vx: r.vx, vy: r.vy, angle: r.angle, fuel: r.fuel, thrust: !!r.thrust, status: r.status
+        }))
+      };
+    },
+    release() {
+      state.holds.forEach((h) => { h.left.clear(); h.right.clear(); h.thrust.clear(); });
+    }
+  };
   FP.ready.then(() => {
     const mode = store.get("mode", "1p"), level = store.get("level", "medium"), world = store.get("world", "moon");
     state.mode = ["1p", "2p"].includes(mode) ? mode : "1p";
