@@ -12,6 +12,18 @@
   const g = canvas.getContext("2d");
 
   FP.shell({ title: "Air Puck" });
+  $("split-back").innerHTML = FP.icon("back");
+  FP.muteButton($("split-mute"));
+  if (window.FunSound && FunSound.onMute) {
+    FunSound.onMute(() => {
+      const muted = FunSound.muted;
+      document.querySelectorAll(".fp-bar button, #split-mute").forEach((btn) => {
+        btn.setAttribute("aria-pressed", String(muted));
+        btn.setAttribute("aria-label", muted ? "Sound off" : "Sound on");
+        btn.innerHTML = FP.icon(muted ? "off" : "sound");
+      });
+    });
+  }
 
   const state = {
     mode: "1p",
@@ -106,8 +118,14 @@
     canvas.height = Math.round(r.height * state.dpr);
     state.view = APRender.fit(canvas.width, canvas.height, landscape());
   }
+  function mobileChrome() {
+    const l = FP.layout.current || { size: "desktop", w: innerWidth, h: innerHeight };
+    const mobile = l.size === "phone" || l.h <= 520 || Math.min(l.w, l.h) < 500;
+    document.documentElement.classList.toggle("ap-mobile", mobile);
+  }
   new ResizeObserver(resize).observe(canvas);
-  FP.layout.on(() => resize());
+  FP.layout.on(() => { mobileChrome(); resize(); });
+  mobileChrome();
 
   // ---------- input: touch / mouse ----------
   function toTable(e) {
@@ -179,6 +197,7 @@
     state.flash = null;
     state.clock = 0;
     $("stage").classList.toggle("two", state.mode === "2p");
+    document.querySelector(".ap").classList.toggle("two", state.mode === "2p");
     names().forEach((n, i) => { $("name-" + i).textContent = n; });
     updateScores();
     FP.sfx.start();

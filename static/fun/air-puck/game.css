@@ -91,3 +91,71 @@ html[data-orient="portrait"] .stage.two .score-1 { rotate: 180deg; right: auto; 
   pointer-events: none;
 }
 .banner:empty { display: none; }
+
+.split-icon { display: none; }
+
+/* Mobile 2P: hide the title bar and park back/music on the centre line, off the ice. */
+html.ap-mobile:has(.ap.two .play-screen:not([hidden])) .fp-bar { display: none !important; }
+html.ap-mobile:has(.ap.two .play-screen:not([hidden])) .ap { padding: 0; }
+html.ap-mobile:has(.ap.two .play-screen:not([hidden])) .play-screen {
+  position: fixed;
+  inset: 0;
+  height: 100dvh;
+  min-height: 100dvh;
+  z-index: 1;
+}
+html.ap-mobile:has(.ap.two .play-screen:not([hidden])) .stage { height: 100%; min-height: 0; }
+html.ap-mobile .ap.two .split-icon {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  z-index: 5;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  border: 2px solid var(--line);
+  border-radius: 50%;
+  background: rgba(5, 6, 12, 0.88);
+  color: var(--soft);
+  text-decoration: none;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+html.ap-mobile .ap.two .split-icon .fp-glyph { width: 22px; height: 22px; fill: currentColor; }
+html.ap-mobile .ap.two .split-icon[aria-pressed="true"] { color: var(--dim); }
+
+/* Portrait: buttons sit in side gutters at centre-line height so the puck never passes under them. */
+html.ap-mobile[data-orient="portrait"] .ap.two .rink {
+  left: max(50px, calc(env(safe-area-inset-left, 0px) + 4px));
+  right: auto;
+  width: calc(100% - max(50px, calc(env(safe-area-inset-left, 0px) + 4px)) - max(50px, calc(env(safe-area-inset-right, 0px) + 4px)));
+}
+html.ap-mobile[data-orient="portrait"] .ap.two #split-back {
+  left: max(3px, env(safe-area-inset-left, 0px));
+  top: 50%;
+  transform: translateY(-50%);
+}
+html.ap-mobile[data-orient="portrait"] .ap.two #split-mute {
+  right: max(3px, env(safe-area-inset-right, 0px));
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Landscape: gutters on the long edges, buttons at the ends of the vertical centre line. */
+html.ap-mobile[data-orient="landscape"] .ap.two .rink {
+  top: max(50px, calc(env(safe-area-inset-top, 0px) + 4px));
+  bottom: auto;
+  height: calc(100% - max(50px, calc(env(safe-area-inset-top, 0px) + 4px)) - max(50px, calc(env(safe-area-inset-bottom, 0px) + 4px)));
+}
+html.ap-mobile[data-orient="landscape"] .ap.two #split-back {
+  top: max(3px, env(safe-area-inset-top, 0px));
+  left: 50%;
+  transform: translateX(-50%);
+}
+html.ap-mobile[data-orient="landscape"] .ap.two #split-mute {
+  bottom: max(3px, env(safe-area-inset-bottom, 0px));
+  left: 50%;
+  transform: translateX(-50%);
+}

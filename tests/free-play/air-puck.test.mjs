@@ -158,3 +158,14 @@ test("rounded corners: a puck sent into a corner comes back out", () => {
   assert.ok(w.puck.vy > 0, "heading back out of the corner");
   assert.ok(Math.hypot(w.puck.vx, w.puck.vy) > 0.5, "still moving");
 });
+
+
+test("mobile 2P chrome keeps back and music off the ice", () => {
+  const html = readFileSync(new URL("../../static/fun/air-puck/index.html", import.meta.url), "utf8");
+  const css = readFileSync(new URL("../../static/fun/air-puck/game.css", import.meta.url), "utf8");
+  assert.match(html, /id="split-back"/);
+  assert.match(html, /id="split-mute"/);
+  assert.match(css, /html\.ap-mobile:has\(\.ap\.two \.play-screen:not\(\[hidden\]\)\) \.fp-bar/);
+  assert.match(css, /#split-back/);
+  assert.match(css, /#split-mute/);
+});
