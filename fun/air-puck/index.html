@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
     <meta name="description" content="Air hockey on one screen. Play the computer or a friend.">
     <meta name="theme-color" content="#0b0a10">
     <title>Air Puck · FREE PLAY</title>
@@ -11,14 +11,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=VT323&family=Silkscreen:wght@400;700&display=swap">
-    <link rel="stylesheet" href="../shared/crt.css?v=202611061607">
-    <link rel="stylesheet" href="game.css?v=202611061607">
-    <script defer src="../shared/sound.js?v=202611061607"></script>
-    <script defer src="../shared/engine.js?v=202611061607"></script>
-    <script defer src="../shared/controls.js?v=202611061607"></script>
-    <script defer src="physics.js?v=202611061607"></script>
-    <script defer src="render.js?v=202611061607"></script>
-    <script defer src="game.js?v=202611061607"></script>
+    <link rel="stylesheet" href="../shared/crt.css?v=202611061450">
+    <link rel="stylesheet" href="game.css?v=202611061450">
+    <script defer src="../shared/sound.js?v=202611061450"></script>
+    <script defer src="../shared/engine.js?v=202611061450"></script>
+    <script defer src="../shared/controls.js?v=202611061450"></script>
+    <script defer src="physics.js?v=202611061450"></script>
+    <script defer src="render.js?v=202611061450"></script>
+    <script defer src="game.js?v=202611061450"></script>
   </head>
   <body>
     <main class="ap">
@@ -61,6 +61,8 @@
       <section class="screen play-screen" data-screen="play" hidden>
         <div class="stage" id="stage">
           <canvas class="rink" id="rink" aria-label="Air hockey rink"></canvas>
+          <a class="split-icon" id="split-back" href="../" aria-label="Back to the arcade"></a>
+          <button class="split-icon" id="split-mute" type="button"></button>
           <div class="score score-0"><span class="who" id="name-0"></span><b id="score-0">0</b></div>
           <div class="score score-1"><span class="who" id="name-1"></span><b id="score-1">0</b></div>
           <p class="banner" id="banner" aria-live="assertive"></p>
