@@ -7,9 +7,9 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg?v=202611061251">
 <link rel="apple-touch-icon" href="apple-touch-icon.png?v=202611061251">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=VT323&family=Silkscreen:wght@400;700&display=swap">
-<link rel="stylesheet" href="../shared/crt.css?v=202611061410"><link rel="stylesheet" href="game.css?v=202611061410">
-<script defer src="../shared/sound.js?v=202611061410"></script><script defer src="../shared/engine.js?v=202611061410"></script><script defer src="../shared/controls.js?v=202611061410"></script>
-<script defer src="rules.js?v=202611061410"></script><script defer src="render.js?v=202611061410"></script><script defer src="game.js?v=202611061410"></script>
+<link rel="stylesheet" href="../shared/crt.css?v=202611061425"><link rel="stylesheet" href="game.css?v=202611061425">
+<script defer src="../shared/sound.js?v=202611061425"></script><script defer src="../shared/engine.js?v=202611061425"></script><script defer src="../shared/controls.js?v=202611061425"></script>
+<script defer src="rules.js?v=202611061425"></script><script defer src="render.js?v=202611061425"></script><script defer src="game.js?v=202611061425"></script>
 </head>
 <body><main class="rl">
 <section class="screen setup" data-screen="title">
@@ -32,7 +32,7 @@
 <p id="live" class="visually-hidden" role="status" aria-live="polite"></p>
 <div class="arena" id="arena">
   <div class="seat p0" id="seat-0">
-    <div class="view" id="view-wrap-0"><div class="hud"><div class="fuel"><span class="fuel-name">FUEL</span><span class="fuel-meter" aria-hidden="true"><i id="fuel-bar-0"></i></span><b id="fuel-0">100</b></div></div><canvas id="view-0" width="240" height="180" aria-label="Your rocket"></canvas></div>
+    <div class="view" id="view-wrap-0"><div class="hud"><div class="hud-left"><div class="seat-score"><span class="seat-who">P1</span><b id="seat-score-0">0</b></div><div class="fuel"><span class="fuel-name">FUEL</span><span class="fuel-meter" aria-hidden="true"><i id="fuel-bar-0"></i></span><b id="fuel-0">100</b></div></div><div class="seat-clock"><span class="clock-name">TIME</span><b class="seat-timer" id="seat-timer-0">45.0</b></div></div><canvas id="view-0" width="240" height="180" aria-label="Your rocket"></canvas></div>
     <div class="cluster p0" id="cluster-0">
       <span class="who">P1</span>
       <button type="button" class="pad" data-p="0" data-act="left" aria-label="Player 1 rotate left">◀</button>
@@ -42,7 +42,7 @@
   </div>
   <div class="split" aria-hidden="true"><span class="vs">VS</span></div>
   <div class="seat p1" id="seat-1">
-    <div class="view" id="view-wrap-1"><div class="hud"><div class="fuel"><span class="fuel-name">FUEL</span><span class="fuel-meter" aria-hidden="true"><i id="fuel-bar-1"></i></span><b id="fuel-1">100</b></div></div><canvas id="view-1" width="240" height="180" aria-label="The other rocket"></canvas></div>
+    <div class="view" id="view-wrap-1"><div class="hud"><div class="hud-left"><div class="seat-score"><span class="seat-who">P2</span><b id="seat-score-1">0</b></div><div class="fuel"><span class="fuel-name">FUEL</span><span class="fuel-meter" aria-hidden="true"><i id="fuel-bar-1"></i></span><b id="fuel-1">100</b></div></div><div class="seat-clock"><span class="clock-name">TIME</span><b class="seat-timer" id="seat-timer-1">45.0</b></div></div><canvas id="view-1" width="240" height="180" aria-label="The other rocket"></canvas></div>
     <div class="cluster p1" id="cluster-1">
       <span class="who">P2</span>
       <button type="button" class="pad" data-p="1" data-act="left" aria-label="Player 2 rotate left">◀</button>

@@ -194,3 +194,55 @@ html.rl-mobile[data-orient="portrait"] .rl.two .vs { font-size: 0.58rem; padding
 
 html.rl-mobile[data-orient="landscape"] .rl.two .seat.p0 .cluster { padding-left: max(4px, env(safe-area-inset-left)); }
 html.rl-mobile[data-orient="landscape"] .rl.two .seat.p1 .cluster { padding-right: max(4px, env(safe-area-inset-right)); }
+
+.seat-score, .seat-clock { display: none; }
+.hud-left { display: contents; }
+
+/* Mobile 2P: each seat carries score + timer, shared top bar goes away. */
+html.rl-mobile .rl.two .scoreboard,
+html.rl-mobile .rl.two #banner { display: none !important; }
+html.rl-mobile .rl.two .hud {
+  left: 6px; right: 6px; top: 6px;
+  width: auto; max-width: none;
+  display: flex; justify-content: space-between; align-items: flex-start;
+  gap: 8px; padding: 0; background: transparent; border: none; border-radius: 0;
+}
+html.rl-mobile .rl.two .hud-left { display: grid; gap: 4px; justify-items: start; }
+html.rl-mobile .rl.two .seat-score,
+html.rl-mobile .rl.two .seat-clock,
+html.rl-mobile .rl.two .fuel {
+  background: rgba(12, 16, 28, 0.8);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 7px;
+  padding: 4px 8px 5px;
+}
+html.rl-mobile .rl.two .seat-score {
+  display: flex; align-items: baseline; gap: 8px;
+  color: var(--seat, #fff);
+}
+html.rl-mobile .rl.two .seat-who {
+  font: 700 0.72rem/1 var(--font-sign);
+  letter-spacing: 0.04em;
+}
+html.rl-mobile .rl.two .seat-score b {
+  font: 400 1.85rem/1 var(--font-sign);
+  color: #fff;
+  min-width: 1.15ch;
+  font-variant-numeric: tabular-nums;
+}
+html.rl-mobile .rl.two .seat-clock {
+  display: grid; justify-items: end; gap: 1px;
+}
+html.rl-mobile .rl.two .seat-clock .clock-name { color: #dfc397; font-size: 0.58rem; }
+html.rl-mobile .rl.two .seat-timer {
+  display: inline-block;
+  font: 400 1.75rem/1 var(--font-sign);
+  color: #fff;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+  width: 4.8ch;
+  min-width: 4.8ch;
+  text-align: right;
+}
+html.rl-mobile .rl.two .seat-timer.low { color: #ff8d8d; }
+html.rl-mobile .rl.two .fuel { width: 112px; }

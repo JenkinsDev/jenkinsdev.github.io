@@ -340,4 +340,8 @@ test('each 2P control cluster sits in the same seat as that player\'s view', () 
   assert.match(css, /\.rl\.two \.seat\.p1 \{ order: -2; transform: rotate\(180deg\); \}/);
   assert.match(css, /\.rl\.two \.seat\.p0 \.cluster \{ order: -1; \}/);
   assert.match(css, /#view-wrap-1 \{ display: none !important; \}/);
+  assert.ok(p0.includes('id="seat-score-0"') && p0.includes('id="seat-timer-0"'));
+  assert.ok(p1.includes('id="seat-score-1"') && p1.includes('id="seat-timer-1"'));
+  assert.match(css, /html\.rl-mobile \.rl\.two \.scoreboard/);
+  assert.match(css, /html\.rl-mobile \.rl\.two #banner/);
 });

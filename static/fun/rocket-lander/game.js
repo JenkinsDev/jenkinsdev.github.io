@@ -120,6 +120,12 @@
       const fuel = Math.max(0, Math.round(g.rockets[i].fuel));
       $("fuel-" + i).textContent = String(fuel);
       $("fuel-bar-" + i).style.width = fuel + "%";
+      const seatScore = $("seat-score-" + i), seatTimer = $("seat-timer-" + i);
+      if (seatScore) seatScore.textContent = String(m.scores[i]);
+      if (seatTimer) {
+        seatTimer.textContent = left.toFixed(1);
+        seatTimer.classList.toggle("low", left <= 10);
+      }
     });
   }
   function say(text) { $("live").textContent = text; $("banner").textContent = text; }
