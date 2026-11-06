@@ -12,7 +12,13 @@
     const time = (view && view.time != null) ? view.time : (state && state.time) || 0;
     const shake = (!reduced && extras.shake) ? extras.shake : 0;
     g.save();
-    g.scale(g.canvas.width / 240, g.canvas.height / 180);
+    const cw = g.canvas.width, ch = g.canvas.height;
+    const scale = Math.min(cw / 240, ch / 180) || 1;
+    if (g.setTransform) g.setTransform(1, 0, 0, 1, 0, 0);
+    g.fillStyle = '#0d1226';
+    g.fillRect(0, 0, cw, ch);
+    g.translate((cw - 240 * scale) / 2, (ch - 180 * scale) / 2);
+    g.scale(scale, scale);
     if (shake) g.translate((Math.floor(time * (shake > 1.5 ? 18 : 14)) % 2 ? 1 : -1) * Math.min(shake > 1.5 ? 3 : 1, shake), 0);
     g.imageSmoothingEnabled = false;
     const r = (x, y, w, h, c) => { g.fillStyle = c; g.fillRect(Math.round(x), Math.round(y), Math.max(1, w), Math.max(1, h)); };

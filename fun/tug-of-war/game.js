@@ -5,11 +5,23 @@
   const canvas = $('scene'), g = canvas.getContext('2d');
   const pads = [$('pad-0'), $('pad-1')];
   FP.shell({ title: 'Tug of War' });
+  $('split-back').innerHTML = FP.icon('back');
+  FP.muteButton($('split-mute'));
+  if (window.FunSound && FunSound.onMute) {
+    FunSound.onMute(() => {
+      const muted = FunSound.muted;
+      document.querySelectorAll('.fp-bar button, #split-mute').forEach((btn) => {
+        btn.setAttribute('aria-pressed', String(muted));
+        btn.setAttribute('aria-label', muted ? 'Sound off' : 'Sound on');
+        btn.innerHTML = FP.icon(muted ? 'off' : 'sound');
+      });
+    });
+  }
 
   const state = {
     mode: '1p', level: 'medium', match: null, round: null, phase: 'idle',
     pointers: new Map(), cpu: null, dust: [], status: '', between: 0, cheer: false, dpr: 1,
-    muddy: [false, false], shake: 0, sploosh: null, yank: [0, 0], lastTap: [-99, -99],
+    muddy: [false, false], shake: 0, sploosh: null, yank: [0, 0], lastTap: [-99, -99], lastPull: -1,
     claim: null, confetti: [], particles: [], hitstop: 0, flash: 0, hot: [0, 0],
     deepAAt: [-99, -99], secondWind: null, contactAt: false
   };
@@ -55,12 +67,17 @@
     $('live').textContent = msg;
   }
   function paintScores() {
+    const remain = state.round && state.round.phase === 'pull'
+      ? String(Math.ceil(state.round.remain)) : '';
     names().forEach((n, i) => {
       $('name-' + i).textContent = n;
       $('score-' + i).textContent = String(state.match ? state.match.scores[i] : 0);
+      const who = $('pad-name-' + i), pts = $('pad-score-' + i), clock = $('pad-clock-' + i);
+      if (who) who.textContent = n;
+      if (pts) pts.textContent = String(state.match ? state.match.scores[i] : 0);
+      if (clock) clock.textContent = remain ? remain + 's' : '';
     });
-    $('timer').textContent = state.round && state.round.phase === 'pull'
-      ? String(Math.ceil(state.round.remain)) : (state.round && state.round.phase === 'countdown' ? '' : '');
+    $('timer').textContent = remain || (state.round && state.round.phase === 'countdown' ? '' : '');
     const now = state.round ? state.round.time : 0;
     pads.forEach((pad, i) => {
       pad.classList.toggle('whoa', !!(state.round && now < state.round.slipUntil[i]));
@@ -70,6 +87,7 @@
   function layoutPads() {
     const two = state.mode === '2p';
     const keys = FP.layout.current.size !== 'phone';
+    document.querySelector('.tw').classList.toggle('two', two);
     $('strip').classList.toggle('solo', !two);
     pads[1].hidden = !two;
     pads[1].disabled = !two;
@@ -109,7 +127,7 @@
     state.contactAt = false;
     state.phase = 'round';
     paintScores();
-    announce('Round ' + (state.match.played + 1));
+    announce('Round ' + (state.match.played + 1), 'round');
   }
   function spark(player) {
     const pad = pads[player];
@@ -120,7 +138,7 @@
   function counted(player, result) {
     if (!result || !result.ok) return;
     if (!FunSound.muted) FunSound.tone(200 + Math.abs(state.round.x) * 90, { duration: 0.04, type: 'square', volume: 0.07 });
-    const rope = TWRender.ropeGeom(portrait());
+    const rope = TWRender.ropeGeom(false);
     const at = TWRender.flagAt(state.round.x, rope);
     if (!FP.reducedMotion) state.dust.push({ x: at.x + (player ? 8 : -8), y: at.y + 6, age: 0, born: state.round.time, p: player });
     state.lastTap[player] = state.round.time;
@@ -143,13 +161,16 @@
     }
   }
   function sideOf(e) {
-    const box = $('stage').getBoundingClientRect();
-    if (portrait()) return e.clientY > box.top + box.height / 2 ? 0 : 1;
-    return e.clientX < box.left + box.width / 2 ? 0 : 1;
+    const box = canvas.getBoundingClientRect();
+    const scale = Math.min(box.width / 240, box.height / 180) || 1;
+    const ox = (box.width - 240 * scale) / 2;
+    const lx = (e.clientX - box.left - ox) / scale;
+    return lx < 120 ? 0 : 1;
   }
   function pull(player) {
     if (!playing() || state.phase !== 'round' || !state.round || state.round.phase !== 'pull') return { ok: false };
     if (state.mode === '1p' && player === 1) return { ok: false };
+    state.lastPull = player;
     const result = TW.tap(state.round, player, state.round.time);
     counted(player, result);
     return result;
@@ -159,6 +180,7 @@
     if (state.mode === '1p' && player === 1) return;
     if (state.round.phase !== 'pull') { e.preventDefault(); return; }
     e.preventDefault();
+    state.lastPull = player;
     const result = TW.down(state.pointers, e.pointerId, player, state.round, state.round.time);
     counted(player, result);
     try { e.currentTarget.setPointerCapture(e.pointerId); } catch (_) { /* capture is optional */ }
@@ -236,6 +258,11 @@
     FP.screens.go('over');
   }
 
+  function mobileChrome() {
+    const l = FP.layout.current || { size: 'desktop', w: innerWidth, h: innerHeight };
+    const mobile = l.size === 'phone' || l.h <= 520 || Math.min(l.w, l.h) < 500;
+    document.documentElement.classList.toggle('tw-mobile', mobile);
+  }
   function resize() {
     const box = canvas.getBoundingClientRect();
     if (!box.width || !box.height) return;
@@ -244,7 +271,8 @@
     canvas.height = Math.round(box.height * state.dpr);
   }
   new ResizeObserver(resize).observe(canvas);
-  FP.layout.on(() => { resize(); state.pointers.clear(); if (FP.screens.current === 'title') syncTitle(); layoutPads(); });
+  FP.layout.on(() => { mobileChrome(); resize(); state.pointers.clear(); if (FP.screens.current === 'title') syncTitle(); layoutPads(); });
+  mobileChrome();
 
   function extras() {
     const now = state.round.time;
@@ -354,7 +382,7 @@
     if (state.round.phase === 'over') endRound();
   }, () => {
     if (!playing() || !state.round) return;
-    TWRender.paint(g, { portrait: portrait(), still: FP.reducedMotion, time: state.round.time }, state.round, extras());
+    TWRender.paint(g, { portrait: false, still: FP.reducedMotion, time: state.round.time }, state.round, extras());
   }).start();
 
   FP.input.tap($('play'), startMatch);
@@ -366,4 +394,25 @@
     state.level = TW.LEVELS[level] ? level : 'medium';
     setup();
   });
+
+  window.__tug = {
+    lastPull() { return state.lastPull; },
+    phase() { return state.round ? state.round.phase : state.phase; },
+    splash(player) {
+      const who = player === 0 || player === 1 ? player : 1;
+      state.sploosh = { player: who, age: 52 / 60, critter: false };
+      state.muddy = who === 'both' ? [true, true] : [who === 0, who === 1];
+      state.cheer = true;
+      state.phase = 'between';
+      state.between = 8;
+      announce('SPLOOSH!', 'sploosh');
+    },
+    over(winner) {
+      if (!state.match) state.match = TW.newMatch();
+      state.match.scores = winner === 1 ? [0, 2] : [2, 0];
+      state.match.winner = winner === 1 ? 1 : 0;
+      state.match.played = 2;
+      showOver();
+    }
+  };
 })();
