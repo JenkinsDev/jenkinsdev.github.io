@@ -4,7 +4,7 @@ Tug of War should be built in `static/fun/tug-of-war/`. It uses the shared shell
 
 This note is the production spec. Follow the same split as Window Post: `rules.js` (DOM-free), `render.js`, `game.js`, `preview.js`, plus `index.html` and `game.css`. Keep each production file under about 300 lines. Tests live in `tests/free-play/tug-of-war.test.mjs`.
 
-Tug of War **replaces** the current `{ slug: "soon", teaser: true }` card in `static/fun/games.js`. After Rocket Lander and Animal Speedometer are also registered, **add a new `soon` teaser at the end** so the hub still has a locked mystery slot.
+Tug of War **replaces** the previous `{ slug: "soon", teaser: true }` card in `static/fun/games.js`.
 
 ## Pitch
 

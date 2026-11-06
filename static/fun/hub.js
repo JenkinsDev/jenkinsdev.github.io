@@ -23,13 +23,40 @@
   const barHtml = (n, label) =>
     `<span class="bar" role="img" aria-label="${label} ${n} of 5">${[0, 1, 2, 3, 4].map((k) => `<i class="${k < n ? "on" : ""}"></i>`).join("")}</span>`;
 
-  function addScreen(canvas, name, replay) {
-    const s = { el: canvas, ctx: canvas.getContext("2d"), name, visible: false, time: 0, last: 0, dirty: true };
+  const stillTime = (s) => (window.FP_SCENE_STILLS || {})[s.name] || 0;
+  function freeze(s) {
+    s.hovered = false;
+    s.time = 0;
+    s.last = 0;
+    s.dirty = true;
+    if (SCENES[s.name] && SCENES[s.name].reset) SCENES[s.name].reset();
+    if (s.ctx) paint(s, stillTime(s));
+  }
+  function playPreview(s) {
+    if (!canHover.matches || motion.matches) return;
+    if (s.hovered) return;
+    s.hovered = true;
+    s.time = 0;
+    s.last = 0;
+    s.dirty = true;
+    if (SCENES[s.name] && SCENES[s.name].reset) SCENES[s.name].reset();
+    wake();
+  }
+  function addScreen(canvas, name, replay, card) {
+    const s = { el: canvas, ctx: canvas.getContext("2d"), name, visible: false, time: 0, last: 0, dirty: true, hovered: false };
     screens.push(s);
+    const host = card || canvas.closest(".row") || canvas;
+    host.addEventListener("mouseenter", () => playPreview(s));
+    host.addEventListener("mouseleave", () => freeze(s));
+    host.addEventListener("focusin", () => playPreview(s));
+    host.addEventListener("focusout", (e) => {
+      if (!host.contains(e.relatedTarget)) freeze(s);
+    });
     if (replay) replay.addEventListener("click", () => {
-      if (motion.matches) return;
+      if (motion.matches || !canHover.matches) return;
+      s.hovered = true;
       s.time = 0; s.last = 0; s.dirty = true;
-      if (SCENES[name].reset) SCENES[name].reset();
+      if (SCENES[name] && SCENES[name].reset) SCENES[name].reset();
       wake();
     });
   }
@@ -75,21 +102,23 @@
         });
       }
       list.append(li);
-      addScreen(li.querySelector("canvas"), g.scene, li.querySelector(".preview-replay"));
+      addScreen(li.querySelector("canvas"), g.scene, li.querySelector(".preview-replay"), li);
     });
   }
 
-  // One scheduler, at most 30fps; no physics or painting off screen or in hidden tabs.
+  // One scheduler, at most 30fps. Idle cards stay on one still frame; rAF runs only while a preview is hovered.
   const motion = matchMedia("(prefers-reduced-motion: reduce)");
+  const canHover = matchMedia("(hover: hover)");
   let raf = 0, lastFrame = 0;
-  const animated = (s) => s.name !== "soon" && s.name !== "stack";
+  const animated = (s) => s.name !== "soon";
+  const shouldPlay = (s) => s.hovered && canHover.matches && !motion.matches && animated(s);
   function paint(s, t) {
     fitCanvas(s.el, s.name);
     (SCENES[s.name] || SCENES.soon)(s.ctx, t);
     s.dirty = false;
   }
   function wake() {
-    if (!raf && !document.hidden && screens.some((s) => s.visible && (s.dirty || (!motion.matches && animated(s)))))
+    if (!raf && !document.hidden && screens.some((s) => s.visible && (s.dirty || shouldPlay(s))))
       raf = requestAnimationFrame(frame);
   }
   function frame(t) {
@@ -99,8 +128,8 @@
       lastFrame = t;
       for (const s of screens) {
         if (!s.visible) continue;
-        if (motion.matches || !animated(s)) {
-          if (s.dirty) paint(s, (window.FP_SCENE_STILLS || {})[s.name] || 0);
+        if (!shouldPlay(s)) {
+          if (s.dirty) paint(s, stillTime(s));
         } else {
           if (s.last) s.time += Math.min(100, t - s.last);
           s.last = t;
@@ -132,6 +161,10 @@
   FP.muteButton($("mute"));
   screens.forEach((s) => observer.observe(s.el));
   motion.addEventListener("change", refresh);
+  canHover.addEventListener("change", () => {
+    screens.forEach((s) => { s.hovered = false; s.time = 0; s.last = 0; s.dirty = true; });
+    refresh();
+  });
   document.addEventListener("visibilitychange", refresh);
   document.fonts.ready.then(refresh);
 })();

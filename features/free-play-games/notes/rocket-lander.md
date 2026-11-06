@@ -116,7 +116,6 @@ Original chiptune `T["rocket-lander"]` at 98 BPM in `shared/tracks.js`. SFX: thr
 
 Also wired: `static/fun/games.js` (replaces the “soon” teaser), `static/fun/index.html` script list, `static/fun/shared/tracks.js`, `tests/free-play/music.test.mjs`, `docs/free-play/README.md`.
 
-No commit or push. Animal Speedometer remains deferred.
 
 ## Open
 
