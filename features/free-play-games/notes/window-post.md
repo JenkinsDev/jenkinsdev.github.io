@@ -118,3 +118,7 @@ Created files:
 - `features/free-play-games/notes/window-post.md`: this handoff, integration snippets and music.
 
 No open implementation questions. The owner still needs to paste the registry entry, hub script list and music track into the shared files, and update the shared README if desired. No shared files or other game files were changed. No git write commands were run.
+
+## Drag to aim (2026-11-06)
+
+The owner asked for tap/click-and-drag instead of sliders. The sliders and THROW button are gone. Press anywhere on the stage and pull back: `WP.fromPull(back, down, full)` in `rules.js` turns the pull into angle (20–80°) and power (30–100). A full pull is 32% of the canvas width (at least 90px). Pulls under 12px don't count, so a tap never throws. While pulling, the courier's hand shows a band in the player's colour with the parcel on the end, and the strip below shows angle, power and a power bar. The computer shows its pull for about 0.7s before throwing. Keyboard controls are unchanged. Tested in `window-post.test.mjs` ("dragging back like a catapult…").

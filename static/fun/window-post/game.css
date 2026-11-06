@@ -20,14 +20,13 @@
 #banner { text-align: center; margin: 0; color: var(--turn); font: 1rem var(--font-sign); min-height: 24px; }
 .stage { display: flex; justify-content: center; align-items: center; min-height: 0; overflow: hidden; background: #182a2a; border-radius: 5px; }
 #scene { display: block; width: auto; height: 100%; max-width: 100%; aspect-ratio: 4 / 3; object-fit: contain; image-rendering: pixelated; }
-#aim-panel { border: 2px solid var(--turn); border-radius: 6px; margin: 0; padding: 6px 14px 12px; min-width: 0; }
-#aim-owner { padding: 0 8px; font: .8rem var(--font-sign); color: var(--turn); }
-.sliders { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-.sliders label { display: grid; grid-template-columns: 1fr auto; color: var(--soft); font-size: 1.25rem; }
-.sliders output { color: var(--text); }
-input[type=range] { grid-column: 1 / -1; width: 100%; margin: 0; height: 44px; accent-color: var(--turn); cursor: pointer; }
-#throw { width: 100%; min-height: 48px; background: var(--turn); color: #fff; }
-#throw:disabled { background: #34333a; color: var(--soft); opacity: 1; }
+.stage { touch-action: none; cursor: crosshair; -webkit-user-select: none; user-select: none; }
+#aim-panel { display: grid; grid-template-columns: auto auto 1fr; align-items: center; gap: 4px 14px; border: 2px solid var(--turn); border-radius: 6px; padding: 8px 14px; }
+#aim-owner { font: .8rem var(--font-sign); color: var(--turn); }
+#aim-read { font-size: 1.3rem; color: var(--text); }
+.meter { height: 12px; border-radius: 3px; background: #26242d; overflow: hidden; }
+.meter i { display: block; height: 100%; width: 40%; background: var(--turn); }
+#aim-hint { grid-column: 1 / -1; color: var(--soft); font-size: 1.1rem; text-align: center; }
 .over h2 { color: var(--accent); font: 2.6rem var(--font-title); margin: 0; }
 .over p { margin: 0; color: var(--soft); }
 #final-score { font: 1.6rem/1.7 var(--font-sign); color: #fff; white-space: pre-line; }
@@ -37,12 +36,12 @@ html[data-layout=phone] #levels { grid-template-columns: 1fr 1fr; }
 html[data-layout=phone] .setup { gap: 16px; }
 html[data-layout=phone] .score { font-size: .65rem; padding: 7px 5px; }
 html[data-layout=phone] .score b { font-size: 1.15rem; margin-left: 4px; }
-html[data-layout=phone] .sliders { grid-template-columns: 1fr; gap: 0; }
-html[data-layout=phone] #aim-panel { padding: 2px 12px 10px; }
-html[data-orient=landscape] .playing { grid-template-columns: minmax(0, 1fr) 280px; grid-template-rows: auto auto minmax(0, 1fr); }
+html[data-layout=phone] #aim-panel { padding: 6px 10px; gap: 2px 10px; }
+html[data-orient=landscape] .playing { grid-template-columns: minmax(0, 1fr) 240px; grid-template-rows: auto auto minmax(0, 1fr); }
 html[data-orient=landscape] .scoreboard, html[data-orient=landscape] #banner { grid-column: 1 / -1; }
 html[data-orient=landscape] #aim-panel { align-self: center; }
-html[data-orient=landscape] .sliders { grid-template-columns: 1fr; }
+html[data-orient=landscape] #aim-panel { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+html[data-orient=landscape] .meter { width: 100%; }
 @media (max-height: 500px) {
   .wp { padding-bottom: 4px; }
   .screen { min-height: calc(100dvh - 76px); }
@@ -58,7 +57,7 @@ html[data-orient=landscape] .sliders { grid-template-columns: 1fr; }
   .playing { height: calc(100dvh - 76px); gap: 3px; }
   .score { padding: 3px 8px; }
   #banner { font-size: .8rem; min-height: 18px; }
-  #aim-panel { padding-block: 0 6px; }
+  #aim-panel { padding-block: 3px; }
 }
 @media (max-height: 500px) {
   .setup { grid-template-rows: auto auto auto auto; align-content: center; }

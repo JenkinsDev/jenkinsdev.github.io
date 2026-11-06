@@ -127,3 +127,7 @@ Some form of block-tower pulling, made to fit the arcade: players take turns rem
 ## Owner's decision (2026-11-05)
 
 Build TILT!, Window Post and Borrowed Blocks (all three), each 1P vs computer (Easy–Impossible) + 2P on one device.
+
+## Owner's follow-up (2026-11-06)
+
+After playing them: Window Post stays, with drag-to-aim (pull back, let go) replacing the sliders. Borrowed Blocks was flat, so it was removed. TILT! confused people, because every tilt moves both marbles and you steer your opponent too; that is the core of the game, so it was removed rather than patched.

@@ -1,5 +1,7 @@
 # TILT!
 
+**Removed on 2026-11-06.** The owner dropped this game after playing it. The code is in git history (commit 47d7c6ef).
+
 Built in `static/fun/tilt/`. No shared files or registry files changed.
 
 ## Rules as built

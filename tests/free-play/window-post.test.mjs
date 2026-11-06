@@ -56,3 +56,18 @@ test('no throw is a universal best choice; same settings and flight cap for comp
     assert.ok(Number.isInteger(aim.power) && aim.power >= 30 && aim.power <= 100); assert.ok(WP.flight(g, aim).time <= 2.001);
   }
 });
+test('dragging back like a catapult sets angle and power', () => {
+  assert.equal(WP.fromPull(5, 5, 100), null, 'a short pull does not count');
+  const steep = WP.fromPull(30, 60, 200), flat = WP.fromPull(60, 30, 200);
+  assert.ok(steep.angle > flat.angle, 'pulling straight down aims higher');
+  assert.equal(WP.fromPull(100, 100, 100).power, 100, 'a full pull is full power');
+  assert.equal(WP.fromPull(10, 10, 1000).power, 31); // 14 px of 1000 → 30 + 1
+  assert.equal(WP.fromPull(-50, 10, 100).angle, 80, 'pulling the wrong way clamps to the steepest throw');
+  assert.equal(WP.fromPull(50, -10, 100).angle, 20, 'pulling upward clamps to the flattest throw');
+  // every legal setting can be reached by some pull
+  for (let angle = 20; angle <= 80; angle += 15) for (let power = 30; power <= 100; power += 10) {
+    const length = (power - 30) / 70 * 200 + 12.5, r = angle * Math.PI / 180;
+    const aim = WP.fromPull(Math.cos(r) * length, Math.sin(r) * length, 200);
+    assert.ok(Math.abs(aim.angle - angle) <= 1 && Math.abs(aim.power - power) <= 5, JSON.stringify({ angle, power, aim }));
+  }
+});

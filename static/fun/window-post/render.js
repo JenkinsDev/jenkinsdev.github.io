@@ -64,6 +64,13 @@
     r(34, 89, 2, 39, '#5c6c62'); r(34, 90, 20, 1, '#5c6c62');
     const dir = game.wind >= 0 ? 1 : -1, fx = dir > 0 ? 35 : 54;
     for (let i = 0; i < 17; i++) r(fx + i * dir, 91 + i / 5, 1, Math.max(2, 7 - i / 3), i % 5 < 3 ? '#eac68e' : '#b9694e');
+    // the pull: a band from the courier's hand back the way it was dragged, with the parcel on the end
+    if (view.pull && view.aim) {
+      const back = view.aim.angle * Math.PI / 180, length = 4 + view.aim.power * 0.14;
+      const end = d => ({ x: 36 - Math.cos(back) * d, y: 142 + Math.sin(back) * d });
+      for (let d = 0; d < length; d += 3) { const p = end(d); r(p.x, p.y, 2, 2, colors[game.turn]); }
+      const p = end(length); r(p.x - 3, p.y - 2, 7, 5, '#f6dcaa'); r(p.x - 1, p.y - 2, 1, 5, '#a6744b');
+    }
     if (view.guide && view.aim) for (let t = 0.055; t < 0.29; t += 0.055) { const p = WP.point(game, view.aim, t); r(p.x, p.y, 2, 2, '#fff0c5'); }
     if (view.parcel) {
       const p = view.parcel; g.save(); g.translate(Math.round(p.x), Math.round(p.y));

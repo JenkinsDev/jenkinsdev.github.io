@@ -12,9 +12,7 @@ The hub is a grid of game cards: each shows a pixel preview of the game, its nam
 | Quick Draw | 1P vs computer / 2P | live | `static/fun/quick-draw/` |
 | Air Puck | 1P vs computer / 2P | live | `static/fun/air-puck/` |
 | Stack It | Solo / 1P vs computer / 2P | live | `static/fun/stack-it/` |
-| TILT! | 1P vs computer / 2P | live | `static/fun/tilt/` |
 | Window Post | 1P vs computer / 2P | live | `static/fun/window-post/` |
-| Borrowed Blocks | 1P vs computer / 2P | live | `static/fun/borrowed-blocks/` |
 | ? (next game) | ? | locked teaser | n/a |
 
 Each game's spec and as-built notes are in `features/free-play-games/notes/<slug>.md`.
@@ -40,10 +38,8 @@ Each game's spec and as-built notes are in `features/free-play-games/notes/<slug
   - 1P vs computer / 2P rounds: the first player builds until their pile falls, then the other builds a fresh pile and must beat that height (a dashed line in the first player's colour). Passing it wins the round at once; falling first loses it. Who starts alternates. A banner names whose turn it is, and the height box shows the builder's name in their colour. Best of 3, 5 or 7.
   - Fairness rules, found by simulating thousands of drops (`tests/free-play/stack-it.test.mjs`): nothing is perfectly round (tyres lie flat, melons and snowmen have flat bottoms, the snowman has a hat), weights stay within 3:1 (the physics engine squashes very light things under very heavy ones), objects fall straight down from the hook, and a hard object never follows a hard one.
   - The hub preview is a real pile built by the Hard computer, using the game's own physics and drawing.
-- **TILT!:** Take turns tilting a shared wooden maze. Both marked marbles roll together; get yours into its matching cup without helping the other player. Preview both stops, then press ROLL. 1P against four computer levels or 2P on one screen, three symmetric trays, 12 turns and no timer. The first player alternates each game.
-- **Window Post:** Take turns throwing parcels into eight apartment windows worth 1–3 points. Delivered windows close for both couriers. Set angle and power, account for the steady wind, then THROW. Eight total throws; highest score wins. 1P against Easy / Medium / Hard / Impossible, or 2P on one screen. Touch sliders and keyboard controls; rematches alternate who starts.
-- **Borrowed Blocks:** Pick a shape from a shared three-piece rack and fit it onto your board. Both 4×4 boards stay visible; each has two blocked cells. Rotate and preview before placing. Covered squares score one each, with six turns per player and no timer. 1P against Easy / Medium / Hard / Impossible, or 2P sharing the screen. Tap or drag to aim; arrows, R and Enter work on a keyboard. Pass only when nothing fits. Ties stand; rematches alternate starts.
-- These three were built in parallel by GPT-6.1 Sol agents (one folder each) from the shortlist in `features/free-play-games/notes/game-ideas.md`, then reviewed and integrated: as-built notes, simulations and tunes are in each game's notes file. Each has `rules.js` (DOM-free rules + computer), `render.js`, `game.js` and `preview.js` (registers its hub scene).
+- **Window Post:** Take turns throwing parcels into eight apartment windows worth 1–3 points. Delivered windows close for both couriers. Aim like a catapult: press anywhere on the picture, pull back away from the windows (direction sets the angle, length sets the power) and let go. A short pull or a tap does nothing. Account for the steady wind. Eight total throws; highest score wins. 1P against Easy / Medium / Hard / Impossible, or 2P on one screen. Keyboard: arrows/WASD for angle and power, Enter/Space to throw. The computer shows its pull before it throws; rematches alternate who starts.
+- Window Post was built by a GPT-6.1 Sol agent from the shortlist in `features/free-play-games/notes/game-ideas.md`, then reviewed and integrated. It has `rules.js` (DOM-free rules + computer), `render.js`, `game.js` and `preview.js` (registers its hub scene). TILT! and Borrowed Blocks were built alongside it and removed on 2026-11-06: TILT! confused players and Borrowed Blocks was flat. Their notes stay in `features/free-play-games/notes/`.
 
 ## Where things live
 
@@ -78,7 +74,7 @@ Hugo copies everything in `static/` to the site root, so `static/fun/index.html`
 2. `scenes.js` defines `window.FP_SCENES`. Each scene is `(ctx, t) => void` and draws one frame at time `t` (ms) into its canvas: 64×48 by default, or the size in `FP_SCENE_SIZES`. CSS scales it up with crisp pixels.
    - **Built games preview the real thing.** Higher or Lower draws its two-card round. Quick Draw calls the game's own painter (`QDScene.paint`). Air Puck runs a live computer-vs-computer match with the game's physics and renderer (`air-puck/physics.js` + `render.js`). The hub loads those scripts.
 3. `hub.js` builds the cards and runs one `requestAnimationFrame` loop that only draws canvases on screen. With reduced motion, each preview is drawn once as a still.
-4. PLAY opens `/fun/<slug>/` after a short coin sound. Games that aren't live show "Coming soon" text instead of a button. The TILT! teaser stays a "?" with no name, tags or stats.
+4. PLAY opens `/fun/<slug>/` after a short coin sound. Games that aren't live show "Coming soon" text instead of a button. The teaser stays a "?" with no name, tags or stats.
 
 ### Registry fields (`games.js`)
 
@@ -88,7 +84,7 @@ Hugo copies everything in `static/` to the site root, so `static/fun/index.html`
 | `name` | Display name |
 | `live` | `false` shows "Coming soon"; set to `true` once the user has reviewed the game |
 | `players` | `1`, `2`, or `[1, 2]` (solo vs the computer, or two people on **one** screen). Shown only as 1P / 2P tags, never in words |
-| `teaser` | `true` renders a locked "?" card (currently TILT!) |
+| `teaser` | `true` renders a locked "?" card (the next game) |
 | `scene` | Key into `FP_SCENES` for the preview |
 | `color` | Accent colour for the card, its border, stat bars and PLAY button |
 | `stats` | `[brains, speed, skill, luck, silly]`, each 0–5, shown as bars |
@@ -209,7 +205,7 @@ Pushing to `main` deploys via `.github/workflows` (Hugo 0.121.2 → GitHub Pages
 
 ## Decisions so far
 
-- **Name:** FREE PLAY. TILT! is a future game.
+- **Name:** FREE PLAY.
 - **Audience:** all ages, not just young kids.
 - **Hub:** a grid of game cards. Rejected along the way: pastel kid UI, a fridge with crayons, editorial/poster/dark-lab layouts, a neon arcade floor (too noisy), a CRT monitor frame, and select-then-play.
 - **Branding:** neutral, with one small `jenkinsdev.us` link in the hub footer.

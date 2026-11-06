@@ -1,5 +1,7 @@
 # Borrowed Blocks
 
+**Removed on 2026-11-06.** The owner dropped this game after playing it. The code is in git history (commit 47d7c6ef).
+
 Built 2026-11-05. Standalone page: `/fun/borrowed-blocks/`.
 
 ## Rules and controls

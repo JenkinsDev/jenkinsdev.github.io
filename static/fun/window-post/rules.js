@@ -84,5 +84,11 @@
     const error = { easy: 12, medium: 5, hard: 1, impossible: 0 }[level] || 0;
     return settings(chosen.angle + (random() * 2 - 1) * error, chosen.power + (random() * 2 - 1) * error);
   }
-  window.WP = { create, point, flight, deliver, search, computer, settings };
+  // Catapult aiming: pulling down-left by (back, down) pixels throws up-right. Returns null for a pull too short to count.
+  function fromPull(back, down, full) {
+    const length = Math.hypot(back, down);
+    if (length < 12) return null;
+    return settings(Math.atan2(down, back) * 180 / Math.PI, 30 + 70 * Math.min(1, length / full));
+  }
+  window.WP = { create, point, flight, deliver, search, computer, settings, fromPull };
 })();

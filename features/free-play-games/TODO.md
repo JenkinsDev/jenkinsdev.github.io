@@ -61,6 +61,8 @@
 - [x] Sol: game idea shortlist in `notes/game-ideas.md`; owner chose TILT!, Window Post, Borrowed Blocks
 - [x] Hub on phones: two compact cards per row; Quick Draw buildings capped on tall screens
 - [x] TILT!, Window Post, Borrowed Blocks built in parallel by Sol agents, reviewed (Window Post: sill points moved into the window glass; Borrowed Blocks: icon CSS leak fixed + polish pass), integrated: registry, hub scripts, tunes
+- [x] Removed TILT! (confusing) and Borrowed Blocks (flat) after the owner played them
+- [x] Window Post: drag to aim (pull back for angle and power, let go to throw)
 - [x] Cache-busting: `scripts/fun-version.mjs` before each deploy
 - [ ] Next: the owner's arcade Jenga idea (teaser "?" slot on the hub)
 
